@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Ambient Declaration Class for GreenSock</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: rodrigo</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/#comment-15754</link>
+		<dc:creator><![CDATA[rodrigo]]></dc:creator>
+		<pubDate>Wed, 12 Jun 2013 16:17:32 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=464#comment-15754</guid>
+		<description><![CDATA[yea same thing happened to me, plus then I try to (on *.d.ts):
+
+declare var TimelineMax:any;
+
+and in my TS file the problem that I have now is that if I try to do a chain call like:
+
+var tl:TimelineMax = new TimelineMax();
+tl.from([options]),
+.from([options]);
+tl.play()
+
+
+I&#039;ve got two new errors saying
+The property &#039;from&#039; does not exist on value of type &#039;TimelineMax&#039;
+The property &#039;play&#039; does not exist on value of type &#039;TimelineMax&#039;
+
+
+since TimelineMax now is of  &quot;any&quot; type. 
+So to avoid this you will have to declare tl as &quot;any&quot; type like this:
+
+var tl:any = new TimelineMax();
+
+or
+
+var tl = new TimelineMax();  // TS asumes that tl is od any type as it is on .d.ts
+
+
+Now I wont get any compile error but I&#039;m not getting syntax completion on tl since it&#039;s any type.
+
+Also I notice that TimelineMax and TimelineLite Interface definitions where not doing  inheritance .
+I try to fix that but I get the same error of course :)
+
+
+
+PS: Great blog , I learned a lot from you .Tanks :)]]></description>
+		<content:encoded><![CDATA[<p>yea same thing happened to me, plus then I try to (on *.d.ts):</p>
+<p>declare var TimelineMax:any;</p>
+<p>and in my TS file the problem that I have now is that if I try to do a chain call like:</p>
+<p>var tl:TimelineMax = new TimelineMax();<br />
+tl.from([options]),<br />
+.from([options]);<br />
+tl.play()</p>
+<p>I&#8217;ve got two new errors saying<br />
+The property &#8216;from&#8217; does not exist on value of type &#8216;TimelineMax&#8217;<br />
+The property &#8216;play&#8217; does not exist on value of type &#8216;TimelineMax&#8217;</p>
+<p>since TimelineMax now is of  &#8220;any&#8221; type.<br />
+So to avoid this you will have to declare tl as &#8220;any&#8221; type like this:</p>
+<p>var tl:any = new TimelineMax();</p>
+<p>or</p>
+<p>var tl = new TimelineMax();  // TS asumes that tl is od any type as it is on .d.ts</p>
+<p>Now I wont get any compile error but I&#8217;m not getting syntax completion on tl since it&#8217;s any type.</p>
+<p>Also I notice that TimelineMax and TimelineLite Interface definitions where not doing  inheritance .<br />
+I try to fix that but I get the same error of course :)</p>
+<p>PS: Great blog , I learned a lot from you .Tanks :)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/#comment-15727</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 05:01:23 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=464#comment-15727</guid>
+		<description><![CDATA[That&#039;s a good question and I will have to look into it. In the mean time to get up and running you can just remove all the code in that file and put:
+
+declare var TweenMax:any;
+declare var TweenLite:any;
+declare var TimelineMax:any;
+declare var TimelineMax:any;
+
+When I have sometime, I will look into the fix.]]></description>
+		<content:encoded><![CDATA[<p>That&#8217;s a good question and I will have to look into it. In the mean time to get up and running you can just remove all the code in that file and put:</p>
+<p>declare var TweenMax:any;<br />
+declare var TweenLite:any;<br />
+declare var TimelineMax:any;<br />
+declare var TimelineMax:any;</p>
+<p>When I have sometime, I will look into the fix.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: richard</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/#comment-15709</link>
+		<dc:creator><![CDATA[richard]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2013 07:38:37 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=464#comment-15709</guid>
+		<description><![CDATA[hi.. this works great for the following
+
+TweenMax.to(bm, 1, {x:100});
+
+but when i try this code..
+
+var tl:TimelineMax = new TimelineMax();
+
+i get the error &#039;interface cannot be instantiated&#039;. how do you recommending using TimelineMax in TypeScript?]]></description>
+		<content:encoded><![CDATA[<p>hi.. this works great for the following</p>
+<p>TweenMax.to(bm, 1, {x:100});</p>
+<p>but when i try this code..</p>
+<p>var tl:TimelineMax = new TimelineMax();</p>
+<p>i get the error &#8216;interface cannot be instantiated&#8217;. how do you recommending using TimelineMax in TypeScript?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>Precompiling JavaScript Underscore Templates &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/contents/ui/theme/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/contents/ui/theme/ie6.css" media="screen"/>
+    <![endif]-->
+    
+    
+
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/front.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/chosen.jquery.min.js'></script>
+
+
+
+
+
+
+
+
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/contents/ui/theme/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>Precompiling JavaScript Underscore Templates</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/javascript/" rel="category tag">JavaScript</a></p>
+
+				
+
+										
+
+					
+
+					<p>In this tutorial I will show you how to <strong>Precompile JavaScript Underscore Templates</strong> with <strong>GruntJS</strong>. I will be using the <a href="https://github.com/gruntjs/grunt-contrib-jst" title="Grunt JST Plugin" target="_blank">GruntJS JST Plugin</a>.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<p>Now <strong>download the example files below</strong> and navigate with Terminal or the Command Prompt to the &#8220;_build&#8221; folder and type in:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+npm install
+</pre>
+<p>On a Mac you may need to type:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+sudo npm install
+</pre>
+<p>Basically what &#8220;npm install&#8221; is doing is looking for a &#8220;package.json&#8221; file and checks the &#8220;devDependencies&#8221;. NodeJS will download and install the necessary files for your GruntJS setup. Here is our package file:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+{
+    &quot;name&quot;: &quot;UnderScoreTemplate&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-jst&quot;: &quot;~0.5.0&quot;
+    }
+}
+</pre>
+<h2>Compiling Underscore Templates into JavaScript</h2>
+<p>Now that we have the GruntJS packages added to our &#8220;_build/node_modules/&#8221; folder we can start converting Underscore templates into precompiled JavaScript template Functions. </p>
+<p>What the JST GruntJS plugin will do is take the Underscore template (templates/home/UserDetailTemplate.tpl) below and will create a JavaScript function that will return the template as a string.</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+&lt;%
+    var length = userList.length;
+    for (var index = 0; index &lt; length; index++) {
+        var user = userList[index];
+%&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;%= index %&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;%= user.firstName %&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;%= user.lastName %&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;%= user.email %&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+&lt;% } %&gt;
+</pre>
+<p>Here is the function it creates. It uses the path and name of the template as the function name.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+this[&quot;JST&quot;][&quot;templates/home/UserDetailTemplate.tpl&quot;] = function (obj) {
+    obj || (obj = {});
+    var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
+
+    function print() {
+        __p += __j.call(arguments, '')
+    }
+
+    with (obj) {
+        var length = userList.length;
+        for (var index = 0; index &lt; length; index++) {
+            var user = userList[index];
+            ;
+            __p += '\r\n        &lt;tr&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( index )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( user.firstName )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( user.lastName )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( user.email )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n        &lt;/tr&gt;\r\n';
+        };
+    }
+    return __p
+};
+</pre>
+<p>To use the precompiled JavaScript template Function in your JavaScript code you would do the following:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+var userDetailTemplate = window['JST']['templates/home/UserDetailTemplate.tpl']();
+jQuery('body').append(userDetailTemplate);
+</pre>
+<p>Since the Underscore template example above expects an Array we will need to pass the data(Array) into the function-call operator as we do below:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+var data = [
+...
+]
+var userDetailTemplate = window['JST']['templates/home/UserDetailTemplate.tpl'](data );
+jQuery('body').append(userDetailTemplate);
+</pre>
+<h2>Precompiled JavaScript Template Example</h2>
+<p>On to my example code which you can download below and see how this all works. I hope code is straight forward.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+&lt;script&gt;
+    /**
+     * Helper Function to get the template function and returns the compiled
+     * template string.
+     * @param {string} templatePath The path and name of the template you want to use.
+     * @param {Object=} data Optional data to be used within the template.
+     * @returns {string} Returned compiled template.
+     */
+    function createTemplate(templatePath, data) {
+        var templateString = window['JST'][templatePath](data);
+        return templateString;
+    }
+
+    /**
+     * Initialize Function that gets called when the page is loaded (window.onload).
+     * All of our JavaScript code to generate the templates and add it to the DOM.
+     */
+    function init() {
+        // Data for the UserDetailTemplate template.
+        var userListData = [
+            {
+                firstName: 'Mark',
+                lastName: 'Otto',
+                email: 'mark@example.com'
+            },
+            {
+                firstName: 'Jacob',
+                lastName: 'Thornton',
+                email: 'jacob@example.com'
+            },
+            {
+                firstName: 'Larry',
+                lastName: 'Bird',
+                email: 'lary@example.com'
+            }
+        ];
+
+        // Get templates by path and template name.
+        var titleBar = createTemplate('templates/titlebar/TitleBarTemplate.tpl');
+        var header = createTemplate('templates/home/HelloTemplate.tpl', { title: 'Robert Is Cool!' });
+        var users = createTemplate('templates/home/UserDetailTemplate.tpl', {userList: userListData});
+
+        // Add the template string to the DOM with jQuery.
+        var $body = $('body');
+        $body.append(titleBar);
+        $body.append(header);
+        $body.find('tbody').html(users);
+    }
+
+    // Calls the init Function on window load.
+    window.onload = init;
+&lt;/script&gt;
+</pre>
+<h2>Gruntfile</h2>
+<p>If you dive into the &#8220;Gruntfile.js&#8221; file you will see:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+jst: {
+    compile: {
+        options: {
+            //namespace: &quot;anotherNameThanJST&quot;,      //Default: 'JST'
+            prettify: false,                        //Default: false|true
+            amdWrapper: false,                      //Default: false|true
+            templateSettings: {
+            },
+            processName: function(filename) {
+                //Shortens the file path for the template.
+                return filename.slice(filename.indexOf(&quot;template&quot;), filename.length);
+            }
+        },
+        files: {
+            &quot;&lt;%= meta.deployPath %&gt;scripts/templates.js&quot;: [&quot;&lt;%= meta.srcPath %&gt;templates/**/*.tpl&quot;]
+        }
+    }
+}
+</pre>
+<p>I will point out a couple of things. Look at the <strong>files: {&#8230;}</strong> property. The first part <strong><%= meta.deployPath %>scripts/templates.js</strong> is the export path and file name(templates.js) we want the template(s) to be outputted to. The second part <strong>[&#8220;<%= meta.srcPath %>templates/**/*.tpl&#8221;]</strong> is where the Underscore templates are located. The <strong>templates/**/</strong> means look in the templates directory and all the sub directories. The <strong>*.tpl</strong> means look for all files that have an extension of <strong>.tpl</strong>. This will take all those <strong>.tpl</strong> files and precompile the Underscore templates into JavaScript Functions to a file called <strong>templates.js</strong>.</p>
+<p>Another one I want to point out is the &#8220;processName&#8221; function. This allows you to modify the file name before the precompiling finishes. By default in my case, all my template Function names would be like below because where my Gruntfile is located:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+this[&quot;JST&quot;][&quot;../assets/src/templates/home/UserDetailTemplate.tpl&quot;]
+</pre>
+<p>I don&#8217;t like the look of that and I just wanted to remove everything before the &#8220;template&#8221; word to get this:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+this[&quot;JST&quot;][&quot;templates/home/UserDetailTemplate.tpl&quot;]
+</pre>
+<p>Now all we have to do is type the command below and it will precompile our Underscore templates.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+grunt jst
+</pre>
+<p>It maybe best to download the example and start playing around with it.</p>
+
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/#comments" class="comments">Comments (3)</a> |		
+
+						<span class="date">May 11th, 2013</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">3 Responses to &#8220;Precompiling JavaScript Underscore Templates&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-16953">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/665316226d97330ecb29a4a7525af312?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/665316226d97330ecb29a4a7525af312?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Deepak Gupta Says: <br />				
+<span class="comment-data"><a href="#comment-16953" title="">August 2, 2013 at 11:19 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>I just loved it. The best and the shortest way to learn grunt in general and also some of its plugins like concat and jst. Many thanks for sharing.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/?replytocom=16953#respond' onclick='return addComment.moveForm( "comment-16953", "16953", "respond", "1024" )' aria-label='Reply to Deepak Gupta'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+   	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-52965">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/3f57149ecb993bbdb64232f0df92e240?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3f57149ecb993bbdb64232f0df92e240?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Echo Says: <br />				
+<span class="comment-data"><a href="#comment-52965" title="">April 25, 2015 at 2:34 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Is this reprinted from somewhere? The text body keep saying &#8220;download the example&#8221; yet there is no download link provided</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/?replytocom=52965#respond' onclick='return addComment.moveForm( "comment-52965", "52965", "respond", "1024" )' aria-label='Reply to Echo'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+   	<li class="comment even thread-even depth-1" id="comment-56128">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/02e26411d1e36d4b905069f20e4c67d6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/02e26411d1e36d4b905069f20e4c67d6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Wilo Says: <br />				
+<span class="comment-data"><a href="#comment-56128" title="">July 22, 2015 at 5:04 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>This is very helpful, thank you &#8212; can&#8217;t find a link to the example files anywhere, though&#8230;?</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/?replytocom=56128#respond' onclick='return addComment.moveForm( "comment-56128", "56128", "respond", "1024" )' aria-label='Reply to Wilo'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='1024' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="54c2979681" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="240"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/contents/data/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2018 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/akismet/_inc/form.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.form.min.js'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

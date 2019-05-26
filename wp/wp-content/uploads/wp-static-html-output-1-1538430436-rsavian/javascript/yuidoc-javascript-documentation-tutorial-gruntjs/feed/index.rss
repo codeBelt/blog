@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: YUIDoc JavaScript Documentation Tutorial GruntJS</title>
+	<atom:link href="https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Grunt系列(三)——自动生成API文档(yuidoc) &#124; Benjamin</title>
+		<link>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#comment-26051</link>
+		<dc:creator><![CDATA[Grunt系列(三)——自动生成API文档(yuidoc) &#124; Benjamin]]></dc:creator>
+		<pubDate>Tue, 03 Jun 2014 08:04:11 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1118#comment-26051</guid>
+		<description><![CDATA[[&#8230;] https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] <a href="https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/" rel="nofollow">https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/</a> [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: haya</title>
+		<link>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#comment-18164</link>
+		<dc:creator><![CDATA[haya]]></dc:creator>
+		<pubDate>Thu, 05 Sep 2013 23:11:56 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1118#comment-18164</guid>
+		<description><![CDATA[I did it .. :)
+
+the only problem was in the Gruntfile :) I changed the source path and know everything is ok :) 
+
+
+Thanks a lot once again for the best tutorial in YUIDoc .........]]></description>
+		<content:encoded><![CDATA[<p>I did it .. :)</p>
+<p>the only problem was in the Gruntfile :) I changed the source path and know everything is ok :) </p>
+<p>Thanks a lot once again for the best tutorial in YUIDoc &#8230;&#8230;&#8230;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: haya</title>
+		<link>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#comment-18152</link>
+		<dc:creator><![CDATA[haya]]></dc:creator>
+		<pubDate>Thu, 05 Sep 2013 16:29:27 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1118#comment-18152</guid>
+		<description><![CDATA[Hi thank you for the great tutorial that I&#039;ve never seen before .. 
+
+I have followed all the steps but I faced an error at the last step ! 
+
+see the following pic please : 
+
+http://s13.postimg.org/x4x01ogef/error.png
+
+Can you advice me please ?]]></description>
+		<content:encoded><![CDATA[<p>Hi thank you for the great tutorial that I&#8217;ve never seen before .. </p>
+<p>I have followed all the steps but I faced an error at the last step ! </p>
+<p>see the following pic please : </p>
+<p><a href="http://s13.postimg.org/x4x01ogef/error.png" rel="nofollow">http://s13.postimg.org/x4x01ogef/error.png</a></p>
+<p>Can you advice me please ?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

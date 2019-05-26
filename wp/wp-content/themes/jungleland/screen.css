@@ -1,0 +1,6 @@
+/* theme screen stylesheets */
+
+/* import stylesheets and hide from ie/mac \*/
+@import url("https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/reset.css");
+@import url("https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/style.css");
+/* end import/hide */

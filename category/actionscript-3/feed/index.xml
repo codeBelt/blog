@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ActionScript 3 &#8211; codeBelt</title>
+	<atom:link href="https://codebelt.github.io/blog/category/actionscript-3/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Sun, 26 May 2019 04:51:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>OSMF Smoothing Video on MediaElement &#8211; MediaFactory</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/osmf-smoothing-on-mediaelement/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/osmf-smoothing-on-mediaelement/#comments</comments>
+		<pubDate>Tue, 13 Sep 2011 01:16:34 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=282</guid>
+		<description><![CDATA[At first I couldn&#8217;t think of how to apply smoothing to OSMF&#8217;s MediaElement when using the MediaFactory. One day later it hit me and I wanted to share. First thing you need to do is the check if the MediaElement is a VideoElement. Once we know it is a VideoElement we can let the compiler [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>At first I couldn&#8217;t think of how to apply smoothing to OSMF&#8217;s MediaElement when using the MediaFactory. One day later it hit me and I wanted to share. First thing you need to do is the check if the MediaElement is a VideoElement. Once we know it is a VideoElement we can let the compiler know it is a VideoElement and apply smoothing to the video.</p>
+<pre class="brush: as3; title: ; notranslate">
+var mediaFactory:MediaFactory =  new DefaultMediaFactory();
+mediaElement = mediaFactory.createMediaElement(new StreamingURLResource(httpStreaming));
+			
+if(mediaElement is VideoElement)
+{
+(mediaElement as VideoElement).smoothing = true;
+}
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/osmf-smoothing-on-mediaelement/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>AS3 OSMF Compiling Errors</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-osmf-compiling-errors/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/as3-osmf-compiling-errors/#comments</comments>
+		<pubDate>Fri, 26 Aug 2011 03:19:14 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=276</guid>
+		<description><![CDATA[Just a quick note to myself. When adding the OSMF.swc to a project delete the OSMF.swc from the Flex SDK (using SDK 4.1) If adding the classes inside the project instead of using the swc you need to set Additional compiler arguemnts: -locale en_US -define CONFIG::FLASH_10_1 true -define CONFIG::LOGGING false -define CONFIG::DEBUG false]]></description>
+				<content:encoded><![CDATA[<p>Just a quick note to myself.</p>
+<p>When adding the OSMF.swc to a project delete the OSMF.swc from the Flex SDK (using SDK 4.1)</p>
+<p>If adding the classes inside the project instead of using the swc you need to set Additional compiler arguemnts:</p>
+<p>-locale en_US -define CONFIG::FLASH_10_1 true -define CONFIG::LOGGING false -define CONFIG::DEBUG false</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/as3-osmf-compiling-errors/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>How to Compare Two Dates in AS3</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/how-to-compare-two-dates-in-as3/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/how-to-compare-two-dates-in-as3/#comments</comments>
+		<pubDate>Thu, 10 Feb 2011 14:51:12 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=271</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[<pre class="brush: as3; title: ; notranslate">
+var daysApart = getDaysBetweenDates(new Date(), new Date(2011, 1, 11))
+trace(daysApart);
+
+function getDaysBetweenDates(date1:Date,date2:Date):int
+{
+	var oneDay:Number = 1000 * 60 * 60 * 24;
+	var date1Milliseconds:Number = date1.getTime();
+	var date2Milliseconds:Number = date2.getTime();		    
+	var differenceMilliseconds:Number = Math.abs(date1Milliseconds - date2Milliseconds);
+	return Math.round(differenceMilliseconds/oneDay);
+}
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/how-to-compare-two-dates-in-as3/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Reset a combo box AS3</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/reset-a-combo-box-as3/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/reset-a-combo-box-as3/#comments</comments>
+		<pubDate>Tue, 28 Dec 2010 15:14:05 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=247</guid>
+		<description><![CDATA[You can set selectedIndex to 0 and it will just reset the combo box to the first selectable item in the list&#8230; However if you define the prompt property, then setting selectedIndex to zero won&#8217;t get you what you want. instead do this and it will be just like when you first started:]]></description>
+				<content:encoded><![CDATA[<p>You can set selectedIndex to 0 and it will just reset the combo box to the first selectable item in the list&#8230;</p>
+<pre class="brush: as3; title: ; notranslate">
+myComboBox.selectedIndex = 0;
+</pre>
+<p>However if you define the prompt property, then setting selectedIndex to zero won&#8217;t get you what you want. instead do this and it will be just like when you first started:</p>
+<pre class="brush: as3; title: ; notranslate">
+myComboBox.selectedItem = myComboBox.prompt;
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/reset-a-combo-box-as3/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Flash Convert Military Time To Standard Time AS3</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/flash-convert-military-time-to-standard-time-as3/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/flash-convert-military-time-to-standard-time-as3/#respond</comments>
+		<pubDate>Tue, 26 Oct 2010 02:01:06 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=214</guid>
+		<description><![CDATA[Here is a code snippet to show you how to get Standard Time and Military Time in ActionScript 3.]]></description>
+				<content:encoded><![CDATA[<p>Here is a code snippet to show you how to get Standard Time and Military Time in ActionScript 3.</p>
+<pre class="brush: as3; title: ; notranslate">
+const STANDARD:uint = 12;
+const MILITARY:uint = 24;
+
+function getCurrentTime(timeFormat:uint):String 
+{
+	var date:Date = new Date();
+	var hour:uint = date.getHours();
+	var currentTime:String;
+	var timeExtention:String;
+		
+	switch(timeFormat)
+	{
+		case 24:
+			hour = (hour == 0) ? 12 : hour;
+			timeExtention = &quot;&quot;;
+			break;
+		case 12:
+			if (hour &gt; 12){
+				hour = (hour == 12) ? 12 : hour - 12;
+				timeExtention = &quot; PM&quot;;
+			}else{
+				hour = (hour == 0) ? 12 : hour ;
+				timeExtention = &quot; AM&quot;;
+			}
+			break;
+	}
+	currentTime = hour.toString();
+	currentTime += &quot;:&quot;;
+	currentTime += doubleDigitFormat( date.getMinutes() );
+	currentTime += &quot;:&quot;;
+	currentTime += doubleDigitFormat( date.getSeconds() );
+	currentTime += timeExtention;
+		
+	return currentTime;
+}
+
+function doubleDigitFormat($num:uint):String
+{
+    if ($num &lt; 10)
+    {
+        return (&quot;0&quot; + $num);
+    }
+    return String($num);
+}
+
+trace( getCurrentTime(STANDARD) );
+trace( getCurrentTime(MILITARY) );
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/flash-convert-military-time-to-standard-time-as3/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>AS3 Random Boolean</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-random-boolean/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/as3-random-boolean/#comments</comments>
+		<pubDate>Mon, 25 Oct 2010 02:58:22 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=61</guid>
+		<description><![CDATA[Recently I built any application that needed a random Boolean. I used Math.random() which will give you a decimal number between 0 and 1. I then wrapped that with Math.round(), if the number is greater than .5 then the number will be 1 and everything else will be 0. In ActionScript 3 and probably previous [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Recently I built any application that needed a random Boolean. I used Math.random() which will give you a decimal number between 0 and 1. I then wrapped that with Math.round(), if the number is greater than .5 then the number will be 1 and everything else will be 0.</p>
+<p><p>In ActionScript 3 and probably previous versions, 0 = false and 1 = true. You can do a simple test like trace(0 == false);. This nothing special but it might help someone.</p>
+<pre class="brush: as3; title: ; notranslate">
+function randomBoolean():Boolean
+{
+	return Boolean( Math.round(Math.random()) );
+}
+
+trace(randomBoolean());
+</pre>
+<p>Or you can use the short hand if conditional statement, called the Ternary operation.</p>
+<pre class="brush: as3; title: ; notranslate">
+var randomBoolean:Boolean = (Math.random() &gt; .5) ? true : false;
+
+trace(randomBoolean);
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/as3-random-boolean/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>AS3 Convert SECONDS TO HOURS, MINUTES, SECONDS</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-convert-seconds-to-hours-minutes-seconds/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/as3-convert-seconds-to-hours-minutes-seconds/#comments</comments>
+		<pubDate>Wed, 20 Oct 2010 03:19:50 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=161</guid>
+		<description><![CDATA[Here is a little Flash code snippet to convert the seconds from your audio or video time display project into hours, minutes and remaining seconds (HH:MM:SS). The code is for ActionScript 3.0 but to make it combatable with ActionScript 2.0. Just change the uint data type to Number and it will work fine.]]></description>
+				<content:encoded><![CDATA[<p>Here is a little Flash code snippet to convert the seconds from your audio or video time display project into hours, minutes and remaining seconds (HH:MM:SS).  The code is for ActionScript 3.0 but to make it combatable with ActionScript 2.0. Just change the uint data type to Number and it will work fine.</p>
+<pre class="brush: as3; title: ; notranslate">
+
+function convertToHHMMSS($seconds:Number):String 
+{
+	var s:Number = $seconds % 60;
+	var m:Number = Math.floor(($seconds % 3600 ) / 60);
+	var h:Number = Math.floor($seconds / (60 * 60));
+	
+	var hourStr:String = (h == 0) ? &quot;&quot; : doubleDigitFormat(h) + &quot;:&quot;;
+	var minuteStr:String = doubleDigitFormat(m) + &quot;:&quot;;
+	var secondsStr:String = doubleDigitFormat(s);
+	
+	return hourStr + minuteStr + secondsStr;
+}
+
+function doubleDigitFormat($num:uint):String 
+{
+	if ($num &lt; 10) 
+	{
+		return (&quot;0&quot; + $num);
+	}
+	return String($num);
+}
+
+trace( convertToHHMMSS(10701) );
+
+//Output = 02:58:21
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/as3-convert-seconds-to-hours-minutes-seconds/feed/</wfw:commentRss>
+		<slash:comments>16</slash:comments>
+		</item>
+		<item>
+		<title>AS3 onBWDone error Flash Media Server with Amazon CloudFront</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/</link>
+		<comments>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/#comments</comments>
+		<pubDate>Thu, 14 Oct 2010 03:56:06 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[ActionScript 3]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=112</guid>
+		<description><![CDATA[Recently I’ve been working on building a AS3 streaming video player and ran into an error with onBWDone and wanted to share my findings. I am streaming (RTMP) my video files from Amazon CloudFront which uses Adobe’s Flash Media Server to power its streaming distributions. You may have seen this error before: I will describe [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Recently I’ve been working on building a <b>AS3 streaming video player</b> and ran into an error with onBWDone and wanted to share my findings. I am streaming (RTMP) my video files from <b>Amazon CloudFront</b> which uses<b> Adobe’s Flash Media Server</b> to power its streaming distributions.</p>
+<p>You may have seen this error before:</p>
+<p><pre class="brush: as3; title: ; notranslate">
+Error #1069: Property onBWDone not found on flash.net.NetConnection and there is no default value.
+</pre>
+<p>I will describe three different ways you can fix the <b>onBWDone</b> issue. First one is a fast fix:</p>
+<pre class="brush: as3; title: ; notranslate">
+_netConnection.client = { onBWDone: function():void{ trace(&quot;onBWDone&quot;) } };
+</pre>
+<p>The second version is to create a public function within the same class and make the <b>NetCennection</b> client equal <i>this</i>. Make sure the function is public! Below is the code:</p>
+<pre class="brush: as3; title: ; notranslate">
+_netConnection.client = this;
+
+public function onBWDone(...rest):void 
+{ 
+	var p_bw:Number; 
+	if (rest.length &gt; 0){
+		p_bw = rest[0]; 
+	}
+	trace(&quot;bandwidth = &quot; + p_bw + &quot; Kbps.&quot;); 
+} 
+</pre>
+<p>The server calls the onBWDone() function when it finishes measuring the bandwidth. It takes four arguments. The first argument it returns is the bandwidth measured in Kbps. The second and third arguments are not used. The fourth argument is the latency in milliseconds.</p>
+<p>The third code example I will show involves creating a custom class which I called NetConnectionClient. I placed the public function onBWDone and also the onBWCheck function in the class.</p>
+<p>The onBWCheck() function is required by native bandwidth detection. It takes an argument, &#8230;rest. The function must return a value, even if the value is 0, to indicate to the server that the client has received the data. You can call onBWCheck() multiple times.</p>
+<pre class="brush: as3; title: ; notranslate">
+_netConnection.client = new NetConnectionClient();
+</pre>
+<p>Below is our custom client class</p>
+<p><pre class="brush: as3; title: ; notranslate">
+package
+{
+	public class NetConnectionClient
+	{
+		public function NetConnectionClient()
+		{
+		}
+		
+		public function onBWCheck(...rest):Number 
+		{ 
+			return 0; 
+		} 
+		
+		public function onBWDone(...rest):void 
+		{ 
+			var p_bw:Number; 
+			if (rest.length &gt; 0){
+				p_bw = rest[0]; 
+			}
+			trace(&quot;bandwidth = &quot; + p_bw + &quot; Kbps.&quot;); 
+		} 
+	}
+}
+</pre>
+<p>If there is interest from viewers, I will show code examples of my finished streaming AS3 video player. Last thing is if you wanted to call your onBWDone to get the client side bandwidth you can use the following code in your application.</p>
+<pre class="brush: as3; title: ; notranslate">
+_netConnection.call(&quot;checkBandwidth&quot;, null);
+</pre>
+<p>Let me know if this post has helped anyone</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

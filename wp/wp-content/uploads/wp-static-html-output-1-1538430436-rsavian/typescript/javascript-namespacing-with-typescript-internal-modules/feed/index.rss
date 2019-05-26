@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Namespace with Internal Modules</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: leo</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-79005</link>
+		<dc:creator><![CDATA[leo]]></dc:creator>
+		<pubDate>Thu, 28 Sep 2017 05:57:42 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-79005</guid>
+		<description><![CDATA[Hi, robert:
+Thanks for your sharing!
+And I have a Question:
+I found the project &#039;StructureJS&#039; in your GitHub, I&#039;m wondering why not use &#039;///&#039; to include other classes instead of &#039;import ... from ...&#039;?
+
+Thanks!]]></description>
+		<content:encoded><![CDATA[<p>Hi, robert:<br />
+Thanks for your sharing!<br />
+And I have a Question:<br />
+I found the project &#8216;StructureJS&#8217; in your GitHub, I&#8217;m wondering why not use &#8216;///&#8217; to include other classes instead of &#8216;import &#8230; from &#8230;&#8217;?</p>
+<p>Thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-21802</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 05 Jan 2014 19:46:05 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-21802</guid>
+		<description><![CDATA[Here is a nice video for Visual Studio 2013 and TypeScript. http://youtu.be/-XXYLIhKA-w]]></description>
+		<content:encoded><![CDATA[<p>Here is a nice video for Visual Studio 2013 and TypeScript. <a href="http://youtu.be/-XXYLIhKA-w" rel="nofollow">http://youtu.be/-XXYLIhKA-w</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-17824</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Fri, 30 Aug 2013 12:25:13 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-17824</guid>
+		<description><![CDATA[One simple way but unpleasant way to get it to work is compile as normal (tsc Main.ts -out ../bin/main.js). Then manually change two lines in the output code (main.js).  Add exports, such as:
+
+})(exports.com &#124;&#124; (exports.com = {}));
+var com = exports.com;
+
+as the last two lines.  Then in create app.js in the bin directory:
+
+var m = require(&#039;./main.js&#039;).com;
+var main = new m.codebelt.Main();
+
+and run it:
+node app.js
+
+A better way is needed.]]></description>
+		<content:encoded><![CDATA[<p>One simple way but unpleasant way to get it to work is compile as normal (tsc Main.ts -out ../bin/main.js). Then manually change two lines in the output code (main.js).  Add exports, such as:</p>
+<p>})(exports.com || (exports.com = {}));<br />
+var com = exports.com;</p>
+<p>as the last two lines.  Then in create app.js in the bin directory:</p>
+<p>var m = require(&#8216;./main.js&#8217;).com;<br />
+var main = new m.codebelt.Main();</p>
+<p>and run it:<br />
+node app.js</p>
+<p>A better way is needed.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ross</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-17801</link>
+		<dc:creator><![CDATA[Ross]]></dc:creator>
+		<pubDate>Thu, 29 Aug 2013 23:20:10 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-17801</guid>
+		<description><![CDATA[Robert,
+Great article and sample code.
+
+One problem that I had was getting the code base to compile under --module commonjs (for NodeJS use).  I tried exporting the main module also and that generated many reference errors.
+
+Any ideas how this could be done (as a single file, e.g., -out)?  I]]></description>
+		<content:encoded><![CDATA[<p>Robert,<br />
+Great article and sample code.</p>
+<p>One problem that I had was getting the code base to compile under &#8211;module commonjs (for NodeJS use).  I tried exporting the main module also and that generated many reference errors.</p>
+<p>Any ideas how this could be done (as a single file, e.g., -out)?  I</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-15889</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 18 Jun 2013 23:18:17 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-15889</guid>
+		<description><![CDATA[Thanks! That is why I write these tutorials because some of the other tutorials are kind of confusing.]]></description>
+		<content:encoded><![CDATA[<p>Thanks! That is why I write these tutorials because some of the other tutorials are kind of confusing.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Luke</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-15888</link>
+		<dc:creator><![CDATA[Luke]]></dc:creator>
+		<pubDate>Tue, 18 Jun 2013 22:28:56 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-15888</guid>
+		<description><![CDATA[I like your typescript coding style - makes more sense to me than other styles I&#039;ve seen.]]></description>
+		<content:encoded><![CDATA[<p>I like your typescript coding style &#8211; makes more sense to me than other styles I&#8217;ve seen.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Cole Peterson</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-13444</link>
+		<dc:creator><![CDATA[Cole Peterson]]></dc:creator>
+		<pubDate>Tue, 12 Mar 2013 04:29:20 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-13444</guid>
+		<description><![CDATA[this is awesome. thanks
+cp]]></description>
+		<content:encoded><![CDATA[<p>this is awesome. thanks<br />
+cp</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-11940</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 23 Dec 2012 01:56:47 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-11940</guid>
+		<description><![CDATA[I will have to talk with a co-worker if you they can show me how to in VS2012 but it maybe a few weeks before I write a tutorial.]]></description>
+		<content:encoded><![CDATA[<p>I will have to talk with a co-worker if you they can show me how to in VS2012 but it maybe a few weeks before I write a tutorial.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Nick</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-11938</link>
+		<dc:creator><![CDATA[Nick]]></dc:creator>
+		<pubDate>Sat, 22 Dec 2012 22:19:51 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-11938</guid>
+		<description><![CDATA[Someone needs to write an article ... TypeScript in VS 2012 for the C# developer!]]></description>
+		<content:encoded><![CDATA[<p>Someone needs to write an article &#8230; TypeScript in VS 2012 for the C# developer!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Nick</title>
+		<link>https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comment-11937</link>
+		<dc:creator><![CDATA[Nick]]></dc:creator>
+		<pubDate>Sat, 22 Dec 2012 22:17:15 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=546#comment-11937</guid>
+		<description><![CDATA[As with most examples of Typescript (including TypeScript.Org samples), I find it impossible to try these in Ie10.  What am I missing about Typescript solutions in VS?  No project files ... no solution file?
+How can this example be loaded and run from VS2012 ?
+
+(I&#039;m a C# developr)]]></description>
+		<content:encoded><![CDATA[<p>As with most examples of Typescript (including TypeScript.Org samples), I find it impossible to try these in Ie10.  What am I missing about Typescript solutions in VS?  No project files &#8230; no solution file?<br />
+How can this example be loaded and run from VS2012 ?</p>
+<p>(I&#8217;m a C# developr)</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

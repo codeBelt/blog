@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Singleton Pattern</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Brenton Pyl</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-61347</link>
+		<dc:creator><![CDATA[Brenton Pyl]]></dc:creator>
+		<pubDate>Tue, 24 May 2016 19:25:04 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-61347</guid>
+		<description><![CDATA[Here is my solution to the singleton pattern in TypeScript enforcing private constructor:
+
+&lt;code&gt;export abstract class SingletonFactory {
+
+    private static _instance: SingletonFactory;
+
+    public static getInstance(): SingletonFactory {
+        if (SingletonFactory._instance == null) {
+            SingletonFactory._instance = new SingletonFactoryImpl();
+        }
+        return SingletonFactory._instance;
+    }
+
+    public somethingUsefull() { ... }
+}
+
+class SingletonFactoryImpl extends SingletonFactory { }&lt;/code&gt;
+
+
+Now I can call SingletonFactory.getInstance() and receive an instance, but I also cannot run new SingletonFactory because it is an abstract class.  Since the implementation isn&#039;t exported, no one can get to it but the factory.
+
+Although, I have to call out that this pattern would be better with the logic of the factory (somethingUseful()) actually being defined in the Impl class and only the interface being defined in the Factory class itself.  It gets the point across.
+
+-Brenton]]></description>
+		<content:encoded><![CDATA[<p>Here is my solution to the singleton pattern in TypeScript enforcing private constructor:</p>
+<p><code>export abstract class SingletonFactory {</p>
+<p>    private static _instance: SingletonFactory;</p>
+<p>    public static getInstance(): SingletonFactory {<br />
+        if (SingletonFactory._instance == null) {<br />
+            SingletonFactory._instance = new SingletonFactoryImpl();<br />
+        }<br />
+        return SingletonFactory._instance;<br />
+    }</p>
+<p>    public somethingUsefull() { ... }<br />
+}</p>
+<p>class SingletonFactoryImpl extends SingletonFactory { }</code></p>
+<p>Now I can call SingletonFactory.getInstance() and receive an instance, but I also cannot run new SingletonFactory because it is an abstract class.  Since the implementation isn&#8217;t exported, no one can get to it but the factory.</p>
+<p>Although, I have to call out that this pattern would be better with the logic of the factory (somethingUseful()) actually being defined in the Impl class and only the interface being defined in the Factory class itself.  It gets the point across.</p>
+<p>-Brenton</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-53149</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2015 04:44:44 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-53149</guid>
+		<description><![CDATA[I think maybe the solution is to assign the _instance property right away like below. I also update the example above.
+
+&lt;code&gt;
+private static _instance:SingletonClass = new SingletonClass();
+&lt;/code&gt;
+
+Then we can just return the instance:
+&lt;code&gt;
+    public static getInstance():SingletonClass {
+        return SingletonClass._instance;
+    }
+&lt;/code&gt;]]></description>
+		<content:encoded><![CDATA[<p>I think maybe the solution is to assign the _instance property right away like below. I also update the example above.</p>
+<p><code><br />
+private static _instance:SingletonClass = new SingletonClass();<br />
+</code></p>
+<p>Then we can just return the instance:<br />
+<code><br />
+    public static getInstance():SingletonClass {<br />
+        return SingletonClass._instance;<br />
+    }<br />
+</code></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Dan</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-53144</link>
+		<dc:creator><![CDATA[Dan]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2015 02:17:47 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-53144</guid>
+		<description><![CDATA[Here&#039;s the problem:  If you immediately call &quot;new SingletonClass()&quot; it will not throw an exception because &quot;if(SingletonClass._instance)&quot; will return false.
+
+If you call getInstance() first, then trying to call &quot;new SingletonClass()&quot; will fail as desired.  But you can&#039;t guarantee what somebody will try to do.
+
+Bastian&#039;s answer handles it, but the extra variable is unfortunate.
+
+Another hacky but workable option is to have the instance method set the variable to undefined instead of null.  Then the constructor only works if the instance variable is undefined rather than the default (null).  I don&#039;t like it, but it&#039;s the best workaround I can think of.
+
+The real solution is for TypeScript to allow private constructors.]]></description>
+		<content:encoded><![CDATA[<p>Here&#8217;s the problem:  If you immediately call &#8220;new SingletonClass()&#8221; it will not throw an exception because &#8220;if(SingletonClass._instance)&#8221; will return false.</p>
+<p>If you call getInstance() first, then trying to call &#8220;new SingletonClass()&#8221; will fail as desired.  But you can&#8217;t guarantee what somebody will try to do.</p>
+<p>Bastian&#8217;s answer handles it, but the extra variable is unfortunate.</p>
+<p>Another hacky but workable option is to have the instance method set the variable to undefined instead of null.  Then the constructor only works if the instance variable is undefined rather than the default (null).  I don&#8217;t like it, but it&#8217;s the best workaround I can think of.</p>
+<p>The real solution is for TypeScript to allow private constructors.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-26904</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sat, 28 Jun 2014 04:37:19 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-26904</guid>
+		<description><![CDATA[I still like my way. Thanks for sharing.]]></description>
+		<content:encoded><![CDATA[<p>I still like my way. Thanks for sharing.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-26903</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sat, 28 Jun 2014 04:32:55 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-26903</guid>
+		<description><![CDATA[Are you sure. Did you check the console area on your browser? I get &quot;Uncaught Error: Error: Instantiation failed: Use SingletonDemo.getInstance() instead of new.&quot;]]></description>
+		<content:encoded><![CDATA[<p>Are you sure. Did you check the console area on your browser? I get &#8220;Uncaught Error: Error: Instantiation failed: Use SingletonDemo.getInstance() instead of new.&#8221;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Claudio</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-26858</link>
+		<dc:creator><![CDATA[Claudio]]></dc:creator>
+		<pubDate>Thu, 26 Jun 2014 18:42:44 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-26858</guid>
+		<description><![CDATA[Hi 
+sorry but for me don&#039;t works :(
+I try to &quot;new SingletonClass()&quot; and I never seen a log or error that alert me...
+
+It&#039;s very courius... Thank you!]]></description>
+		<content:encoded><![CDATA[<p>Hi<br />
+sorry but for me don&#8217;t works :(<br />
+I try to &#8220;new SingletonClass()&#8221; and I never seen a log or error that alert me&#8230;</p>
+<p>It&#8217;s very courius&#8230; Thank you!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Bastian</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-26295</link>
+		<dc:creator><![CDATA[Bastian]]></dc:creator>
+		<pubDate>Wed, 11 Jun 2014 14:35:46 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-26295</guid>
+		<description><![CDATA[In my opinion the best way to do a singleton is this:
+&lt;code&gt;
+     class Singleton {
+
+        /**
+         * The Singleton Instance
+         */
+        private static _instance:Singleton;
+
+        /**
+         * constructor throws error if this property is false,
+         * only the getInstance() method could set it to true
+         */
+        private static allowInstance:boolean = false;
+        
+        /**
+         * The constructor should not be used, use getInstance() instead
+         */
+        constructor(){
+            if(!Ready.allowInstance){
+                throw new Error(&quot;Error: Instantiation failed: Use Singleton.getInstance() instead of new.&quot;);
+            }
+        }
+
+        /**
+         * Returns the instance of Singleton
+         *
+         * @returns object {Singleton}
+         */
+        public static getInstance():Singleton {
+            if(Singleton._instance === null) {
+                Singleton.allowInstance = true;
+                Singleton._instance = new Singleton();
+                Singleton.allowInstance = false;
+            }
+            return Singleton._instance;
+        }
+     }
+&lt;/code&gt;]]></description>
+		<content:encoded><![CDATA[<p>In my opinion the best way to do a singleton is this:<br />
+<code><br />
+     class Singleton {</p>
+<p>        /**<br />
+         * The Singleton Instance<br />
+         */<br />
+        private static _instance:Singleton;</p>
+<p>        /**<br />
+         * constructor throws error if this property is false,<br />
+         * only the getInstance() method could set it to true<br />
+         */<br />
+        private static allowInstance:boolean = false;</p>
+<p>        /**<br />
+         * The constructor should not be used, use getInstance() instead<br />
+         */<br />
+        constructor(){<br />
+            if(!Ready.allowInstance){<br />
+                throw new Error("Error: Instantiation failed: Use Singleton.getInstance() instead of new.");<br />
+            }<br />
+        }</p>
+<p>        /**<br />
+         * Returns the instance of Singleton<br />
+         *<br />
+         * @returns object {Singleton}<br />
+         */<br />
+        public static getInstance():Singleton {<br />
+            if(Singleton._instance === null) {<br />
+                Singleton.allowInstance = true;<br />
+                Singleton._instance = new Singleton();<br />
+                Singleton.allowInstance = false;<br />
+            }<br />
+            return Singleton._instance;<br />
+        }<br />
+     }<br />
+</code></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: ThisIsTheList</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-26282</link>
+		<dc:creator><![CDATA[ThisIsTheList]]></dc:creator>
+		<pubDate>Wed, 11 Jun 2014 00:56:45 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-26282</guid>
+		<description><![CDATA[Thanks for this terrific example.  Very helpful.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for this terrific example.  Very helpful.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-21840</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Wed, 08 Jan 2014 00:43:33 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-21840</guid>
+		<description><![CDATA[Not sure. That&#039;s how I&#039;ve always seen it. Your way works but it could be confusing to another developer. It does not enforce the getInstance(); usage and I would say it does not follow the Singleton pattern.
+
+Someone could use your Singleton class like below and assume they have created two different instances. Which they have not, they are both the same object.
+
+&lt;code&gt;
+var one = new SingletonClass();
+var two = new SingletonClass();
+// (one===two) does equal true as the same object.
+var three = SingletonClass.getInstance();
+// three is the same object as one and two.
+&lt;/code&gt;
+
+With coding I find limiting the number of ways you can do something better. Or your documentation will look: &quot;You can do it this way, or this way or this way to accomplish the same task.&quot;]]></description>
+		<content:encoded><![CDATA[<p>Not sure. That&#8217;s how I&#8217;ve always seen it. Your way works but it could be confusing to another developer. It does not enforce the getInstance(); usage and I would say it does not follow the Singleton pattern.</p>
+<p>Someone could use your Singleton class like below and assume they have created two different instances. Which they have not, they are both the same object.</p>
+<p><code><br />
+var one = new SingletonClass();<br />
+var two = new SingletonClass();<br />
+// (one===two) does equal true as the same object.<br />
+var three = SingletonClass.getInstance();<br />
+// three is the same object as one and two.<br />
+</code></p>
+<p>With coding I find limiting the number of ways you can do something better. Or your documentation will look: &#8220;You can do it this way, or this way or this way to accomplish the same task.&#8221;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ludovic Cleroux</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-21812</link>
+		<dc:creator><![CDATA[Ludovic Cleroux]]></dc:creator>
+		<pubDate>Mon, 06 Jan 2014 04:16:39 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-21812</guid>
+		<description><![CDATA[Why don&#039;t you put 
+
+&lt;code&gt;
+constructor() {
+&#160;&#160;&#160;&#160;if(SingletonClass._instance){
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;return SingletonClass._instance;
+&#160;&#160;&#160;&#160;}
+&#160;&#160;&#160;&#160;SingletonClass._instance = this;
+}
+&lt;/code&gt;]]></description>
+		<content:encoded><![CDATA[<p>Why don&#8217;t you put </p>
+<p><code><br />
+constructor() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if(SingletonClass._instance){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return SingletonClass._instance;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;SingletonClass._instance = this;<br />
+}<br />
+</code></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Dan Spencer</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-18093</link>
+		<dc:creator><![CDATA[Dan Spencer]]></dc:creator>
+		<pubDate>Wed, 04 Sep 2013 11:25:22 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-18093</guid>
+		<description><![CDATA[Yeah it looks like I was incorrect, it doesn&#039;t seem to correctly make the constructor private.
+
+I tested before posting and it caused the compile error (or seemed to) but have tested again it it doesn&#039;t. I updated to 0.9.1.1 yesterday so it&#039;s possible I tested on 0.9.1 and it was working under that version.]]></description>
+		<content:encoded><![CDATA[<p>Yeah it looks like I was incorrect, it doesn&#8217;t seem to correctly make the constructor private.</p>
+<p>I tested before posting and it caused the compile error (or seemed to) but have tested again it it doesn&#8217;t. I updated to 0.9.1.1 yesterday so it&#8217;s possible I tested on 0.9.1 and it was working under that version.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-18044</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2013 23:58:27 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-18044</guid>
+		<description><![CDATA[I didn&#039;t know you could set the constructor to private but it doesn&#039;t look like it enforces the Singleton pattern.
+
+I tried it and I did not get a compile error. I don&#039;t think that is a good approach to enforce the singleton pattern. With your approach I can do the below and there is no compile error. Also they are two different objects. I am using TypeScript 0.9.1.1.
+
+
+&lt;code&gt;
+ var sing1:SingletonClass = new SingletonClass();
+ var sing2:SingletonClass = new SingletonClass();
+ console.log(sing1 === sing2);
+ // false
+&lt;/code&gt;]]></description>
+		<content:encoded><![CDATA[<p>I didn&#8217;t know you could set the constructor to private but it doesn&#8217;t look like it enforces the Singleton pattern.</p>
+<p>I tried it and I did not get a compile error. I don&#8217;t think that is a good approach to enforce the singleton pattern. With your approach I can do the below and there is no compile error. Also they are two different objects. I am using TypeScript 0.9.1.1.</p>
+<p><code><br />
+ var sing1:SingletonClass = new SingletonClass();<br />
+ var sing2:SingletonClass = new SingletonClass();<br />
+ console.log(sing1 === sing2);<br />
+ // false<br />
+</code></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Dan Spencer</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-18019</link>
+		<dc:creator><![CDATA[Dan Spencer]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2013 14:11:45 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-18019</guid>
+		<description><![CDATA[Typescript lets you make the constructor private. This would be my preferred method for enforcing the singleton pattern. Attempting to use the new keyword with a private constructor will cause a compile error rather than a runtime exception (as with the current solution).]]></description>
+		<content:encoded><![CDATA[<p>Typescript lets you make the constructor private. This would be my preferred method for enforcing the singleton pattern. Attempting to use the new keyword with a private constructor will cause a compile error rather than a runtime exception (as with the current solution).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-17345</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 23:29:05 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-17345</guid>
+		<description><![CDATA[Yes, you are correct. I updated the code above to enforce the Singleton pattern now. Thanks for calling that out.]]></description>
+		<content:encoded><![CDATA[<p>Yes, you are correct. I updated the code above to enforce the Singleton pattern now. Thanks for calling that out.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: RF</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-17235</link>
+		<dc:creator><![CDATA[RF]]></dc:creator>
+		<pubDate>Sun, 11 Aug 2013 00:12:03 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-17235</guid>
+		<description><![CDATA[But if I will use the new keyword I will get another instance. no?]]></description>
+		<content:encoded><![CDATA[<p>But if I will use the new keyword I will get another instance. no?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: richard</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-singleton-pattern/#comment-15628</link>
+		<dc:creator><![CDATA[richard]]></dc:creator>
+		<pubDate>Wed, 05 Jun 2013 07:34:53 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=849#comment-15628</guid>
+		<description><![CDATA[works well.. thanks]]></description>
+		<content:encoded><![CDATA[<p>works well.. thanks</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Object Oriented Programming with TypeScript Tutorial (JavaScript OOP)</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: Dhineshkumar</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-60497</link>
+		<dc:creator><![CDATA[Dhineshkumar]]></dc:creator>
+		<pubDate>Wed, 30 Mar 2016 11:51:34 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-60497</guid>
+		<description><![CDATA[Hi,
+
+
+Thanks for your reply. Do you have any idea in angular js and require js.]]></description>
+		<content:encoded><![CDATA[<p>Hi,</p>
+<p>Thanks for your reply. Do you have any idea in angular js and require js.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-60278</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2016 18:39:31 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-60278</guid>
+		<description><![CDATA[Ya, &quot;bool&quot; was the old way TypeScript did it. It is now &quot;boolean&quot;. I will change that. Thanks.
+
+Check out my new and better Boilerplate that uses &lt;a href=&quot;https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/&quot; rel=&quot;nofollow&quot;&gt;ES6 Modules in TypeScript&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>Ya, &#8220;bool&#8221; was the old way TypeScript did it. It is now &#8220;boolean&#8221;. I will change that. Thanks.</p>
+<p>Check out my new and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/" rel="nofollow">ES6 Modules in TypeScript</a>.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: LuisQuin</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-60273</link>
+		<dc:creator><![CDATA[LuisQuin]]></dc:creator>
+		<pubDate>Tue, 15 Mar 2016 14:20:57 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-60273</guid>
+		<description><![CDATA[Hi, Robert.
+Thanks for this helpful post.
+Are you using &quot;bool&quot; instead of &quot;boolean&quot; in several places of your source code? I get an error when I try to compile :S]]></description>
+		<content:encoded><![CDATA[<p>Hi, Robert.<br />
+Thanks for this helpful post.<br />
+Are you using &#8220;bool&#8221; instead of &#8220;boolean&#8221; in several places of your source code? I get an error when I try to compile :S</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-60171</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sat, 05 Mar 2016 01:34:39 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-60171</guid>
+		<description><![CDATA[Sorry, I don&#039;t use Angular.]]></description>
+		<content:encoded><![CDATA[<p>Sorry, I don&#8217;t use Angular.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: DhineshKumar</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-60160</link>
+		<dc:creator><![CDATA[DhineshKumar]]></dc:creator>
+		<pubDate>Fri, 04 Mar 2016 06:48:03 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-60160</guid>
+		<description><![CDATA[Hi,
+
+It&#039;s really help full to start learn typescript.
+
+Can you please help how to use typescript in angular structure?]]></description>
+		<content:encoded><![CDATA[<p>Hi,</p>
+<p>It&#8217;s really help full to start learn typescript.</p>
+<p>Can you please help how to use typescript in angular structure?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mcmurray</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-57609</link>
+		<dc:creator><![CDATA[Mcmurray]]></dc:creator>
+		<pubDate>Sat, 19 Sep 2015 06:01:31 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-57609</guid>
+		<description><![CDATA[This was really superb and i enjoyed it.
+ Please is there a way to can show me how to create a slickGrid or a Grid using Typescript.]]></description>
+		<content:encoded><![CDATA[<p>This was really superb and i enjoyed it.<br />
+ Please is there a way to can show me how to create a slickGrid or a Grid using Typescript.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: sasha</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-51325</link>
+		<dc:creator><![CDATA[sasha]]></dc:creator>
+		<pubDate>Wed, 25 Mar 2015 15:48:44 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-51325</guid>
+		<description><![CDATA[Great! thank you a lot, really helpful]]></description>
+		<content:encoded><![CDATA[<p>Great! thank you a lot, really helpful</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: siddjain</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-27307</link>
+		<dc:creator><![CDATA[siddjain]]></dc:creator>
+		<pubDate>Sat, 12 Jul 2014 19:44:48 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-27307</guid>
+		<description><![CDATA[if you want to modify your csproj to create a single js file as part of build process (rather than running tsc.exe), insert following code in csproj file:
+app.js
+i got this tip from http://stackoverflow.com/questions/15864584/what-are-the-typescript-project-build-configuration-options
+
+i also inserted this code in the csproj to nuke out all the old js files before every build:
+
+    del ..\*.js    
+    
+
+i also set this to false in debug mode as i don&#039;t know what use it is:
+false]]></description>
+		<content:encoded><![CDATA[<p>if you want to modify your csproj to create a single js file as part of build process (rather than running tsc.exe), insert following code in csproj file:<br />
+app.js<br />
+i got this tip from <a href="http://stackoverflow.com/questions/15864584/what-are-the-typescript-project-build-configuration-options" rel="nofollow">http://stackoverflow.com/questions/15864584/what-are-the-typescript-project-build-configuration-options</a></p>
+<p>i also inserted this code in the csproj to nuke out all the old js files before every build:</p>
+<p>    del ..\*.js    </p>
+<p>i also set this to false in debug mode as i don&#8217;t know what use it is:<br />
+false</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-21841</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Wed, 08 Jan 2014 01:07:07 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-21841</guid>
+		<description><![CDATA[Ya, I didn&#039;t have luck creating a single declaration file from my code in &lt;a href=&quot;https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/&quot; title=&quot;TypeScript Workflow Boilerplate&quot; rel=&quot;nofollow&quot;&gt;My TypeScript Workflow&lt;/a&gt;. Talking about baby steps I was able to create &lt;a href=&quot;https://codebelt.github.io/blog/typescript/typescript-source-maps-after-uglify/&quot; title=&quot;TypeScript Source Maps After Minifying&quot; rel=&quot;nofollow&quot;&gt;TypeScript Source Maps After Minifying&lt;/a&gt; my code. If I have time I may look to see how I can add it to my TypeScript workflow.]]></description>
+		<content:encoded><![CDATA[<p>Ya, I didn&#8217;t have luck creating a single declaration file from my code in <a href="https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/" title="TypeScript Workflow Boilerplate" rel="nofollow">My TypeScript Workflow</a>. Talking about baby steps I was able to create <a href="https://codebelt.github.io/blog/typescript/typescript-source-maps-after-uglify/" title="TypeScript Source Maps After Minifying" rel="nofollow">TypeScript Source Maps After Minifying</a> my code. If I have time I may look to see how I can add it to my TypeScript workflow.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Martin Andersson</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-21816</link>
+		<dc:creator><![CDATA[Martin Andersson]]></dc:creator>
+		<pubDate>Mon, 06 Jan 2014 12:43:57 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-21816</guid>
+		<description><![CDATA[Would be awesome if you could write a new tutorial or add a section that the describes the whole build process. We want to compile our project into one JS file yes, but we also want to minify that file and have a working source map to go with the minified file. Moreover, we want a declaration file. This is requirements all serious programmers should have. Yet I keep reading tutorials all over internet covering all kinds of topics yet only describing the first few baby steps one need to take.
+
+Making the compiler output one single file with his source map and create a declaration file can be done from the GUI in latest Visual Studio. The tuff problem is to minify the file. How that affects the source map file, I don&#039;t know.
+
+Thank you for sharing!]]></description>
+		<content:encoded><![CDATA[<p>Would be awesome if you could write a new tutorial or add a section that the describes the whole build process. We want to compile our project into one JS file yes, but we also want to minify that file and have a working source map to go with the minified file. Moreover, we want a declaration file. This is requirements all serious programmers should have. Yet I keep reading tutorials all over internet covering all kinds of topics yet only describing the first few baby steps one need to take.</p>
+<p>Making the compiler output one single file with his source map and create a declaration file can be done from the GUI in latest Visual Studio. The tuff problem is to minify the file. How that affects the source map file, I don&#8217;t know.</p>
+<p>Thank you for sharing!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-21073</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Fri, 06 Dec 2013 03:36:45 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-21073</guid>
+		<description><![CDATA[I never new about Script# and Saltarelle but I don&#039;t know if there is a compiler from C# to TypeScript. The syntax is very close to ActionScript 3 and that is why I like it.]]></description>
+		<content:encoded><![CDATA[<p>I never new about Script# and Saltarelle but I don&#8217;t know if there is a compiler from C# to TypeScript. The syntax is very close to ActionScript 3 and that is why I like it.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: PepLamb</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-21061</link>
+		<dc:creator><![CDATA[PepLamb]]></dc:creator>
+		<pubDate>Thu, 05 Dec 2013 18:32:27 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-21061</guid>
+		<description><![CDATA[Awesome!
+
+The syntax is closer to Java than C# with keywords like &#039;extends&#039; and &#039;implements&#039;. I worked with Script# and Saltarelle (C# to Javascript translators) and would like to know if there are any ways to translate C# to typescript.
+
+Thanks Robert!]]></description>
+		<content:encoded><![CDATA[<p>Awesome!</p>
+<p>The syntax is closer to Java than C# with keywords like &#8216;extends&#8217; and &#8216;implements&#8217;. I worked with Script# and Saltarelle (C# to Javascript translators) and would like to know if there are any ways to translate C# to typescript.</p>
+<p>Thanks Robert!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-14829</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 05 May 2013 14:22:05 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-14829</guid>
+		<description><![CDATA[I think your are having scoping issues but can&#039;t tell if I don&#039;t see the code but check out my &lt;a href=&quot;https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/&quot; title=&quot;TypeScript Arrow Function Tutorial&quot; rel=&quot;nofollow&quot;&gt;TypeScript Arrow Function Tutorial&lt;/a&gt; it will help.]]></description>
+		<content:encoded><![CDATA[<p>I think your are having scoping issues but can&#8217;t tell if I don&#8217;t see the code but check out my <a href="https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/" title="TypeScript Arrow Function Tutorial" rel="nofollow">TypeScript Arrow Function Tutorial</a> it will help.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Clark</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-14808</link>
+		<dc:creator><![CDATA[Clark]]></dc:creator>
+		<pubDate>Sat, 04 May 2013 21:42:39 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-14808</guid>
+		<description><![CDATA[Finally have time to start looking through you website typescript articles. Sorry if I spam you in advance! I refactored my project to use your structure but I am getting problems with &quot;this&quot; scoping.  For example I would get an error that window.turnOn does not exist. Therefor this appears to not reference the car but the window. I have no idea why this occurs but it appears to have something to do with lambda =&#062;. As I have just realised during this post, I am using a global setInterval function to start the car. Thus turnOn becomes window.turnOn....... And does not refer to the car class method. I currently do not understand scope here.]]></description>
+		<content:encoded><![CDATA[<p>Finally have time to start looking through you website typescript articles. Sorry if I spam you in advance! I refactored my project to use your structure but I am getting problems with &#8220;this&#8221; scoping.  For example I would get an error that window.turnOn does not exist. Therefor this appears to not reference the car but the window. I have no idea why this occurs but it appears to have something to do with lambda =&gt;. As I have just realised during this post, I am using a global setInterval function to start the car. Thus turnOn becomes window.turnOn&#8230;&#8230;. And does not refer to the car class method. I currently do not understand scope here.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-14703</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Wed, 01 May 2013 03:44:13 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-14703</guid>
+		<description><![CDATA[Hey, thanks for the feedback. 
+
+This is true you can have all your classes as single TS files and just reference them with ///&#060;reference path=&#039;folder/MyClass.ts&#039;/&gt;. Then type &quot;tsc --out main.js Main.ts&quot; which would be your top level class (Main.ts) and it will concatenate all your TypeScript files that are referenced in your classes into a single JavaScript file (main.js). Check out my &lt;a href=&quot;https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/&quot; title=&quot;HTML5 Canvas Ad with TypeScript Tutorial&quot; rel=&quot;nofollow&quot;&gt;HTML5 Canvas Ad with TypeScript Tutorial&lt;/a&gt; and download the example files.
+
+Sounds like there is going to be a lot of changes with TypeScript version 0.9.0. I am hoping they changed how modules are imported/referenced.]]></description>
+		<content:encoded><![CDATA[<p>Hey, thanks for the feedback. </p>
+<p>This is true you can have all your classes as single TS files and just reference them with ///&lt;reference path=&#8217;folder/MyClass.ts&#8217;/>. Then type &#8220;tsc &#8211;out main.js Main.ts&#8221; which would be your top level class (Main.ts) and it will concatenate all your TypeScript files that are referenced in your classes into a single JavaScript file (main.js). Check out my <a href="https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/" title="HTML5 Canvas Ad with TypeScript Tutorial" rel="nofollow">HTML5 Canvas Ad with TypeScript Tutorial</a> and download the example files.</p>
+<p>Sounds like there is going to be a lot of changes with TypeScript version 0.9.0. I am hoping they changed how modules are imported/referenced.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Clark</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-14697</link>
+		<dc:creator><![CDATA[Clark]]></dc:creator>
+		<pubDate>Tue, 30 Apr 2013 13:52:39 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-14697</guid>
+		<description><![CDATA[This page is excellent. Everything I pump into google relating to my typescript woes comes back here like an old friend. Thanks Robert.
+
+I have done almost what you have done, but used modules as package names. 
+
+
+module com.codebelt.robert
+{
+       export class Vehicle extends FooBar()
+}
+
+
+This is causing me all kinds of problems. If I am reading this correctly, there is no need for modules in this way. I can package my classes into individual TS simply reference them with the /// ?]]></description>
+		<content:encoded><![CDATA[<p>This page is excellent. Everything I pump into google relating to my typescript woes comes back here like an old friend. Thanks Robert.</p>
+<p>I have done almost what you have done, but used modules as package names. </p>
+<p>module com.codebelt.robert<br />
+{<br />
+       export class Vehicle extends FooBar()<br />
+}</p>
+<p>This is causing me all kinds of problems. If I am reading this correctly, there is no need for modules in this way. I can package my classes into individual TS simply reference them with the /// ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-11915</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Fri, 21 Dec 2012 22:49:25 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-11915</guid>
+		<description><![CDATA[Sorry I don&#039;t have the time to do that.]]></description>
+		<content:encoded><![CDATA[<p>Sorry I don&#8217;t have the time to do that.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Karthik</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-11910</link>
+		<dc:creator><![CDATA[Karthik]]></dc:creator>
+		<pubDate>Fri, 21 Dec 2012 15:28:31 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-11910</guid>
+		<description><![CDATA[Can u provide me a a seminar report on Type script...
+
+it can help me in my studies...]]></description>
+		<content:encoded><![CDATA[<p>Can u provide me a a seminar report on Type script&#8230;</p>
+<p>it can help me in my studies&#8230;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Karthik</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-11885</link>
+		<dc:creator><![CDATA[Karthik]]></dc:creator>
+		<pubDate>Thu, 20 Dec 2012 10:49:45 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-11885</guid>
+		<description><![CDATA[Thank you Robert ....
+
+It help me a lot...]]></description>
+		<content:encoded><![CDATA[<p>Thank you Robert &#8230;.</p>
+<p>It help me a lot&#8230;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/#comment-11844</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 18 Dec 2012 14:42:02 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=284#comment-11844</guid>
+		<description><![CDATA[The main difference I see is how easy it is to create classes that can extend other classes. Then you are just writing JavaScript after that.
+
+class Truck extends Vehicle {
+ //Now write normal JavaScript
+}
+
+You also don&#039;t have to type out prototype on all your class functions which makes you source code smaller and cleaner to read.
+
+TypeScript is not a new language it just adds some conventions to JavaScript like how to create a class and the ability to add types to your variables and functions. This will help in error checking and refactoring when you have an IDE that supports TypeScript.
+
+You don&#039;t need to use types such as (private, :number, :void, etc) but these will help with code completion with an IDE like WebStorm 6 or Visual Studio. 
+
+Download the example code and compare the typescript code to the outputted JavaScript code.]]></description>
+		<content:encoded><![CDATA[<p>The main difference I see is how easy it is to create classes that can extend other classes. Then you are just writing JavaScript after that.</p>
+<p>class Truck extends Vehicle {<br />
+ //Now write normal JavaScript<br />
+}</p>
+<p>You also don&#8217;t have to type out prototype on all your class functions which makes you source code smaller and cleaner to read.</p>
+<p>TypeScript is not a new language it just adds some conventions to JavaScript like how to create a class and the ability to add types to your variables and functions. This will help in error checking and refactoring when you have an IDE that supports TypeScript.</p>
+<p>You don&#8217;t need to use types such as (private, :number, :void, etc) but these will help with code completion with an IDE like WebStorm 6 or Visual Studio. </p>
+<p>Download the example code and compare the typescript code to the outputted JavaScript code.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

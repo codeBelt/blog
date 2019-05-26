@@ -1,0 +1,903 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>TypeScript Ambient Declaration Class for GreenSock &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/ie6.css" media="screen"/>
+    <![endif]-->
+    <link rel="pingback" href="https://codebelt.github.io/blog/wp/xmlrpc.php"/>
+    <link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="codeBelt &raquo; TypeScript Ambient Declaration Class for GreenSock Comments Feed" href="https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/feed/" />
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/font-awesome/css/font-awesome.min.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/css/front.css?ver=4.9.10' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/js/front.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/js/chosen.jquery.min.js?ver=4.9.10'></script>
+<meta name="generator" content="WordPress Download Manager 2.8.92" />
+<link rel='https://api.w.org/' href='https://codebelt.github.io/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codebelt.github.io/blog/wp/xmlrpc.php?rsd" />
+<link rel='prev' title='HTML5 Canvas Banner Ads with Greensock Tweening and TypeScript Tutorial' href='https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/' />
+<link rel='next' title='How to create Ambient Declarations in TypeScript Tutorial' href='https://codebelt.github.io/blog/typescript/how-to-create-a-ambient-class-declarations-in-typescript-tutorial/' />
+<link rel='shortlink' href='https://codebelt.github.io/blog/?p=464' />
+<link rel="alternate" type="application/json+oembed" href="https://codebelt.github.io/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://codebelt.github.io/blog%2Ftypescript%2Ftypescript-ambient-declarations-class-for-greensock%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://codebelt.github.io/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://codebelt.github.io/blog%2Ftypescript%2Ftypescript-ambient-declarations-class-for-greensock%2F&#038;format=xml" />
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>TypeScript Ambient Declaration Class for GreenSock</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/typescript/" rel="category tag">TypeScript</a></p>
+
+				
+
+										
+
+					
+
+					<p>I love GreenSock&#8217;s tweening library for ActionScript and when I found out he converted it to JavaScript I was super pumped. </p>
+<p>I&#8217;ve been playing around with TypeScript and I created a TypeScript Ambient Declarations Class for the GreenSock JavaScript library. Now I can start using TweenMax, TweenLite, TimelineLite, TimelineMax and not get any compiling errors.</p>
+<p>If you want to learn how to create your own TypeScript Ambient Declarations file for another JavaScript library check out my other post <a href="https://codebelt.github.io/blog/typescript/how-to-create-a-ambient-class-declarations-in-typescript-tutorial/">How to create Ambient Class Declarations in TypeScript</a></p>
+<p>You can compare the code below the GreenSock&#8217;s JavaScript Docs at <a href="http://api.greensock.com/js/" target="_blank">http://api.greensock.com/js/</a>.</p>
+<p>You can also download the TypeScript Ambient Declarations Class for GreenSock at <a href="https://github.com/borisyankov/DefinitelyTyped/tree/master/greensock" title="TypeScript Ambient Declarations Class for GreenSock" target="_blank">https://github.com/borisyankov/DefinitelyTyped</a>.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+//com.greensock.core
+interface Animation {
+    data:any;
+    ticker:any;
+    timeline:SimpleTimeline;
+    vars:Object;
+
+    Animation(duration:number, vars?:Object);
+    delay(value:number):any;
+    duration(value:number):any;
+    eventCallback(type:string, callback?:Function, params?:any[], scope?:any):any;
+    invalidate():any;
+    kill(vars?:Object, target?:Object):any;
+    pause(atTime?:any, suppressEvents?:bool):any;
+    paused(value?:bool):any;
+    play(from?:any, suppressEvents?:bool):any;
+    restart(includeDelay?:bool, suppressEvents?:bool):any;
+    resume(from?:any, suppressEvents?:bool):any;
+    reverse(from?:any, suppressEvents?:bool):any;
+    reversed(value?:bool):any;
+    seek(time:any, suppressEvents?:bool):any;
+    startTime(value:number):any;
+    time(value:number, suppressEvents?:bool):any;
+    timeScale(value:number):any;
+    totalDuration(value:number):any;
+    totalTime(time:number, suppressEvents?:bool):any;
+}
+
+interface SimpleTimeline extends Animation {
+    autoRemoveChildren:bool;
+    smoothChildTiming:bool;
+
+    insert(tween:any, time:any):any;
+    render(time:number, suppressEvents?:bool, force?:bool):void;
+}
+
+//com.greensock
+interface TimelineLite {
+    addLabel(label:string, time:number):any;
+    append(value:any, offset:number):any;
+    appendMultiple(tweens:any[], offset:number, align:string, stagger:number):any;
+    call(callback:Function, params?:any[], scope?:any, offset?:number, baseTimeOrLabel?:any):any;
+    clear(labels?:bool):any;
+    duration(value:number):any;
+    exportRoot(vars?:Object, omitDelayedCalls?:bool):TimelineLite;
+    from(target:Object, duration:number, vars:Object, offset:number, baseTimeOrLabel?:any):any;
+    fromTo(target:Object, duration:number, fromVars:Object, toVars:Object, offset:number, baseTimeOrLabel?:any):any;
+    getChildren(nested?:bool, tweens?:bool, timelines?:bool, ignoreBeforeTime?:number):any[];
+    getLabelTime(label:string):number;
+    getTweensOf(target:Object, nested?:bool):any[];
+    insert(value:any, timeOrLabel:any):any;
+    insertMultiple(tweens:any[], timeOrLabel:any, align:string, stagger:number):any;
+    invalidate():any;
+    progress(value:number):any;
+    remove(value:any):any;
+    removeLabel(label:string):any;
+    seek(timeOrLabel:any, suppressEvents?:bool):any;
+    set(target:Object, vars:Object, offset:number, baseTimeOrLabel?:any):any;
+    shiftChildren(amount:number, adjustLabels?:bool, ignoreBeforeTime?:number):any;
+    staggerFrom(targets:Object[], duration:number, vars:Object, stagger:number, offset:number, baseTimeOrLabel?:any, onCompleteAll?:Function, onCompleteAllParams?:any[], onCompleteAllScope?:any):any;
+    staggerFromTo(targets:Object[], duration:number, fromVars:Object, toVars:Object, stagger:number, offset:number, baseTimeOrLabel?:any, onCompleteAll?:Function, onCompleteAllParams?:any[], onCompleteAllScope?:any):any;
+    staggerTo(targets:Object[], duration:number, vars:Object, stagger:number, offset:number, baseTimeOrLabel?:any, onCompleteAll?:Function, onCompleteAllParams?:any[], onCompleteAllScope?:any):any;
+    stop():any;
+    to(target:Object, duration:number, vars:Object, offset:number, baseTimeOrLabel?:any):any;
+    totalDuration(value:number):any;
+    usesFrames():bool;
+}
+
+interface TimelineMax {
+    addCallback(callback:Function, timeOrLabel:any, params?:any[], scope?:any):TimelineMax;
+    currentLabel(value?:string):any;
+    getActive(nested?:bool, tweens?:bool, timelines?:bool):any[];
+    getLabelAfter(time:number):string;
+    getLabelBefore(time:number):string;
+    getLabelsArray():any[];
+    invalidate():any;
+    progress(value:number):any;
+    removeCallback(callback:Function, timeOrLabel?:any):TimelineMax;
+    repeat(value:number):any;
+    repeatDelay(value:number):any;
+    time(value:number, suppressEvents?:bool):any;
+    totalDuration(value:number):any;
+    totalProgress(value:number):any;
+    tweenFromTo(fromTimeOrLabel:any, toTimeOrLabel:any, vars?:Object):TweenLite;
+    tweenTo(timeOrLabel:any, vars?:Object):TweenLite;
+    yoyo(value?:bool):any;
+}
+
+interface TweenLite extends Animation {
+    defaultEase:Ease;
+    defaultOverwrite:string;
+    target:Object;
+    ticker:any;
+
+    delayedCall(delay:number, callback:Function, params?:any[], scope?:any, useFrames?:bool):TweenLite;
+    from(target:Object, duration:number, vars:Object):TweenLite;
+    fromTo(target:Object, duration:number, fromVars:Object, toVars:Object):TweenLite;
+    getTweensOf(target:Object):any[];
+    invalidate():any;
+    killDelayedCallsTo(func:Function):void;
+    killTweensOf(target:Object, vars?:Object):void;
+    set(target:Object, vars:Object):TweenLite;
+    to(target:Object, duration:number, vars:Object):TweenLite;
+}
+
+interface TweenMax extends TweenLite {
+    delayedCall(delay:number, callback:Function, params?:any[], scope?:any, useFrames?:bool):TweenMax;
+    from(target:Object, duration:number, vars:Object):TweenMax;
+    fromTo(target:Object, duration:number, fromVars:Object, toVars:Object):TweenMax;
+    getAllTweens(includeTimelines?:bool):any[];
+    getTweensOf(target:Object):any[];
+    invalidate():any;
+    isTweening(target:Object):bool;
+    killAll(complete?:bool, tweens?:bool, delayedCalls?:bool, timelines?:bool):void;
+    killChildTweensOf(parent:any, complete?:bool):void;
+    killDelayedCallsTo(func:Function):void;
+    killTweensOf(target:Object, vars?:Object):void;
+    pauseAll(tweens?:bool, delayedCalls?:bool, timelines?:bool):void;
+    progress(value:number):any;
+    repeat(value:number):any;
+    repeatDelay(value:number):any;
+    resumeAll(tweens?:bool, delayedCalls?:bool, timelines?:bool):void;
+    set(target:Object, vars:Object):TweenMax;
+    staggerFrom(targets:Object[], duration:number, vars:Object, stagger:number, onCompleteAll?:Function, onCompleteAllParams?:any[], onCompleteAllScope?:any):any[];
+    staggerFromTo(targets:Object[], duration:number, fromVars:Object, toVars:Object, stagger:number, onCompleteAll?:Function, onCompleteAllParams?:any[], onCompleteAllScope?:any):any[];
+    staggerTo(targets:Object[], duration:number, vars:Object, stagger:number, onCompleteAll?:Function, onCompleteAllParams?:any[], onCompleteAllScope?:any):any[];
+    time(value:number, suppressEvents?:bool):any;
+    to(target:Object, duration:number, vars:Object):TweenMax;
+    totalDuration(value:number):any;
+    totalProgress(value:number):any;
+    updateTo(vars:Object, resetDuration?:bool):any;
+    yoyo(value?:bool):any;
+}
+
+//com.greensock.easing
+interface Back {
+    easeIn;
+    easeInOut;
+    easeOut;
+}
+interface Bounce {
+    easeIn;
+    easeInOut;
+    easeOut;
+}
+interface Circ {
+    easeIn;
+    easeInOut;
+    easeOut;
+}
+interface Cubic {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Ease {
+    getRatio(p:number):number;
+}
+interface EaseLookup {
+    find(name:string):Ease;
+}
+interface Elastic {
+    easeIn;
+    easeInOut;
+    easeOut;
+}
+interface Expo {
+    easeIn;
+    easeInOut;
+    easeOut;
+}
+interface Linear {
+    ease:Linear;
+    easeIn:Linear;
+    easeInOut:Linear;
+    easeNone:Linear;
+    easeOut:Linear;
+}
+interface Power0 {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Power1 {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Power2 {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Power3 {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Power4 {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Quad {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Quart {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Quint {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+interface Sine {
+    easeIn;
+    easeInOut;
+    easeOut;
+}
+interface SlowMo {
+    ease:SlowMo;
+
+    SlowMo(linearRatio:number, power:number, yoyoMode:bool);
+    config(linearRatio:number, power:number, yoyoMode:bool):SlowMo;
+    getRatio(p:number):number;
+}
+interface SteppedEase {
+    config(steps:number):SteppedEase;
+    getRatio(p:number):number;
+}
+interface Strong {
+    easeIn:Ease;
+    easeInOut:Ease;
+    easeOut:Ease;
+}
+
+//com.greensock.plugins
+interface BezierPlugin extends TweenPlugin {
+    bezierThrough(values:any[], curviness?:number, quadratic?:bool, correlate?:string, prepend?:Object, calcDifs?:bool):Object;
+    cubicToQuadratic(a:number, b:number, c:number, d:number):any[];
+    quadraticToCubic(a:number, b:number, c:number):Object;
+}
+interface ColorPropsPlugin extends TweenPlugin {
+
+}
+interface CSSPlugin extends TweenPlugin {
+
+}
+interface CSSRulePlugin extends TweenPlugin {
+    getRule(selector:string):Object;
+}
+interface EaselPlugin extends TweenPlugin {
+
+}
+interface RaphaelPlugin extends TweenPlugin {
+
+}
+interface RoundPropsPlugin extends TweenPlugin {
+
+}
+interface ScrollToPlugin extends TweenPlugin {
+
+}
+interface TweenPlugin {
+    activate(plugins:any[]):bool;
+}
+
+
+//com.greensock.core
+declare var Animation:Animation;
+declare var SimpleTimeline:SimpleTimeline;
+
+//com.greensock
+declare var TimelineLite:TimelineLite;
+declare var TimelineMax:TimelineMax;
+declare var TweenLite:TweenLite;
+declare var TweenMax:TweenMax;
+
+//com.greensock.easing
+declare var Back:Back;
+declare var Bounce:Bounce;
+declare var Circ:Circ;
+declare var Cubic:Cubic;
+declare var Ease:Ease;
+declare var EaseLookup:EaseLookup;
+declare var Elastic:Elastic;
+declare var Expo:Expo;
+declare var Linear:Linear;
+declare var Power0:Power0;
+declare var Power1:Power1;
+declare var Power2:Power2;
+declare var Power3:Power3;
+declare var Power4:Power4;
+declare var Quad:Quad;
+declare var Quart:Quart;
+declare var Quint:Quint;
+declare var Sine:Sine;
+declare var SlowMo:SlowMo;
+declare var SteppedEase:SteppedEase;
+declare var Strong:Strong;
+
+//com.greensock.plugins
+declare var BezierPlugin:BezierPlugin;
+declare var ColorPropsPlugin:ColorPropsPlugin;
+declare var CSSPlugin:CSSPlugin;
+declare var CSSRulePlugin:CSSRulePlugin;
+declare var EaselPlugin:EaselPlugin;
+declare var RaphaelPlugin:RaphaelPlugin;
+declare var RoundPropsPlugin:RoundPropsPlugin;
+declare var ScrollToPlugin:ScrollToPlugin;
+declare var TweenPlugin:TweenPlugin;
+</pre>
+<p>Let me know if there are any issues.</p>
+<p>You download the file <strong>greensock.d.ts</strong> at DefinitelyTyped on gitbhub: <br /><a href="https://github.com/borisyankov/DefinitelyTyped" title="TypeScript Definitely Typed" target="_blank">https://github.com/borisyankov/DefinitelyTyped</a> Also if you like this tutorial please provide a link back to this page or my site.</p>
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/#comments" class="comments">Comments (3)</a> |		
+
+						<span class="date">November 23rd, 2012</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">3 Responses to &#8220;TypeScript Ambient Declaration Class for GreenSock&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-15709">
+
+<div class="comment-info">			
+<img alt='' src='http://1.gravatar.com/avatar/ab94fd3dd7769e47b4ba0a41ec5996e2?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/ab94fd3dd7769e47b4ba0a41ec5996e2?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+richard Says: <br />				
+<span class="comment-data"><a href="#comment-15709" title="">June 10, 2013 at 12:38 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>hi.. this works great for the following</p>
+<p>TweenMax.to(bm, 1, {x:100});</p>
+<p>but when i try this code..</p>
+<p>var tl:TimelineMax = new TimelineMax();</p>
+<p>i get the error &#8216;interface cannot be instantiated&#8217;. how do you recommending using TimelineMax in TypeScript?</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/?replytocom=15709#respond' onclick='return addComment.moveForm( "comment-15709", "15709", "respond", "464" )' aria-label='Reply to richard'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-15727">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/wp-content/uploads/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-15727" title="">June 10, 2013 at 10:01 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>That&#8217;s a good question and I will have to look into it. In the mean time to get up and running you can just remove all the code in that file and put:</p>
+<p>declare var TweenMax:any;<br />
+declare var TweenLite:any;<br />
+declare var TimelineMax:any;<br />
+declare var TimelineMax:any;</p>
+<p>When I have sometime, I will look into the fix.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/?replytocom=15727#respond' onclick='return addComment.moveForm( "comment-15727", "15727", "respond", "464" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="comment even thread-odd thread-alt depth-1" id="comment-15754">
+
+<div class="comment-info">			
+<img alt='' src='http://2.gravatar.com/avatar/ea13d825e7b0b507d0a158a84c74f335?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ea13d825e7b0b507d0a158a84c74f335?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+rodrigo Says: <br />				
+<span class="comment-data"><a href="#comment-15754" title="">June 12, 2013 at 9:17 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>yea same thing happened to me, plus then I try to (on *.d.ts):</p>
+<p>declare var TimelineMax:any;</p>
+<p>and in my TS file the problem that I have now is that if I try to do a chain call like:</p>
+<p>var tl:TimelineMax = new TimelineMax();<br />
+tl.from([options]),<br />
+.from([options]);<br />
+tl.play()</p>
+<p>I&#8217;ve got two new errors saying<br />
+The property &#8216;from&#8217; does not exist on value of type &#8216;TimelineMax&#8217;<br />
+The property &#8216;play&#8217; does not exist on value of type &#8216;TimelineMax&#8217;</p>
+<p>since TimelineMax now is of  &#8220;any&#8221; type.<br />
+So to avoid this you will have to declare tl as &#8220;any&#8221; type like this:</p>
+<p>var tl:any = new TimelineMax();</p>
+<p>or</p>
+<p>var tl = new TimelineMax();  // TS asumes that tl is od any type as it is on .d.ts</p>
+<p>Now I wont get any compile error but I&#8217;m not getting syntax completion on tl since it&#8217;s any type.</p>
+<p>Also I notice that TimelineMax and TimelineLite Interface definitions where not doing  inheritance .<br />
+I try to fix that but I get the same error of course :)</p>
+<p>PS: Great blog , I learned a lot from you .Tanks :)</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/?replytocom=15754#respond' onclick='return addComment.moveForm( "comment-15754", "15754", "respond", "464" )' aria-label='Reply to rodrigo'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='464' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4c54d26811" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="58"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://codebelt.github.io/blog/category/uncategorized/" >Uncategorized</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/wp-content/uploads/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2019 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0.9b'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

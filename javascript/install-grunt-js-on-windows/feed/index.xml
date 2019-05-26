@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Install Grunt JS on Windows &#8211; Tutorial</title>
+	<atom:link href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: Ransford</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-72352</link>
+		<dc:creator><![CDATA[Ransford]]></dc:creator>
+		<pubDate>Wed, 17 May 2017 17:39:51 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-72352</guid>
+		<description><![CDATA[Hi Robert,
+
+Everything seemed to be moving smoothly till the fileone.js and filetwo.js thing came in. Don&#039;t really know how to take it on from there. Don&#039;t know where to find the link to download the example files (don&#039;t know if they are the fileone.js and filetwo.js) after the &quot;You can download the example files here:&quot; text.
+
+Please Advice.]]></description>
+		<content:encoded><![CDATA[<p>Hi Robert,</p>
+<p>Everything seemed to be moving smoothly till the fileone.js and filetwo.js thing came in. Don&#8217;t really know how to take it on from there. Don&#8217;t know where to find the link to download the example files (don&#8217;t know if they are the fileone.js and filetwo.js) after the &#8220;You can download the example files here:&#8221; text.</p>
+<p>Please Advice.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mark Griffin</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-64287</link>
+		<dc:creator><![CDATA[Mark Griffin]]></dc:creator>
+		<pubDate>Tue, 11 Oct 2016 20:39:26 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-64287</guid>
+		<description><![CDATA[Hello, 
+
+One of my questions is do you have to a package.json and a gruntfile.js in every javascript project where you are going to use grunt to build the project?]]></description>
+		<content:encoded><![CDATA[<p>Hello, </p>
+<p>One of my questions is do you have to a package.json and a gruntfile.js in every javascript project where you are going to use grunt to build the project?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Εγκαταστήστε το Γρύλισμα JS σε Windows – Φροντιστήριο &#8211; Moresky</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-61181</link>
+		<dc:creator><![CDATA[Εγκαταστήστε το Γρύλισμα JS σε Windows – Φροντιστήριο &#8211; Moresky]]></dc:creator>
+		<pubDate>Mon, 16 May 2016 17:32:55 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-61181</guid>
+		<description><![CDATA[[&#8230;] Αρχικά στο https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] Αρχικά στο <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" rel="nofollow">https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/</a> [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Omer Hussain</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-58187</link>
+		<dc:creator><![CDATA[Omer Hussain]]></dc:creator>
+		<pubDate>Wed, 21 Oct 2015 08:03:34 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-58187</guid>
+		<description><![CDATA[Hi Robert,
+
+Tutorial is very informative :)
+
+Can we use external source to get the files like:
+
+// Metadata.
+        meta: {
+            basePath: &#039;../&#039;,
+            srcPath: &#039;https://raw.githubusercontent.com/omerblink/avatec/master/&#039;,
+            deployPath: &#039;../template/&#039;
+        },
+
+???
+
+
+Thanks Omer]]></description>
+		<content:encoded><![CDATA[<p>Hi Robert,</p>
+<p>Tutorial is very informative :)</p>
+<p>Can we use external source to get the files like:</p>
+<p>// Metadata.<br />
+        meta: {<br />
+            basePath: &#8216;../&#8217;,<br />
+            srcPath: &#8216;https://raw.githubusercontent.com/omerblink/avatec/master/&#8217;,<br />
+            deployPath: &#8216;../template/&#8217;<br />
+        },</p>
+<p>???</p>
+<p>Thanks Omer</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Koushik</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-56605</link>
+		<dc:creator><![CDATA[Koushik]]></dc:creator>
+		<pubDate>Mon, 10 Aug 2015 03:41:27 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-56605</guid>
+		<description><![CDATA[Thanks for the tutorial.
+How to run cmd on any path easily was an awesome trick and that also saved my ass in some way.
+Much appreciated.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the tutorial.<br />
+How to run cmd on any path easily was an awesome trick and that also saved my ass in some way.<br />
+Much appreciated.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sunil</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-54879</link>
+		<dc:creator><![CDATA[Sunil]]></dc:creator>
+		<pubDate>Tue, 16 Jun 2015 07:56:30 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-54879</guid>
+		<description><![CDATA[Thanks for the article. it really works.. I have an angular project having js files in different folder and I want to minify all the js files and placing in their respective folders . How can i do this ?]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the article. it really works.. I have an angular project having js files in different folder and I want to minify all the js files and placing in their respective folders . How can i do this ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Vach</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-51661</link>
+		<dc:creator><![CDATA[Vach]]></dc:creator>
+		<pubDate>Sat, 28 Mar 2015 14:47:03 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-51661</guid>
+		<description><![CDATA[Hi, please, can you help me with one problem, i install nodejs on window 8 and try to use grunt, i install grunt via npm, but when i try to use command grunt in windows console i get the error - grunt: command not found, thank you]]></description>
+		<content:encoded><![CDATA[<p>Hi, please, can you help me with one problem, i install nodejs on window 8 and try to use grunt, i install grunt via npm, but when i try to use command grunt in windows console i get the error &#8211; grunt: command not found, thank you</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Krunal Shah</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-47520</link>
+		<dc:creator><![CDATA[Krunal Shah]]></dc:creator>
+		<pubDate>Thu, 05 Feb 2015 10:13:33 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-47520</guid>
+		<description><![CDATA[simple. concise. precise.
+
+Thanks Robert for such a wonderful article. It saves my day.]]></description>
+		<content:encoded><![CDATA[<p>simple. concise. precise.</p>
+<p>Thanks Robert for such a wonderful article. It saves my day.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: A random Coder</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-47227</link>
+		<dc:creator><![CDATA[A random Coder]]></dc:creator>
+		<pubDate>Sun, 01 Feb 2015 18:03:48 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-47227</guid>
+		<description><![CDATA[Thank You]]></description>
+		<content:encoded><![CDATA[<p>Thank You</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: JRatha</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-45339</link>
+		<dc:creator><![CDATA[JRatha]]></dc:creator>
+		<pubDate>Thu, 22 Jan 2015 17:21:16 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-45339</guid>
+		<description><![CDATA[Thanks a lot for sharing this article. Its really helpful  and a nice post.]]></description>
+		<content:encoded><![CDATA[<p>Thanks a lot for sharing this article. Its really helpful  and a nice post.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: tepeli</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-32718</link>
+		<dc:creator><![CDATA[tepeli]]></dc:creator>
+		<pubDate>Mon, 20 Oct 2014 17:06:36 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-32718</guid>
+		<description><![CDATA[Thank you it was really helpful for getting started with Grunt on Windows platform.]]></description>
+		<content:encoded><![CDATA[<p>Thank you it was really helpful for getting started with Grunt on Windows platform.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-28204</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Thu, 14 Aug 2014 02:27:01 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-28204</guid>
+		<description><![CDATA[You check out my &lt;a href=&quot;https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/&quot; title=&quot;Single Page JavaScript Application Workflow&quot; rel=&quot;nofollow&quot;&gt;Single Page JavaScript Application Workflow&lt;/a&gt; or &lt;a href=&quot;https://codebelt.github.io/blog/javascript/compile-sass-files-into-one-css-file-grunt-js-tutorial/&quot; title=&quot;Compile SASS files into one CSS file &#124; Grunt JS Tutorial&quot; rel=&quot;nofollow&quot;&gt;Compile SASS files into one CSS file&lt;/a&gt; tutorials how to use the Grunt watch task.]]></description>
+		<content:encoded><![CDATA[<p>You check out my <a href="https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/" title="Single Page JavaScript Application Workflow" rel="nofollow">Single Page JavaScript Application Workflow</a> or <a href="https://codebelt.github.io/blog/javascript/compile-sass-files-into-one-css-file-grunt-js-tutorial/" title="Compile SASS files into one CSS file | Grunt JS Tutorial" rel="nofollow">Compile SASS files into one CSS file</a> tutorials how to use the Grunt watch task.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: mrTyner</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-28071</link>
+		<dc:creator><![CDATA[mrTyner]]></dc:creator>
+		<pubDate>Sun, 10 Aug 2014 15:56:46 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-28071</guid>
+		<description><![CDATA[Late to the party here but wanted to say thank you. This saved me a ton of time!]]></description>
+		<content:encoded><![CDATA[<p>Late to the party here but wanted to say thank you. This saved me a ton of time!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sina</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-28053</link>
+		<dc:creator><![CDATA[Sina]]></dc:creator>
+		<pubDate>Sun, 10 Aug 2014 00:45:06 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-28053</guid>
+		<description><![CDATA[Nice Post :) Thanks you.
+
+How can I find the grunt watch config ?
+
+Thanks,]]></description>
+		<content:encoded><![CDATA[<p>Nice Post :) Thanks you.</p>
+<p>How can I find the grunt watch config ?</p>
+<p>Thanks,</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Влад</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-25571</link>
+		<dc:creator><![CDATA[Влад]]></dc:creator>
+		<pubDate>Sat, 17 May 2014 07:22:11 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-25571</guid>
+		<description><![CDATA[Hey, even without knowing the English could not understand your article, thank you!]]></description>
+		<content:encoded><![CDATA[<p>Hey, even without knowing the English could not understand your article, thank you!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-23589</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2014 02:21:23 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-23589</guid>
+		<description><![CDATA[I think it be because you don&#039;t have the required &quot;default&quot; grunt task:
+&lt;code&gt;
+grunt.registerTask(&#039;default&#039;, [
+     &#039;min&#039;
+]);
+&lt;/code&gt;
+
+It should look like this:
+I think it be because you don&#039;t have the required &quot;default&quot; grunt task:
+&lt;code&gt;
+module.exports = function(grunt) {
+    // Project configuration.
+    grunt.initConfig({
+        min:{
+            dist:{
+                src:&#039;../src/scripts/custom.js&#039;,
+                dest: &#039;../src/scripts/custom.min.js&#039;
+            }
+        }
+    });
+    grunt.registerTask(&#039;default&#039;, [
+        &#039;min&#039;
+    ]);
+};
+&lt;/code&gt;
+
+I&#039;ve used &lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-uglify&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;grunt-contrib-uglify&lt;/a&gt; before and it great for getting started with minifying.]]></description>
+		<content:encoded><![CDATA[<p>I think it be because you don&#8217;t have the required &#8220;default&#8221; grunt task:<br />
+<code><br />
+grunt.registerTask('default', [<br />
+     'min'<br />
+]);<br />
+</code></p>
+<p>It should look like this:<br />
+I think it be because you don&#8217;t have the required &#8220;default&#8221; grunt task:<br />
+<code><br />
+module.exports = function(grunt) {<br />
+    // Project configuration.<br />
+    grunt.initConfig({<br />
+        min:{<br />
+            dist:{<br />
+                src:'../src/scripts/custom.js',<br />
+                dest: '../src/scripts/custom.min.js'<br />
+            }<br />
+        }<br />
+    });<br />
+    grunt.registerTask('default', [<br />
+        'min'<br />
+    ]);<br />
+};<br />
+</code></p>
+<p>I&#8217;ve used <a href="https://github.com/gruntjs/grunt-contrib-uglify" target="_blank" rel="nofollow">grunt-contrib-uglify</a> before and it great for getting started with minifying.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sandeep Upadhyay</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-23547</link>
+		<dc:creator><![CDATA[Sandeep Upadhyay]]></dc:creator>
+		<pubDate>Thu, 03 Apr 2014 12:06:10 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-23547</guid>
+		<description><![CDATA[Thanks so much Robert, your tutorial is very simple and easy to understand. Today I have start learning Grunt and your tutorial help me to go one step ahead. Now I want to do little bit more like minify:-
+
+Can you please help me to minify my custom.js file as custom.min.js
+
+Here is the code Gruntfile.js which I&#039;m trying:-
+
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        min:{
+            dist:{
+                src:&#039;../src/scripts/custom.js&#039;,
+                dest: &#039;../src/scripts/custom.min.js&#039;
+            }
+        }
+
+    });
+};
+
+But I&#039;m getting error in window - cmd as:-
+
+Warning: Task &quot;default&quot; not found. Use --force to continue
+Aborted due to warnings.]]></description>
+		<content:encoded><![CDATA[<p>Thanks so much Robert, your tutorial is very simple and easy to understand. Today I have start learning Grunt and your tutorial help me to go one step ahead. Now I want to do little bit more like minify:-</p>
+<p>Can you please help me to minify my custom.js file as custom.min.js</p>
+<p>Here is the code Gruntfile.js which I&#8217;m trying:-</p>
+<p>module.exports = function(grunt) {</p>
+<p>    // Project configuration.<br />
+    grunt.initConfig({</p>
+<p>        min:{<br />
+            dist:{<br />
+                src:&#8217;../src/scripts/custom.js&#8217;,<br />
+                dest: &#8216;../src/scripts/custom.min.js&#8217;<br />
+            }<br />
+        }</p>
+<p>    });<br />
+};</p>
+<p>But I&#8217;m getting error in window &#8211; cmd as:-</p>
+<p>Warning: Task &#8220;default&#8221; not found. Use &#8211;force to continue<br />
+Aborted due to warnings.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jonath Lee</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-21571</link>
+		<dc:creator><![CDATA[Jonath Lee]]></dc:creator>
+		<pubDate>Tue, 24 Dec 2013 04:00:58 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-21571</guid>
+		<description><![CDATA[Thank you very much for the tutorial, as a designer getting started with Grunt was tough, no visual software just command prompt. Your explanation in this page really help out a lot :D]]></description>
+		<content:encoded><![CDATA[<p>Thank you very much for the tutorial, as a designer getting started with Grunt was tough, no visual software just command prompt. Your explanation in this page really help out a lot :D</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Shirin</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-21078</link>
+		<dc:creator><![CDATA[Shirin]]></dc:creator>
+		<pubDate>Fri, 06 Dec 2013 06:27:36 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-21078</guid>
+		<description><![CDATA[A fantastic article for installation of gruntjs !! Helps a lot!! Really Thanks!!]]></description>
+		<content:encoded><![CDATA[<p>A fantastic article for installation of gruntjs !! Helps a lot!! Really Thanks!!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Get your Grunt on&#8230; (aka Getting to Hello World with Grunt for Windows 7 users) &#124; LearnGrind</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comment-18933</link>
+		<dc:creator><![CDATA[Get your Grunt on&#8230; (aka Getting to Hello World with Grunt for Windows 7 users) &#124; LearnGrind]]></dc:creator>
+		<pubDate>Tue, 24 Sep 2013 03:31:33 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901#comment-18933</guid>
+		<description><![CDATA[[...] These instructions from codeBelt worked nicely. [...]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] These instructions from codeBelt worked nicely. [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

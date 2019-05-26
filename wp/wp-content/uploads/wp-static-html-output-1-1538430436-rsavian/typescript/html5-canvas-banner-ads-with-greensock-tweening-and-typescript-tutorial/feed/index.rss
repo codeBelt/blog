@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: HTML5 Canvas Banner Ads with Greensock Tweening and TypeScript Tutorial</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#comment-14830</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 05 May 2013 14:26:07 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=389#comment-14830</guid>
+		<description><![CDATA[I totally understand because it was confusing to me too. Take a look at my &lt;a href=&quot;https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/&quot; title=&quot;TypeScript Arrow Function Tutorial&quot; rel=&quot;nofollow&quot;&gt;TypeScript Arrow Function Tutorial&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>I totally understand because it was confusing to me too. Take a look at my <a href="https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/" title="TypeScript Arrow Function Tutorial" rel="nofollow">TypeScript Arrow Function Tutorial</a>.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Clark</title>
+		<link>https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#comment-14809</link>
+		<dc:creator><![CDATA[Clark]]></dc:creator>
+		<pubDate>Sat, 04 May 2013 21:53:49 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=389#comment-14809</guid>
+		<description><![CDATA[Yes these =&#062; are a little confusing for me. 
+
+I see people define a method signature outside of the constructor.
+
+Public onLoaded: ()  =&#062; void
+
+
+Then populate that inside the constructor? 
+
+This.onLoaded = () =&#062; {}  sorry my syntax is prob not exact. But if I do this for my class methods, what happens to my getter and setters? If getters reference &quot;this&quot; the class, why does onLoaded need =&#062; syntax but the getter does not?]]></description>
+		<content:encoded><![CDATA[<p>Yes these =&gt; are a little confusing for me. </p>
+<p>I see people define a method signature outside of the constructor.</p>
+<p>Public onLoaded: ()  =&gt; void</p>
+<p>Then populate that inside the constructor? </p>
+<p>This.onLoaded = () =&gt; {}  sorry my syntax is prob not exact. But if I do this for my class methods, what happens to my getter and setters? If getters reference &#8220;this&#8221; the class, why does onLoaded need =&gt; syntax but the getter does not?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Payman T.</title>
+		<link>https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#comment-13620</link>
+		<dc:creator><![CDATA[Payman T.]]></dc:creator>
+		<pubDate>Tue, 19 Mar 2013 18:06:20 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=389#comment-13620</guid>
+		<description><![CDATA[Good info. Your covering all the angles.   I did want to note though for those who want to just bypass the coding part and visually crate banners visually (as you could do previously in Flash);  you should check out Easy WebContent&#039;s Presenter.   no coding ; just drag and drop with a full timeline ;   http://www.ewcPresenter.com/  ; it&#039;s free to everyone.]]></description>
+		<content:encoded><![CDATA[<p>Good info. Your covering all the angles.   I did want to note though for those who want to just bypass the coding part and visually crate banners visually (as you could do previously in Flash);  you should check out Easy WebContent&#8217;s Presenter.   no coding ; just drag and drop with a full timeline ;   <a href="http://www.ewcPresenter.com/" rel="nofollow">http://www.ewcPresenter.com/</a>  ; it&#8217;s free to everyone.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#comment-11506</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Wed, 05 Dec 2012 17:49:07 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=389#comment-11506</guid>
+		<description><![CDATA[I haven&#039;t really looked into arrow functions but now that you showed me an example I will start playing with it. Thanks for the tip.]]></description>
+		<content:encoded><![CDATA[<p>I haven&#8217;t really looked into arrow functions but now that you showed me an example I will start playing with it. Thanks for the tip.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: esimov</title>
+		<link>https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#comment-11504</link>
+		<dc:creator><![CDATA[esimov]]></dc:creator>
+		<pubDate>Wed, 05 Dec 2012 14:18:33 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=389#comment-11504</guid>
+		<description><![CDATA[Why you are not using the new arrow function on:
+
+this._image.onload = function() {
+      self.onImageLoad();
+ }
+
+this._image.onload = e =&#062; {
+      this.onImageLoad();
+}
+
+This way you will preserve the scope of the outer execution context and it&#039;s no need to bind the scope of the inner function to a variable &quot;self&quot; predefined outside. BTW some nice articles about TS.]]></description>
+		<content:encoded><![CDATA[<p>Why you are not using the new arrow function on:</p>
+<p>this._image.onload = function() {<br />
+      self.onImageLoad();<br />
+ }</p>
+<p>this._image.onload = e =&gt; {<br />
+      this.onImageLoad();<br />
+}</p>
+<p>This way you will preserve the scope of the outer execution context and it&#8217;s no need to bind the scope of the inner function to a variable &#8220;self&#8221; predefined outside. BTW some nice articles about TS.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Arrow Function Tutorial</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Ruan Fourie</title>
+		<link>https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/#comment-22280</link>
+		<dc:creator><![CDATA[Ruan Fourie]]></dc:creator>
+		<pubDate>Sat, 01 Feb 2014 07:49:23 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=611#comment-22280</guid>
+		<description><![CDATA[Thank you so much! It was very frustrating getting the correct scope to get to my variables. Even though I saw some answers at stackoverflow your examples are what finally made me get it to work.
+
+As a C# developer I thought that going with Typescript would be easier than just using javascript. So far it doesn&#039;t really feel that way. Will see though.]]></description>
+		<content:encoded><![CDATA[<p>Thank you so much! It was very frustrating getting the correct scope to get to my variables. Even though I saw some answers at stackoverflow your examples are what finally made me get it to work.</p>
+<p>As a C# developer I thought that going with Typescript would be easier than just using javascript. So far it doesn&#8217;t really feel that way. Will see though.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/#comment-21800</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 05 Jan 2014 19:43:46 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=611#comment-21800</guid>
+		<description><![CDATA[Here is a good video for Visual Studio and TypeScript. http://youtu.be/-XXYLIhKA-w]]></description>
+		<content:encoded><![CDATA[<p>Here is a good video for Visual Studio and TypeScript. <a href="http://youtu.be/-XXYLIhKA-w" rel="nofollow">http://youtu.be/-XXYLIhKA-w</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Martin Andersson</title>
+		<link>https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/#comment-18140</link>
+		<dc:creator><![CDATA[Martin Andersson]]></dc:creator>
+		<pubDate>Thu, 05 Sep 2013 06:54:42 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=611#comment-18140</guid>
+		<description><![CDATA[Wow, a totally awesum tutorial! And I like your way of writing. You seem to be a nice guy, in this game for the fun of it and one likes to share your knowledge. I&#039;m totally sold on TypeScript since yesterday when I began reading about it. Really makes a JavaScritper&#039;s life so much easier. The sad thing though is that Visual Studio 2012 does not support TypeScript in the class view window. So all we have in the IDE is our code and the IntelliSense feature. But I figure that will come to in the future.]]></description>
+		<content:encoded><![CDATA[<p>Wow, a totally awesum tutorial! And I like your way of writing. You seem to be a nice guy, in this game for the fun of it and one likes to share your knowledge. I&#8217;m totally sold on TypeScript since yesterday when I began reading about it. Really makes a JavaScritper&#8217;s life so much easier. The sad thing though is that Visual Studio 2012 does not support TypeScript in the class view window. So all we have in the IDE is our code and the IntelliSense feature. But I figure that will come to in the future.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Clark</title>
+		<link>https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/#comment-14811</link>
+		<dc:creator><![CDATA[Clark]]></dc:creator>
+		<pubDate>Sat, 04 May 2013 22:50:28 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=611#comment-14811</guid>
+		<description><![CDATA[This is what I was looking for! Thanks for these articles!]]></description>
+		<content:encoded><![CDATA[<p>This is what I was looking for! Thanks for these articles!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Vhornets</title>
+		<link>https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/#comment-13696</link>
+		<dc:creator><![CDATA[Vhornets]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 18:04:34 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=611#comment-13696</guid>
+		<description><![CDATA[Nice feature if be honest, thanks]]></description>
+		<content:encoded><![CDATA[<p>Nice feature if be honest, thanks</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

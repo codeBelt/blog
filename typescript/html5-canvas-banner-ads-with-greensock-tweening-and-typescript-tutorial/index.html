@@ -1,0 +1,846 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>HTML5 Canvas Banner Ads with Greensock Tweening and TypeScript Tutorial &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/ie6.css" media="screen"/>
+    <![endif]-->
+    <link rel="pingback" href="https://codebelt.github.io/blog/wp/xmlrpc.php"/>
+    <link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="codeBelt &raquo; HTML5 Canvas Banner Ads with Greensock Tweening and TypeScript Tutorial Comments Feed" href="https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/feed/" />
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/font-awesome/css/font-awesome.min.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/css/front.css?ver=4.9.10' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/js/front.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/js/chosen.jquery.min.js?ver=4.9.10'></script>
+<meta name="generator" content="WordPress Download Manager 2.8.92" />
+<link rel='https://api.w.org/' href='https://codebelt.github.io/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codebelt.github.io/blog/wp/xmlrpc.php?rsd" />
+<link rel='prev' title='TypeScript &#038; PhpStorm or WebStorm' href='https://codebelt.github.io/blog/typescript/typescript-phpstorm-webstorm/' />
+<link rel='next' title='TypeScript Ambient Declaration Class for GreenSock' href='https://codebelt.github.io/blog/typescript/typescript-ambient-declarations-class-for-greensock/' />
+<link rel='shortlink' href='https://codebelt.github.io/blog/?p=389' />
+<link rel="alternate" type="application/json+oembed" href="https://codebelt.github.io/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://codebelt.github.io/blog%2Ftypescript%2Fhtml5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://codebelt.github.io/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://codebelt.github.io/blog%2Ftypescript%2Fhtml5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial%2F&#038;format=xml" />
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>HTML5 Canvas Banner Ads with Greensock Tweening and TypeScript Tutorial</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/typescript/" rel="category tag">TypeScript</a></p>
+
+				
+
+										
+
+					
+
+					<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<h1>How to make a HTML5 Canvas Banner Ad</h1>
+<p>I got a new project where a client wanted an HTML5 Banner Ad that needed to be under 100k and must be done with HTML5 Canvas. Below is not the banner ad I create for the client just a simple example. </p>
+<p>I decided to create my own simple Canvas library (Not sure if you can call this a library) that I could use for Canvas Banner Ads. For the past two weeks I&#8217;ve been playing around with TypeScript and love how you can create nice clean code and classes. </p>
+<p>One think I didn&#8217;t want to create was my own tweening library so I decided to go with the best one I know of. <a href="http://www.greensock.com/get-started-js/" target="_blank">GreenSock Animation Platform (GSAP)</a> also know as TweenMax and TweenLite. TweenLite.js when minified with UglifyJS is 19.7. I also wanted to use a different easing then the default one provided in Tweenlite so I include the EasePack.js which is was only 3.64k after Uglifying. </p>
+<p>If you haven&#8217;t heard of TweenMax/TweenLite you definitely need to check out what Jack Doyle (The GreenSock guy) has for a tweening library. Check out the TimelineMax also and see what awesome stuff you can do. Also check out the speed test of the TweenLite: <a href="http://www.greensock.com/js/speed.html" target="_blank">Greensock TweenLite Speed Test</a> or <a href="http://www.greensock.com/jump-start-js/" title="GreenSock Get Started" target="_blank">http://www.greensock.com/jump-start-js/</a></p>
+<p><strong>Here is the Html5 Canvas Banner Ad: (Disable your Ad blocker to view)</strong></p>
+<p><iframe width="755" height="113" src="https://codebelt.github.io/blog/wp/files/bannerad/"></iframe></p>
+<p>If you are an ActionScript 3 developer this will look familiar to you. At the top we import in our required classes. Then to setup a class in TypeScript we just have to type &#8220;class NameOfClass&#8221;; Ahh so clean. Next we setup a static and several private properties. </p>
+<p>In the constructor you will see a BulkLoader class that you can add objects to preload our images and when they are all loaded a LoaderEvent.LOAD_COMPLETE event/type is dispatched. In the init method you will see we create an Canvas object where we pass in the canvas element id. Next we set up our Bitmap&#8217;s which will use the loaded images. Take note of the x, y, alpha, scaleX, scaleY and visible properties that you can set on the Bitmap class. Also take note of how we are adding the Bitmap object as a child to the Canvas object with the method this.canvas.addChild(). There is also a removeChild which will not render the image to the canvas stage.</p>
+<p>Finally we get to the TweenLite calls where it takes out Bitmap objects and animates them with ease. That&#8217;s it, just preload the image, setup Bitmap classes and use TweenLite/TweenMax to animate the objects around. If you want learn more about the classes please keep reading but you can stop here. You can download the files below.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='_declare/greensock.d.ts'/&gt;
+///&lt;reference path='_core/display/Canvas.ts'/&gt;
+///&lt;reference path='_core/display/Bitmap.ts'/&gt;
+///&lt;reference path='_core/utils/BulkLoader.ts'/&gt;
+///&lt;reference path='_core/utils/ImageLoader.ts'/&gt;
+///&lt;reference path='_core/events/LoaderEvent.ts'/&gt;
+
+class BannerAd {
+
+    static BASE_PATH:string = &quot;assets/images/&quot;;
+
+    private _canvas:Canvas = null;
+    private _cherry:Bitmap = null;
+    private _cherryDipped:Bitmap = null;
+    private _logo:Bitmap = null;
+    private _boxOfCandy:Bitmap = null;
+
+    private _bulkLoader:BulkLoader = null;
+
+    constructor()
+    {
+        this._bulkLoader = new BulkLoader();
+        this._bulkLoader.addEventListener(LoaderEvent.LOAD_COMPLETE, this.init, this);
+        this._bulkLoader.addFile(new ImageLoader(BannerAd.BASE_PATH + &quot;cherry.png&quot;), &quot;cherry&quot;);
+        this._bulkLoader.addFile(new ImageLoader(BannerAd.BASE_PATH + &quot;cherry-dipped.png&quot;), &quot;cherry-dipped&quot;);
+        this._bulkLoader.addFile(new ImageLoader(BannerAd.BASE_PATH + &quot;logo.png&quot;), &quot;logo&quot;);
+        this._bulkLoader.addFile(new ImageLoader(BannerAd.BASE_PATH + &quot;box.png&quot;), &quot;box&quot;);
+        this._bulkLoader.load();
+    }
+
+    private init(event:LoaderEvent):void
+    {
+        this._bulkLoader.removeEventListener(LoaderEvent.LOAD_COMPLETE, this.init);
+
+        this._canvas = new Canvas(&quot;stage&quot;);
+
+        this._cherry = new Bitmap( this._bulkLoader.getImage(&quot;cherry&quot;) );
+        this._cherry.x = 83;
+        this._cherry.y = 3;
+        this._canvas.addChild(this._cherry);
+
+        this._cherryDipped = new Bitmap( this._bulkLoader.getImage(&quot;cherry-dipped&quot;) );
+        this._cherryDipped.x = 83;
+        this._cherryDipped.y = 37;
+        this._cherryDipped.visible = false;
+        this._canvas.addChild(this._cherryDipped);
+
+        this._logo = new Bitmap( this._bulkLoader.getImage(&quot;logo&quot;) );
+        this._logo.x = 222;
+        this._logo.y = 27;
+        this._canvas.addChild(this._logo);
+
+        this._boxOfCandy = new Bitmap( this._bulkLoader.getImage(&quot;box&quot;) );
+        this._boxOfCandy.x = 598;
+        this._boxOfCandy.y = 2;
+        this._boxOfCandy.alpha = 0;
+        this._boxOfCandy.scaleX = 0;
+        this._boxOfCandy.scaleY = 0;
+        this._canvas.addChild(this._boxOfCandy);
+
+        TweenLite.to(this._boxOfCandy, 1, {delay: 0.5, alpha:1, scaleX:1, scaleY:1, ease:Cubic.easeOut});
+        TweenLite.to(this._cherry, 0.5, {delay: 1, y:37, ease:Cubic.easeOut, onComplete: this.onCherryComplete.bind(this)});
+    }
+
+    private onCherryComplete():void
+    {
+        this._cherryDipped.visible = true;
+        this._canvas.removeChild(this._cherry);
+
+        TweenLite.to(this._cherryDipped, 0.5, {y:3, ease:Cubic.easeInOut, onComplete: this.onCherryDippedComplete.bind(this)});
+    }
+
+    private onCherryDippedComplete():void
+    {
+        TweenLite.to(this._logo, 1, { rotation:720, scaleX:0.5, scaleY:0.5, ease:Bounce.easeOut});
+    }
+
+}
+</pre>
+<p>Before we go over the BulkLoader TypeScript class in detail. I want to go over the ImageLoader class. All the ImageLoader class is responsible for it taking and string (Image Path), loading the image and dispatching when it is done. If you look the class extends EventDispatcher so it can dispatch events but the class also implements the IDataStore interface which give us polymorphism. Polymorphism means many forms so if you have several different classes and you want them to be the same in some manner. You would implement an interface. Our BulkLoader class only accepts a IDataStore class. So in the future we can pass in a HtmlLoader or a JsonLoader class and there would be no problems.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='../interfaces/IDataStore.ts'/&gt;
+///&lt;reference path='../events/EventDispatcher.ts'/&gt;
+
+class ImageLoader extends EventDispatcher implements IDataStore {
+
+    private _image:HTMLImageElement = null;
+
+    public data:any;
+    public src:string;
+    public complete:bool = false;
+
+    constructor(path:string)
+    {
+        super();
+
+        this.src = path;
+
+        var self = this;
+        this._image = new Image();
+        this._image.onload = function() {
+            self.onImageLoad();
+        }
+    }
+
+    public load():void
+    {
+        if (this.complete) return;
+
+        this._image.src = this.src;
+    }
+
+    private onImageLoad():void
+    {
+        this.complete = true;
+        this.data = this._image;
+        this.dispatchEvent(LoaderEvent.COMPLETE);
+    }
+}
+</pre>
+<p>The BulkLoader class is simple. The purpose for the BulkLoader is to tell other objects when to start loading and it will dispatch a event when all objects have completed loading. The BulkLoader doesn&#8217;t care what classes they are but only if they implements the IDataStore interface. The BulkLoader is only concerned with the &#8220;complete&#8221; property. Every time a IDataStore object finishes loading it will call the onLoadComplete method. Which will loop through the list of loading files and will stop the loop once if finds one that is not complete. If all are complete then the LoaderEvent.LOAD_COMPLETE is dispatched.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='../interfaces/IDataStore.ts'/&gt;
+///&lt;reference path='../events/EventDispatcher.ts'/&gt;
+///&lt;reference path='../events/LoaderEvent.ts'/&gt;
+
+class BulkLoader extends EventDispatcher {
+
+    private _dataStores:IDataStore[] = [];
+
+    constructor()
+    {
+        super();
+
+        this.addEventListener(LoaderEvent.COMPLETE, this.onLoadComplete, this);
+    }
+
+    public addFile(dataStore:IDataStore, key:string):void
+    {
+        this._dataStores[key] = dataStore;
+    }
+
+    public getFile(key:string):IDataStore
+    {
+        return this._dataStores[key];
+    }
+
+    public getImage(key:string):HTMLImageElement
+    {
+        return this._dataStores[key].data;
+    }
+
+    public load():void
+    {
+        for (var key in this._dataStores)
+        {
+            var dataStore:IDataStore = this._dataStores[key];
+            dataStore.addEventListener(LoaderEvent.COMPLETE, this.onLoadComplete, this);
+            dataStore.load();
+        }
+    }
+
+    private onLoadComplete(event:LoaderEvent):void
+    {
+        event.target.removeEventListener(LoaderEvent.COMPLETE, this.onLoadComplete);
+
+        for (var key in this._dataStores)
+        {
+            var dataStore:IDataStore = this._dataStores[key];
+            if(!dataStore.complete) {
+                return;
+            }
+        }
+
+        this.dispatchEvent(LoaderEvent.LOAD_COMPLETE);
+    }
+
+}
+</pre>
+<p>There are several class that I won&#8217;t go over right now but the last one I will is the Bitmap class. The Bitmap class accepts an HTMLImageElement object in the constructor that we get from the BulkLoader. We set the image locally and also get the width and height. The render method is being called by the base class (CanvasElement). The base class is also saving the Canvas content before render is called and then restore is called after the render method. We are using Encapsulation here to keep everything nice and clean. It&#8217;s a nice way to keep logic behind the scenes so we only have to worry about one piece at a time.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='CanvasElement.ts'/&gt;
+///&lt;reference path='../utils/NumberUtil.ts'/&gt;
+
+class Bitmap extends CanvasElement {
+
+    private _image:HTMLImageElement = null;
+
+    public ready:bool = false;
+
+    constructor(image:HTMLImageElement)
+    {
+        super();
+
+        this._image = image;
+        this.width = this._image.width;
+        this.height = this._image.height;
+    }
+
+    public createChildren():void
+    {
+    }
+
+    public render():void
+    {
+        this.context.translate(this.x + this.width * 0.5, this.y + this.height * 0.5);
+        this.context.scale(this.scaleX, this.scaleY);
+        this.context.rotate( NumberUtil.degreesToRadians(this.rotation) );
+        this.context.translate(-this.width * 0.5, -this.height * 0.5);
+
+        this.context.drawImage(this._image, 0, 0);
+    }
+
+}
+</pre>
+<p>Please download the source files below and review the code. I hope it is clear what I am doing. If it is not and people want me to explain more I can.</p>
+<p>To compile all the TypeScript classes into one JavaScript file I used the command below. Here is the command:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+tsc BannerAd.ts -out ../../deploy/app.js
+</pre>
+<p>That will save a javascript file called app.js into a folder called deploy two directory up from the BannerAd.ts file.</p>
+<p>Also if you like this tutorial please provide a link back to this page or my site.</p>
+
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#comments" class="comments">Comments (5)</a> |		
+
+						<span class="date">November 17th, 2012</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">5 Responses to &#8220;HTML5 Canvas Banner Ads with Greensock Tweening and TypeScript Tutorial&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-11504">
+
+<div class="comment-info">			
+<img alt='' src='http://2.gravatar.com/avatar/869a71220d56c9edbed475398af9c79c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/869a71220d56c9edbed475398af9c79c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+<a href='http://www.hellopixel.net/blog' rel='external nofollow' class='url'>esimov</a> Says: <br />				
+<span class="comment-data"><a href="#comment-11504" title="">December 5, 2012 at 7:18 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Why you are not using the new arrow function on:</p>
+<p>this._image.onload = function() {<br />
+      self.onImageLoad();<br />
+ }</p>
+<p>this._image.onload = e =&gt; {<br />
+      this.onImageLoad();<br />
+}</p>
+<p>This way you will preserve the scope of the outer execution context and it&#8217;s no need to bind the scope of the inner function to a variable &#8220;self&#8221; predefined outside. BTW some nice articles about TS.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/?replytocom=11504#respond' onclick='return addComment.moveForm( "comment-11504", "11504", "respond", "389" )' aria-label='Reply to esimov'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-11506">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/wp-content/uploads/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-11506" title="">December 5, 2012 at 10:49 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>I haven&#8217;t really looked into arrow functions but now that you showed me an example I will start playing with it. Thanks for the tip.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/?replytocom=11506#respond' onclick='return addComment.moveForm( "comment-11506", "11506", "respond", "389" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+   	<li class="comment even depth-2" id="comment-14809">
+
+<div class="comment-info">			
+<img alt='' src='http://2.gravatar.com/avatar/b641f7aaa9603b827997a90ed8ce60c8?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b641f7aaa9603b827997a90ed8ce60c8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Clark Says: <br />				
+<span class="comment-data"><a href="#comment-14809" title="">May 4, 2013 at 2:53 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Yes these =&gt; are a little confusing for me. </p>
+<p>I see people define a method signature outside of the constructor.</p>
+<p>Public onLoaded: ()  =&gt; void</p>
+<p>Then populate that inside the constructor? </p>
+<p>This.onLoaded = () =&gt; {}  sorry my syntax is prob not exact. But if I do this for my class methods, what happens to my getter and setters? If getters reference &#8220;this&#8221; the class, why does onLoaded need =&gt; syntax but the getter does not?</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/?replytocom=14809#respond' onclick='return addComment.moveForm( "comment-14809", "14809", "respond", "389" )' aria-label='Reply to Clark'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-3" id="comment-14830">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/wp-content/uploads/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-14830" title="">May 5, 2013 at 7:26 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>I totally understand because it was confusing to me too. Take a look at my <a href="https://codebelt.github.io/blog/typescript/arrow-function-typescript-tutorial/" title="TypeScript Arrow Function Tutorial" rel="nofollow">TypeScript Arrow Function Tutorial</a>.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/?replytocom=14830#respond' onclick='return addComment.moveForm( "comment-14830", "14830", "respond", "389" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="comment even thread-odd thread-alt depth-1" id="comment-13620">
+
+<div class="comment-info">			
+<img alt='' src='http://1.gravatar.com/avatar/4772f04f9a543fdd0490e14272f0e9db?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4772f04f9a543fdd0490e14272f0e9db?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+<a href='http://www.ewcPresenter.com/' rel='external nofollow' class='url'>Payman T.</a> Says: <br />				
+<span class="comment-data"><a href="#comment-13620" title="">March 19, 2013 at 11:06 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Good info. Your covering all the angles.   I did want to note though for those who want to just bypass the coding part and visually crate banners visually (as you could do previously in Flash);  you should check out Easy WebContent&#8217;s Presenter.   no coding ; just drag and drop with a full timeline ;   <a href="http://www.ewcPresenter.com/" rel="nofollow">http://www.ewcPresenter.com</a>  ; it&#8217;s free to everyone.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/?replytocom=13620#respond' onclick='return addComment.moveForm( "comment-13620", "13620", "respond", "389" )' aria-label='Reply to Payman T.'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/typescript/html5-canvas-banner-ads-with-greensock-tweening-and-typescript-tutorial/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='389' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="11af9ab19a" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="15"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://codebelt.github.io/blog/category/uncategorized/" >Uncategorized</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/wp-content/uploads/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2019 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0.9b'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

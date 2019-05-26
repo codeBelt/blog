@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Install Grunt JS on a Mac &#8211; Tutorial</title>
+	<atom:link href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: Sylvia</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-77487</link>
+		<dc:creator><![CDATA[Sylvia]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2017 15:20:19 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-77487</guid>
+		<description><![CDATA[Finally I figured out my mistake. You need to install Node and Grunt to your /usr/local/bin directory. Here are my install procedures in case it helps somebody else.
+
+Note: sudo is just required on MACs
+
+Node.js Installation
+Go to https://nodejs.org/en/
+Download and install the “Download for most users”
+It will save to the downloads folder on your MAC
+Install: Click on the node…pkg
+Say yes to all questions
+You should receive this message:
+
+	“ npm was installed at 
+  	 /usr/local/bin/npm
+	Make sure that /usr/local/bin is in your $PATH. “
+
+To confirm Node.js installation
+Terminal type: sylviamcconnell$ sudo cd  /usr/local/bin/
+then type: sylviamcconnell$ node --version
+Confirmation with version: /usr/local/bin/node v6.11.2
+
+
+Grunt Installation
+Terminal type- sylviamcconnell$ sudo cd /usr/local/bin
+install type: sylviamcconnell$ sudo npm install -g grunt-cli
+to confirm install type: sylviamcconnell$ sudo grunt --version
+Confirmation with version: grunt-cli v1.2.0]]></description>
+		<content:encoded><![CDATA[<p>Finally I figured out my mistake. You need to install Node and Grunt to your /usr/local/bin directory. Here are my install procedures in case it helps somebody else.</p>
+<p>Note: sudo is just required on MACs</p>
+<p>Node.js Installation<br />
+Go to <a href="https://nodejs.org/en/" rel="nofollow">https://nodejs.org/en/</a><br />
+Download and install the “Download for most users”<br />
+It will save to the downloads folder on your MAC<br />
+Install: Click on the node…pkg<br />
+Say yes to all questions<br />
+You should receive this message:</p>
+<p>	“ npm was installed at<br />
+  	 /usr/local/bin/npm<br />
+	Make sure that /usr/local/bin is in your $PATH. “</p>
+<p>To confirm Node.js installation<br />
+Terminal type: sylviamcconnell$ sudo cd  /usr/local/bin/<br />
+then type: sylviamcconnell$ node &#8211;version<br />
+Confirmation with version: /usr/local/bin/node v6.11.2</p>
+<p>Grunt Installation<br />
+Terminal type- sylviamcconnell$ sudo cd /usr/local/bin<br />
+install type: sylviamcconnell$ sudo npm install -g grunt-cli<br />
+to confirm install type: sylviamcconnell$ sudo grunt &#8211;version<br />
+Confirmation with version: grunt-cli v1.2.0</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sylvia</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-77465</link>
+		<dc:creator><![CDATA[Sylvia]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2017 05:27:50 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-77465</guid>
+		<description><![CDATA[I am trying to install on a mac. I get to this line.
+sudo npm install grunt-cli -g
+&quot;This will put the grunt command in your system path, allowing it to be run from any directory.&quot;
+
+Where is this file supposed to be installed? I have tried many locations and none of them have worked.
+
+I am getting this message after I install do I need to change a path somewhere?
+/usr/local/bin/grunt -&#062; /usr/local/lib/node_modules/grunt-cli/bin/grunt
++ grunt-cli@1.2.0
+
+Thank you for your help!]]></description>
+		<content:encoded><![CDATA[<p>I am trying to install on a mac. I get to this line.<br />
+sudo npm install grunt-cli -g<br />
+&#8220;This will put the grunt command in your system path, allowing it to be run from any directory.&#8221;</p>
+<p>Where is this file supposed to be installed? I have tried many locations and none of them have worked.</p>
+<p>I am getting this message after I install do I need to change a path somewhere?<br />
+/usr/local/bin/grunt -&gt; /usr/local/lib/node_modules/grunt-cli/bin/grunt<br />
++ grunt-cli@1.2.0</p>
+<p>Thank you for your help!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sylvia</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-77464</link>
+		<dc:creator><![CDATA[Sylvia]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2017 05:25:59 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-77464</guid>
+		<description><![CDATA[I am trying to install on a mac. I get to this line.
+sudo npm install grunt-cli -g
+&quot;This will put the grunt command in your system path, allowing it to be run from any directory.&quot;
+
+Where is this file supposed to be installed? I have tried many locations and none of them have worked.
+
+I am getting this message after I install /usr/local/bin/grunt -&#062; /usr/local/lib/node_modules/grunt-cli/bin/grunt
++ grunt-cli@1.2.0
+
+Thank you for your help!]]></description>
+		<content:encoded><![CDATA[<p>I am trying to install on a mac. I get to this line.<br />
+sudo npm install grunt-cli -g<br />
+&#8220;This will put the grunt command in your system path, allowing it to be run from any directory.&#8221;</p>
+<p>Where is this file supposed to be installed? I have tried many locations and none of them have worked.</p>
+<p>I am getting this message after I install /usr/local/bin/grunt -&gt; /usr/local/lib/node_modules/grunt-cli/bin/grunt<br />
++ grunt-cli@1.2.0</p>
+<p>Thank you for your help!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Εγκαταστήστε το Γρύλισμα JS σε ένα Mac – Φροντιστήριο &#8211; Moresky</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-61180</link>
+		<dc:creator><![CDATA[Εγκαταστήστε το Γρύλισμα JS σε ένα Mac – Φροντιστήριο &#8211; Moresky]]></dc:creator>
+		<pubDate>Mon, 16 May 2016 17:29:51 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-61180</guid>
+		<description><![CDATA[[&#8230;] Αρχικά στο https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] Αρχικά στο <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" rel="nofollow">https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/</a> [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Anusha</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-58605</link>
+		<dc:creator><![CDATA[Anusha]]></dc:creator>
+		<pubDate>Fri, 20 Nov 2015 05:50:18 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-58605</guid>
+		<description><![CDATA[Hi ,I want to minfy the code of my project  in mac (its working fyn in windows),
+I am getting the syntax error in  grunt.js file in the line where am giving the path to  the files 
+the file code is shown below
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON(&#039;package.json&#039;),
+    uglify: {
+      options: {
+        banner: &#039;/*!   */\n&#039;
+      },
+      build: {
+        src: [&#039;www/js/index.js&#039;],
+        dest: [&#039;www/js/index.min.js&#039;]
+		
+      }
+    }
+  });
+
+  // Load the plugin that provides the &quot;uglify&quot; task.
+  grunt.loadNpmTasks(&#039;grunt-contrib-uglify&#039;);
+
+  // Default task(s).
+  grunt.registerTask(&#039;default&#039;, [&#039;uglify&#039;]);
+
+};]]></description>
+		<content:encoded><![CDATA[<p>Hi ,I want to minfy the code of my project  in mac (its working fyn in windows),<br />
+I am getting the syntax error in  grunt.js file in the line where am giving the path to  the files<br />
+the file code is shown below<br />
+module.exports = function(grunt) {</p>
+<p>  // Project configuration.<br />
+  grunt.initConfig({<br />
+    pkg: grunt.file.readJSON(&#8216;package.json&#8217;),<br />
+    uglify: {<br />
+      options: {<br />
+        banner: &#8216;/*!   */\n&#8217;<br />
+      },<br />
+      build: {<br />
+        src: [&#8216;www/js/index.js&#8217;],<br />
+        dest: [&#8216;www/js/index.min.js&#8217;]</p>
+<p>      }<br />
+    }<br />
+  });</p>
+<p>  // Load the plugin that provides the &#8220;uglify&#8221; task.<br />
+  grunt.loadNpmTasks(&#8216;grunt-contrib-uglify&#8217;);</p>
+<p>  // Default task(s).<br />
+  grunt.registerTask(&#8216;default&#8217;, [&#8216;uglify&#8217;]);</p>
+<p>};</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jonathan Beech</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-27234</link>
+		<dc:creator><![CDATA[Jonathan Beech]]></dc:creator>
+		<pubDate>Thu, 10 Jul 2014 11:49:54 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-27234</guid>
+		<description><![CDATA[I was initially getting frustrated with having to add sudo along with the appropriate password whenever I attempted to do  an npm install which goes hand in hand with Grunt. However I found a good article on StackOverflow which helped me out a great deal. I&#039;m not a confident command line user yet however I was able to change the permissions using the following commands:
+
+sudo chown -R `whoami` ~/.npm
+
+This basically changes recursively the ownership of the folder so that non root administrators dont need permission to access it.
+
+You may also need this
+
+sudo chown -R `whoami` /usr/local/lib/node_modules
+
+It stopped the pesky sudo need from getting in the way]]></description>
+		<content:encoded><![CDATA[<p>I was initially getting frustrated with having to add sudo along with the appropriate password whenever I attempted to do  an npm install which goes hand in hand with Grunt. However I found a good article on StackOverflow which helped me out a great deal. I&#8217;m not a confident command line user yet however I was able to change the permissions using the following commands:</p>
+<p>sudo chown -R `whoami` ~/.npm</p>
+<p>This basically changes recursively the ownership of the folder so that non root administrators dont need permission to access it.</p>
+<p>You may also need this</p>
+<p>sudo chown -R `whoami` /usr/local/lib/node_modules</p>
+<p>It stopped the pesky sudo need from getting in the way</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-21280</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Thu, 12 Dec 2013 15:42:39 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-21280</guid>
+		<description><![CDATA[Awesome. Thanks for the feedback.]]></description>
+		<content:encoded><![CDATA[<p>Awesome. Thanks for the feedback.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: John</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-21279</link>
+		<dc:creator><![CDATA[John]]></dc:creator>
+		<pubDate>Thu, 12 Dec 2013 14:03:05 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-21279</guid>
+		<description><![CDATA[Thanks for this!  I spent a whole day trying to make sense of using grunt to concatenate and minify my .js and .css files.  I was about to give up and ran across this.    I now understand and it finally makes sense now.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for this!  I spent a whole day trying to make sense of using grunt to concatenate and minify my .js and .css files.  I was about to give up and ran across this.    I now understand and it finally makes sense now.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-16016</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Tue, 25 Jun 2013 04:02:20 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-16016</guid>
+		<description><![CDATA[Thanks for the feedback. In my &lt;a href=&quot;https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/&quot; title=&quot;Install Grunt JS on Windows – Tutorial&quot; rel=&quot;nofollow&quot;&gt;Install Grunt JS on Windows Tutorial&lt;/a&gt; I am able to just type &quot;grunt&quot; to run my task(s).]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the feedback. In my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial" rel="nofollow">Install Grunt JS on Windows Tutorial</a> I am able to just type &#8220;grunt&#8221; to run my task(s).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Rob</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-16010</link>
+		<dc:creator><![CDATA[Rob]]></dc:creator>
+		<pubDate>Tue, 25 Jun 2013 02:58:34 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-16010</guid>
+		<description><![CDATA[Great tutorial, also note that on windows you will need to install the grunt-cli and execute grunt using grunt.cmd
+
+$ npm install -g grunt-cli
+$ grunt.cmd]]></description>
+		<content:encoded><![CDATA[<p>Great tutorial, also note that on windows you will need to install the grunt-cli and execute grunt using grunt.cmd</p>
+<p>$ npm install -g grunt-cli<br />
+$ grunt.cmd</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ben B</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comment-13628</link>
+		<dc:creator><![CDATA[Ben B]]></dc:creator>
+		<pubDate>Wed, 20 Mar 2013 06:01:04 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871#comment-13628</guid>
+		<description><![CDATA[Awesome you made my day thanks!]]></description>
+		<content:encoded><![CDATA[<p>Awesome you made my day thanks!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

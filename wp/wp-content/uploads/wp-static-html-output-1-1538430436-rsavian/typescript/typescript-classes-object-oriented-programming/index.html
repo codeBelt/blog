@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>TypeScript Classes &#038; Object-Oriented Programming &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/contents/ui/theme/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/contents/ui/theme/ie6.css" media="screen"/>
+    <![endif]-->
+    
+    
+
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/front.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/chosen.jquery.min.js'></script>
+
+
+
+
+
+
+
+
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/contents/ui/theme/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>TypeScript Classes &#038; Object-Oriented Programming</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/typescript/" rel="category tag">TypeScript</a></p>
+
+				
+
+										
+
+					
+
+					<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>Full credit for this article goes to <a href="http://peterelst.com/">Peter Elst</a>. I took a really old article of his and modified it to talk about TypeScript.</p>
+<h2>What is OOP</h2>
+<p>In object-oriented programming, developers often use the term &#8220;architecting an application.&#8221; This analogy is not far off the mark. You can approach any project as if you are its architect, and use object-oriented principles as building blocks to structure your code. As you develop your application, you can think of your code modules as the blueprints that form the foundation of your applications. Just as you can use one blueprint repeatedly to build similar structures, you can repurpose your code as needed to achieve your desired functionality.</p>
+<p>The concept of classes is at the heart of all object-oriented code development. If you&#8217;re not already familiar with object-oriented programming (OOP), this article will get you started writing TypeScript classes. Writing classes has never been easier than with TypeScript. If you are new to working with TypeScript, you&#8217;ll find that writing classes allows you to create projects that are easier to manage and maintain.</p>
+<p>The concepts covered in this article will help you begin writing more portable, reusable code and move beyond the world of procedural code.</p>
+<h2>What are classes?</h2>
+<p>Classes are nothing more than a collection of functions (<em>called methods in this context</em>) that provide a blueprint for any number of instances that are created from it. By changing some variables (or in OOP terminology, properties) of a class instance, or by passing different values as arguments to its methods, the same underlying class can have widely different outcomes.</p>
+<p>The ability to generate multiple instances (that can appear and behave differently) from the same object is one of the reasons why classes are so powerful. Writing TypeScript classes promotes reusability because the functionality you create can be repurposed.</p>
+<p>Let&#8217;s see how this looks in code:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+class Brick {
+
+    public color: string = 'red';
+
+    constructor() {
+        console.log(`new ${this.color} brick created`);
+    }
+}
+
+export default Brick;
+</pre>
+<p>The Brick.ts class code above illustrates one of the most basic implementations of an TypeScript class. The class holds just a single method and property.</p>
+<p>To use this class in another TypeScript we will need to import it and instantiate the class.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import Brick from './somepath/Brick';
+
+const firstBrick: Brick = new Brick();
+</pre>
+<p>If you run the compiled TypeScript code which is JavaScript, you&#8217;ll see that the Console panel now displays &#8220;new red brick created&#8221; (see Figure 1).</p>
+<p><a href="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure1.png"><img src="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure1.png" alt="figure1" width="625" height="152" class="alignnone size-full wp-image-1579" srcset="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure1.png 625w, https://codebelt.github.io/blog/wp/contents/data/2014/05/figure1-300x72.png 300w" sizes="(max-width: 625px) 100vw, 625px" /></a><br />
+<em>Figure 1. Console panel of Brick class getting instantiated</em></p>
+<p>The console message in the Console panel means that your TypeScript class is functioning correctly. Now it is time to start doing some more advanced things with classes.</p>
+<h2>Basic OOP concepts: Inheritance vs. composition</h2>
+<p>There are just a handful of concepts at the core of OOP. This article covers the most important ones: inheritance, encapsulation, and polymorphism. I also discuss a few related topics to help you put these ideas into context.</p>
+<p>Without a doubt, <em>inheritance</em> is the most well-known principle of OOP. Inheritance can be defined as the ability to inherit properties and methods and extend the functionality of an existing class in a new one.</p>
+<p>If you&#8217;re thinking ahead, you might imagine creating a new &#8220;Wall&#8221; class that extends the &#8220;Brick&#8221; class you created earlier. However, that is not how inheritance works.</p>
+<p>Looking at the relationship between a brick and a wall, the best way to code this is not through inheritance but rather by a concept called <em>composition</em>.</p>
+<p>A simple rule of thumb determines whether the relationship between classes is one that warrants inheritance or composition. If you can say class A &#8220;is a&#8221; class B, you&#8217;re dealing with inheritance. If you can say class A &#8220;has a&#8221; class B, the relationship is one of composition.</p>
+<p>Here are some examples of inheritance:</p>
+<ul>
+<li>Cat &#8220;is an&#8221; animal</li>
+<li>Engineer &#8220;is an&#8221; employee</li>
+<li>Rugby &#8220;is a&#8221; sport</li>
+</ul>
+<p>Here are examples of composition:</p>
+<ul>
+<li>Wall &#8220;has a&#8221; brick</li>
+<li>Computer &#8220;has a&#8221; keyboard</li>
+<li>School &#8220;has a&#8221; teacher</li>
+</ul>
+<p>So what is the difference in how inheritance and composition are implemented? Let&#8217;s compare how this works, starting with inheritance:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+class Animal {
+
+    public furry: boolean;
+    public domestic: boolean;
+
+    constructor() {
+        console.log('new animal created');
+    }
+
+}
+
+export default Animal;
+</pre>
+<p>The Animal.ts class code above is the base Animal class, which you will now extend using inheritance with a Cat class:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import Animal from './somepath/Animal';
+
+class Cat extends Animal {
+
+    public family: string;
+
+    constructor() {
+        super();
+
+        this.furry = true;
+        this.domestic = true;
+        this.family = 'feline';
+    }
+}
+
+export default Cat;
+</pre>
+<p>If you look at the Cat.ts class, the constructor assigns values to three different properties. On close inspection, only one of these properties (family) is defined in the Cat class. The other properties (furry and domestic) come from the Animal base class.</p>
+<p>While this not exactly the most practical example, you can see how class inheritance allows you to build upon existing functionality to create a new blueprint for you to start using as you develop your project.</p>
+<p>Now if you wanted to create half a dozen cats, you could simply do this by instantiating the Cat class, which has all the properties already set up, rather than using the generic Animal class and having to define the properties again and again for each instance.</p>
+<p>Currently in TypeScript there is no override keyword to override a method defined in the class that you extended. You just create a new method with the same name to override the one in the class you extended.</p>
+<p>On the other hand, composition doesn&#8217;t have any formal syntax like the extends keyword. Composition simply instantiates its own instance of any class it wants to use.</p>
+<p>Let&#8217;s take the Brick class created earlier. In this next example you&#8217;ll create a Wall class that uses composition to instantiate instances of the Brick class:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import Brick from './somepath/Brick';
+
+export class Wall {
+
+    public wallWidth: number = 0;
+    public wallHeight: number = 0;
+
+    constructor(w: number, h: number) {
+        this.wallWidth = w;
+        this.wallHeight = h;
+        this.build();
+    }
+
+    public build(): void {
+        for (var i: number = 0; i &lt; this.wallHeight; i++) {
+            for (var j: number = 0; j &lt; this.wallWidth; j++) {
+                var brick: Brick = new Brick();
+            }
+        }
+    }
+}
+
+export default Wall;
+</pre>
+<p>In the code above, the Wall.ts class accepts two arguments passed to its constructor, defining the width and height in bricks of the wall you want to create.</p>
+<p>Let&#8217;s do a quick test of this class by instantiating it:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import Wall from './somepath/Wall';
+
+const myWall: Wall = new Wall(4, 4);
+</pre>
+<p>If you run the compiled TypeScript code which is JavaScript, you&#8217;ll see that 16 Brick instances are created with corresponding trace statements displayed in the Output panel to create a 4 x 4 wall (see Figure 2).</p>
+<p>Output panel of Wall class getting executed Figure 2. Output panel of Wall class getting executed Apart from the difference in class relationship between inheritance and composition (as I discussed earlier), composition has the advantage of being able to add functionality to another class at runtime. It allows you to have control over the creation and destruction of class instances, whereas with inheritance the relationship between the classes is fixed and defined at the time the code is compiled.</p>
+<p><a href="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure2.png"><img src="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure2.png" alt="figure2" width="625" height="152" class="alignnone size-full wp-image-1580" srcset="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure2.png 625w, https://codebelt.github.io/blog/wp/contents/data/2014/05/figure2-300x72.png 300w" sizes="(max-width: 625px) 100vw, 625px" /></a></p>
+<h2>Encapsulation</h2>
+<p>Now let&#8217;s move on to another important principle of OOP called <em>encapsulation</em>. The underlying concept of encapsulation deals with what methods and properties your class exposes to the outside world.</p>
+<p>Up until this point you&#8217;ve always set methods and properties as public, but is that really what you&#8217;d want to do?</p>
+<p>If you want your code to be stable, and if you want to develop projects that are least prone to bug and errors, you&#8217;ll want to restrict the ways in which other classes can interact with your code.</p>
+<p>The key here is to only have those methods and properties available that are required as settings for the class, and restrict access to the rest. Using this approach, you&#8217;ll have a limited number of places in your code to debug when something goes wrong in the interaction with your class.</p>
+<p>TypeScript includes the following keywords as access modifiers to methods and properties:</p>
+<dl>
+<dt>public</dt>
+<dd>allows access from anywhere</dd>
+<dt>private</dt>
+<dd>can only be accessed within its own class</dd>
+</dl>
+<p>The keyword below is current not in TypeScript but I do hope it is added soon:</p>
+<dl>
+<dt>protected</dt>
+<dd>can only be accessed within own class and subclasses</dd>
+</dl>
+<p>Let&#8217;s put this concept into practice. Take a look at the following example:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+export class Person {
+
+    private _age: number = 1;
+
+    constructor() {
+
+    }
+
+    public get age(): number {
+        return this._age;
+    }
+
+    public set age(val: number) {
+        if (this._age &gt; 0) {
+            this._age = val;
+        }
+    }
+
+}
+
+export default Person;
+</pre>
+<p>Note: TypeScript supports getter and setter methods but some older browsers do not support the compiled JavaScript code. To learn more check out my <a href="https://codebelt.github.io/blog/typescript/javascript-getters-setters-typescript-accessor-tutorial/" title="JavaScript/TypeScript Getters Setters with TypeScript Accessor Tutorial">TypeScript Getters Setters with TypeScript Accessor Tutorial</a>.</p>
+<p>The code example above shows a Person.ts class with a private property _age of a Number type. Even though you want to allow the age of the person to be set, you still opted not to use a public property here. Instead you are routing the age value through the use of a getter/setter method.</p>
+<p>Getter/setter methods (as implemented in the previous example) appear as if they are properties, but they behave like methods.</p>
+<p>When you set the age property, it calls the age setter method that assigns the value to the private _age property after validating it. In this case, you know that a person&#8217;s age can&#8217;t be a negative value.</p>
+<p>The major advantage of this approach is that every time the age property is set, validation occurs because the age value is always routed through the setter function.</p>
+<h2>Polymorphism</h2>
+<p>The final concept I cover in this article is <em>polymorphism</em>. The concept behind polymorphism is based on the idea of different classes implementing the same method names.</p>
+<p>Even though this is a very simple concept, polymorphism has some interesting implications. The first major advantage is that it allows classes to be interchangeable at runtime. There are no hard-coded references to specific method names for specific classes.</p>
+<p>For example, imagine you have a Teacher class and a Student class. You could implement a teach method for the teacher and a study method for the student, but polymorphism allows you to write the code so that the two classes both implement a work method. Although a Teacher and Student class will clearly have a different implementation of a work method (one teaches, the other studies), you can use a shared generic method name, creating a single interface through which they can be accessed:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+class Teacher {
+
+    public work(): void {
+        console.log('I am teaching');
+    }
+
+}
+
+export default Teacher;
+</pre>
+<pre class="brush: as3; title: ; notranslate" title="">
+class Student {
+
+    public work(): void {
+        console.log('I am studying');
+    }
+
+}
+
+export default Student;
+</pre>
+<p>Any class that gets passed an instance of either the Teacher.ts or Student.ts class does not need to do any type checking to determine whether it is dealing with a teacher or a student instance (or any other class implementing the same methods for that matter) but it can directly call the work method.</p>
+<p>You can enforce polymorphism between classes through the use of something called <em>interfaces</em>. These are similar to classes in that they define a set of methods, but interfaces are different than classes because they do not have an implementation. Interfaces simply define a &#8220;contract&#8221; of the methods a class needs to implement in order to be valid.</p>
+<p>Here&#8217;s an example of an interface called IWork:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+interface IWork {
+    work(): void;
+}
+
+export default IWork;
+</pre>
+<p>As you can see from the IWork.ts code above, an interface looks suspiciously like any other class. But there are a few differences. Most developers choose to name an interface name so that it begins with a capital I (a common naming convention for interfaces, although it is optional). Also, instead of a class keyword, interfaces use the interface keyword. Additionally, as you analyze the code, you&#8217;ll see that in the section where you would expect to see some code for the work method, only its method signature is defined.</p>
+<p>The interface above requires that any class that implements it must have a method called work that has a return type of void.</p>
+<p>Let&#8217;s see how the Teacher and Student class implement this interface:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import IWork from './somepath/IWork';
+
+class Teacher implements IWork {
+
+    public tenure: boolean;
+
+    constructor() {
+        this.tenure = true;
+    }
+
+    public work(): void {
+        console.log(&quot;I am teaching&quot;);
+    }
+
+}
+
+export default Teacher;
+</pre>
+<pre class="brush: as3; title: ; notranslate" title="">
+import IWork from './somepath/IWork';
+
+class Student implements IWork {
+
+    public averageGrade: number;
+
+    constructor() {
+        this.averageGrade = 4.07;
+    }
+
+    public work(): void {
+        console.log('I am studying');
+    }
+
+}
+
+export default Student;
+</pre>
+<p>That was easy. By simply adding the implements keyword, you now have set up both the Teacher.ts and Student.ts classes so that they are required to implement the work method. If you try removing or renaming the work method from either of the two classes, you&#8217;ll receive a compile-time error message.</p>
+<p>By having classes all implement a common interface, the interface can actually be used as a data type. Let&#8217;s look at the following example:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import IWork from './somepath/IWork';
+
+class Supervisor {
+
+    constructor(worker: IWork) {
+        worker.work();
+    }
+
+}
+
+export default Supervisor;
+</pre>
+<p>In the example above, you have a Supervisor.ts class that can be passed an instance of a class implementing the IWork interface. In this way, the interface is being used as a data type.</p>
+<p>The TypeScript compiler knows that any class instance implementing this IWork interface will have the work method defined. Therefore, it doesn&#8217;t complain about a possibly undefined method when the code is compiled.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import Supervisor from './somepath/Supervisor';
+import Teacher from './somepath/Teacher';
+import Student from './somepath/Student';
+
+const supervisor1: Supervisor = new Supervisor(new Teacher());
+const supervisor2: Supervisor = new Supervisor(new Student());
+</pre>
+<p>If you run the compiled TypeScript code which is JavaScript, you&#8217;ll see two lines appear in the Output panel. The first line displays &#8220;I&#8217;m teaching&#8221; and the second displays &#8220;I&#8217;m studying&#8221; (see Figure 3). These console.log statements are, of course, exactly what you&#8217;d expect by passing a new teacher and student instance to the Supervisor constructor.</p>
+<p><a href="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure3.png"><img src="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure3.png" alt="figure3" width="625" height="152" class="alignnone size-full wp-image-1578" srcset="https://codebelt.github.io/blog/wp/contents/data/2014/05/figure3.png 625w, https://codebelt.github.io/blog/wp/contents/data/2014/05/figure3-300x72.png 300w" sizes="(max-width: 625px) 100vw, 625px" /></a><br />
+Figure 3. Output panel of the Supervisor class using polymorphism</p>
+<h2>Type casting</h2>
+<p>That brings up the next question: What happens when you try to access class-specific methods or properties of Teacher or Student (other than the work method) that weren&#8217;t defined in the interface?</p>
+<p>The Supervisor class uses the IWork data type for any instance that is passed to its constructor so if you were to call any other method, the compiler has no way of knowing whether that is implemented. The compiler will report an error.</p>
+<p>You can work around this is by using something called type casting by converting the instance from this generic IWork data type back to the Teacher or Student instance.</p>
+<p>The way this is accomplished is by using the instanceof keyword and the &#8220;as&#8221; keyword to cast the object:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+import Teacher from './somepath/Teacher';
+import Student from './somepath/Student';
+import IWork from './somepath/IWork';
+
+export class Supervisor {
+
+    constructor(inst: IWork) {
+        inst.work();
+
+        if (inst instanceof Teacher) {
+            const teacher = inst as Teacher;
+            console.log('Has tenure:', teacher.tenure);
+        }
+
+        if (inst instanceof Student) {
+            const student = inst as Student;
+            console.log('Average grade is:', student.averageGrade);
+        }
+    }
+
+}
+
+export default Supervisor;
+</pre>
+<p>In the code above, the instanceof keyword checks whether the worker instance passed to the constructor is of the specific type Teacher or of the type Student.</p>
+<p>If it is a teacher instance, you are able to type cast the instance to that specific class by using &#8220;as&#8221; keyword, so you can access its specific methods and properties. In this case you could, for example, have a Boolean tenure property set in the Teacher class.</p>
+<p>The same holds true if we&#8217;re dealing with a student instance. If the is keyword confirms that you are working with a student, you can type cast the generic IWork instance to a student instance and access the averageGrade property.</p>
+<p>This is a very useful behavior. You can see how using polymorphism in this way benefits your projects when you have a collection of classes that need to accept any number of data types, as long as they implement a common interface. When you need to get into the specific method implementations of the class implementing the interface, type casting makes this possible.</p>
+<p>To check out an example of OOP and TypeScript check out an older post of mine <a href="https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/" title="Object Oriented Programming with TypeScript Tutorial (JavaScript OOP)">Object Oriented Programming with TypeScript Tutorial</a>.</p>
+<p>Files for this example can be found at: <a href="https://gist.github.com/codeBelt/65a82e76597f2fb6c2af" target="_blank">https://gist.github.com/codeBelt/65a82e76597f2fb6c2af</a> You can use the follow command to compile the example code:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+tsc TestApp.ts -out app.js
+</pre>
+<p>Original Article written by Peter Elst (<a href="http://www.adobe.com/devnet/archive/actionscript/articles/oop_as3.html">source</a>)</p>
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/#comments" class="comments">Comments (2)</a> |		
+
+						<span class="date">May 31st, 2014</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">2 Responses to &#8220;TypeScript Classes &#038; Object-Oriented Programming&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-58972">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/9bd3af3a2e044d5baf054b65d271ec81?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9bd3af3a2e044d5baf054b65d271ec81?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+gabriel Says: <br />				
+<span class="comment-data"><a href="#comment-58972" title="">December 3, 2015 at 12:25 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>As a guy that has worked with javascript but is now required to work in an object oriented way (which i&#8217;ve never done), this couldn&#8217;t be more helpful, thanks. Only doubts that remained are:</p>
+<p>If <code>public work():void {(something)}</code> means that the function is expected to return nothing, then if I expect it to return a string for instance, would I write <code>public work():string {(something)}</code></p>
+<p>And, what&#8217;s the meaning of the &#8216;super()&#8217; keyword you used in the constructor of the cat class?</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/?replytocom=58972#respond' onclick='return addComment.moveForm( "comment-58972", "58972", "respond", "1561" )' aria-label='Reply to gabriel'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-59003">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/contents/data/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-59003" title="">December 6, 2015 at 1:29 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>The example below doesn&#8217;t retrun anything. Notice that there is no &#8216;return&#8217; keyword at the bottom of the method.<br />
+<code><br />
+public work():void {<br />
+    // This method doesn't return anything.<br />
+}<br />
+</code></p>
+<p>Notice that there is a &#8216;return&#8217; keyword at the bottom of the method. That is how you tell the method to return something.<br />
+<code><br />
+public work():string {<br />
+    var str = 'This is the string you are returning';<br />
+    return str;<br />
+}<br />
+</code></p>
+<p><strong>super()</strong> is only need in the constructor when you <strong>extend</strong> another class. <strong>Cat extends Animal</strong> Basically this is calling the constructor of the Animal class so that your Cat class inherits all the functionality from the Animal class.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/?replytocom=59003#respond' onclick='return addComment.moveForm( "comment-59003", "59003", "respond", "1561" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='1561' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4ac05579ba" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="205"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/contents/data/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2018 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/akismet/_inc/form.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.form.min.js'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

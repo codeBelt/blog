@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>Generate Documentation for TypeScript &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/contents/ui/theme/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/contents/ui/theme/ie6.css" media="screen"/>
+    <![endif]-->
+    
+    
+
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/front.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/chosen.jquery.min.js'></script>
+
+
+
+
+
+
+
+
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/contents/ui/theme/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>Generate Documentation for TypeScript</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/typescript/" rel="category tag">TypeScript</a></p>
+
+				
+
+										
+
+					
+
+					<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>In this TypeScript tutorial I will go over how to generate code documents from your TypeScript files. We will be using YUIDoc&#8217;s and GruntJS.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Example-TypeScript-Generate-Documentation" target="_blank">https://github.com/codeBelt/Example-TypeScript-Generate-Documentation</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Package File</h2>
+<p>Lets look how I setup the <strong>package.json</strong> file in the <strong>_build</strong> folder. This file will install Grunt and Grunt plugins locally for our project. All we have to do to install grunt and the YUIDoc plugin is type <strong>npm install</strong> in Terminal or the Command Prompt when inside the <strong>_build</strong> folder.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+{
+    &quot;name&quot;: &quot;TypeScript-Generate-Documentation&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;Create documentation from TypeScript files&quot;,
+    &quot;url&quot;: &quot;https://codebelt.github.io/blog&quot;,
+    &quot;developedBy&quot;: &quot;codeBelt&quot;,
+
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;*&quot;
+    }
+}
+</pre>
+<h2>Grunt File</h2>
+<p>Below is our Grunt file.You can add more plugins when you need but if you look we have only one <strong>&#8216;yuidoc&#8217;</strong>. One thing you need to do is set the <strong>extension</strong> option to <strong>&#8216;.ts&#8217;</strong>. The plugin will look for all files with the <strong>&#8216;.ts&#8217;</strong> extension and generate documentation from those TypeScript files.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        // This will load in our package.json file so we can have access
+        // to the project name and version number.
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Constants for the Gruntfile so we can easily change the path for
+        // our environments.
+        BASE_PATH: '../',
+        DEVELOPMENT_PATH: '../dev/',
+
+        // The YUIDoc plugin to generate documentation for code files.
+        yuidoc: {
+            compile: {
+                name: '&lt;%= pkg.name %&gt;',
+                description: '&lt;%= pkg.description %&gt;',
+                version: '&lt;%= pkg.version %&gt;',
+                url: '&lt;%= pkg.homepage %&gt;',
+                options: {
+                    extension: '.ts',                               // Default '.js' &lt;comma-separated list of file extensions&gt;
+                    paths: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'scripts/',
+                    outdir: '&lt;%= BASE_PATH %&gt;' + 'docs/'
+                }
+            }
+        }
+
+    });
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks('grunt-contrib-yuidoc');
+
+    // Default task.
+    grunt.registerTask('default', ['yuidoc']);
+
+};
+</pre>
+<p>Once you have your package.json and Gruntfile.js setup you can navigate with Terminal or the Command Prompt to the <strong>_build</strong> folder and type the command below to generate the TypeScript documentation:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+grunt
+</pre>
+<p>If you want to get a good overview of YUIDoc check out <a href="http://net.tutsplus.com/tutorials/javascript-ajax/documenting-javascript-with-yuidoc/" title="Documenting JavaScript with YUIDoc" target="_blank">Documenting JavaScript with YUIDoc</a>. You can also checkout the office <a href="http://yui.github.io/yuidoc/syntax/" title="YUIDoc Syntax Reference" target="_blank">YUIDoc Syntax Reference</a>.</p>
+<p>One thing I wanted to point out. You will see the tag below in the <strong>DisplayObject</strong> class. The <strong>@overridden</strong> is not a valid YUIDoc tag but I use it so I know what properties or methods Inherited the same comment blocks from other extended classes.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+@overridden EventDispatcher.CLASS_NAME
+</pre>
+<p>Here is the <strong>DisplayObject</strong> class example with YUIDoc comments. You can download the files above and checkout the other classes with YUIDoc comments.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='../events/EventDispatcher.ts'/&gt;
+
+/**
+ * The {{#crossLink &quot;DisplayObject&quot;}}{{/crossLink}} class is the base class for all objects that can be placed on the display list.
+ *
+ * @class DisplayObject
+ * @extends EventDispatcher
+ * @constructor
+ **/
+class DisplayObject extends EventDispatcher
+{
+    /**
+     * @overridden EventDispatcher.CLASS_NAME
+     */
+    public CLASS_NAME:string = 'DisplayObject';
+
+    /**
+     * The isEnabled property is used to keep track of the enabled start of the DisplayObject.
+     *
+     * @property isEnabled
+     * @type {boolean}
+     * @default false
+     * @protected
+     */
+    public isEnabled:boolean = false;
+
+    /**
+     * The isCreated property is used to keep track if it is the first time this DisplayObject is created.
+     *
+     * @property isCreated
+     * @type {boolean}
+     * @default false
+     * @protected
+     */
+    public isCreated:boolean = false;
+
+    /**
+     * Returns the number of children of this object.
+     *
+     * @property numChildren
+     * @type {init}
+     * @default 0
+     * @readonly
+     */
+    public numChildren:number = 0;
+
+    /**
+     * A reference to the child DisplayObject instances to this parent object instance.
+     *
+     * @property children
+     * @type {array}
+     * @readonly
+     */
+    public children:DisplayObject[] = [];
+
+    constructor()
+    {
+        super();
+    }
+
+    /**
+     * The createChildren function is intended to provide a consistent place for the creation and adding
+     * of children to the view. It will automatically be called the first time that the view is added
+     * to another DisplayObject. It is critical that all subclasses call the super for this function in
+     * their overridden methods.
+     *
+     * @method createChildren
+     * @override
+     * @public
+     */
+    public createChildren():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Adds a child DisplayObject instance to this parent object instance. The child is added to the front (top) of all other
+     * children in this parent object instance. (To add a child to a specific index position, use the addChildAt() method.)
+     *
+     * If you add a child object that already has a different parent, the object is removed from the child
+     * list of the other parent object.
+     *
+     * @method addChild
+     * @param child {DisplayObject} The DisplayObject instance to add as a child of this DisplayObjectContainer instance.
+     * @returns {DisplayObject} The DisplayObject instance that you pass in the child parameter.
+     */
+    public addChild(child:DisplayObject):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Removes the specified child object instance from the child list of the parent object instance.
+     * The parent property of the removed child is set to null , and the object is garbage collected if no other references
+     * to the child exist. The index positions of any objects above the child in the parent object are decreased by 1.
+     *
+     * @method removeChild
+     * @param child {DisplayObject} The DisplayObject instance to remove.
+     * @returns {DisplayObject} The DisplayObject instance that you pass in the child parameter.
+     * @public
+     */
+    public removeChild(child:DisplayObject):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Removes all child DisplayObject instances from the child list of the DisplayObjectContainer instance.
+     * The parent property of the removed children is set to null , and the objects are garbage collected if
+     * no other references to the children exist.
+     *
+     * @method removeChildren
+     * @returns {DisplayObject}
+     */
+    public removeChildren():DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Adds a child DisplayObject instance to this DisplayObjectContainer instance.
+     * The child is added at the index position specified. An index of 0 represents the back
+     * (bottom) of the display list for this DisplayObjectContainer object.
+     *
+     * @method addChildAt
+     * @param child {DisplayObject} The DisplayObject instance to add as a child of this object instance.
+     * @param index {int} The index position to which the child is added. If you specify a currently occupied index position, the child object that exists at that position and all higher positions are moved up one position in the child list.
+     * @returns {DisplayObject} The DisplayObject instance that you pass in the child parameter.
+     */
+    public addChildAt(child:DisplayObject, index:number):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Returns the child display object instance that exists at the specified index.
+     *
+     * @param index {int} The index position of the child object.
+     * @returns {DisplayObject} The child display object at the specified index position.
+     */
+    public getChildAt(index:number):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The enable method is responsible for enabling all event listeners and enabling children of the view.
+     *
+     * @method enable
+     * @public
+     */
+    public enable():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The disable method is responsible for disabling all event listeners and disabling children of the view.
+     *
+     * @method disable
+     * @public
+     */
+    public disable():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The layoutComponent method provides a common function to handle updating child objects.
+     *
+     * @method layoutChildren
+     */
+    public layoutChildren():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The purpose of the destroy method is to make an object ready for garbage collection. This
+     * should be thought of as a one way function. Once destroy is called no further methods should be
+     * called on the object or properties accessed. It is the responsibility of those who implement this
+     * function to stop all running Timers, all running Sounds, remove any event
+     * listeners and take any other steps necessary to make an object eligible for garbage collection.
+     * It is critical that all subclasses call the super for this function in their overridden methods.
+     *
+     * @method destroy
+     */
+    public destroy():void
+    {
+        // JavaScript Code ...
+    }
+
+}
+</pre>
+<p>Leave me a comment, I love comments.</p>
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/#comments" class="comments">Comments (3)</a> |		
+
+						<span class="date">July 17th, 2013</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">3 Responses to &#8220;Generate Documentation for TypeScript&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-22143">
+
+<div class="comment-info">			
+<img alt='' src='http://2.gravatar.com/avatar/eed9eac7857a0863ceb0b0562d20ba98?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/eed9eac7857a0863ceb0b0562d20ba98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Matthew Says: <br />				
+<span class="comment-data"><a href="#comment-22143" title="">January 23, 2014 at 5:46 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>No offense, but this isn&#8217;t a very good solution&#8230; </p>
+<p>/**<br />
+   * @property isEnabled<br />
+   * @type {boolean}<br />
+   * @default false<br />
+   * @protected<br />
+   */<br />
+  public isEnabled:boolean = false;</p>
+<p>The great thing about JSDoc for JavaScript is that it can take standard-looking, minimal comments and generate relatively useful documentation. If you have to basically rewrite every declaration into your doc comments, then you either can&#8217;t use refactoring tools or have to deal with the fact that your documentation is going to get out of date fast.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/?replytocom=22143#respond' onclick='return addComment.moveForm( "comment-22143", "22143", "respond", "1314" )' aria-label='Reply to Matthew'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-22164">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/contents/data/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-22164" title="">January 25, 2014 at 8:22 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Thanks for the feedback. If you can show me an better/easier way to generate documentation for TypeScript. I&#8217;m all ears.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/?replytocom=22164#respond' onclick='return addComment.moveForm( "comment-22164", "22164", "respond", "1314" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment even depth-3" id="comment-30509">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/3ca7cc5f0c4ae7962f3161184548303e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3ca7cc5f0c4ae7962f3161184548303e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Antonio Says: <br />				
+<span class="comment-data"><a href="#comment-30509" title="">October 1, 2014 at 6:03 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>He obviously doesn&#8217;t have solution other than the ability to bitch and moan.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/?replytocom=30509#respond' onclick='return addComment.moveForm( "comment-30509", "30509", "respond", "1314" )' aria-label='Reply to Antonio'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='1314' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="76111f10c9" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="46"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/contents/data/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2018 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/akismet/_inc/form.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.form.min.js'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

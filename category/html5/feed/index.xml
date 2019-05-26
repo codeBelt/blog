@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>html5 &#8211; codeBelt</title>
+	<atom:link href="https://codebelt.github.io/blog/category/html5/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Sun, 26 May 2019 04:51:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>HTML5 Basic Semantic Structure</title>
+		<link>https://codebelt.github.io/blog/html5/html5-basic-semantic-structure/</link>
+		<comments>https://codebelt.github.io/blog/html5/html5-basic-semantic-structure/#comments</comments>
+		<pubDate>Thu, 30 Dec 2010 15:17:50 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[html5]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=254</guid>
+		<description><![CDATA[This is a basic semantic structure of HTML5. HTML5 HTML5 CSS]]></description>
+				<content:encoded><![CDATA[<p>This is a basic semantic structure of HTML5.</p>
+<h2>HTML5</h2>
+<pre class="brush: xml; title: ; notranslate">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+    &lt;link href=&quot;styles/screen.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;header&gt;
+        &lt;/header&gt;
+        
+        &lt;main&gt;
+            &lt;aside&gt;
+                &lt;nav&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/aside&gt;
+    
+            &lt;article class=&quot;content&quot;&gt;
+            &lt;/article&gt;
+        &lt;/main&gt;
+        
+        &lt;footer&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;&lt;!-- END .wrapper --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><a href="http://www.expression-web-tutorial.com/Structural-Semantic-Elements.html"></p>
+<h2>HTML5 CSS</h2>
+<pre class="brush: css; title: ; notranslate">
+/*html5 display rule*/
+main, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/html5/html5-basic-semantic-structure/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

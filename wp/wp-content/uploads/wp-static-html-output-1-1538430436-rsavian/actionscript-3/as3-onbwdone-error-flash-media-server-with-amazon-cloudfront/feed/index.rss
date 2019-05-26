@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: AS3 onBWDone error Flash Media Server with Amazon CloudFront</title>
+	<atom:link href="https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: as3script</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/#comment-16586</link>
+		<dc:creator><![CDATA[as3script]]></dc:creator>
+		<pubDate>Thu, 18 Jul 2013 14:34:36 +0000</pubDate>
+		<guid isPermaLink="false">http://codebelt.com/?p=112#comment-16586</guid>
+		<description><![CDATA[Super solution. I love one liner solution. you saved me. Thanks :-)]]></description>
+		<content:encoded><![CDATA[<p>Super solution. I love one liner solution. you saved me. Thanks :-)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Murzilla</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/#comment-13101</link>
+		<dc:creator><![CDATA[Murzilla]]></dc:creator>
+		<pubDate>Fri, 22 Feb 2013 10:15:47 +0000</pubDate>
+		<guid isPermaLink="false">http://codebelt.com/?p=112#comment-13101</guid>
+		<description><![CDATA[Hi.
+You saved me a lot of time.
+Thanks.
+found this article by googling: &quot;onBWCheck not found&quot; red5]]></description>
+		<content:encoded><![CDATA[<p>Hi.<br />
+You saved me a lot of time.<br />
+Thanks.<br />
+found this article by googling: &#8220;onBWCheck not found&#8221; red5</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marc A</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/#comment-12275</link>
+		<dc:creator><![CDATA[Marc A]]></dc:creator>
+		<pubDate>Thu, 10 Jan 2013 11:49:53 +0000</pubDate>
+		<guid isPermaLink="false">http://codebelt.com/?p=112#comment-12275</guid>
+		<description><![CDATA[Thanks! This really helped me out :)]]></description>
+		<content:encoded><![CDATA[<p>Thanks! This really helped me out :)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: greg</title>
+		<link>https://codebelt.github.io/blog/actionscript-3/as3-onbwdone-error-flash-media-server-with-amazon-cloudfront/#comment-4966</link>
+		<dc:creator><![CDATA[greg]]></dc:creator>
+		<pubDate>Tue, 06 Sep 2011 16:34:38 +0000</pubDate>
+		<guid isPermaLink="false">http://codebelt.com/?p=112#comment-4966</guid>
+		<description><![CDATA[hi rob, your post was pole position in gloogle for &#039;flex fms Property onBWCheck not found&#039;, and is actually just what I was looking for. I&#039;m switching from a hosted fms enviro to local, and not at all familiar with the server-side scripts yet.
+
+Thanks and best,
+Greg]]></description>
+		<content:encoded><![CDATA[<p>hi rob, your post was pole position in gloogle for &#8216;flex fms Property onBWCheck not found&#8217;, and is actually just what I was looking for. I&#8217;m switching from a hosted fms enviro to local, and not at all familiar with the server-side scripts yet.</p>
+<p>Thanks and best,<br />
+Greg</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

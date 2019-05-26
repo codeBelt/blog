@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Internal and External Modules</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/#comment-23322</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 23 Mar 2014 04:46:07 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1528#comment-23322</guid>
+		<description><![CDATA[I would suggest getting &lt;a href=&quot;http://www.jetbrains.com/webstorm/&quot; title=&quot;WebStorm TypeScript&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;WebStorm&lt;/a&gt; or another product from &lt;a href=&quot;http://www.jetbrains.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;JetBrains&lt;/a&gt; to do your TypeScript development. WebStorm has great support for TypeScript but I mainly use GruntJS to do my TypeScript compiling.]]></description>
+		<content:encoded><![CDATA[<p>I would suggest getting <a href="http://www.jetbrains.com/webstorm/" title="WebStorm TypeScript" target="_blank" rel="nofollow">WebStorm</a> or another product from <a href="http://www.jetbrains.com/" target="_blank" rel="nofollow">JetBrains</a> to do your TypeScript development. WebStorm has great support for TypeScript but I mainly use GruntJS to do my TypeScript compiling.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Eric</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/#comment-23282</link>
+		<dc:creator><![CDATA[Eric]]></dc:creator>
+		<pubDate>Fri, 21 Mar 2014 17:58:41 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1528#comment-23282</guid>
+		<description><![CDATA[It&#039;s an IDE error I get, and I am using Eclipse with the Palantir TS plugin. This &quot;double-naming&quot; of the external-module/class is irritating for me too, but it seems like I am stuck with it if I stay in Eclipse.
+
+I am reading your guide now and it&#039;s informative. I decided to dive into TypeScript and learn as I go, but this guide is definitely worth a read. Thanks!]]></description>
+		<content:encoded><![CDATA[<p>It&#8217;s an IDE error I get, and I am using Eclipse with the Palantir TS plugin. This &#8220;double-naming&#8221; of the external-module/class is irritating for me too, but it seems like I am stuck with it if I stay in Eclipse.</p>
+<p>I am reading your guide now and it&#8217;s informative. I decided to dive into TypeScript and learn as I go, but this guide is definitely worth a read. Thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/#comment-23246</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Thu, 20 Mar 2014 03:40:19 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1528#comment-23246</guid>
+		<description><![CDATA[Eric you can checkout my example code here: &lt;a href=&quot;https://github.com/codeBelt/TypeScript-AMD-Boilerplate&quot; title=&quot;TypeScript AMD Boilerplate&quot; rel=&quot;nofollow&quot;&gt;https://github.com/codeBelt/TypeScript-AMD-Boilerplate&lt;/a&gt;. I am using TypeScript 0.9.7 but using GruntJS to do all my compiling.
+
+If you navigate to my &#039;src/assets/scripts/AppBootstrap.ts&#039; and type &lt;strong&gt;&lt;em&gt;tsc --module amd AppBootstrap.ts&lt;/em&gt;&lt;/strong&gt; you can see how my classes compile with no errors.
+
+I&#039;ve tried the &quot;export class MyClass {…}&quot; syntax before but the output is not what I want because you need to create a class like: new MyClass.MyClass(); . Check out &lt;a href=&quot;http://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/&quot; title=&quot;definitive-guide to typescript&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;definitive guide to typescript&lt;/a&gt; for more detailed information.]]></description>
+		<content:encoded><![CDATA[<p>Eric you can checkout my example code here: <a href="https://github.com/codeBelt/TypeScript-AMD-Boilerplate" title="TypeScript AMD Boilerplate" rel="nofollow">https://github.com/codeBelt/TypeScript-AMD-Boilerplate</a>. I am using TypeScript 0.9.7 but using GruntJS to do all my compiling.</p>
+<p>If you navigate to my &#8216;src/assets/scripts/AppBootstrap.ts&#8217; and type <strong><em>tsc &#8211;module amd AppBootstrap.ts</em></strong> you can see how my classes compile with no errors.</p>
+<p>I&#8217;ve tried the &#8220;export class MyClass {…}&#8221; syntax before but the output is not what I want because you need to create a class like: new MyClass.MyClass(); . Check out <a href="http://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/" title="definitive-guide to typescript" target="_blank" rel="nofollow">definitive guide to typescript</a> for more detailed information.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Eric</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/#comment-23242</link>
+		<dc:creator><![CDATA[Eric]]></dc:creator>
+		<pubDate>Wed, 19 Mar 2014 22:50:59 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1528#comment-23242</guid>
+		<description><![CDATA[Hi Robert. I just tried this in my project, and I get syntax errors when I add the final export line. My class is not in a module.
+
+On the other hand, I just tried using export like &quot;export class MyClass {...}&quot; and I got no syntax error.
+
+Does the above approach work for you? What version of TypeScript are you working with?]]></description>
+		<content:encoded><![CDATA[<p>Hi Robert. I just tried this in my project, and I get syntax errors when I add the final export line. My class is not in a module.</p>
+<p>On the other hand, I just tried using export like &#8220;export class MyClass {&#8230;}&#8221; and I got no syntax error.</p>
+<p>Does the above approach work for you? What version of TypeScript are you working with?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

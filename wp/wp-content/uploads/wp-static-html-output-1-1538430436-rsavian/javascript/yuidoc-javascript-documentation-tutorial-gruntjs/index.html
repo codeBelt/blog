@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>YUIDoc JavaScript Documentation Tutorial GruntJS &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/contents/ui/theme/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/contents/ui/theme/ie6.css" media="screen"/>
+    <![endif]-->
+    
+    
+
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/front.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/chosen.jquery.min.js'></script>
+
+
+
+
+
+
+
+
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/contents/ui/theme/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>YUIDoc JavaScript Documentation Tutorial GruntJS</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/javascript/" rel="category tag">JavaScript</a></p>
+
+				
+
+										
+
+					
+
+					<p>Wow, I am totally impressed with <a href="http://yui.github.io/yuidoc/" title="YUIDoc" "target="_blank">YUIDoc</a> and <a href="http://gruntjs.com/" title="GruntJS" target="_blank">GruntJS</a> for getting me generating JavaScript docs within 5 minutes. Plus the default template/theme is pretty nice but I am still going to see if I can get the <a href="http://api.greensock.com/js/" title="GreenSock JavaScript API Docs" target="_blank">GreenSock JavaScript API Docs</a> look.</p>
+<p>In this YUIDoc JavaScript Documentation Tutorial I will be using the <a href="https://github.com/gruntjs/grunt-contrib-yuidoc" title="Grunt YUIDoc Plugin" target="_blank">GruntJS YUIDoc Plugin</a> to generate the JavaScript Docs.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<p>Now <strong>download the example files below</strong> and navigate with Terminal or the Command Prompt to the &#8220;_build&#8221; folder and type in:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+npm install
+</pre>
+<p>On a Mac you may need to type:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+sudo npm install
+</pre>
+<p>Basically what &#8220;npm install&#8221; is doing is looking for a &#8220;package.json&#8221; file and checks the &#8220;devDependencies&#8221;. NodeJS will download and install the necessary files for your GruntJS setup. Here is our package file:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+{
+    &quot;name&quot;: &quot;YUI-Docs&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;This is the description.&quot;,
+    &quot;url&quot;: &quot;http://www.test.com&quot;,
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;*&quot;
+    }
+}
+</pre>
+<p>Luckily <a href="http://www.createjs.com/#!/EaselJS" title="EaselJS" target="_blank">EaselJS</a> uses YUIDoc and I could run a test with JavaScript classes already committed. Below is how the Gruntfile is setup.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+// Metadata.
+meta: {
+    basePath: '../',
+    srcPath: '../easeljs/',
+    docsPath: '../docs/',
+    deployPath: '../deploy/'
+},
+
+// Task configuration.
+yuidoc: {
+    compile: {
+        name: '&lt;%= pkg.name %&gt;',
+        description: '&lt;%= pkg.description %&gt;',
+        version: '&lt;%= pkg.version %&gt;',
+        url: '&lt;%= pkg.homepage %&gt;',
+        options: {
+            paths: '&lt;%= meta.srcPath %&gt;',
+            outdir: '&lt;%= meta.docsPath %&gt;',
+            themedir: '',
+            exclude: ''
+        }
+    }
+}
+</pre>
+<p>Now all we have to do is type the command below and it will generate the JavaScript documents for us.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+grunt yuidoc
+</pre>
+<p>If you want to get a good overview of YUIDoc check out <a href="http://net.tutsplus.com/tutorials/javascript-ajax/documenting-javascript-with-yuidoc/" title="Documenting JavaScript with YUIDoc" target="_blank">Documenting JavaScript with YUIDoc</a>. Also it seems YUIDoc is not just for JavaScript Documenting before all languages.</p>
+<p><br />
+Download the examples files to see the outputted docs.</p>
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#comments" class="comments">Comments (3)</a> |		
+
+						<span class="date">May 15th, 2013</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">3 Responses to &#8220;YUIDoc JavaScript Documentation Tutorial GruntJS&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-18152">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/99dbbc7d0edf2dc6f9d4b4ca9b88a0bf?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/99dbbc7d0edf2dc6f9d4b4ca9b88a0bf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+haya Says: <br />				
+<span class="comment-data"><a href="#comment-18152" title="">September 5, 2013 at 9:29 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Hi thank you for the great tutorial that I&#8217;ve never seen before .. </p>
+<p>I have followed all the steps but I faced an error at the last step ! </p>
+<p>see the following pic please : </p>
+<p><a href="http://s13.postimg.org/x4x01ogef/error.png" rel="nofollow">http://s13.postimg.org/x4x01ogef/error.png</a></p>
+<p>Can you advice me please ?</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/?replytocom=18152#respond' onclick='return addComment.moveForm( "comment-18152", "18152", "respond", "1118" )' aria-label='Reply to haya'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment odd alt depth-2" id="comment-18164">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/99dbbc7d0edf2dc6f9d4b4ca9b88a0bf?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/99dbbc7d0edf2dc6f9d4b4ca9b88a0bf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+haya Says: <br />				
+<span class="comment-data"><a href="#comment-18164" title="">September 5, 2013 at 4:11 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>I did it .. :)</p>
+<p>the only problem was in the Gruntfile :) I changed the source path and know everything is ok :) </p>
+<p>Thanks a lot once again for the best tutorial in YUIDoc &#8230;&#8230;&#8230;</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/?replytocom=18164#respond' onclick='return addComment.moveForm( "comment-18164", "18164", "respond", "1118" )' aria-label='Reply to haya'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="pingback even thread-odd thread-alt depth-1" id="comment-26051">
+
+<div class="comment-info">			
+				
+								<cite>										
+<a href='http://www.zuojj.com/archives/422.html' rel='external nofollow' class='url'>Grunt系列(三)——自动生成API文档(yuidoc) | Benjamin</a> Says: <br />				
+<span class="comment-data"><a href="#comment-26051" title="">June 3, 2014 at 1:04 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>[&#8230;] <a href="https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/" rel="nofollow">https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/</a> [&#8230;]</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/?replytocom=26051#respond' onclick='return addComment.moveForm( "comment-26051", "26051", "respond", "1118" )' aria-label='Reply to Grunt系列(三)——自动生成API文档(yuidoc) | Benjamin'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='1118' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="85f89a1ad6" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="15"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/contents/data/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2018 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/akismet/_inc/form.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.form.min.js'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Precompiling JavaScript Underscore Templates</title>
+	<atom:link href="https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Wilo</title>
+		<link>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/#comment-56128</link>
+		<dc:creator><![CDATA[Wilo]]></dc:creator>
+		<pubDate>Thu, 23 Jul 2015 00:04:34 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1024#comment-56128</guid>
+		<description><![CDATA[This is very helpful, thank you -- can&#039;t find a link to the example files anywhere, though...?]]></description>
+		<content:encoded><![CDATA[<p>This is very helpful, thank you &#8212; can&#8217;t find a link to the example files anywhere, though&#8230;?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Echo</title>
+		<link>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/#comment-52965</link>
+		<dc:creator><![CDATA[Echo]]></dc:creator>
+		<pubDate>Sat, 25 Apr 2015 09:34:57 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1024#comment-52965</guid>
+		<description><![CDATA[Is this reprinted from somewhere? The text body keep saying &quot;download the example&quot; yet there is no download link provided]]></description>
+		<content:encoded><![CDATA[<p>Is this reprinted from somewhere? The text body keep saying &#8220;download the example&#8221; yet there is no download link provided</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Deepak Gupta</title>
+		<link>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/#comment-16953</link>
+		<dc:creator><![CDATA[Deepak Gupta]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2013 18:19:04 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1024#comment-16953</guid>
+		<description><![CDATA[I just loved it. The best and the shortest way to learn grunt in general and also some of its plugins like concat and jst. Many thanks for sharing.]]></description>
+		<content:encoded><![CDATA[<p>I just loved it. The best and the shortest way to learn grunt in general and also some of its plugins like concat and jst. Many thanks for sharing.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

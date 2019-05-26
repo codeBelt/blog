@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript AMD with RequireJS Tutorial</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: Diwakar Singh</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comment-59432</link>
+		<dc:creator><![CDATA[Diwakar Singh]]></dc:creator>
+		<pubDate>Fri, 25 Dec 2015 11:55:33 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526#comment-59432</guid>
+		<description><![CDATA[I have an application with the same architecture as you showed here.
+The only thing that I am unable to achieve is how should I enable the intellisence in config file.
+
+I mean auto complete for the modules that I have loaded in main.js is not working.
+
+Please suggest how to enable auto-complete in main.js file.
+
+Thanks]]></description>
+		<content:encoded><![CDATA[<p>I have an application with the same architecture as you showed here.<br />
+The only thing that I am unable to achieve is how should I enable the intellisence in config file.</p>
+<p>I mean auto complete for the modules that I have loaded in main.js is not working.</p>
+<p>Please suggest how to enable auto-complete in main.js file.</p>
+<p>Thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: David</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comment-58488</link>
+		<dc:creator><![CDATA[David]]></dc:creator>
+		<pubDate>Tue, 10 Nov 2015 14:26:53 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526#comment-58488</guid>
+		<description><![CDATA[Actually it is of use! :) thanks for the tips. I was starting to go crazy with this]]></description>
+		<content:encoded><![CDATA[<p>Actually it is of use! :) thanks for the tips. I was starting to go crazy with this</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Bill</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comment-58030</link>
+		<dc:creator><![CDATA[Bill]]></dc:creator>
+		<pubDate>Wed, 14 Oct 2015 09:14:58 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526#comment-58030</guid>
+		<description><![CDATA[thanks for this. I retrofitted Typescript onto existing RequireJS install. Some learnings for other users who may be new to this like me:
+
+1) I didn&#039;t need to convert my existing requirejs config to typescript which was handy as it was in a separate shared location
+2) I mistakenly used &quot;import&quot; to try and load the existing requirejs modules. found it should only be used on typescript modules, stick with your existing require()
+3) to get intellisense working my require line now looks like:
+
+require[(&#039;jquery&#039;, &#039;toastr&#039;)], function($, toastr: Toastr) {....
+
+where Toastr is picking up the interface definition for that library from the declaration file.
+
+hope this is of use.]]></description>
+		<content:encoded><![CDATA[<p>thanks for this. I retrofitted Typescript onto existing RequireJS install. Some learnings for other users who may be new to this like me:</p>
+<p>1) I didn&#8217;t need to convert my existing requirejs config to typescript which was handy as it was in a separate shared location<br />
+2) I mistakenly used &#8220;import&#8221; to try and load the existing requirejs modules. found it should only be used on typescript modules, stick with your existing require()<br />
+3) to get intellisense working my require line now looks like:</p>
+<p>require[(&#8216;jquery&#8217;, &#8216;toastr&#8217;)], function($, toastr: Toastr) {&#8230;.</p>
+<p>where Toastr is picking up the interface definition for that library from the declaration file.</p>
+<p>hope this is of use.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: BundleConfig should be considered harmful for web applications &#124; &#124; Underwater Gorilla DomeUnderwater Gorilla Dome</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comment-28552</link>
+		<dc:creator><![CDATA[BundleConfig should be considered harmful for web applications &#124; &#124; Underwater Gorilla DomeUnderwater Gorilla Dome]]></dc:creator>
+		<pubDate>Sun, 24 Aug 2014 22:44:45 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526#comment-28552</guid>
+		<description><![CDATA[[&#8230;] so I won&#8217;t go in depth too much. Here are some good articles that google came back with: TypeScript AMD with RequireJS Tutorial, TypeScript: Organizing your code with AMD modules and require.js, The Definitive TypeScript [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] so I won&#8217;t go in depth too much. Here are some good articles that google came back with: TypeScript AMD with RequireJS Tutorial, TypeScript: Organizing your code with AMD modules and require.js, The Definitive TypeScript [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: JBrosi</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comment-24907</link>
+		<dc:creator><![CDATA[JBrosi]]></dc:creator>
+		<pubDate>Sun, 04 May 2014 10:00:40 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526#comment-24907</guid>
+		<description><![CDATA[Sorry, it kicked the tags in the comment-lines. The example should be:
+
+/// (reference path=&quot;../../lib.d/lodash.d.ts&quot; /)
+/// (amd-dependency path=&quot;lodash&quot; /)
+declare var require:(moduleId:string) =&#062; any;
+var _ :_.LoDashStatic = require(&#039;lodash&#039;);
+
+
+just replace the round brackets ( ) with the angle bracket-style.]]></description>
+		<content:encoded><![CDATA[<p>Sorry, it kicked the tags in the comment-lines. The example should be:</p>
+<p>/// (reference path=&#8221;../../lib.d/lodash.d.ts&#8221; /)<br />
+/// (amd-dependency path=&#8221;lodash&#8221; /)<br />
+declare var require:(moduleId:string) =&gt; any;<br />
+var _ :_.LoDashStatic = require(&#8216;lodash&#8217;);</p>
+<p>just replace the round brackets ( ) with the angle bracket-style.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: JBrosi</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comment-23327</link>
+		<dc:creator><![CDATA[JBrosi]]></dc:creator>
+		<pubDate>Sun, 23 Mar 2014 08:53:03 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526#comment-23327</guid>
+		<description><![CDATA[Thanks a lot!! I tried various ways in order to get my typescript work well with requirejs, tsc and full code-completion in PhpStorm but it never worked out.
+
+With your workaround using the custom require method it now all works together very well :). I just need to add the /// to the libs and to set the right type for the var in the require-line.
+
+Example for including lodash:
+
+/// 
+/// 
+declare var require:(moduleId:string) =&#062; any;
+var _ : _.LoDashStatic = require(&#039;lodash&#039;);
+
+Well its four lines of code for one library but all the other things i tried out either didn´t work in require, threw errors in tsc or the code-completion in phpstorm wouldn´t show up.]]></description>
+		<content:encoded><![CDATA[<p>Thanks a lot!! I tried various ways in order to get my typescript work well with requirejs, tsc and full code-completion in PhpStorm but it never worked out.</p>
+<p>With your workaround using the custom require method it now all works together very well :). I just need to add the /// to the libs and to set the right type for the var in the require-line.</p>
+<p>Example for including lodash:</p>
+<p>///<br />
+///<br />
+declare var require:(moduleId:string) =&gt; any;<br />
+var _ : _.LoDashStatic = require(&#8216;lodash&#8217;);</p>
+<p>Well its four lines of code for one library but all the other things i tried out either didn´t work in require, threw errors in tsc or the code-completion in phpstorm wouldn´t show up.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

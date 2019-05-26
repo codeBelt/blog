@@ -1,0 +1,1081 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>Single Page JavaScript Application Workflow &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/contents/ui/theme/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/contents/ui/theme/ie6.css" media="screen"/>
+    <![endif]-->
+    
+    
+
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/bootstrap/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/front.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/download-manager/assets/js/chosen.jquery.min.js'></script>
+
+
+
+
+
+
+
+
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/contents/ui/theme/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>Single Page JavaScript Application Workflow</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/javascript/" rel="category tag">JavaScript</a></p>
+
+				
+
+										
+
+					
+
+					<p>I started playing around with creating a workflow for creating single page applications with JavaScript. The big player in this workflow is GruntJS. In this <strong>Single Page JavaScript Application Workflow Tutorial</strong> I will explain how to setup a build process for your development and production environment. We will be using several GruntJS plugins to help us and they are:</p>
+<p><a href="https://github.com/gruntjs/grunt-contrib-requirejs" target="_blank">grunt-contrib-requirejs</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank">grunt-contrib-cssmin</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-htmlmin" target="_blank">grunt-contrib-htmlmin</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-copy" target="_blank">grunt-contrib-copy</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-concat" target="_blank">grunt-contrib-concat</a><br />
+<a href="https://github.com/onehealth/grunt-env" target="_blank">grunt-env</a><br />
+<a href="https://github.com/onehealth/grunt-preprocess" target="_blank">grunt-preprocess</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-yuidoc" target="_blank">grunt-contrib-yuidoc</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-watch" target="_blank">grunt-contrib-watch</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-clean" target="_blank">grunt-contrib-clean</a><br />
+<a href="https://npmjs.org/package/grunt-banner" target="_blank">grunt-banner</a><br />
+<a href="https://npmjs.org/package/grunt-usemin" target="_blank">grunt-usemin</a><br />
+<a href="https://npmjs.org/package/grunt-manifest" target="_blank">grunt-manifest</a><br />
+<a href="https://npmjs.org/package/grunt-express" target="_blank">grunt-express</a><br />
+<a href="https://npmjs.org/package/grunt-open" target="_blank">grunt-open</a></p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you probably need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Single-Page-Application-Workflow-Boilerplate" target="_blank">https://github.com/codeBelt/Single-Page-Application-Workflow-Boilerplate</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Environments</h2>
+<p>We will setup GruntJS to build our development (src/ folder) environment and our production (web/ folder) environments. Our two GruntJS commands will be <strong>grunt</strong> and <strong>grunt web</strong>.</p>
+<p>We will start with the following:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+/
+├──  src/
+├──  web/
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<dl>
+<dt>src folder</dt>
+<dd>The src folder will have all of the source files we need to create a single page JavaScript application.</dd>
+<dt>web folder</dt>
+<dd>The web folder will only contain the minified files and assets needed for the production server.</dd>
+<dt>Gruntfile.js &#038; package.json Files</dt>
+<dd>The GruntJS tasks and plugins need to build our environments.</dd>
+</dl>
+<h2>Development Folder</h2>
+<p>Lets take a look at our <strong>src</strong> folder. Notice the <strong>src/config.html</strong> file. This file will be used to create the <strong>index.html</strong> file for both our development (src) and production (web) environment.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+/
+├──+ src/
+│  ├── assets/
+│  ├── favicon.ico
+│  └── config.html
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<p>If where too run both the development (grunt) and production (grunt web) commands it would generate the following:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+/
+├──+ src/
+│  ├── assets/
+│  ├── favicon.ico
+│  ├── config.html
+│  └── index.html
+├──+ web/
+│  ├── assets/
+│  ├── favicon.ico
+│  ├── offline.appcache
+│  └── index.html
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<p>Here is our <strong>config.html</strong> in the <strong>src</strong> folder. Notice the <strong>NODE_ENV</strong> conditions, they will be used to determine how the production and development html file will be generated.</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+&lt;!DOCTYPE html&gt;
+
+&lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;!-- @endif --&gt;
+
+&lt;!-- @if NODE_ENV == 'PRODUCTION' --&gt;
+&lt;html lang=&quot;en&quot; manifest=&quot;offline.appcache&quot;&gt;
+&lt;!-- @endif --&gt;
+
+&lt;head&gt;
+    &lt;!-- The current version of the application --&gt;
+    &lt;meta name=&quot;version&quot; content=&quot;&lt;!-- @echo buildVersion --&gt;&quot;/&gt;
+
+    &lt;!-- Add the fav icon --&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+    &lt;!-- build:css assets/styles/app.min.css --&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/setup.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/bootstrap.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/screen.css&quot; /&gt;
+    &lt;!-- endbuild --&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+        &lt;script src=&quot;assets/vendor/require/require.js&quot; data-main=&quot;assets/scripts/AppBootstrap.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;assets/scripts/config.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- @endif --&gt;
+
+    &lt;!-- @if NODE_ENV == 'PRODUCTION' --&gt;
+        &lt;script src=&quot;assets/scripts/require.js&quot; data-main=&quot;assets/scripts/app.min.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- @endif --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h2>Install GruntJS &#038; the necessary plugins</h2>
+<p>Lets look how I setup the <strong>package.json</strong> file. This file will install Grunt and Grunt plugins locally for our project. All we have to do to install all of the plugins is type <strong>npm install</strong> when in root of this project and it will install everything we need.</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+{
+    &quot;name&quot;: &quot;Single-Page-Application-GruntJS&quot;,
+    &quot;version&quot;: &quot;0.2.0&quot;,
+
+    &quot;appVersion&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;A sample single page JavaScript application workflow boilerplate with Grunt.js&quot;,
+    &quot;url&quot;: &quot;https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/&quot;,
+    &quot;developedBy&quot;: &quot;codeBelt&quot;,
+
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;0.4.2&quot;,
+        &quot;matchdep&quot;: &quot;0.3.0&quot;,
+
+        &quot;grunt-contrib-requirejs&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;0.5.0&quot;,
+        &quot;grunt-contrib-watch&quot;: &quot;0.5.3&quot;,
+        &quot;grunt-contrib-cssmin&quot;: &quot;0.7.0&quot;,
+        &quot;grunt-contrib-htmlmin&quot;: &quot;0.1.3&quot;,
+        &quot;grunt-contrib-concat&quot;: &quot;0.3.0&quot;,
+        &quot;grunt-contrib-uglify&quot;: &quot;0.2.7&quot;,
+        &quot;grunt-contrib-copy&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-contrib-clean&quot;: &quot;0.5.0&quot;,
+        &quot;grunt-banner&quot;: &quot;0.2.0&quot;,
+        &quot;grunt-usemin&quot;: &quot;2.0.2&quot;,
+        &quot;grunt-manifest&quot;: &quot;0.4.0&quot;,
+        &quot;grunt-preprocess&quot;: &quot;4.0.0&quot;,
+        &quot;grunt-env&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-express&quot;: &quot;1.2.1&quot;,
+        &quot;grunt-open&quot;: &quot;0.2.2&quot;
+    }
+}
+</pre>
+<p>Take notice of the <strong>&#8220;version&#8221;</strong> property. It will be used in the creation of the index.html, minified css, minified JavaScript and the cache manifest files.</p>
+<p>Here is the <strong>Gruntfile.js</strong> file. You can read the comments to see what each plugin is doing.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+module.exports = function(grunt) {
+
+    // Load Grunt tasks declared in the package.json file.
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+    // Project configuration.
+    grunt.initConfig({
+
+        /**
+        * This will load in our package.json file so we can have access
+        * to the project name and appVersion number.
+        */
+        pkg: grunt.file.readJSON('package.json'),
+
+        /**
+        * Constants for the Gruntfile so we can easily change the path for our environments.
+        */
+        BASE_PATH: '',
+        DEVELOPMENT_PATH: 'src/',
+        PRODUCTION_PATH: 'web/',
+
+        /**
+        * A code block that will be added to our minified code files.
+        * Gets the name and appVersion and other info from the above loaded 'package.json' file.
+        * @example &lt;%= banner.join(&quot;\\n&quot;) %&gt;
+        */
+        banner: [
+            '/*',
+            '* Project: &lt;%= pkg.name %&gt;',
+            '* Version: &lt;%= pkg.appVersion %&gt; (&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;)',
+            '* Development By: &lt;%= pkg.developedBy %&gt;',
+            '* Copyright(c): &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt;',
+            '*/'
+        ],
+
+        /**
+        * The different constant names that will be use to build our html files.
+        * @example &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+        */
+        env: {
+            src: {
+                NODE_ENV : 'DEVELOPMENT'
+            },
+            web : {
+                NODE_ENV : 'PRODUCTION'
+            }
+        },
+
+        /**
+        * Allows us to pass in variables to files that have place holders so we can similar files with different data.
+        * This plugin works with the 'env' plugin above.
+        * @example &lt;!-- @echo appVersion --&gt; or &lt;!-- @echo filePath --&gt;
+        */
+        preprocess : {
+            // Task to create the index.html file that will be used during development.
+            // Passes the app version and creates the /index.html
+            src : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            },
+            // Task to create the index.html file that will be used in production.
+            // Passes the app version and creates the /index.html
+            web : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            }
+        },
+
+        /**
+        * Cleans or deletes our production folder before we create a new production build.
+        */
+        clean: {
+            dist: ['&lt;%= PRODUCTION_PATH %&gt;']
+        },
+
+        /**
+        * Copies certain files over from the development folder to the production folder so we don't have to do it manually.
+        */
+        copy: {
+            web:  {
+                files: [
+                    // Copy favicon.ico file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: 'favicon.ico', dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the media folder from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: ['assets/media/**'], dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the index.html file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', dest: '&lt;%= PRODUCTION_PATH %&gt;', src: ['index.html'], filter: 'isFile', dot: true },
+                    // Copy require.js file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/vendor/require/', src: 'require.js', dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/' }
+                ]
+            }
+        },
+
+        /**
+        * Prepends the banner above to the minified files.
+        */
+        usebanner: {
+            dist: {
+                options: {
+                    position: 'top',
+                    banner: '&lt;%= banner.join(&quot;\\n&quot;) %&gt;',
+                    linebreak: true
+                },
+                files: {
+                    src: [
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/styles/app.min.css'
+                    ]
+                }
+            }
+        },
+
+        /**
+        * The useminPrepare part of the usemin plugin looks at the html file and checks for a build:js or build:css code block.
+        * It will take those files found in the code block(s) and concat them together and then runs uglify for js and/or cssmin for css files.
+        * useminPrepare requires grunt-contrib-uglify, grunt-contrib-concat, and grunt-contrib-cssmin plugins to be installed. Which is listed in the package.json file.
+        *
+        * The usemin part will remove the code block(s) and replace that area with the single file path in the html file.
+        */
+        useminPrepare: {
+            html: ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html'],
+            options: {
+                dest: '&lt;%= PRODUCTION_PATH %&gt;'// Moves the single concatenated files to production.
+            }
+        },
+        usemin: {
+            html: ['&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'],
+            options: {
+                dirs: ['&lt;%= PRODUCTION_PATH %&gt;']
+            }
+        },
+
+        /**
+        * The RequireJS plugin that will use uglify2 to build and minify our JavaScript,
+        * templates and any other data we include in the require files.
+        */
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',                         // Path of source scripts, relative to this build file
+                    mainConfigFile: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/config.js',         // Path of shared configuration file, relative to this build file
+                    name: 'AppBootstrap',                                                           // Name of input script (.js extension inferred)
+                    out: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',                    // Path of built script output
+
+                    fileExclusionRegExp: /.svn/,                                                    // Ignore all files matching this pattern
+                    useStrict: true,
+                    preserveLicenseComments: false,
+                    pragmas: {
+                        debugExclude: true
+                    },
+
+                    optimize: 'uglify2',                                                            // Use 'none' If you do not want to uglify.
+                    uglify2: {
+                        output: {
+                            beautify: false,
+                            comments: false
+                        },
+                        compress: {
+                            sequences: false,
+                            global_defs: {
+                                DEBUG: false
+                            }
+                        },
+                        warnings: false,
+                        mangle: true
+                    }
+                }
+            }
+        },
+
+        /**
+        * Removes all comments from the production index.html file. I can also remove all whitespace if desired.
+        */
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: false
+                },
+                files: {
+                    '&lt;%= PRODUCTION_PATH %&gt;index.html': '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'
+                }
+            }
+        },
+
+        /**
+        * Creates a Cache Manifest file.
+        */
+        manifest: {
+            generate: {
+                options: {
+                    basePath: '&lt;%= PRODUCTION_PATH %&gt;',
+                    exclude: [
+                        'assets/media/images/moblie-icons/icon-144x144.png',
+                        'assets/media/images/moblie-icons/icon-100x100.png',
+                        'assets/media/images/moblie-icons/icon-29x29.png',
+                        'assets/media/images/moblie-icons/icon-50x50.png',
+                        'assets/media/images/moblie-icons/icon-58x58.png',
+                        'assets/media/images/moblie-icons/icon-72x72.png'
+                    ],
+                    preferOnline: false,
+                    verbose: true,
+                    timestamp: true,
+                    master: []
+                },
+                src: [
+                    'assets/data/**/*.json',
+                    'assets/media/images/**/*.jpg',
+                    'assets/media/images/**/*.png',
+                    'assets/scripts/**/*.js',
+                    'assets/styles/**/*.css'
+                ],
+                dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'offline.appcache'
+            }
+        },
+
+        /**
+        * YUIDoc plugin that will generate documentation from our YUI comments.
+        */
+        yuidoc: {
+            compile: {
+                name: '&lt;%= pkg.name %&gt;',
+                description: '&lt;%= pkg.description %&gt;',
+                version: '&lt;%= pkg.appVersion %&gt;',
+                url: '&lt;%= pkg.homepage %&gt;',
+                options: {
+                    paths: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',
+                    outdir: '&lt;%= BASE_PATH %&gt;docs',
+                    themedir: '',
+                    extension: '.js',                                   // Default '.js' &lt;comma-separated list of file extensions&gt;
+                    exclude: ''
+                }
+            }
+        },
+
+        /**
+        * Creates a node.js Express Server to test our code in a server like environment.
+        * Note: We are using the watch task to keep the server running.
+        */
+        express: {
+            src: {
+                options: {
+                    port: 8000,
+                    hostname: &quot;0.0.0.0&quot;,
+                    bases: ['&lt;%= DEVELOPMENT_PATH %&gt;'],
+                    livereload: true
+                }
+            },
+            web: {
+                options: {
+                    port: 8001,
+                    hostname: &quot;0.0.0.1&quot;,
+                    bases: ['&lt;%= PRODUCTION_PATH %&gt;'],
+                    livereload: true
+                }
+            }
+        },
+
+        /**
+        * Opens the index.html file in the default browser after the node.js Express Server is running.
+        */
+        open: {
+            src: {
+                // Gets the port from the connect configuration
+                path: 'http://localhost:&lt;%= express.src.options.port%&gt;'
+            },
+            web: {
+                // Gets the port from the connect configuration
+                path: 'http://localhost:&lt;%= express.web.options.port%&gt;'
+            }
+        },
+
+        /**
+        * Watches files and will run task(s) when files are changed. It will also reload/refresh the browser.
+        */
+        watch: {
+            css: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/styles/**/*.css',
+                ]
+            },
+            src: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/**/*.ts',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/templates/**/*.hbs'
+                ],
+                tasks: ['src']
+            }
+        }
+
+    });
+
+    /**
+    * Grunt tasks:
+    *
+    * grunt        (Will build and run your development code/server)
+    * grunt web    (Will build and run your production code/server)
+    * grunt doc    (Will generate the YUI documentation from the code comments)
+    */
+    grunt.registerTask('default', [
+        'server'
+    ]);
+
+    grunt.registerTask('server', [
+        'src',
+        'express:src',
+        'open:src',
+        'watch'
+    ]);
+
+    grunt.registerTask('src', [
+        'env:src',
+        'preprocess:src'
+    ]);
+
+    grunt.registerTask('web', [
+        'env:web',
+        'preprocess',
+        'clean',
+        'copy',
+        'useminPrepare', 'concat', 'cssmin',
+        'usemin',
+        'requirejs',
+        'usebanner',
+        'htmlmin',
+        'manifest',
+        'open:web',
+        'express:web',
+        'express-keepalive'
+    ]);
+
+    grunt.registerTask('doc', [
+        'yuidoc'
+    ]);
+
+};
+</pre>
+<p>Please let me know if you liked this tutorial.</p>
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/#comments" class="comments">Comments (4)</a> |		
+
+						<span class="date">June 23rd, 2013</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">4 Responses to &#8220;Single Page JavaScript Application Workflow&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-25896">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/cf7bc941a7f588f21fde9bddc8fc5e69?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cf7bc941a7f588f21fde9bddc8fc5e69?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Amp Says: <br />				
+<span class="comment-data"><a href="#comment-25896" title="">May 30, 2014 at 6:52 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Hi,</p>
+<p>Thanks for the amazing article.<br />
+A quick question on the below line:</p>
+<p><code>&lt;-- @if NODE_ENV == 'DEVELOPMENT' --></code></p>
+<p>Is this (<code>&lt;!-- @if .... --></code>) specific to nodejs or part of regular JS apart from NODE_ENV.<br />
+Any reference?</p>
+<p>Thanks,<br />
+Amp</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/?replytocom=25896#respond' onclick='return addComment.moveForm( "comment-25896", "25896", "respond", "1155" )' aria-label='Reply to Amp'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-25996">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/contents/data/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-25996" title="">June 1, 2014 at 7:51 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Its part of the NODE_ENV which the grunt-env plugin parses. Other than that I am not totally sure how it is doing it.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/?replytocom=25996#respond' onclick='return addComment.moveForm( "comment-25996", "25996", "respond", "1155" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="pingback even thread-odd thread-alt depth-1" id="comment-39411">
+
+<div class="comment-info">			
+				
+								<cite>										
+<a href='http://loutlook.wordpress.com/2014/12/08/notes-of-week-1214-2014/' rel='external nofollow' class='url'>Notes of Week 1214 2014 | loutlook</a> Says: <br />				
+<span class="comment-data"><a href="#comment-39411" title="">December 8, 2014 at 12:41 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>[&#8230;] Single Page JavaScript Application Workflow [&#8230;]</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/?replytocom=39411#respond' onclick='return addComment.moveForm( "comment-39411", "39411", "respond", "1155" )' aria-label='Reply to Notes of Week 1214 2014 | loutlook'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+   	<li class="pingback odd alt thread-even depth-1" id="comment-39587">
+
+<div class="comment-info">			
+				
+								<cite>										
+<a href='http://robesimpson.me/2014/12/10/water-cooler-web-dev-talk-show-6/' rel='external nofollow' class='url'>Water Cooler Web Dev Talk &#8211; Show #6 | Rob Simpson</a> Says: <br />				
+<span class="comment-data"><a href="#comment-39587" title="">December 10, 2014 at 5:08 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>[&#8230;] Single Page Javascript Application Workflow&nbsp;&#8211; Grunt [&#8230;]</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/?replytocom=39587#respond' onclick='return addComment.moveForm( "comment-39587", "39587", "respond", "1155" )' aria-label='Reply to Water Cooler Web Dev Talk &#8211; Show #6 | Rob Simpson'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='1155' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7b4944bd88" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="221"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/contents/data/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2018 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/akismet/_inc/form.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/inc/js/jquery/jquery.form.min.js'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>

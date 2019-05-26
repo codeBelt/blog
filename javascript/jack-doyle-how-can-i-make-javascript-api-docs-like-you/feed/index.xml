@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Jack Doyle How Can I Make JavaScript API Docs Like You?</title>
+	<atom:link href="https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/#comment-15091</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Thu, 16 May 2013 14:10:34 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1086#comment-15091</guid>
+		<description><![CDATA[Only played around with it for 15 minutes but YUIDoc looks promising. Once I have time to figure out how to change themes with GruntJS I will try to create a asDoc theme. Checkout my &lt;a href=&quot;https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/&quot; title=&quot;YUIDoc JavaScript Documentation Tutorial GruntJS&quot; rel=&quot;nofollow&quot;&gt;YUIDoc JavaScript Documentation Tutorial&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>Only played around with it for 15 minutes but YUIDoc looks promising. Once I have time to figure out how to change themes with GruntJS I will try to create a asDoc theme. Checkout my <a href="https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/" title="YUIDoc JavaScript Documentation Tutorial GruntJS" rel="nofollow">YUIDoc JavaScript Documentation Tutorial</a>.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jack</title>
+		<link>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/#comment-15060</link>
+		<dc:creator><![CDATA[Jack]]></dc:creator>
+		<pubDate>Wed, 15 May 2013 16:40:05 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1086#comment-15060</guid>
+		<description><![CDATA[Hey Robert. Your post made me smile. To answer your question, I couldn&#039;t find any decent JS doc generators (at least when I looked a while back), and since the JS flavor of GSAP is a port of the AS3 one, I just copied the AS3 files with all the comments and used Adobe&#039;s asdoc generator. Of course I customized the docs where necessary for JS-specific stuff. If you find any good tools for generating JS docs, I&#039;m all ears. 
+
+Happy tweening!]]></description>
+		<content:encoded><![CDATA[<p>Hey Robert. Your post made me smile. To answer your question, I couldn&#8217;t find any decent JS doc generators (at least when I looked a while back), and since the JS flavor of GSAP is a port of the AS3 one, I just copied the AS3 files with all the comments and used Adobe&#8217;s asdoc generator. Of course I customized the docs where necessary for JS-specific stuff. If you find any good tools for generating JS docs, I&#8217;m all ears. </p>
+<p>Happy tweening!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

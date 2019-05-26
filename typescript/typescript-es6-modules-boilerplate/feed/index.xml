@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript ES6 Modules Boilerplate</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/#comment-80223</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Fri, 20 Oct 2017 18:56:16 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1682#comment-80223</guid>
+		<description><![CDATA[When using TypeScript you want to use types. It helps document you code and give the compiler accurate details on what you are doing. Typically when you are writing your classes most of your methods will be `private` so why not add that in there to tell other developer that I intend this method not to be called outside of the class and this method does not return any values. Hence the `:void` return type.]]></description>
+		<content:encoded><![CDATA[<p>When using TypeScript you want to use types. It helps document you code and give the compiler accurate details on what you are doing. Typically when you are writing your classes most of your methods will be `private` so why not add that in there to tell other developer that I intend this method not to be called outside of the class and this method does not return any values. Hence the `:void` return type.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/#comment-61135</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Thu, 12 May 2016 15:06:46 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1682#comment-61135</guid>
+		<description><![CDATA[It&#039;s hard to tell from your project what TypeScript commands you are using. I&#039;m sorry but I don&#039;t have time to troubleshoot your project.
+
+Save yourself sometime and check out my &lt;a href=&quot;https://github.com/codeBelt/slush-project&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;slush project boilerplate generator&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>It&#8217;s hard to tell from your project what TypeScript commands you are using. I&#8217;m sorry but I don&#8217;t have time to troubleshoot your project.</p>
+<p>Save yourself sometime and check out my <a href="https://github.com/codeBelt/slush-project" target="_blank" rel="nofollow">slush project boilerplate generator</a>.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sandeep</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/#comment-61096</link>
+		<dc:creator><![CDATA[Sandeep]]></dc:creator>
+		<pubDate>Tue, 10 May 2016 13:51:56 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1682#comment-61096</guid>
+		<description><![CDATA[Hi Robert,
+
+Great tutorials for typescript. It really helpful to developers. By the way i am facing problem when i am doing Typescript-ES6 sample project. It is showing error like require is not defined. Can you please look at https://github.com/Sandeepvedam/TypeScript-Starter-ES6
+
+Please provide your contribution or valuable suggestions. Much appreciated on your help.
+
+Thanks,
+Sandeep.]]></description>
+		<content:encoded><![CDATA[<p>Hi Robert,</p>
+<p>Great tutorials for typescript. It really helpful to developers. By the way i am facing problem when i am doing Typescript-ES6 sample project. It is showing error like require is not defined. Can you please look at <a href="https://github.com/Sandeepvedam/TypeScript-Starter-ES6" rel="nofollow">https://github.com/Sandeepvedam/TypeScript-Starter-ES6</a></p>
+<p>Please provide your contribution or valuable suggestions. Much appreciated on your help.</p>
+<p>Thanks,<br />
+Sandeep.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

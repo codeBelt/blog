@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jQuery &#8211; codeBelt</title>
+	<atom:link href="https://codebelt.github.io/blog/category/jquery/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Sun, 26 May 2019 04:51:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>jQuery event Listener plugin</title>
+		<link>https://codebelt.github.io/blog/jquery/jquery-event-listener-plugin/</link>
+		<comments>https://codebelt.github.io/blog/jquery/jquery-event-listener-plugin/#respond</comments>
+		<pubDate>Tue, 25 Feb 2014 01:33:54 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1516</guid>
+		<description><![CDATA[When creating JavaScript classes you will run into an issue where you cannot remove event listeners once you&#8217;ve added them. To get this to work you typically need to assign your bind function call(s) to a property on the class. You can see this in the Example 1 below in the setupHandlers method. The jQuery [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>When creating JavaScript classes you will run into an issue where you cannot remove event listeners once you&#8217;ve added them. To get this to work you typically need to assign your bind function call(s) to a property on the class. You can see this in the Example 1 below in the setupHandlers method.</p>
+<p>The jQuery eventListener plugin makes it so you don&#8217;t need to do this. Basically you can do everything the on and off methods does in jQuery. You&#8217;ll just need to pass the class scope as the last argument. Check out the Example 2.</p>
+<p>Also check out the EventListenerApp sample code. <a href="https://github.com/codeBelt/jquery-eventListener" title="jquery event listener" target="_blank">https://github.com/codeBelt/jquery-eventListener</a></p>
+<p><strong><em>Example 1 without plugin</em></strong></p>
+<pre class="brush: jscript; title: ; notranslate">
+var DemoView = function() {
+    this.isEnabled = false;
+
+    this.setupHandlers();
+    this.enable();
+};
+
+DemoView.prototype.setupHandlers = function() {
+    // Bind event handlers scope here
+    this.onClickHandler = this.onClick.bind(this);
+    this.onMouseEnterHandler = this.onMouseEnter.bind(this);
+    this.onMouseLeaveHandler = this.onMouseLeave.bind(this);
+};
+
+DemoView.prototype.enable = function() {
+    if (this.isEnabled === true) return this;
+    this.isEnabled = true;
+
+    this.$card.on('click', this.onClickHandler)
+    this.$card.on('mouseenter', this.onMouseEnterHandler)
+    this.$card.on('mouseleave', this.onMouseLeaveHandler);
+};
+
+DemoView.prototype.disable = function() {
+    if (this.isEnabled === false) return this;
+    this.isEnabled = false;
+
+    this.$card.off('click', this.onClickHandler)
+    this.$card.off('mouseenter', this.onMouseEnterHandler)
+    this.$card.off('mouseleave', this.onMouseLeaveHandler);
+};
+
+DemoView.prototype.onClick = function(event) {};
+DemoView.prototype.onMouseEnter = function(event) {};
+DemoView.prototype.onMouseLeave = function(event) {};
+</pre>
+<p><strong><em>Example 2 with plugin</em></strong></p>
+<pre class="brush: jscript; title: ; notranslate">
+var DemoView = function() {
+    this.isEnabled = false;
+
+    this.enable();
+};
+
+DemoView.prototype.enable = function() {
+    if (this.isEnabled === true) return this;
+    this.isEnabled = true;
+
+    this.$card.addEventListener('click', this.onClickHandler, this)
+    this.$card.addEventListener('mouseenter', this.onMouseEnterHandler, this)
+    this.$card.addEventListener('mouseleave', this.onMouseLeaveHandler, this);
+};
+
+DemoView.prototype.disable = function() {
+    if (this.isEnabled === false) return this;
+    this.isEnabled = false;
+
+    this.$card.removeEventListener('click', this.onClickHandler, this)
+    this.$card.removeEventListener('mouseenter', this.onMouseEnterHandler, this)
+    this.$card.removeEventListener('mouseleave', this.onMouseLeaveHandler, this);
+};
+
+DemoView.prototype.onClick = function(event) {};
+DemoView.prototype.onMouseEnter = function(event) {};
+DemoView.prototype.onMouseLeave = function(event) {};
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/jquery/jquery-event-listener-plugin/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Open New Browser Window with jQuery (Custom Size)</title>
+		<link>https://codebelt.github.io/blog/jquery/open-new-browser-window-with-jquery-custom-size/</link>
+		<comments>https://codebelt.github.io/blog/jquery/open-new-browser-window-with-jquery-custom-size/#comments</comments>
+		<pubDate>Sun, 29 Aug 2010 04:33:22 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=22</guid>
+		<description><![CDATA[I sure this is nothing special but I thought I would share. I&#8217;ve been play around with jQuery and wanted to build an easy way to open a new browser window with a certain size for multiple links. Below is what I came up with. Click on the links below to see a simple demo. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><script type="text/javascript">
+<!--
+var windowSizeArray = [ "width=200,height=200", "width=300,height=400,scrollbars=yes" ];
+jQuery(document).ready(function(){  jQuery(".newWindow").click(function (event){
+var url = jQuery(this).attr("href");
+var windowName = "popUp";
+var windowSize = windowSizeArray[jQuery(this).attr("rel")];
+window.open(url, windowName, windowSize);
+event.preventDefault();
+});
+});
+//--></script></p>
+<p><img class="float-left" src="http://codebelt.com/wp/wp-content/uploads/2010/08/jquery-new-window.jpg" alt="coldfusion actionscript" width="100" height="120" />I sure this is nothing special but I thought I would share. I&#8217;ve been play around with jQuery and wanted to build an easy way to open a new browser window with a certain size for multiple links. Below is what I came up with. Click on the links below to see a simple demo.</p>
+<p><a class="newWindow" rel="0" href="http://www.flashmn.com/">click me 1 (fixed size)</a><br />
+<a class="newWindow" rel="1" href="http://www.mnswf.com/">click me 2 (fixed size w/ scrollbar</a>)</p>
+<p>&nbsp; </p>
+<dt>Update : I have added a new and improved version at the end of this article.</dt>
+<h2>Everything Together</h2>
+<p>First take a look at what the whole thing and later I will break it out.</p>
+<pre class="brush: jscript; title: ; notranslate">
+&lt;html&gt;
+    &lt;head&gt;
+    	&lt;title&gt;&lt;/title&gt;
+
+    	&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js&quot;&gt;&lt;/script&gt;
+
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            var windowSizeArray = [ &quot;width=200,height=200&quot;,
+									&quot;width=300,height=400,scrollbars=yes&quot; ];
+
+            $(document).ready(function(){
+                $('.newWindow').click(function (event){
+
+                    var url = $(this).attr(&quot;href&quot;);
+                    var windowName = &quot;popUp&quot;;//$(this).attr(&quot;name&quot;);
+                    var windowSize = windowSizeArray[$(this).attr(&quot;rel&quot;)];
+
+                    window.open(url, windowName, windowSize);
+
+                    event.preventDefault();
+
+                });
+            });
+        &lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;a href=&quot;http://www.flashmn.com/&quot; rel=&quot;0&quot; class=&quot;newWindow&quot; &gt;click me&lt;/a&gt;
+        &lt;a href=&quot;http://www.mnswf.com/&quot; rel=&quot;1&quot; class=&quot;newWindow&quot; &gt;click me&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h2>Add the HTML Links</h2>
+<p>Lets start with our links in the   of our html. Notice I used the &#8220;rel&#8221; attribute to determine the array slot I would like to use. I will be using an array to hold on the link information.</p>
+<pre class="brush: xml; title: ; notranslate">
+&lt;a href=&quot;http://www.flashmn.com/&quot; rel=&quot;0&quot; class=&quot;newWindow&quot; &gt;click me&lt;/a&gt;
+&lt;a href=&quot;http://www.mnswf.com/&quot; rel=&quot;1&quot; class=&quot;newWindow&quot; &gt;click me&lt;/a&gt;
+</pre>
+<h2>Include the jQuery JavaScript library</h2>
+<pre class="brush: jscript; title: ; notranslate">
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h2>Include the jQuery Script</h2>
+<p>Place this script below the include of the jQuery library. Below I explain what each line does.</p>
+<pre class="brush: jscript; title: ; notranslate">
+&lt;script type=&quot;text/javascript&quot;&gt;
+	var windowSizeArray = [ &quot;width=200,height=200&quot;,
+							&quot;width=300,height=400,scrollbars=yes&quot; ];
+
+	$(document).ready(function(){
+		$('.newWindow').click(function (event){
+
+			var url = $(this).attr(&quot;href&quot;);
+			var windowName = &quot;popUp&quot;;//$(this).attr(&quot;name&quot;);
+			var windowSize = windowSizeArray[ $(this).attr(&quot;rel&quot;) ];
+
+			window.open(url, windowName, windowSize);
+
+			event.preventDefault();
+
+		});
+	});
+&lt;/script&gt;
+</pre>
+<h2>The jQuery Script Explained</h2>
+<pre class="brush: jscript; title: ; notranslate">
+&lt;script type=&quot;text/javascript&quot;&gt;
+	//Created an array to hold onto the desired info.
+	var windowSizeArray = [ &quot;width=200,height=200&quot;,
+							&quot;width=300,height=400,scrollbars=yes&quot; ];
+
+	$(document).ready(function(){
+		//Links that has the &quot;.newWindow&quot; class will call this script.
+		$('.newWindow').click(function (event){
+
+			// Gets the URL from the clicked link.
+			var url = $(this).attr(&quot;href&quot;);
+
+			/*Gets the name from the clicked link. Currently I commented out the
+			  jquery script and just put &quot;popUp&quot; for a default name because I didn't
+              include the name in the links.*/
+			var windowName = &quot;popUp&quot;;//$(this).attr(&quot;name&quot;);
+
+			/*Places the string from the array into the windowSize variable.
+			  The array slot is determined by the &quot;rel&quot; number on the link.*/
+			var windowSize = windowSizeArray[  $(this).attr(&quot;rel&quot;)  ];
+
+			//This method opens a new browser window.
+			window.open(url, windowName, windowSize);
+
+			/*Prevents the browser from executing the default action and
+			  allows us to use the &quot;window.open&quot; within our script.*/
+			event.preventDefault();
+
+		});
+	});
+&lt;/script&gt;
+</pre>
+<h2>New and Improved Version</h2>
+<p>Below I use the data attributes to set the size of the popup window. This way is more dynamic because you do not need to have extra logic in the JavaScript.</p>
+<pre class="brush: jscript; title: ; notranslate">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;https://code.jquery.com/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        $(document).ready(function(){
+            $('.js-newWindow').click(function (event) {
+                event.preventDefault();
+
+                var $this = $(this);
+
+                var url = $this.attr(&quot;href&quot;);
+                var windowName = &quot;popUp&quot;;
+                var windowSize = $this.data(&quot;popup&quot;);
+
+                window.open(url, windowName, windowSize);
+            });
+        });
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;a href=&quot;http://www.typescriptlang.org/&quot; class=&quot;js-newWindow&quot; data-popup=&quot;width=200,height=200&quot;&gt;click me&lt;/a&gt;
+    &lt;a href=&quot;http://nodejs.org/&quot; class=&quot;js-newWindow&quot; data-popup=&quot;width=300,height=500,scrollbars=yes&quot;&gt;click me&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/jquery/open-new-browser-window-with-jquery-custom-size/feed/</wfw:commentRss>
+		<slash:comments>46</slash:comments>
+		</item>
+	</channel>
+</rss>

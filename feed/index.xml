@@ -1,0 +1,2760 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>codeBelt</title>
+	<atom:link href="https://codebelt.github.io/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Sun, 26 May 2019 04:51:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>I&#8217;ve Moved to Medium.com</title>
+		<link>https://codebelt.github.io/blog/uncategorized/ive-moved-to-medium-com/</link>
+		<comments>https://codebelt.github.io/blog/uncategorized/ive-moved-to-medium-com/#respond</comments>
+		<pubDate>Sun, 26 May 2019 04:51:30 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1764</guid>
+		<description><![CDATA[I move my blogging to medium.com so go check it out.]]></description>
+				<content:encoded><![CDATA[<p>I move my blogging to <a href="https://medium.com/@robertsavian">medium.com</a> so go check it out.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/uncategorized/ive-moved-to-medium-com/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Webpack React Hot Loader Hapi.js Server-side Rendering Example</title>
+		<link>https://codebelt.github.io/blog/javascript/webpack-react-hot-loader-hapi-js-server-side-rendering-example/</link>
+		<comments>https://codebelt.github.io/blog/javascript/webpack-react-hot-loader-hapi-js-server-side-rendering-example/#respond</comments>
+		<pubDate>Sat, 19 Aug 2017 04:43:14 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1755</guid>
+		<description><![CDATA[I wanted to share my awesome hapi-react-hot-loader-example and my typescript-hapi-react-hot-loader-example . Please check out my example universal application demonstrating react-hot-loader-3 with webpack-3, react and friends, and hapi.js for server-side rendering. I think it is a very clean and simple example that many can understand. I a very proud of my one webpack.config file that handles dev, production, [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I wanted to share my awesome <a href="https://github.com/codeBelt/hapi-react-hot-loader-example" target="_blank">hapi-react-hot-loader-example</a> and my <a href="https://github.com/codeBelt/typescript-hapi-react-hot-loader-example" target="_blank">typescript-hapi-react-hot-loader-example</a> . Please check out my example universal application demonstrating react-hot-loader-3 with webpack-3, react and friends, and hapi.js for server-side rendering. I think it is a very clean and simple example that many can understand. I a very proud of my one webpack.config file that handles dev, production, and staging builds.</p>
+<p>Below is some of the features:</p>
+<ul>
+<li>React</li>
+<li>React Router 4</li>
+<li>React Hot Loader 3</li>
+<li>Redux</li>
+<li>Redux Saga</li>
+<li>Redux Form</li>
+<li>Webpack 3</li>
+<li>Hapi.js</li>
+<li>Universal / Isomorphic / Server-sider Rendering</li>
+</ul>
+<p>Please star my <a href="https://github.com/codeBelt/hapi-react-hot-loader-example" target="_blank">JavaScript version of React Server-side rendering boilerplate/example</a> and my <a href="https://github.com/codeBelt/typescript-hapi-react-hot-loader-example" target="_blank">TypeScript version of React Server-side rendering boilerplate/example</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/webpack-react-hot-loader-hapi-js-server-side-rendering-example/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript ES6 Modules Boilerplate</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/#comments</comments>
+		<pubDate>Tue, 05 Jan 2016 17:07:20 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1682</guid>
+		<description><![CDATA[Update: I&#8217;ve officially switched over to Gulp and created a boilerplate generator to make things easier. Check out Slush Project Boilerplate Generator. &#8212;- I&#8217;ve been playing with TypeScript off and on since 2012 (version 0.8) and using ES6 modules seems to be the perfect way to do TypeScript/JavaScript. In this post I will give you [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: I&#8217;ve officially switched over to Gulp and created a boilerplate generator to make things easier. Check out <a href="https://github.com/codeBelt/slush-project/">Slush Project Boilerplate Generator</a>.</h4>
+<p>&#8212;-</p>
+<p>I&#8217;ve been playing with TypeScript off and on since 2012 (version 0.8) and using ES6 modules seems to be the perfect way to do TypeScript/JavaScript.</p>
+<p>In this post I will give you a quick overview how to setup your TypeScript project(s) to work with ES6 Modules. I suggest taking a look at my current <a href="https://github.com/codeBelt/StructureJS-Boilerplate/tree/typescript-es6" target="_blank">TypeScript ES6 Modules Boilerplate</a> after looking at the examples below.</p>
+<p>I have two different setups:</p>
+<ol>
+<li>Using TypeScript to develop your website/application</li>
+<li>Using TypeScript to create a JavaScript library that others can use without TypeScript</li>
+</ol>
+<h2>TypeScript ES6 Modules Project Setup</h2>
+<h3>TypeScript ES6 Module Sample Class</h3>
+<pre class="brush: as3; title: ; notranslate">
+import AnotherClass from './AnotherClass';
+
+class ExampleClass extends AnotherClass {
+
+    public exampleProperty:string = null;
+
+    constructor() {
+        super();
+    }
+
+    public exampleMethod():void {
+    }
+
+}
+
+export default ExampleClass;
+</pre>
+<h3>Gruntfile for compiling your TypeScript ES6 Module Code</h3>
+<pre class="brush: as3; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Intelligently lazy-loads tasks and plugins as needed at runtime.
+    require('jit-grunt')(grunt)();
+
+    // -- Configuration --------------------------------------------------------
+    grunt.initConfig({
+
+        browserify: {
+            buildTypeScript: {
+                options: {
+                    preBundleCB: function(bundle) {
+                        bundle.plugin('tsify', {
+                            removeComments: true,
+                            noImplicitAny: false,
+                            target: 'ES5'
+                        });
+                    },
+                    // sourcemaps
+                    browserifyOptions: {
+                        debug: true
+                    }
+                },
+                files: {
+                    'web/assets/scripts/main.js': ['src/assets/scripts/main.ts']
+                }
+            }
+        }
+
+    });
+
+    grunt.registerTask('default', [
+        'browserify:buildTypeScript'
+    ]);
+
+};
+</pre>
+<h3>NPM package.json for node modules used for the Gruntfile build</h3>
+<pre class="brush: as3; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;Example&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;browser&quot;: {
+        &quot;jquery&quot;: &quot;./src/assets/vendor/jquery/dist/jquery.js&quot;
+    },
+    &quot;browserify-shim&quot;: {
+        &quot;jquery&quot;: &quot;global:$&quot;
+    },
+    &quot;browserify&quot;: {
+        &quot;transform&quot;: [
+            &quot;browserify-shim&quot;
+        ]
+    },
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;^0.4.5&quot;,
+        &quot;grunt-browserify&quot;: &quot;^4.0.1&quot;,
+        &quot;browserify-shim&quot;: &quot;^3.8.11&quot;,
+        &quot;tsify&quot;: &quot;^0.12.2&quot;,
+        &quot;jit-grunt&quot;: &quot;^0.9.1&quot;
+    }
+}
+</pre>
+<h2>TypeScript ES6 Modules Library Setup</h2>
+<p>I maintain a library of code called <a href="https://github.com/codeBelt/StructureJS" target="_blank">StructureJS</a>. I use the TypeScript library to generate the JavaScript one so that I only have one codebase. I suggest using <strong>grunt-ts</strong> and the <strong>umd</strong> module setting.</p>
+<pre class="brush: as3; title: ; notranslate">
+ts: {
+    default: {
+        src: ['ts/**/*.ts'],
+        outDir: 'js/',
+        options: {
+            target: 'es5',
+            module: 'umd',
+            basePath: '',
+            sourceMap: false,
+            declaration: false,
+            nolib: false,
+            comments: true
+        }
+    }
+}
+</pre>
+<p>You can see the actual usage here:<br />
+<a href="https://github.com/codeBelt/StructureJS/blob/master/Gruntfile.js" target="_blank">https://github.com/codeBelt/StructureJS/blob/master/Gruntfile.js</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>How To Write JavaScript Classes</title>
+		<link>https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/</link>
+		<comments>https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/#respond</comments>
+		<pubDate>Fri, 10 Oct 2014 04:54:59 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1639</guid>
+		<description><![CDATA[Example files for this article. Today I want to show you how I think JavaScript Classes should be structured. I&#8217;ve written classes many different ways over the years (Prototypal Inheritance, Object Literal Notation, Mootools, Base2js, Sencha Touch, Backbone and TypeScript). The following is a condensed example of the current format I use to structure my [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><i><a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes" target="_blank">Example files</a> for this article.</i></p>
+<p>Today I want to show you how I think JavaScript Classes should be structured. I&#8217;ve written classes many different ways over the years (Prototypal Inheritance, Object Literal Notation, Mootools, Base2js, Sencha Touch, Backbone and TypeScript). The following is a condensed example of the current format I use to structure my classes in JavaScript.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var BaseView = (function () {
+
+    function BaseView() {
+    }
+
+    BaseView.prototype.createChildren = function () {
+    };
+
+    BaseView.prototype.layoutChildren = function () {
+    };
+
+    return BaseView;
+})();
+</pre>
+<p>You may have seen prototypal inheritance before but in the example above you can see it is wrapped with an extra closure.  Sometimes this is referred to as an immediately invoked function expression (iife). The extra iife allows us to have access to the class when we start extending other classes. It is in this example to keep our class structure consistent.</p>
+<h2>Inheritance</h2>
+<p>Prototypal or class inheritance is where one class can inherit characteristics from another class. The benefit is you don&#8217;t have the same exact code or functionality in several different classes. If there is a bug in your code you don&#8217;t have to fix it in 10 different places. You just have to fix it in one class and all classes extending that class will be fixed.</p>
+<p>Below is an example of how to extend the class above.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var AnotherView = (function () {
+
+    var _super = Extend(AnotherView, BaseView);
+
+    function AnotherView() {
+        _super.call(this);
+    }
+
+    AnotherView.prototype.createChildren = function () {
+        _super.prototype.createChildren.call(this);
+    };
+
+    AnotherView.prototype.layoutChildren = function () {
+    };
+
+    return AnotherView;
+})();
+</pre>
+<p>The format is constant with the the <strong>BaseView</strong> above but now we have this `_super` thing in our class. What `_super` allows you to do is call the functions/methods on the class you extended.</p>
+<p>If you look at <strong>Extend</strong> in `var _super = Extend(AnotherView, BaseView);` it is a helper function that allows you to extend other classes easily. It will take the first class (AnotherView) and extend it with the second class (BaseView).</p>
+<p>Below is the 12 line Extend function/class. Go ahead, put it in your projects to easily extend your classes.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var Extend = function (inheritorClass, baseClass) {
+    for (var p in baseClass) {
+        if (baseClass.hasOwnProperty(p)) {
+            inheritorClass[p] = baseClass[p];
+        }
+    }
+    function __() {
+        this.constructor = inheritorClass;
+    }
+    __.prototype = baseClass.prototype;
+    inheritorClass.prototype = new __();
+    return baseClass;
+};
+</pre>
+<h2>Real World Example</h2>
+<p>You may have a view class like below that you always use and repeat the same methods and logic throughout most of your classes. Lets use this class as our base for all of our other view classes. After, scroll down to the next sample class to see how we can extend this class.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var BaseView = (function () {
+
+    function BaseView($element) {
+        if (($element instanceof jQuery) === true &amp;&amp; $element.length === 0) {
+            // If a jQuery object was passed in and it doesn't have any items then exit.
+            return;
+        }
+
+        this.$element = $element;
+        this.isEnabled = false;
+
+        this.init();
+    }
+
+    BaseView.prototype.init = function() {
+        // Kick off the view lifecycle
+        this.createChildren()
+            .setupHandlers()
+            .enable()
+            .layoutChildren();
+
+        return this;
+    };
+
+    BaseView.prototype.createChildren = function() {
+        // Used to create any objects for thr view and/or find references to child elements.
+        return this;
+    };
+
+    BaseView.prototype.setupHandlers = function() {
+        // Creates a class reference to an event handler method that is bound to the scope of the object.
+        return this;
+    };
+
+    BaseView.prototype.layoutChildren = function() {
+        // Optional use to set any child objects for the view. Also can be called later to update objects.
+        return this;
+    };
+
+    BaseView.prototype.enable = function() {
+        if (this.isEnabled === true) {
+            return this;
+        }
+        this.isEnabled = true;
+
+        // Add event listeners for this class.
+
+        return this;
+    };
+
+    BaseView.prototype.disable = function() {
+        if (!this.isEnabled === false) {
+            return this;
+        }
+        this.isEnabled = false;
+
+        // Remove event listeners for this class.
+
+        return this;
+    };
+
+    BaseView.prototype.destroy = function() {
+        this.disable();
+
+        // Nulls out all properties of the class to prevent memory leak.
+        for (var key in this) {
+            if (this.hasOwnProperty(key)) {
+                this[key] = null;
+            }
+        }
+    };
+
+    return BaseView;
+})();
+</pre>
+<p>In the new class below you will notice we don&#8217;t need to set any properties or have any logic that we usually have in all of our view classes. Since we extended <strong>BaseView</strong> and called super throughout the different methods it will be handle behind the scenes and we can concentrate on what this new class needs to do.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var AnotherView = (function () {
+
+    var _super = Extend(AnotherView, BaseView);
+
+    function AnotherView($element) {
+           // Put any properties above super.
+            _super.call(this, $element);
+            // Put any method calls below super.
+    }
+
+    AnotherView.prototype.createChildren = function() {
+        _super.prototype.createChildren.call(this);
+
+        return this;
+    };
+
+    AnotherView.prototype.setupHandlers = function() {
+        _super.prototype.setupHandlers.call(this);
+
+        return this;
+    };
+
+    AnotherView.prototype.layoutChildren = function() {
+        return this;
+    };
+
+    AnotherView.prototype.enable = function() {
+        if (this.isEnabled) {
+            return this;
+        }
+
+        return _super.prototype.enable.call(this);
+    };
+
+    AnotherView.prototype.disable = function() {
+        if (!this.isEnabled) {
+            return this;
+        }
+
+       return _super.prototype.disable.call(this);
+    };
+
+    AnotherView.prototype.destroy = function() {
+
+       _super.prototype.destroy.call(this);
+    };
+
+    return AnotherView;
+})();
+</pre>
+<p>I did not come up with this structure. This is what the TypeScript compiler spits out. I&#8217;ve just clean it up for easier use in native JavaScript projects.</p>
+<p><strong>Check out the <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/" target="_blank">example files</a> for this article.</strong></p>
+<h2>Less Typing with Templates and Snippets</h2>
+<p>Want to speed up your development? Check out my other article <a href="https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/">Templates/Snippets in your IDE</a> to learn more. </p>
+<p>Below is an example of a template I created that will create new classes that extends the <strong>BaseView</strong> above.<br />
+<img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/AnotherView.gif" /></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Templates Snippets in your IDE</title>
+		<link>https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/</link>
+		<comments>https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/#respond</comments>
+		<pubDate>Fri, 10 Oct 2014 04:54:02 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1636</guid>
+		<description><![CDATA[In this article I am going to talk about how you can speed up your development by using templates in Sublime Text and JetBrains IDE&#8217;s (WebStorm, PhpStorm, etc). Below you can see the snippets in action. Just hit the Tab key to fill in the next predefined input area. Creating a Property Creating a Method [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In this article I am going to talk about how you can speed up your development by using templates in <strong>Sublime Text</strong> and <strong>JetBrains IDE&#8217;s</strong> (WebStorm, PhpStorm, etc).</p>
+<p>Below you can see the snippets in action. Just hit the <strong>Tab</strong> key to fill in the next predefined input area.</p>
+<h4>Creating a Property</h4>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/Property.gif" /></p>
+<h4>Creating a Method</h4>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/Method.gif" /></p>
+<h4>Creating a Class</h4>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/AnotherView.gif" /></p>
+<h2>Sublime Text Snippets</h2>
+<p>Here are three Sublime Text snippets for you to use:<br />
+  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/method.sublime-snippet" target="_blank">Method Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/property.sublime-snippet" target="_blank">Property Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/view.sublime-snippet" target="_blank">View Class</a></li>
+</p>
+<p>1) To create a snippet, go to <strong>Tools > New Snippet.</strong></p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-new-snippet.png" width="625" height="271" /></p>
+<p>2) A new sample snippet file will be created. Go ahead and replace all of the code with one of the snippets I provided above. Below I have replaced it with the BaseView snippet.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-view.png" width="625" height="271" /></p>
+<p>3) Now save the file and name it &#8220;view.sublime-snippet&#8221;. For Sublime Text snippets the file must end with <strong>&#8220;.sublime-snippet&#8221;</strong>.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-save.png" width="470" height="296" /></p>
+<p>The snippets files will be saved in: <strong>Sublime Text > Preferences > Browse Package > Users</strong></p>
+<p>4) Once you have created all three snippets above you can start using them. First, create a new file and save it with the class name you are creating, be sure to give it a <strong>&#8220;.js&#8221;</strong> extension. You must have the extension defined so Sublime Text knows what type of snippet to use.</p>
+<p>Now start typing <strong>&#8220;view&#8221;</strong> and hit the Tab key on your keyboard.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-type.png" width="625" height="271" /></p>
+<p>5) You can see it has created a <strong>&#8220;AnotherView&#8221;</strong> class that extends <strong>&#8220;BaseView&#8221;</strong> with all of the default methods.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-build-out.png" width="625" height="271" /></p>
+<h2>JetBrains Templates &amp; Live Templates</h2>
+<p>With JetBrains you have File Templates &amp; Live Templates. Here are three JetBrains templates for you to use:<br />
+  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/method.txt" target="_blank">Method Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/property.txt" target="_blank">Property Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/view.txt" target="_blank">View Class</a></li>
+</p>
+<h4>File Templates</h4>
+<p>1) Lets create a File Template for the <strong>View Class</strong> template. In PhpStorm/WebStorm you can right click on any folder in your project then select <strong>New > Edit File Templates</strong>.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/edit-template.jpg" /></p>
+<p>2) Now click the green <strong>plus button</strong> top left and name it <strong>JS View</strong>. Copy the snippet provided above and paste it in. Click the <strong>OK</strong> button and you are ready to go.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/js-view.png" /></p>
+<p>3) Now you can click <strong>New > JS View</strong> to create a new view class.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/new-template.png" /></p>
+<h4>Live Templates</h4>
+<p>For the <strong>Method Helper</strong> and <strong>Property Helper</strong> snippets above we need to do the following.</p>
+<p>1) Go to <strong>Preferences > Live Templates > JavaScript</strong> and click on the <strong>plus symbol</strong> and select <strong>1. Live Template</strong>.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/new-live-template.png" /></p>
+<p>2) Fill in the <strong>Abbreviation:</strong> with the name you want to type to trigger the snippet. Add the snippet I&#8217;ve provided in the <strong>Template text:</strong> area and then click the <strong>Define</strong> link.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/set-live-template.png" /></p>
+<p>3) After clicking the <strong>Define</strong> select <strong>JavaScript</strong> and click the <strong>Apply</strong> button.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/define-live-template.png" /></p>
+<p>4) One thing you will want to do is click the <strong>Edit variables</strong> and order the names like I have below. Also on the <strong>Method Helper</strong> you will need to set the <strong>Expression</strong> and check the <strong>Skip if defined</strong> checkbox.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/order-live-template.png" /></p>
+<p>5) When you want to use the Live Template use <strong>Ctrl+J</strong> or <strong>Cmd+J</strong> and start typing the <strong>Abbreviation</strong> name to insert the snippet.</p>
+<p>This template article relates to another article I wrote <a href="https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/">How To Write JavaScript Classes</a>. Please let me know if you use and like these templates.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript Classes &#038; Object-Oriented Programming</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/#comments</comments>
+		<pubDate>Sat, 31 May 2014 19:56:29 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1561</guid>
+		<description><![CDATA[Update: New and better Boilerplate that uses ES6 Modules in TypeScript check it out. Full credit for this article goes to Peter Elst. I took a really old article of his and modified it to talk about TypeScript. What is OOP In object-oriented programming, developers often use the term &#8220;architecting an application.&#8221; This analogy is [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>Full credit for this article goes to <a href="http://peterelst.com/">Peter Elst</a>. I took a really old article of his and modified it to talk about TypeScript.</p>
+<h2>What is OOP</h2>
+<p>In object-oriented programming, developers often use the term &#8220;architecting an application.&#8221; This analogy is not far off the mark. You can approach any project as if you are its architect, and use object-oriented principles as building blocks to structure your code. As you develop your application, you can think of your code modules as the blueprints that form the foundation of your applications. Just as you can use one blueprint repeatedly to build similar structures, you can repurpose your code as needed to achieve your desired functionality.</p>
+<p>The concept of classes is at the heart of all object-oriented code development. If you&#8217;re not already familiar with object-oriented programming (OOP), this article will get you started writing TypeScript classes. Writing classes has never been easier than with TypeScript. If you are new to working with TypeScript, you&#8217;ll find that writing classes allows you to create projects that are easier to manage and maintain.</p>
+<p>The concepts covered in this article will help you begin writing more portable, reusable code and move beyond the world of procedural code.</p>
+<h2>What are classes?</h2>
+<p>Classes are nothing more than a collection of functions (<em>called methods in this context</em>) that provide a blueprint for any number of instances that are created from it. By changing some variables (or in OOP terminology, properties) of a class instance, or by passing different values as arguments to its methods, the same underlying class can have widely different outcomes.</p>
+<p>The ability to generate multiple instances (that can appear and behave differently) from the same object is one of the reasons why classes are so powerful. Writing TypeScript classes promotes reusability because the functionality you create can be repurposed.</p>
+<p>Let&#8217;s see how this looks in code:</p>
+<pre class="brush: as3; title: ; notranslate">
+class Brick {
+
+    public color: string = 'red';
+
+    constructor() {
+        console.log(`new ${this.color} brick created`);
+    }
+}
+
+export default Brick;
+</pre>
+<p>The Brick.ts class code above illustrates one of the most basic implementations of an TypeScript class. The class holds just a single method and property.</p>
+<p>To use this class in another TypeScript we will need to import it and instantiate the class.</p>
+<pre class="brush: as3; title: ; notranslate">
+import Brick from './somepath/Brick';
+
+const firstBrick: Brick = new Brick();
+</pre>
+<p>If you run the compiled TypeScript code which is JavaScript, you&#8217;ll see that the Console panel now displays &#8220;new red brick created&#8221; (see Figure 1).</p>
+<p><a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure1.png"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure1.png" alt="figure1" width="625" height="152" class="alignnone size-full wp-image-1579" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure1.png 625w, https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure1-300x72.png 300w" sizes="(max-width: 625px) 100vw, 625px" /></a><br />
+<em>Figure 1. Console panel of Brick class getting instantiated</em></p>
+<p>The console message in the Console panel means that your TypeScript class is functioning correctly. Now it is time to start doing some more advanced things with classes.</p>
+<h2>Basic OOP concepts: Inheritance vs. composition</h2>
+<p>There are just a handful of concepts at the core of OOP. This article covers the most important ones: inheritance, encapsulation, and polymorphism. I also discuss a few related topics to help you put these ideas into context.</p>
+<p>Without a doubt, <em>inheritance</em> is the most well-known principle of OOP. Inheritance can be defined as the ability to inherit properties and methods and extend the functionality of an existing class in a new one.</p>
+<p>If you&#8217;re thinking ahead, you might imagine creating a new &#8220;Wall&#8221; class that extends the &#8220;Brick&#8221; class you created earlier. However, that is not how inheritance works.</p>
+<p>Looking at the relationship between a brick and a wall, the best way to code this is not through inheritance but rather by a concept called <em>composition</em>.</p>
+<p>A simple rule of thumb determines whether the relationship between classes is one that warrants inheritance or composition. If you can say class A &#8220;is a&#8221; class B, you&#8217;re dealing with inheritance. If you can say class A &#8220;has a&#8221; class B, the relationship is one of composition.</p>
+<p>Here are some examples of inheritance:</p>
+<ul>
+<li>Cat &#8220;is an&#8221; animal</li>
+<li>Engineer &#8220;is an&#8221; employee</li>
+<li>Rugby &#8220;is a&#8221; sport</li>
+</ul>
+<p>Here are examples of composition:</p>
+<ul>
+<li>Wall &#8220;has a&#8221; brick</li>
+<li>Computer &#8220;has a&#8221; keyboard</li>
+<li>School &#8220;has a&#8221; teacher</li>
+</ul>
+<p>So what is the difference in how inheritance and composition are implemented? Let&#8217;s compare how this works, starting with inheritance:</p>
+<pre class="brush: as3; title: ; notranslate">
+class Animal {
+
+    public furry: boolean;
+    public domestic: boolean;
+
+    constructor() {
+        console.log('new animal created');
+    }
+
+}
+
+export default Animal;
+</pre>
+<p>The Animal.ts class code above is the base Animal class, which you will now extend using inheritance with a Cat class:</p>
+<pre class="brush: as3; title: ; notranslate">
+import Animal from './somepath/Animal';
+
+class Cat extends Animal {
+
+    public family: string;
+
+    constructor() {
+        super();
+
+        this.furry = true;
+        this.domestic = true;
+        this.family = 'feline';
+    }
+}
+
+export default Cat;
+</pre>
+<p>If you look at the Cat.ts class, the constructor assigns values to three different properties. On close inspection, only one of these properties (family) is defined in the Cat class. The other properties (furry and domestic) come from the Animal base class.</p>
+<p>While this not exactly the most practical example, you can see how class inheritance allows you to build upon existing functionality to create a new blueprint for you to start using as you develop your project.</p>
+<p>Now if you wanted to create half a dozen cats, you could simply do this by instantiating the Cat class, which has all the properties already set up, rather than using the generic Animal class and having to define the properties again and again for each instance.</p>
+<p>Currently in TypeScript there is no override keyword to override a method defined in the class that you extended. You just create a new method with the same name to override the one in the class you extended.</p>
+<p>On the other hand, composition doesn&#8217;t have any formal syntax like the extends keyword. Composition simply instantiates its own instance of any class it wants to use.</p>
+<p>Let&#8217;s take the Brick class created earlier. In this next example you&#8217;ll create a Wall class that uses composition to instantiate instances of the Brick class:</p>
+<pre class="brush: as3; title: ; notranslate">
+import Brick from './somepath/Brick';
+
+export class Wall {
+
+    public wallWidth: number = 0;
+    public wallHeight: number = 0;
+
+    constructor(w: number, h: number) {
+        this.wallWidth = w;
+        this.wallHeight = h;
+        this.build();
+    }
+
+    public build(): void {
+        for (var i: number = 0; i &lt; this.wallHeight; i++) {
+            for (var j: number = 0; j &lt; this.wallWidth; j++) {
+                var brick: Brick = new Brick();
+            }
+        }
+    }
+}
+
+export default Wall;
+</pre>
+<p>In the code above, the Wall.ts class accepts two arguments passed to its constructor, defining the width and height in bricks of the wall you want to create.</p>
+<p>Let&#8217;s do a quick test of this class by instantiating it:</p>
+<pre class="brush: as3; title: ; notranslate">
+import Wall from './somepath/Wall';
+
+const myWall: Wall = new Wall(4, 4);
+</pre>
+<p>If you run the compiled TypeScript code which is JavaScript, you&#8217;ll see that 16 Brick instances are created with corresponding trace statements displayed in the Output panel to create a 4 x 4 wall (see Figure 2).</p>
+<p>Output panel of Wall class getting executed Figure 2. Output panel of Wall class getting executed Apart from the difference in class relationship between inheritance and composition (as I discussed earlier), composition has the advantage of being able to add functionality to another class at runtime. It allows you to have control over the creation and destruction of class instances, whereas with inheritance the relationship between the classes is fixed and defined at the time the code is compiled.</p>
+<p><a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure2.png"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure2.png" alt="figure2" width="625" height="152" class="alignnone size-full wp-image-1580" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure2.png 625w, https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure2-300x72.png 300w" sizes="(max-width: 625px) 100vw, 625px" /></a></p>
+<h2>Encapsulation</h2>
+<p>Now let&#8217;s move on to another important principle of OOP called <em>encapsulation</em>. The underlying concept of encapsulation deals with what methods and properties your class exposes to the outside world.</p>
+<p>Up until this point you&#8217;ve always set methods and properties as public, but is that really what you&#8217;d want to do?</p>
+<p>If you want your code to be stable, and if you want to develop projects that are least prone to bug and errors, you&#8217;ll want to restrict the ways in which other classes can interact with your code.</p>
+<p>The key here is to only have those methods and properties available that are required as settings for the class, and restrict access to the rest. Using this approach, you&#8217;ll have a limited number of places in your code to debug when something goes wrong in the interaction with your class.</p>
+<p>TypeScript includes the following keywords as access modifiers to methods and properties:</p>
+<dl>
+<dt>public</dt>
+<dd>allows access from anywhere</dd>
+<dt>private</dt>
+<dd>can only be accessed within its own class</dd>
+</dl>
+<p>The keyword below is current not in TypeScript but I do hope it is added soon:</p>
+<dl>
+<dt>protected</dt>
+<dd>can only be accessed within own class and subclasses</dd>
+</dl>
+<p>Let&#8217;s put this concept into practice. Take a look at the following example:</p>
+<pre class="brush: as3; title: ; notranslate">
+export class Person {
+
+    private _age: number = 1;
+
+    constructor() {
+
+    }
+
+    public get age(): number {
+        return this._age;
+    }
+
+    public set age(val: number) {
+        if (this._age &gt; 0) {
+            this._age = val;
+        }
+    }
+
+}
+
+export default Person;
+</pre>
+<p>Note: TypeScript supports getter and setter methods but some older browsers do not support the compiled JavaScript code. To learn more check out my <a href="https://codebelt.github.io/blog/typescript/javascript-getters-setters-typescript-accessor-tutorial/" title="JavaScript/TypeScript Getters Setters with TypeScript Accessor Tutorial">TypeScript Getters Setters with TypeScript Accessor Tutorial</a>.</p>
+<p>The code example above shows a Person.ts class with a private property _age of a Number type. Even though you want to allow the age of the person to be set, you still opted not to use a public property here. Instead you are routing the age value through the use of a getter/setter method.</p>
+<p>Getter/setter methods (as implemented in the previous example) appear as if they are properties, but they behave like methods.</p>
+<p>When you set the age property, it calls the age setter method that assigns the value to the private _age property after validating it. In this case, you know that a person&#8217;s age can&#8217;t be a negative value.</p>
+<p>The major advantage of this approach is that every time the age property is set, validation occurs because the age value is always routed through the setter function.</p>
+<h2>Polymorphism</h2>
+<p>The final concept I cover in this article is <em>polymorphism</em>. The concept behind polymorphism is based on the idea of different classes implementing the same method names.</p>
+<p>Even though this is a very simple concept, polymorphism has some interesting implications. The first major advantage is that it allows classes to be interchangeable at runtime. There are no hard-coded references to specific method names for specific classes.</p>
+<p>For example, imagine you have a Teacher class and a Student class. You could implement a teach method for the teacher and a study method for the student, but polymorphism allows you to write the code so that the two classes both implement a work method. Although a Teacher and Student class will clearly have a different implementation of a work method (one teaches, the other studies), you can use a shared generic method name, creating a single interface through which they can be accessed:</p>
+<pre class="brush: as3; title: ; notranslate">
+class Teacher {
+
+    public work(): void {
+        console.log('I am teaching');
+    }
+
+}
+
+export default Teacher;
+</pre>
+<pre class="brush: as3; title: ; notranslate">
+class Student {
+
+    public work(): void {
+        console.log('I am studying');
+    }
+
+}
+
+export default Student;
+</pre>
+<p>Any class that gets passed an instance of either the Teacher.ts or Student.ts class does not need to do any type checking to determine whether it is dealing with a teacher or a student instance (or any other class implementing the same methods for that matter) but it can directly call the work method.</p>
+<p>You can enforce polymorphism between classes through the use of something called <em>interfaces</em>. These are similar to classes in that they define a set of methods, but interfaces are different than classes because they do not have an implementation. Interfaces simply define a &#8220;contract&#8221; of the methods a class needs to implement in order to be valid.</p>
+<p>Here&#8217;s an example of an interface called IWork:</p>
+<pre class="brush: as3; title: ; notranslate">
+interface IWork {
+    work(): void;
+}
+
+export default IWork;
+</pre>
+<p>As you can see from the IWork.ts code above, an interface looks suspiciously like any other class. But there are a few differences. Most developers choose to name an interface name so that it begins with a capital I (a common naming convention for interfaces, although it is optional). Also, instead of a class keyword, interfaces use the interface keyword. Additionally, as you analyze the code, you&#8217;ll see that in the section where you would expect to see some code for the work method, only its method signature is defined.</p>
+<p>The interface above requires that any class that implements it must have a method called work that has a return type of void.</p>
+<p>Let&#8217;s see how the Teacher and Student class implement this interface:</p>
+<pre class="brush: as3; title: ; notranslate">
+import IWork from './somepath/IWork';
+
+class Teacher implements IWork {
+
+    public tenure: boolean;
+
+    constructor() {
+        this.tenure = true;
+    }
+
+    public work(): void {
+        console.log(&quot;I am teaching&quot;);
+    }
+
+}
+
+export default Teacher;
+</pre>
+<pre class="brush: as3; title: ; notranslate">
+import IWork from './somepath/IWork';
+
+class Student implements IWork {
+
+    public averageGrade: number;
+
+    constructor() {
+        this.averageGrade = 4.07;
+    }
+
+    public work(): void {
+        console.log('I am studying');
+    }
+
+}
+
+export default Student;
+</pre>
+<p>That was easy. By simply adding the implements keyword, you now have set up both the Teacher.ts and Student.ts classes so that they are required to implement the work method. If you try removing or renaming the work method from either of the two classes, you&#8217;ll receive a compile-time error message.</p>
+<p>By having classes all implement a common interface, the interface can actually be used as a data type. Let&#8217;s look at the following example:</p>
+<pre class="brush: as3; title: ; notranslate">
+import IWork from './somepath/IWork';
+
+class Supervisor {
+
+    constructor(worker: IWork) {
+        worker.work();
+    }
+
+}
+
+export default Supervisor;
+</pre>
+<p>In the example above, you have a Supervisor.ts class that can be passed an instance of a class implementing the IWork interface. In this way, the interface is being used as a data type.</p>
+<p>The TypeScript compiler knows that any class instance implementing this IWork interface will have the work method defined. Therefore, it doesn&#8217;t complain about a possibly undefined method when the code is compiled.</p>
+<pre class="brush: as3; title: ; notranslate">
+import Supervisor from './somepath/Supervisor';
+import Teacher from './somepath/Teacher';
+import Student from './somepath/Student';
+
+const supervisor1: Supervisor = new Supervisor(new Teacher());
+const supervisor2: Supervisor = new Supervisor(new Student());
+</pre>
+<p>If you run the compiled TypeScript code which is JavaScript, you&#8217;ll see two lines appear in the Output panel. The first line displays &#8220;I&#8217;m teaching&#8221; and the second displays &#8220;I&#8217;m studying&#8221; (see Figure 3). These console.log statements are, of course, exactly what you&#8217;d expect by passing a new teacher and student instance to the Supervisor constructor.</p>
+<p><a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure3.png"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure3.png" alt="figure3" width="625" height="152" class="alignnone size-full wp-image-1578" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure3.png 625w, https://codebelt.github.io/blog/wp/wp-content/uploads/2014/05/figure3-300x72.png 300w" sizes="(max-width: 625px) 100vw, 625px" /></a><br />
+Figure 3. Output panel of the Supervisor class using polymorphism</p>
+<h2>Type casting</h2>
+<p>That brings up the next question: What happens when you try to access class-specific methods or properties of Teacher or Student (other than the work method) that weren&#8217;t defined in the interface?</p>
+<p>The Supervisor class uses the IWork data type for any instance that is passed to its constructor so if you were to call any other method, the compiler has no way of knowing whether that is implemented. The compiler will report an error.</p>
+<p>You can work around this is by using something called type casting by converting the instance from this generic IWork data type back to the Teacher or Student instance.</p>
+<p>The way this is accomplished is by using the instanceof keyword and the &#8220;as&#8221; keyword to cast the object:</p>
+<pre class="brush: as3; title: ; notranslate">
+import Teacher from './somepath/Teacher';
+import Student from './somepath/Student';
+import IWork from './somepath/IWork';
+
+export class Supervisor {
+
+    constructor(inst: IWork) {
+        inst.work();
+
+        if (inst instanceof Teacher) {
+            const teacher = inst as Teacher;
+            console.log('Has tenure:', teacher.tenure);
+        }
+
+        if (inst instanceof Student) {
+            const student = inst as Student;
+            console.log('Average grade is:', student.averageGrade);
+        }
+    }
+
+}
+
+export default Supervisor;
+</pre>
+<p>In the code above, the instanceof keyword checks whether the worker instance passed to the constructor is of the specific type Teacher or of the type Student.</p>
+<p>If it is a teacher instance, you are able to type cast the instance to that specific class by using &#8220;as&#8221; keyword, so you can access its specific methods and properties. In this case you could, for example, have a Boolean tenure property set in the Teacher class.</p>
+<p>The same holds true if we&#8217;re dealing with a student instance. If the is keyword confirms that you are working with a student, you can type cast the generic IWork instance to a student instance and access the averageGrade property.</p>
+<p>This is a very useful behavior. You can see how using polymorphism in this way benefits your projects when you have a collection of classes that need to accept any number of data types, as long as they implement a common interface. When you need to get into the specific method implementations of the class implementing the interface, type casting makes this possible.</p>
+<p>To check out an example of OOP and TypeScript check out an older post of mine <a href="https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/" title="Object Oriented Programming with TypeScript Tutorial (JavaScript OOP)">Object Oriented Programming with TypeScript Tutorial</a>.</p>
+<p>Files for this example can be found at: <a href="https://gist.github.com/codeBelt/65a82e76597f2fb6c2af" target="_blank">https://gist.github.com/codeBelt/65a82e76597f2fb6c2af</a> You can use the follow command to compile the example code:</p>
+<pre class="brush: as3; title: ; notranslate">
+tsc TestApp.ts -out app.js
+</pre>
+<p>Original Article written by Peter Elst (<a href="http://www.adobe.com/devnet/archive/actionscript/articles/oop_as3.html">source</a>)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript AMD with RequireJS Tutorial</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/#comments</comments>
+		<pubDate>Sun, 09 Mar 2014 20:03:55 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1526</guid>
+		<description><![CDATA[Update: New and better Boilerplate that uses ES6 Modules in TypeScript check it out. In this TypeScript RequireJS tutorial I will show you how to setup AMD classes, setup your config file and how to use RequireJS plugins with TypeScript. TypeScript AMD Classes Below is how we setup a AMD class that we can use [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>In this TypeScript RequireJS tutorial I will show you how to setup AMD classes, setup your config file and how to use RequireJS plugins with TypeScript.</p>
+<h2>TypeScript AMD Classes</h2>
+<p>Below is how we setup a AMD class that we can use with RequireJS. The most important part is to have the export statement below the class itself and to equal the class you created.</p>
+<pre class="brush: as3; title: ; notranslate">
+// Base.ts file
+class Base {
+
+    constructor() {
+    }
+
+    public createChildren():void {
+
+    }
+}
+
+export = Base;
+</pre>
+<p>Next we want to import that Base.ts AMD TypeScript class into another class. You can see below how we have an import statement that will bring in our Base class.</p>
+<pre class="brush: as3; title: ; notranslate">
+// TestApp.ts file
+import Base = require(&quot;view/Base&quot;);
+
+class TestApp extends Base {
+
+    private _title:string = 'TypeScript AMD Boilerplate';
+
+    constructor() {
+        super();
+    }
+
+    public createChildren():void {
+
+    }
+
+}
+
+export = TestApp;
+</pre>
+<p>Once you have your RequireJS config file setup to load jQuery then you can do the following in your classes. Later I will should my config file.</p>
+<pre class="brush: as3; title: ; notranslate">
+import $ = require(&quot;jquery&quot;);
+</pre>
+<h2>RequireJS Plugins TypeScript</h2>
+<p>Seems like this is an undocumented TypeScript feature. Below is what you need to use RequireJS plugins like the text! plugin or in this example the Handlebars(hbs!) plugin:</p>
+<pre class="brush: as3; title: ; notranslate">
+/// &lt;amd-dependency path=&quot;hbs!templates/topbar/TopNavigationTemplate&quot; /&gt;
+declare var require:(moduleId:string) =&gt; any;
+var TopNavigationTemplate:Function = require('hbs!templates/topbar/TopNavigationTemplate');
+</pre>
+<p>If you need to add multiple plugins into the file you will need to put all the <strong>/// &lt;amd-dependency path=&#8221;&#8221; /></strong> above the require code like:</p>
+<pre class="brush: as3; title: ; notranslate">
+/// &lt;amd-dependency path=&quot;hbs!templates/topbar/TopNavigationTemplate&quot; /&gt;
+/// &lt;amd-dependency path=&quot;hbs!templates/login/LoginTemplate&quot; /&gt;
+declare var require:(moduleId:string) =&gt; any;
+var TopNavigationTemplate:Function = require('hbs!templates/topbar/TopNavigationTemplate');
+var LoginTemplate:Function = require('hbs!templates/login/LoginTemplate');
+</pre>
+<h2>RequireJS Config &#038; Bootstrap Classes</h2>
+<p>Here is my RequireJS config file(AppConfig.ts):</p>
+<pre class="brush: as3; title: ; notranslate">
+require.config({
+
+    baseUrl: 'assets/scripts/',
+
+    paths: {
+        //main libraries
+        jquery: '../vendor/jquery/jquery-1.9.1',
+
+        //shortcut paths
+        templates: '../templates',
+        data: '../data',
+
+        //require plugins
+        text: '../vendor/require/text',
+        tpl: '../vendor/require/tpl',
+        json: '../vendor/require/json',
+        hbs: '../vendor/require-handlebars-plugin/hbs'
+    },
+
+    shim: {
+        jquery: {
+            exports: '$'
+        }
+    }
+});
+</pre>
+<p>And here is my main RequireJS file(AppBootstrap.ts) that kicks everything off:</p>
+<pre class="brush: as3; title: ; notranslate">
+/// &lt;reference path=&quot;_declare/require.d.ts&quot; /&gt;
+
+///&lt;reference path='AppConfig.ts'/&gt;
+///&lt;reference path='TestApp.ts'/&gt;
+
+/**
+ * Main entry point for RequireJS
+ */
+require(
+    [
+        'TestApp',
+        'jquery'
+    ],
+    (TestApp, $) =&gt; {
+        'use strict';
+
+        $(document).ready(function () {
+            var app = new TestApp();
+            app.appendTo('body');
+        });
+    }
+);
+</pre>
+<h2>RequireJS TypeScript Example Files</h2>
+<p>Be sure to check out my <a href="https://github.com/codeBelt/TypeScript-AMD-Boilerplate" title="TypeScript RequireJS Example" target="_blank">TypeScript AMD(RequireJS) Example</a> files to see how to setup an TypeScript application with RequireJS.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-amd-with-requirejs-tutorial/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript Internal and External Modules</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/#comments</comments>
+		<pubDate>Sun, 09 Mar 2014 06:38:12 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1528</guid>
+		<description><![CDATA[Update: New and better Boilerplate that uses ES6 Modules in TypeScript check it out. Final I figured out how to do both TypeScript AMD &#038; CommonJS external modules and TypeScript Internal module classes. Hopefully you can get started right away with my examples below. TypeScript External Modules Classes Below is how to setup TypeScript AMD/CommonJS [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>Final I figured out how to do both TypeScript AMD &#038; CommonJS external modules and TypeScript Internal module classes. Hopefully you can get started right away with my examples below.</p>
+<h2>TypeScript External Modules Classes</h2>
+<p>Below is how to setup TypeScript AMD/CommonJS classes so they will output correctly. You can check out my <a href="https://github.com/codeBelt/TypeScript-AMD-Boilerplate" title="TypeScript AMD Example" target="_blank">TypeScript AMD(RequireJS) Example</a> files to see how to setup an TypeScript application with RequireJS.</p>
+<pre class="brush: as3; title: ; notranslate">
+// TestApp.ts file
+import Base = require(&quot;view/Base&quot;);
+
+class TestApp extends Base {
+
+    private _title:string = 'TypeScript AMD Boilerplate';
+
+    constructor() {
+        super();
+    }
+
+    public createChildren():void {
+
+    }
+
+}
+
+export = TestApp;
+</pre>
+<p>Here is the Base.ts class that the TestApp.ts will extend.</p>
+<pre class="brush: as3; title: ; notranslate">
+// Base.ts file
+import $ = require(&quot;jquery&quot;);
+
+class Base {
+
+    private _parent:JQuery = null;
+
+    constructor() {
+    }
+
+    public createChildren():void {
+
+    }
+
+    public appendTo(selector:string):void {
+        this._parent = $(selector);
+        this.createChildren();
+    }
+
+}
+
+export = Base;
+</pre>
+<h2>TypeScript Internal Modules Classes</h2>
+<p>Below is how to setup TypeScript Internal classes so they will output correctly. This is the way I like to setup my TypeScript files. You can check out my <a href="https://github.com/codeBelt/TypeScript-Boilerplate" title="TypeScript Internal Modules Example" target="_blank">TypeScript Internal Modules Example</a> files to see how to setup an TypeScript application with regular classes.</p>
+<pre class="brush: as3; title: ; notranslate">
+///&lt;reference path='_declare/jquery.d.ts'/&gt;
+
+///&lt;reference path='view/Base.ts'/&gt;
+
+module namespace {
+
+    export class TestApp extends Base {
+
+        private _title:string = 'TypeScript Boilerplate';
+
+        constructor() {
+            super();
+        }
+
+        public createChildren():void {
+
+        }
+
+    }
+}
+</pre>
+<p>Here is the Base.ts class that the TestApp.ts will extend.</p>
+<pre class="brush: as3; title: ; notranslate">
+module namespace {
+
+    export class Base {
+
+        private _parent:JQuery = null;
+
+        constructor() {
+        }
+
+        public createChildren():void {
+
+        }
+
+        public appendTo(selector:string):void {
+            this._parent = $(selector);
+            this.createChildren();
+        }
+
+    }
+}
+</pre>
+<p>If you want to learn more about <a href="https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/" title="TypeScript Namespace with Internal Modules">TypeScript Namespace with Internal Modules</a> check out this other post.</p>
+<p>Go ahead and leave comments because I know people are trying to figure this out and I think this is the way to do <strong>TypeScript Internal and External Modules</strong>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-internal-and-external-modules/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>jQuery event Listener plugin</title>
+		<link>https://codebelt.github.io/blog/jquery/jquery-event-listener-plugin/</link>
+		<comments>https://codebelt.github.io/blog/jquery/jquery-event-listener-plugin/#respond</comments>
+		<pubDate>Tue, 25 Feb 2014 01:33:54 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1516</guid>
+		<description><![CDATA[When creating JavaScript classes you will run into an issue where you cannot remove event listeners once you&#8217;ve added them. To get this to work you typically need to assign your bind function call(s) to a property on the class. You can see this in the Example 1 below in the setupHandlers method. The jQuery [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>When creating JavaScript classes you will run into an issue where you cannot remove event listeners once you&#8217;ve added them. To get this to work you typically need to assign your bind function call(s) to a property on the class. You can see this in the Example 1 below in the setupHandlers method.</p>
+<p>The jQuery eventListener plugin makes it so you don&#8217;t need to do this. Basically you can do everything the on and off methods does in jQuery. You&#8217;ll just need to pass the class scope as the last argument. Check out the Example 2.</p>
+<p>Also check out the EventListenerApp sample code. <a href="https://github.com/codeBelt/jquery-eventListener" title="jquery event listener" target="_blank">https://github.com/codeBelt/jquery-eventListener</a></p>
+<p><strong><em>Example 1 without plugin</em></strong></p>
+<pre class="brush: jscript; title: ; notranslate">
+var DemoView = function() {
+    this.isEnabled = false;
+
+    this.setupHandlers();
+    this.enable();
+};
+
+DemoView.prototype.setupHandlers = function() {
+    // Bind event handlers scope here
+    this.onClickHandler = this.onClick.bind(this);
+    this.onMouseEnterHandler = this.onMouseEnter.bind(this);
+    this.onMouseLeaveHandler = this.onMouseLeave.bind(this);
+};
+
+DemoView.prototype.enable = function() {
+    if (this.isEnabled === true) return this;
+    this.isEnabled = true;
+
+    this.$card.on('click', this.onClickHandler)
+    this.$card.on('mouseenter', this.onMouseEnterHandler)
+    this.$card.on('mouseleave', this.onMouseLeaveHandler);
+};
+
+DemoView.prototype.disable = function() {
+    if (this.isEnabled === false) return this;
+    this.isEnabled = false;
+
+    this.$card.off('click', this.onClickHandler)
+    this.$card.off('mouseenter', this.onMouseEnterHandler)
+    this.$card.off('mouseleave', this.onMouseLeaveHandler);
+};
+
+DemoView.prototype.onClick = function(event) {};
+DemoView.prototype.onMouseEnter = function(event) {};
+DemoView.prototype.onMouseLeave = function(event) {};
+</pre>
+<p><strong><em>Example 2 with plugin</em></strong></p>
+<pre class="brush: jscript; title: ; notranslate">
+var DemoView = function() {
+    this.isEnabled = false;
+
+    this.enable();
+};
+
+DemoView.prototype.enable = function() {
+    if (this.isEnabled === true) return this;
+    this.isEnabled = true;
+
+    this.$card.addEventListener('click', this.onClickHandler, this)
+    this.$card.addEventListener('mouseenter', this.onMouseEnterHandler, this)
+    this.$card.addEventListener('mouseleave', this.onMouseLeaveHandler, this);
+};
+
+DemoView.prototype.disable = function() {
+    if (this.isEnabled === false) return this;
+    this.isEnabled = false;
+
+    this.$card.removeEventListener('click', this.onClickHandler, this)
+    this.$card.removeEventListener('mouseenter', this.onMouseEnterHandler, this)
+    this.$card.removeEventListener('mouseleave', this.onMouseLeaveHandler, this);
+};
+
+DemoView.prototype.onClick = function(event) {};
+DemoView.prototype.onMouseEnter = function(event) {};
+DemoView.prototype.onMouseLeave = function(event) {};
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/jquery/jquery-event-listener-plugin/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript Cheat Sheet</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-cheat-sheet/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-cheat-sheet/#respond</comments>
+		<pubDate>Sun, 05 Jan 2014 20:02:16 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1511</guid>
+		<description><![CDATA[I just wanted to share a few good TypeScript links I have found. TypeScript Cheat Sheet The Definitive TypeScript Guide TypeScript Handbook TypeScript Wiki Also checkout my TypeScript Tutorials.]]></description>
+				<content:encoded><![CDATA[<p>I just wanted to share a few good TypeScript links I have found.</p>
+<ul>
+<li><a href="http://www.sitepen.com/blog/2013/12/31/typescript-cheat-sheet/" title="TypeScript Cheat Sheet">TypeScript Cheat Sheet</a></li>
+<li><a href="http://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/" title="The Definitive TypeScript Guide">The Definitive TypeScript Guide</a></li>
+<li><a href="http://www.typescriptlang.org/Handbook" title="TypeScript Handbook">TypeScript Handbook</a></li>
+<li><a href="https://github.com/Microsoft/TypeScript/wiki" title="TypeScript Handbook">TypeScript Wiki</a></li>
+</ul>
+<p>Also checkout my <a href="https://codebelt.github.io/blog/typescript/" title="TypeScript Tutorials">TypeScript Tutorials</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-cheat-sheet/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>My TypeScript Workflow Example</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/</link>
+		<comments>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comments</comments>
+		<pubDate>Tue, 24 Dec 2013 19:33:11 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402</guid>
+		<description><![CDATA[Update: New and better Boilerplate that uses ES6 Modules in TypeScript check it out. Being a former ActionScript developer, TypeScript is the next best thing and I wanted to share my TypeScript workflow. This is not a TypeScript workflow for Visual Studio. My IDE of choice is WebStorm/PhpStorm and they both have great TypeScript support. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>Being a former ActionScript developer, TypeScript is the next best thing and I wanted to share my TypeScript workflow. This is not a TypeScript workflow for Visual Studio. My <a href="http://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">IDE</a> of choice is <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>/<a href="http://www.jetbrains.com/phpstorm/" target="_blank">PhpStorm </a> and they both have great TypeScript support.</p>
+<h2>Let Something Else Do The Grunt Work</h2>
+<p>My whole TypeScript workflow is handle by <a href="http://gruntjs.com/" title="grunt js website." target="_blank">GruntJS</a> and several <a href="http://gruntjs.com/plugins" title="Link to grunt plugins" target="_blank">Grunt plugins</a>. Before we go over the Grunt plugins. I want to talk about the three Grunt Tasks in <strong>My TypeScript Workflow</strong>.</p>
+<dl>
+<dt>Development Task (src folder)</dt>
+<dd><strong>grunt</strong> &#8211; This task will compile our TypeScript files, Handlebar Template files and any JSON files we want converted into JavaScript. It will also create a index.html specifically for our development environment and starts up a node.js server for us to start working with files that are located in the development &#8220;src&#8221; folder.</dd>
+<dt>Production Task (web folder)</dt>
+<dd><strong>grunt web</strong> &#8211; This task will do what the above Development Task does plus it will concatenate and minify our CSS &#038; JavaScript files, prepends a comment block in our minified files, copies only the necessary files from the development folder to the production folder, creates a specific index.html file for our production environment and starts up a node.js server for us to start testing files that are located in the development &#8220;web&#8221; folder.</dd>
+<dt>Documentation Generating Task (docs folder)</dt>
+<dd><strong>grunt doc</strong> &#8211; This task will create <a href="http://yui.github.io/yuidoc/" target="_blank">YUIDoc</a>&#8216;s from our code comments in the TypeScript files.</dd>
+</dl>
+<h2>Example Code Files</h2>
+<p>Checkout my <a href="https://github.com/codeBelt/TypeScript-Boilerplate" target="_blank">TypeScript Boilerplate</a> example code to get started with the TypeScript Workflow and GruntJS. Make sure to checkout the <a href="https://github.com/codeBelt/TypeScript-Boilerplate/blob/master/Gruntfile.js" target="_blank">Gruntfile.js</a> file to see all the tasks.</p>
+<p>If you have <a href="http://nodejs.org/" target="_blank">node.js</a> and <a href="http://gruntjs.com/" target="_blank">gruntjs</a> installed you should only have to type the two following commands when in the root of the downloaded files:</p>
+<ul>
+<li>sudo npm install</li>
+<li>grunt</li>
+</ul>
+<h2>Grunt Plugins</h2>
+<dl>
+<dt>grunt-env &#038; grunt-preprocess</dt>
+<dd>These two plugins work together to create an index.html file for both our development and production environment. It will take the config.html file and include/exclude section that we have outlined.</dd>
+<dt>grunt-json</dt>
+<dd>This plugin will take your JSON files and convert them into JavaScript files. For example if you had a JSON file that had a list of all countries that was never going to change. You could eliminate that HTTP request by making the file JavaScript and minifing it together with your other JavaScript code. You can read more about this on my <a href="https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/" title="Compile JSON files into Javascript Tutorial" target="_blank">Compile JSON files into Javascript Tutorial</a>.</dd>
+<dt>grunt-contrib-handlebars</dt>
+<dd>This plugin will take your Handlebar Templates and  Partials and precompile them into JavaScript for a performance boost. If you like to use Underscore Templates you can check out my <a href="https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/" title="Precompiling JavaScript Underscore Templates" target="_blank">Precompiling JavaScript Underscore Templates Tutorial</a>.</dd>
+<dt>grunt-typescript</dt>
+<dd>This plugin will take your TypeScript files and compile them into JavaScript. It will also create sourcemaps for the TypeScript files. You can read more about this in my <a href="https://codebelt.github.io/blog/typescript/typescript-source-maps-example/" title="TypeScript Source Maps Example" target="_blank">TypeScript Source Maps Example</a> and/or <a href="https://codebelt.github.io/blog/typescript/typescript-source-maps-after-uglify/" title="TypeScript Source Maps After Uglify" target="_blank">TypeScript Source Maps After Uglify</a> tutorials.</dd>
+<dt>grunt-contrib-clean</dt>
+<dd>This plugin will delete all the files in the production (web) folder so when we do another build for production we know there are no extra files from a previous build that were removed.</dd>
+<dt>grunt-contrib-copy</dt>
+<dd>This plugin will copy specified files from the development folder into the production folder so we don&#8217;t have to add files manually every time we do a build to production.</dd>
+<dt>grunt-usemin</dt>
+<dd>This plugin has two parts to it and maybe confusing at first. It also requires the grunt-contrib-concat, grunt-contrib-uglify &#038; grunt-contrib-cssmin plugins. The two parts are:</p>
+<dl>
+<dt>useminPrepare</dt>
+<dd>The useminPrepare part of the usemin plugin looks at the html file and checks for a build:js or build:css code block. It will take those files found in the code block(s) and concat them together and then runs uglify for js and/or cssmin for css files. useminPrepare requires grunt-contrib-uglify, grunt-contrib-concat, and grunt-contrib-cssmin plugins to be installed. Which is listed in the package.json file.</dd>
+<dt>usemin</dt>
+<dd>The usemin part will remove the code block(s) and replace that area with the single file path in the html file.</dd>
+</dl>
+</dd>
+<dt>grunt-banner</dt>
+<dd>This plugin allows you to prepend or append comments to files. I prepend the version number and date to my minified files whenever I do a production build.</dd>
+<dt>grunt-manifest</dt>
+<dd>The plugin allow you to create a Application Cache Manifest file from select folders and file types. This is only needed if you are making an application that needs to work offline.</dd>
+<dt>grunt-express &#038; grunt-open</dt>
+<dd>These two plugins will creates a node.js Express Server to test our code in a server like environment and will open the index.html file in our default browsers.</dd>
+<dt>grunt-contrib-watch</dt>
+<dd>This plugin allows you to watch certain files and if they change it will kick off other tasks. In this TypeScript Workflow I watch the TypeScript and Handlebar files and have them re-compile every time I save my edits.</dd>
+<dt>grunt-contrib-yuidoc</dt>
+<dd>This plugin will generate YUIDoc&#8217;s from the yuidoc comments in your code files.</dd>
+</dl>
+<h2>The Gruntfile.js File</h2>
+<pre class="brush: as3; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Load Grunt tasks declared in the package.json file.
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+    // Project configuration.
+    grunt.initConfig({
+
+        /**
+         * This will load in our package.json file so we can have access
+         * to the project name and appVersion number.
+         */
+        pkg: grunt.file.readJSON('package.json'),
+
+        /**
+         * Constants for the Gruntfile so we can easily change the path for our environments.
+         */
+        BASE_PATH: '',
+        DEVELOPMENT_PATH: 'src/',
+        PRODUCTION_PATH: 'web/',
+
+        /**
+         * A code block that will be added to our minified code files.
+         * Gets the name and appVersion and other info from the above loaded 'package.json' file.
+         * @example &lt;%= banner.join(&quot;\\n&quot;) %&gt;
+         */
+        banner: [
+                 '/*',
+                 '* Project: &lt;%= pkg.name %&gt;',
+                 '* Version: &lt;%= pkg.appVersion %&gt; (&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;)',
+                 '* Development By: &lt;%= pkg.developedBy %&gt;',
+                 '* Copyright(c): &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt;',
+                 '*/'
+        ],
+
+        /**
+         * The different constant names that will be use to build our html files.
+         * @example &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+         */
+        env: {
+            src: {
+                NODE_ENV : 'DEVELOPMENT'
+            },
+            web : {
+                NODE_ENV : 'PRODUCTION'
+            }
+        },
+
+        /**
+         * Allows us to pass in variables to files that have place holders so we can similar files with different data.
+         * This plugin works with the 'env' plugin above.
+         * @example &lt;!-- @echo appVersion --&gt; or &lt;!-- @echo filePath --&gt;
+         */
+        preprocess : {
+            // Task to create the index.html file that will be used during development.
+            // Passes the app version and creates the /index.html
+            src : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            },
+            // Task to create the index.html file that will be used in production.
+            // Passes the app version and creates the /index.html
+            web : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            }
+        },
+
+        /**
+         * Cleans or deletes our production folder before we create a new production build.
+         */
+        clean: {
+            dist: ['&lt;%= PRODUCTION_PATH %&gt;']
+        },
+
+        /**
+         * Copies certain files over from the development folder to the production folder so we don't have to do it manually.
+         */
+        copy: {
+            web:  {
+                files: [
+                    // Copy favicon.ico file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: 'favicon.ico', dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the media folder from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: ['assets/media/**'], dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the index.html file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', dest: '&lt;%= PRODUCTION_PATH %&gt;', src: ['index.html'], filter: 'isFile', dot: true }
+                ]
+            }
+        },
+
+        /**
+         * Prepends the banner above to the minified files.
+         */
+        usebanner: {
+            dist: {
+                options: {
+                    position: 'top',
+                    banner: '&lt;%= banner.join(&quot;\\n&quot;) %&gt;',
+                    linebreak: true
+                },
+                files: {
+                    src: [
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/styles/app.min.css'
+                    ]
+                }
+            }
+        },
+
+        /**
+         * Turns any JSON files into JavaScript files.
+         */
+        json: {
+            web: {
+                options: {
+                    namespace: 'JSON_DATA',
+                    includePath: false,
+                    processName: function(filename) {
+                        return filename.toLowerCase();
+                    }
+                },
+                src: ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/data/**/*.json'],
+                dest:  '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/compiled/json.js'
+            }
+        },
+
+        /**
+         * Compiles the Handlebars templates into Javascript.
+         * http://handlebarsjs.com/
+         */
+        handlebars: {
+            compile: {
+                options: {
+                    namespace: 'JST',
+                    // Registers all files that start with '_' as a partial.
+                    partialRegex: /^_/,
+                    // Shortens the file path for the templates.
+                    processName: function(filename) {
+                        return filename.slice(filename.indexOf(&quot;template&quot;), filename.length);
+                    },
+                    // Shortens the file path for the partials.
+                    processPartialName: function(filePath) {
+                        return filePath.slice(filePath.indexOf(&quot;template&quot;), filePath.length);
+                    }
+                },
+                files: {
+                    '&lt;%= DEVELOPMENT_PATH %&gt;assets/scripts/compiled/templates.tmpl.js': ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/templates/**/*.hbs']
+                }
+            }
+        },
+
+        /**
+         * Compiles the TypeScript files into one JavaScript file.
+         */
+        typescript: {
+            main: {
+                src: ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/TestApp.ts'],
+                dest: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/compiled/app.js',
+                options: {
+                    target: 'es3', //or es5
+                    base_path: '',
+                    sourcemap: true,
+                    declaration: false,
+                    nolib: false,
+                    comments: false
+                }
+            }
+        },
+
+        /**
+         * The useminPrepare part of the usemin plugin looks at the html file and checks for a build:js or build:css code block.
+         * It will take those files found in the code block(s) and concat them together and then runs uglify for js and/or cssmin for css files.
+         * useminPrepare requires grunt-contrib-uglify, grunt-contrib-concat, and grunt-contrib-cssmin plugins to be installed. Which is listed in the package.json file.
+         *
+         * The usemin part will remove the code block(s) and replace that area with the single file path in the html file.
+         */
+        useminPrepare: {
+            html: ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html'],
+            options: {
+                dest: '&lt;%= PRODUCTION_PATH %&gt;'// Moves the single concatenated files to production.
+            }
+        },
+        usemin: {
+            html: ['&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'],
+            options: {
+                dirs: ['&lt;%= PRODUCTION_PATH %&gt;']
+            }
+        },
+
+        /**
+         * Removes all comments from the production index.html file. I can also remove all whitespace if desired.
+         */
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: false
+                },
+                files: {
+                    '&lt;%= PRODUCTION_PATH %&gt;index.html': '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'
+                }
+            }
+        },
+
+        /**
+         * Creates a Cache Manifest file.
+         */
+        manifest: {
+            generate: {
+                options: {
+                    basePath: '&lt;%= PRODUCTION_PATH %&gt;',
+                    exclude: [
+                        'assets/media/images/moblie-icons/icon-144x144.png',
+                        'assets/media/images/moblie-icons/icon-100x100.png',
+                        'assets/media/images/moblie-icons/icon-29x29.png',
+                        'assets/media/images/moblie-icons/icon-50x50.png',
+                        'assets/media/images/moblie-icons/icon-58x58.png',
+                        'assets/media/images/moblie-icons/icon-72x72.png'
+                    ],
+                    preferOnline: false,
+                    verbose: true,
+                    timestamp: true,
+                    master: []
+                },
+                src: [
+                    'assets/data/**/*.json',
+                    'assets/media/images/**/*.jpg',
+                    'assets/media/images/**/*.png',
+                    'assets/scripts/**/*.js',
+                    'assets/styles/**/*.css'
+                ],
+                dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'offline.appcache'
+            }
+        },
+
+        /**
+         * YUIDoc plugin that will generate documentation from our YUI comments.
+         */
+        yuidoc: {
+            compile: {
+                name: '&lt;%= pkg.name %&gt;',
+                description: '&lt;%= pkg.description %&gt;',
+                version: '&lt;%= pkg.appVersion %&gt;',
+                url: '&lt;%= pkg.homepage %&gt;',
+                options: {
+                    paths: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',
+                    outdir: '&lt;%= BASE_PATH %&gt;docs',
+                    themedir: '',
+                    extension: '.ts',                                   // Default '.js' &lt;comma-separated list of file extensions&gt;
+                    exclude: ''
+                }
+            }
+        },
+
+        /**
+         * Creates a node.js Express Server to test our code in a server like environment.
+         * Note: We are using the watch task to keep the server running.
+         */
+        express: {
+            src: {
+                options: {
+                    port: 8000,
+                    hostname: &quot;0.0.0.0&quot;,
+                    bases: ['&lt;%= DEVELOPMENT_PATH %&gt;'],
+                    livereload: true
+                }
+            },
+            web: {
+                options: {
+                    port: 8001,
+                    hostname: &quot;0.0.0.1&quot;,
+                    bases: ['&lt;%= PRODUCTION_PATH %&gt;'],
+                    livereload: true
+                }
+            }
+        },
+
+        /**
+         * Opens the index.html file in the default browser after the node.js Express Server is running.
+         */
+        open: {
+            src: {
+                // Gets the port from the connect configuration
+                path: ' express.src.options.port%&gt;'
+            },
+            web: {
+                // Gets the port from the connect configuration
+                path: ' express.web.options.port%&gt;'
+            }
+        },
+
+        /**
+         * Watches files and will run task(s) when files are changed. It will also reload/refresh the browser.
+         */
+        watch: {
+            css: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/styles/**/*.css',
+                ]
+            },
+            src: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/**/*.ts',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/templates/**/*.hbs'
+                ],
+                tasks: ['src']
+            }
+        }
+
+    });
+
+    /**
+     * Grunt tasks:
+     *
+     * grunt        (Will build and run your development code/server)
+     * grunt web    (Will build and run your production code/server)
+     * grunt doc    (Will generate the YUI documentation from the code comments)
+     */
+    grunt.registerTask('default', [
+        'server'
+    ]);
+
+    grunt.registerTask('server', [
+        'src',
+        'express:src',
+        'open:src',
+        'watch'
+    ]);
+
+    grunt.registerTask('src', [
+        'env:src',
+        'preprocess:src',
+        'json',
+        'handlebars',
+        'typescript'
+    ]);
+
+    grunt.registerTask('web', [
+        'env:web',
+        'preprocess',
+        'json',
+        'handlebars',
+        'typescript',
+        'clean',
+        'copy',
+        'useminPrepare', 'concat', 'uglify', 'cssmin',
+        'usemin',
+        'usebanner',
+        'htmlmin',
+        'manifest',
+        'open:web',
+        'express:web',
+        'express-keepalive'
+    ]);
+
+    grunt.registerTask('doc', [
+        'yuidoc'
+    ]);
+
+};
+</pre>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript Source Maps After Uglify</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-source-maps-after-uglify/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-source-maps-after-uglify/#respond</comments>
+		<pubDate>Fri, 15 Nov 2013 17:35:18 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1435</guid>
+		<description><![CDATA[Update: New and better Boilerplate that uses ES6 Modules in TypeScript check it out. I am going to take my first TypeScript Source Maps Example a step future. I am going to take our compiled TypeScript code and then use UglifyJS to minify it. UglifyJS will also create a new source map for the minified [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>I am going to take my first <a href="https://codebelt.github.io/blog/typescript/typescript-source-maps-example/" title="TypeScript Source Maps Example">TypeScript Source Maps Example</a> a step future. I am going to take our compiled TypeScript code and then use <a href="https://github.com/mishoo/UglifyJS" target="_blank">UglifyJS</a> to minify it. UglifyJS will also create a new source map for the minified version of the code.</p>
+<p>I am going to assume you have read my first <a href="https://codebelt.github.io/blog/typescript/typescript-source-maps-example/" title="TypeScript Source Maps Example">TypeScript Source Maps Example</a> and know how to use GruntJS to compile TypeScript classes.</p>
+<p>Here is part of my Gruntfile that does all the work for us:</p>
+<pre class="brush: as3; title: ; notranslate">
+grunt.initConfig({
+
+    pkg: grunt.file.readJSON('package.json'),
+
+    typescript: {
+        base: {
+            src: ['../ts/Man.ts'],
+            dest: '../js/main.js',
+            options: {
+                sourcemap: true,
+                declaration: false
+            }
+        }
+    },
+
+    uglify: {
+        dist: {
+            options: {
+                // Reference to the source map TypeScript created.
+                sourceMapIn: '../js/main.js.map',
+                // Creates our new source map after minifying.
+                sourceMap: '../js/main.min.map',
+                // The root folder where the TypeScript live.
+                sourceMapRoot: '../ts/'
+            },
+            files: {
+                '../js/main.min.js': ['../js/main.js']
+            }
+        }
+    }
+
+});
+</pre>
+<p>You can download all the TypeScript Source Maps with Uglify example files here and try it out:<br />
+<a href="https://github.com/codeBelt/Grunt-TypeScript-Source-Map-to-JavaScript-with-Uglify" target="_blank">https://github.com/codeBelt/Grunt-TypeScript-Source-Map-to-JavaScript-with-Uglify</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-source-maps-after-uglify/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript Source Maps Example</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-source-maps-example/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-source-maps-example/#respond</comments>
+		<pubDate>Fri, 15 Nov 2013 01:32:21 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1411</guid>
+		<description><![CDATA[I put together a fast TypeScript Source Maps example. Currently it only works in Google Chrome but first you need to enable source maps. Open the &#8220;Developer Tools&#8221; panel and then click on the &#8220;gear&#8221; icon (bottom right). Then go to Settings > General and check &#8220;Enable JS source maps&#8221;. In the code I created [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I put together a fast <strong>TypeScript Source Maps</strong> example. Currently it only works in Google Chrome but first you need to enable source maps. Open the &#8220;Developer Tools&#8221; panel and then click on the &#8220;gear&#8221; icon (bottom right). Then go to Settings > General and check &#8220;Enable JS source maps&#8221;.</p>
+<p><a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/chrome-enable-source-maps1.png"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/chrome-enable-source-maps1.png" alt="chrome-enable-source-maps" width="590" class="alignnone size-full wp-image-1418" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/chrome-enable-source-maps1.png 920w, https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/chrome-enable-source-maps1-300x121.png 300w" sizes="(max-width: 920px) 100vw, 920px" /></a></p>
+<p>In the code I created a JavaScript object and tried console logging a property that didn&#8217;t exist on it. </p>
+<pre class="brush: as3; title: ; notranslate">
+var obj:any = {};
+console.log( obj.property.anotherProperty );
+</pre>
+<p>If you look at the Console tab you will see the error. Also notice that <strong>Person.ts:16</strong> is being referenced in the output. Clicking on that file name will take you straight to the TypeScript file.<br />
+<a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-file-error.png"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-file-error.png" alt="typescript-file-error" width="590"class="alignnone size-full wp-image-1424" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-file-error.png 752w, https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-file-error-300x27.png 300w" sizes="(max-width: 752px) 100vw, 752px" /></a></p>
+<p>As you can see Google Chrome maps the TypeScript source file with the error. Awesome!<br />
+<a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-sourcemaps-error.png"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-sourcemaps-error.png" alt="typescript-sourcemaps-error" width="590" class="alignnone size-full wp-image-1412" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-sourcemaps-error.png 735w, https://codebelt.github.io/blog/wp/wp-content/uploads/2013/11/typescript-sourcemaps-error-300x151.png 300w" sizes="(max-width: 735px) 100vw, 735px" /></a></p>
+<p>You can download the <strong>TypeScript Source Maps</strong> example files here: <a href="https://github.com/codeBelt/TypeScript-Source-Maps" title="TypeScript Source Maps Example Files" target="_blank">https://github.com/codeBelt/TypeScript-Source-Maps</a></p>
+<h2>Grunt JS To Compile TypeScript Code</h2>
+<p>I used <a href="http://gruntjs.com/" title="Grunt JS Link" target="_blank">GruntJS</a> to compile my TypeScript code. If you have never used GruntJS before you probably need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-source-maps-example/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Compile JSON files into Javascript Tutorial</title>
+		<link>https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/</link>
+		<comments>https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/#respond</comments>
+		<pubDate>Thu, 18 Jul 2013 04:43:13 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1309</guid>
+		<description><![CDATA[Just a quick tutorial on how to compile JSON files into a single JavaScript file. This is very easy with GruntJS and the grunt-json plugin. Grunt JS Setup If you have never used GruntJS before you probably need to checkout my Install Grunt JS on a Mac Tutorial or Install Grunt JS on Windows Tutorial. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Just a quick tutorial on how to compile JSON files into a single JavaScript file. This is very easy with <strong>GruntJS</strong> and the <a href="https://npmjs.org/package/grunt-json" target="_blank">grunt-json</a> plugin.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you probably need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Example-JSON-to-Javascript" target="_blank">https://github.com/codeBelt/Example-JSON-to-Javascript</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Grunt File</h2>
+<p>If you take a look at the <strong>json </strong>config area you will see some <strong>options</strong>. Those <strong>options </strong>are:</p>
+<dl>
+<dt>namespace</dt>
+<dd>The namespace in which the json data will be assigned. (Default: &#8216;myjson&#8217;)</dd>
+<dt>includePath</dt>
+<dd>Includes the full path of the file and the extension. By default only the file name is used as the key value. (Default: false)</dd>
+<dt>processName</dt>
+<dd>This option accepts a function which takes one argument (filename) and returns a string which will be used as the key for the object. The example below stores all json data on the default <strong>JSON_DATA </strong>namespace in lowercase letters. (Default: null)</dd>
+</dl>
+<pre class="brush: jscript; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        //Read the package.json (optional)
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Constants for the Gruntfile so we can easily change the path for
+        // our environments.
+        BASE_PATH: '../',
+        DEVELOPMENT_PATH: '../dev/',
+        PRODUCTION_PATH: '../prod/',
+
+        // The JSON to JavaScript plugin.
+        json: {
+            prod: {
+                options: {
+                    namespace: 'JSON_DATA',
+                    includePath: false,
+                    processName: function(filename) {
+                        return filename.toLowerCase();
+                    }
+                },
+                src: ['&lt;%= DEVELOPMENT_PATH %&gt;' + '**/*.json'],
+                dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/json.js'
+            }
+        }
+
+    });
+
+    // Loads the necessary tasks for this Grunt file.
+    grunt.loadNpmTasks('grunt-json');
+
+    // Grunt tasks.
+    grunt.registerTask('default', ['json']);
+
+};
+</pre>
+<p>Checkout the <a href="https://npmjs.org/package/grunt-json" target="_blank">grunt-json</a> plugin to learn more about the plugin.</p>
+<h2>JSON File</h2>
+<p>The <strong>grunt-json</strong> plugin will take the following JSON data convert it into a JavaScript Object like in the next example.</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;Product&quot;,
+    &quot;properties&quot;: {
+        &quot;id&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;description&quot;: &quot;Product identifier&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;name&quot;: {
+            &quot;description&quot;: &quot;Name of the product&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;price&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;required&quot;: true
+        },
+        &quot;tags&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+            }
+        }
+    }
+}
+</pre>
+<h2>JSON Converted to JavaScript</h2>
+<p>Below is what the JavaScript file will look like.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var JSON_DATA = JSON_DATA || {};
+JSON_DATA[&quot;products&quot;] = {
+    &quot;name&quot;: &quot;Product&quot;,
+    &quot;properties&quot;: {
+        &quot;id&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;description&quot;: &quot;Product identifier&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;name&quot;: {
+            &quot;description&quot;: &quot;Name of the product&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;price&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;required&quot;: true
+        },
+        &quot;tags&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+            }
+        }
+    }
+};
+</pre>
+<p>Now we can used the data like any other JavaScript Object.</p>
+<pre class="brush: jscript; title: ; notranslate">
+console.log( JSON_DATA.products );
+</pre>
+<p>Leave me a comment, I love comments.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Generate Documentation for TypeScript</title>
+		<link>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/</link>
+		<comments>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/#comments</comments>
+		<pubDate>Wed, 17 Jul 2013 15:41:47 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1314</guid>
+		<description><![CDATA[Update: New and better Boilerplate that uses ES6 Modules in TypeScript check it out. In this TypeScript tutorial I will go over how to generate code documents from your TypeScript files. We will be using YUIDoc&#8217;s and GruntJS. Grunt JS Setup If you have never used GruntJS before you will need to checkout my Install [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>In this TypeScript tutorial I will go over how to generate code documents from your TypeScript files. We will be using YUIDoc&#8217;s and GruntJS.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Example-TypeScript-Generate-Documentation" target="_blank">https://github.com/codeBelt/Example-TypeScript-Generate-Documentation</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Package File</h2>
+<p>Lets look how I setup the <strong>package.json</strong> file in the <strong>_build</strong> folder. This file will install Grunt and Grunt plugins locally for our project. All we have to do to install grunt and the YUIDoc plugin is type <strong>npm install</strong> in Terminal or the Command Prompt when inside the <strong>_build</strong> folder.</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;TypeScript-Generate-Documentation&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;Create documentation from TypeScript files&quot;,
+    &quot;url&quot;: &quot;https://codebelt.github.io/blog&quot;,/
+    &quot;developedBy&quot;: &quot;codeBelt&quot;,
+
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;*&quot;
+    }
+}
+</pre>
+<h2>Grunt File</h2>
+<p>Below is our Grunt file.You can add more plugins when you need but if you look we have only one <strong>&#8216;yuidoc&#8217;</strong>. One thing you need to do is set the <strong>extension</strong> option to <strong>&#8216;.ts&#8217;</strong>. The plugin will look for all files with the <strong>&#8216;.ts&#8217;</strong> extension and generate documentation from those TypeScript files.</p>
+<pre class="brush: jscript; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        // This will load in our package.json file so we can have access
+        // to the project name and version number.
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Constants for the Gruntfile so we can easily change the path for
+        // our environments.
+        BASE_PATH: '../',
+        DEVELOPMENT_PATH: '../dev/',
+
+        // The YUIDoc plugin to generate documentation for code files.
+        yuidoc: {
+            compile: {
+                name: '&lt;%= pkg.name %&gt;',
+                description: '&lt;%= pkg.description %&gt;',
+                version: '&lt;%= pkg.version %&gt;',
+                url: '&lt;%= pkg.homepage %&gt;',
+                options: {
+                    extension: '.ts',                               // Default '.js' &lt;comma-separated list of file extensions&gt;
+                    paths: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'scripts/',
+                    outdir: '&lt;%= BASE_PATH %&gt;' + 'docs/'
+                }
+            }
+        }
+
+    });
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks('grunt-contrib-yuidoc');
+
+    // Default task.
+    grunt.registerTask('default', ['yuidoc']);
+
+};
+</pre>
+<p>Once you have your package.json and Gruntfile.js setup you can navigate with Terminal or the Command Prompt to the <strong>_build</strong> folder and type the command below to generate the TypeScript documentation:</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt
+</pre>
+<p>If you want to get a good overview of YUIDoc check out <a href="http://net.tutsplus.com/tutorials/javascript-ajax/documenting-javascript-with-yuidoc/" title="Documenting JavaScript with YUIDoc" target="_blank">Documenting JavaScript with YUIDoc</a>. You can also checkout the office <a href="http://yui.github.io/yuidoc/syntax/" title="YUIDoc Syntax Reference" target="_blank">YUIDoc Syntax Reference</a>.</p>
+<p>One thing I wanted to point out. You will see the tag below in the <strong>DisplayObject</strong> class. The <strong>@overridden</strong> is not a valid YUIDoc tag but I use it so I know what properties or methods Inherited the same comment blocks from other extended classes.</p>
+<pre class="brush: jscript; title: ; notranslate">
+@overridden EventDispatcher.CLASS_NAME
+</pre>
+<p>Here is the <strong>DisplayObject</strong> class example with YUIDoc comments. You can download the files above and checkout the other classes with YUIDoc comments.</p>
+<pre class="brush: as3; title: ; notranslate">
+///&lt;reference path='../events/EventDispatcher.ts'/&gt;
+
+/**
+ * The {{#crossLink &quot;DisplayObject&quot;}}{{/crossLink}} class is the base class for all objects that can be placed on the display list.
+ *
+ * @class DisplayObject
+ * @extends EventDispatcher
+ * @constructor
+ **/
+class DisplayObject extends EventDispatcher
+{
+    /**
+     * @overridden EventDispatcher.CLASS_NAME
+     */
+    public CLASS_NAME:string = 'DisplayObject';
+
+    /**
+     * The isEnabled property is used to keep track of the enabled start of the DisplayObject.
+     *
+     * @property isEnabled
+     * @type {boolean}
+     * @default false
+     * @protected
+     */
+    public isEnabled:boolean = false;
+
+    /**
+     * The isCreated property is used to keep track if it is the first time this DisplayObject is created.
+     *
+     * @property isCreated
+     * @type {boolean}
+     * @default false
+     * @protected
+     */
+    public isCreated:boolean = false;
+
+    /**
+     * Returns the number of children of this object.
+     *
+     * @property numChildren
+     * @type {init}
+     * @default 0
+     * @readonly
+     */
+    public numChildren:number = 0;
+
+    /**
+     * A reference to the child DisplayObject instances to this parent object instance.
+     *
+     * @property children
+     * @type {array}
+     * @readonly
+     */
+    public children:DisplayObject[] = [];
+
+    constructor()
+    {
+        super();
+    }
+
+    /**
+     * The createChildren function is intended to provide a consistent place for the creation and adding
+     * of children to the view. It will automatically be called the first time that the view is added
+     * to another DisplayObject. It is critical that all subclasses call the super for this function in
+     * their overridden methods.
+     *
+     * @method createChildren
+     * @override
+     * @public
+     */
+    public createChildren():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Adds a child DisplayObject instance to this parent object instance. The child is added to the front (top) of all other
+     * children in this parent object instance. (To add a child to a specific index position, use the addChildAt() method.)
+     *
+     * If you add a child object that already has a different parent, the object is removed from the child
+     * list of the other parent object.
+     *
+     * @method addChild
+     * @param child {DisplayObject} The DisplayObject instance to add as a child of this DisplayObjectContainer instance.
+     * @returns {DisplayObject} The DisplayObject instance that you pass in the child parameter.
+     */
+    public addChild(child:DisplayObject):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Removes the specified child object instance from the child list of the parent object instance.
+     * The parent property of the removed child is set to null , and the object is garbage collected if no other references
+     * to the child exist. The index positions of any objects above the child in the parent object are decreased by 1.
+     *
+     * @method removeChild
+     * @param child {DisplayObject} The DisplayObject instance to remove.
+     * @returns {DisplayObject} The DisplayObject instance that you pass in the child parameter.
+     * @public
+     */
+    public removeChild(child:DisplayObject):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Removes all child DisplayObject instances from the child list of the DisplayObjectContainer instance.
+     * The parent property of the removed children is set to null , and the objects are garbage collected if
+     * no other references to the children exist.
+     *
+     * @method removeChildren
+     * @returns {DisplayObject}
+     */
+    public removeChildren():DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Adds a child DisplayObject instance to this DisplayObjectContainer instance.
+     * The child is added at the index position specified. An index of 0 represents the back
+     * (bottom) of the display list for this DisplayObjectContainer object.
+     *
+     * @method addChildAt
+     * @param child {DisplayObject} The DisplayObject instance to add as a child of this object instance.
+     * @param index {int} The index position to which the child is added. If you specify a currently occupied index position, the child object that exists at that position and all higher positions are moved up one position in the child list.
+     * @returns {DisplayObject} The DisplayObject instance that you pass in the child parameter.
+     */
+    public addChildAt(child:DisplayObject, index:number):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * Returns the child display object instance that exists at the specified index.
+     *
+     * @param index {int} The index position of the child object.
+     * @returns {DisplayObject} The child display object at the specified index position.
+     */
+    public getChildAt(index:number):DisplayObject
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The enable method is responsible for enabling all event listeners and enabling children of the view.
+     *
+     * @method enable
+     * @public
+     */
+    public enable():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The disable method is responsible for disabling all event listeners and disabling children of the view.
+     *
+     * @method disable
+     * @public
+     */
+    public disable():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The layoutComponent method provides a common function to handle updating child objects.
+     *
+     * @method layoutChildren
+     */
+    public layoutChildren():void
+    {
+        // JavaScript Code ...
+    }
+
+    /**
+     * The purpose of the destroy method is to make an object ready for garbage collection. This
+     * should be thought of as a one way function. Once destroy is called no further methods should be
+     * called on the object or properties accessed. It is the responsibility of those who implement this
+     * function to stop all running Timers, all running Sounds, remove any event
+     * listeners and take any other steps necessary to make an object eligible for garbage collection.
+     * It is critical that all subclasses call the super for this function in their overridden methods.
+     *
+     * @method destroy
+     */
+    public destroy():void
+    {
+        // JavaScript Code ...
+    }
+
+}
+</pre>
+<p>Leave me a comment, I love comments.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>PhpStorm/WebStorm Typescript Class Template</title>
+		<link>https://codebelt.github.io/blog/typescript/phpstorm-webstorm-typescript-class-template/</link>
+		<comments>https://codebelt.github.io/blog/typescript/phpstorm-webstorm-typescript-class-template/#comments</comments>
+		<pubDate>Fri, 28 Jun 2013 15:02:39 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1284</guid>
+		<description><![CDATA[I just love PhpStorm/WebStorm support for Typescript. In this simple tutorial I will show you how to create a Class template for TypeScript to make your development a little faster. Here is the template. Notice the ${Name} placeholder. That will place the name of the file you typed in. To create a new file template [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I just love PhpStorm/WebStorm support for Typescript. In this simple tutorial I will show you how to create a Class template for TypeScript to make your development a little faster. </p>
+<p>Here is the template. Notice the <strong>${Name}</strong> placeholder. That will place the name of the file you typed in.</p>
+<pre class="brush: plain; title: ; notranslate">
+///&lt;reference path=''/&gt;
+ 
+/**
+ * YUIDoc_comment
+ *
+ * @class ${NAME}
+ * @constructor
+ **/
+class ${NAME} {
+ 
+    public CLASS_NAME:string = '${NAME}';
+ 
+    constructor() {
+    
+    }
+    
+}
+</pre>
+<p>To create a new file template in PhpStrom/WebStorm you can right click on any folder in your project and hover over <strong>New</strong> and click <strong>Edit File Templates&#8230;</strong> .<br />
+<a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/edit-template.jpg"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/edit-template.jpg" alt="edit-template" width="465" height="301" class="alignnone size-full wp-image-1292" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/edit-template.jpg 465w, https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/edit-template-300x194.jpg 300w" sizes="(max-width: 465px) 100vw, 465px" /></a></p>
+<p>Now click the green plus button top left and name in <strong>TypeScript Class</strong> and copy the snippet above and paste it in. Click <strong>OK</strong> and you are ready to go.<br />
+<a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/typescript-class.jpg"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/typescript-class.jpg" alt="typescript-class" width="500" class="alignnone size-full wp-image-1291" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/typescript-class.jpg 707w, https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/typescript-class-300x215.jpg 300w" sizes="(max-width: 707px) 100vw, 707px" /></a></p>
+<p>Now you can right click and select New and then new <strong>TypeScript Class</strong> template you created.<br />
+<a href="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/new-class.jpg"><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/new-class.jpg" alt="new-class" width="361" height="110" class="alignnone size-full wp-image-1302" srcset="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/new-class.jpg 361w, https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/new-class-300x91.jpg 300w" sizes="(max-width: 361px) 100vw, 361px" /></a></p>
+<p>You also can get this and other snippets at <a href="https://gist.github.com/codeBelt/8025959" target="_blank">https://gist.github.com/codeBelt/8025959</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/phpstorm-webstorm-typescript-class-template/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>TypeScript Error TS2172</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-error-ts2172/</link>
+		<comments>https://codebelt.github.io/blog/typescript/typescript-error-ts2172/#respond</comments>
+		<pubDate>Wed, 26 Jun 2013 14:14:37 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[TypeScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1271</guid>
+		<description><![CDATA[I just updated to TypeScript version 0.9.0 and stuff was breaking. I know they said stuff is going to break and I can handle that but I couldn&#8217;t get anything to work with jQuery. I even tried the office TypeScript sample example and it breaks. Here was my issue: error TS2172: All named properties must [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I just updated to TypeScript version 0.9.0 and stuff was breaking. I know they said stuff is going to break and I can handle that but I couldn&#8217;t get anything to work with jQuery. I even tried the office TypeScript sample example and it breaks. Here was my issue:<br />
+<i>error TS2172: All named properties must be subtypes of string indexer type &#8216;HTMLElement&#8217;:</i><br />
+<i>Type &#8216;(handler: any) => JQuery&#8217; is missing property &#8216;ondragend&#8217; from type &#8216;HTMLElement&#8217;</i></p>
+<p>Thanks to the post below I was able to fix the issue.<br />
+<a href="http://stackoverflow.com/questions/17201854/jquery-definition-screwed-up-with-typescript-0-9" target="_blank">http://stackoverflow.com/questions/17201854/jquery-definition-screwed-up-with-typescript-0-9</a></p>
+<p>I am not sure why the office TypeScript jQuery sample doesn&#8217;t have to right <strong>jquery.d.ts</strong> definitions but you can get it here:<br />
+<a href="https://github.com/borisyankov/DefinitelyTyped/blob/master/jquery/jquery.d.ts" target="_blank">https://github.com/borisyankov/DefinitelyTyped/blob/master/jquery/jquery.d.ts</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/typescript/typescript-error-ts2172/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Single Page JavaScript Application Workflow</title>
+		<link>https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/</link>
+		<comments>https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/#comments</comments>
+		<pubDate>Mon, 24 Jun 2013 06:14:13 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1155</guid>
+		<description><![CDATA[I started playing around with creating a workflow for creating single page applications with JavaScript. The big player in this workflow is GruntJS. In this Single Page JavaScript Application Workflow Tutorial I will explain how to setup a build process for your development and production environment. We will be using several GruntJS plugins to help [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I started playing around with creating a workflow for creating single page applications with JavaScript. The big player in this workflow is GruntJS. In this <strong>Single Page JavaScript Application Workflow Tutorial</strong> I will explain how to setup a build process for your development and production environment. We will be using several GruntJS plugins to help us and they are:</p>
+<p><a href="https://github.com/gruntjs/grunt-contrib-requirejs" target="_blank">grunt-contrib-requirejs</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank">grunt-contrib-cssmin</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-htmlmin" target="_blank">grunt-contrib-htmlmin</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-copy" target="_blank">grunt-contrib-copy</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-concat" target="_blank">grunt-contrib-concat</a><br />
+<a href="https://github.com/onehealth/grunt-env" target="_blank">grunt-env</a><br />
+<a href="https://github.com/onehealth/grunt-preprocess" target="_blank">grunt-preprocess</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-yuidoc" target="_blank">grunt-contrib-yuidoc</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-watch" target="_blank">grunt-contrib-watch</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-clean" target="_blank">grunt-contrib-clean</a><br />
+<a href="https://npmjs.org/package/grunt-banner" target="_blank">grunt-banner</a><br />
+<a href="https://npmjs.org/package/grunt-usemin" target="_blank">grunt-usemin</a><br />
+<a href="https://npmjs.org/package/grunt-manifest" target="_blank">grunt-manifest</a><br />
+<a href="https://npmjs.org/package/grunt-express" target="_blank">grunt-express</a><br />
+<a href="https://npmjs.org/package/grunt-open" target="_blank">grunt-open</a></p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you probably need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Single-Page-Application-Workflow-Boilerplate" target="_blank">https://github.com/codeBelt/Single-Page-Application-Workflow-Boilerplate</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Environments</h2>
+<p>We will setup GruntJS to build our development (src/ folder) environment and our production (web/ folder) environments. Our two GruntJS commands will be <strong>grunt</strong> and <strong>grunt web</strong>.</p>
+<p>We will start with the following:</p>
+<pre class="brush: jscript; title: ; notranslate">
+/
+├──  src/
+├──  web/
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<dl>
+<dt>src folder</dt>
+<dd>The src folder will have all of the source files we need to create a single page JavaScript application.</dd>
+<dt>web folder</dt>
+<dd>The web folder will only contain the minified files and assets needed for the production server.</dd>
+<dt>Gruntfile.js &#038; package.json Files</dt>
+<dd>The GruntJS tasks and plugins need to build our environments.</dd>
+</dl>
+<h2>Development Folder</h2>
+<p>Lets take a look at our <strong>src</strong> folder. Notice the <strong>src/config.html</strong> file. This file will be used to create the <strong>index.html</strong> file for both our development (src) and production (web) environment.</p>
+<pre class="brush: jscript; title: ; notranslate">
+/
+├──+ src/
+│  ├── assets/
+│  ├── favicon.ico
+│  └── config.html
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<p>If where too run both the development (grunt) and production (grunt web) commands it would generate the following:</p>
+<pre class="brush: jscript; title: ; notranslate">
+/
+├──+ src/
+│  ├── assets/
+│  ├── favicon.ico
+│  ├── config.html
+│  └── index.html
+├──+ web/
+│  ├── assets/
+│  ├── favicon.ico
+│  ├── offline.appcache
+│  └── index.html
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<p>Here is our <strong>config.html</strong> in the <strong>src</strong> folder. Notice the <strong>NODE_ENV</strong> conditions, they will be used to determine how the production and development html file will be generated.</p>
+<pre class="brush: xml; title: ; notranslate">
+&lt;!DOCTYPE html&gt;
+
+&lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;!-- @endif --&gt;
+
+&lt;!-- @if NODE_ENV == 'PRODUCTION' --&gt;
+&lt;html lang=&quot;en&quot; manifest=&quot;offline.appcache&quot;&gt;
+&lt;!-- @endif --&gt;
+
+&lt;head&gt;
+    &lt;!-- The current version of the application --&gt;
+    &lt;meta name=&quot;version&quot; content=&quot;&lt;!-- @echo buildVersion --&gt;&quot;/&gt;
+
+    &lt;!-- Add the fav icon --&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+    &lt;!-- build:css assets/styles/app.min.css --&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/setup.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/bootstrap.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/screen.css&quot; /&gt;
+    &lt;!-- endbuild --&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+        &lt;script src=&quot;assets/vendor/require/require.js&quot; data-main=&quot;assets/scripts/AppBootstrap.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;assets/scripts/config.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- @endif --&gt;
+
+    &lt;!-- @if NODE_ENV == 'PRODUCTION' --&gt;
+        &lt;script src=&quot;assets/scripts/require.js&quot; data-main=&quot;assets/scripts/app.min.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- @endif --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h2>Install GruntJS &#038; the necessary plugins</h2>
+<p>Lets look how I setup the <strong>package.json</strong> file. This file will install Grunt and Grunt plugins locally for our project. All we have to do to install all of the plugins is type <strong>npm install</strong> when in root of this project and it will install everything we need.</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;Single-Page-Application-GruntJS&quot;,
+    &quot;version&quot;: &quot;0.2.0&quot;,
+
+    &quot;appVersion&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;A sample single page JavaScript application workflow boilerplate with Grunt.js&quot;,
+    &quot;url&quot;: &quot;https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/&quot;,
+    &quot;developedBy&quot;: &quot;codeBelt&quot;,
+
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;0.4.2&quot;,
+        &quot;matchdep&quot;: &quot;0.3.0&quot;,
+
+        &quot;grunt-contrib-requirejs&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;0.5.0&quot;,
+        &quot;grunt-contrib-watch&quot;: &quot;0.5.3&quot;,
+        &quot;grunt-contrib-cssmin&quot;: &quot;0.7.0&quot;,
+        &quot;grunt-contrib-htmlmin&quot;: &quot;0.1.3&quot;,
+        &quot;grunt-contrib-concat&quot;: &quot;0.3.0&quot;,
+        &quot;grunt-contrib-uglify&quot;: &quot;0.2.7&quot;,
+        &quot;grunt-contrib-copy&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-contrib-clean&quot;: &quot;0.5.0&quot;,
+        &quot;grunt-banner&quot;: &quot;0.2.0&quot;,
+        &quot;grunt-usemin&quot;: &quot;2.0.2&quot;,
+        &quot;grunt-manifest&quot;: &quot;0.4.0&quot;,
+        &quot;grunt-preprocess&quot;: &quot;4.0.0&quot;,
+        &quot;grunt-env&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-express&quot;: &quot;1.2.1&quot;,
+        &quot;grunt-open&quot;: &quot;0.2.2&quot;
+    }
+}
+</pre>
+<p>Take notice of the <strong>&#8220;version&#8221;</strong> property. It will be used in the creation of the index.html, minified css, minified JavaScript and the cache manifest files.</p>
+<p>Here is the <strong>Gruntfile.js</strong> file. You can read the comments to see what each plugin is doing.</p>
+<pre class="brush: as3; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Load Grunt tasks declared in the package.json file.
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+    // Project configuration.
+    grunt.initConfig({
+
+        /**
+        * This will load in our package.json file so we can have access
+        * to the project name and appVersion number.
+        */
+        pkg: grunt.file.readJSON('package.json'),
+
+        /**
+        * Constants for the Gruntfile so we can easily change the path for our environments.
+        */
+        BASE_PATH: '',
+        DEVELOPMENT_PATH: 'src/',
+        PRODUCTION_PATH: 'web/',
+
+        /**
+        * A code block that will be added to our minified code files.
+        * Gets the name and appVersion and other info from the above loaded 'package.json' file.
+        * @example &lt;%= banner.join(&quot;\\n&quot;) %&gt;
+        */
+        banner: [
+            '/*',
+            '* Project: &lt;%= pkg.name %&gt;',
+            '* Version: &lt;%= pkg.appVersion %&gt; (&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;)',
+            '* Development By: &lt;%= pkg.developedBy %&gt;',
+            '* Copyright(c): &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt;',
+            '*/'
+        ],
+
+        /**
+        * The different constant names that will be use to build our html files.
+        * @example &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+        */
+        env: {
+            src: {
+                NODE_ENV : 'DEVELOPMENT'
+            },
+            web : {
+                NODE_ENV : 'PRODUCTION'
+            }
+        },
+
+        /**
+        * Allows us to pass in variables to files that have place holders so we can similar files with different data.
+        * This plugin works with the 'env' plugin above.
+        * @example &lt;!-- @echo appVersion --&gt; or &lt;!-- @echo filePath --&gt;
+        */
+        preprocess : {
+            // Task to create the index.html file that will be used during development.
+            // Passes the app version and creates the /index.html
+            src : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            },
+            // Task to create the index.html file that will be used in production.
+            // Passes the app version and creates the /index.html
+            web : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            }
+        },
+
+        /**
+        * Cleans or deletes our production folder before we create a new production build.
+        */
+        clean: {
+            dist: ['&lt;%= PRODUCTION_PATH %&gt;']
+        },
+
+        /**
+        * Copies certain files over from the development folder to the production folder so we don't have to do it manually.
+        */
+        copy: {
+            web:  {
+                files: [
+                    // Copy favicon.ico file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: 'favicon.ico', dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the media folder from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: ['assets/media/**'], dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the index.html file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', dest: '&lt;%= PRODUCTION_PATH %&gt;', src: ['index.html'], filter: 'isFile', dot: true },
+                    // Copy require.js file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/vendor/require/', src: 'require.js', dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/' }
+                ]
+            }
+        },
+
+        /**
+        * Prepends the banner above to the minified files.
+        */
+        usebanner: {
+            dist: {
+                options: {
+                    position: 'top',
+                    banner: '&lt;%= banner.join(&quot;\\n&quot;) %&gt;',
+                    linebreak: true
+                },
+                files: {
+                    src: [
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/styles/app.min.css'
+                    ]
+                }
+            }
+        },
+
+        /**
+        * The useminPrepare part of the usemin plugin looks at the html file and checks for a build:js or build:css code block.
+        * It will take those files found in the code block(s) and concat them together and then runs uglify for js and/or cssmin for css files.
+        * useminPrepare requires grunt-contrib-uglify, grunt-contrib-concat, and grunt-contrib-cssmin plugins to be installed. Which is listed in the package.json file.
+        *
+        * The usemin part will remove the code block(s) and replace that area with the single file path in the html file.
+        */
+        useminPrepare: {
+            html: ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html'],
+            options: {
+                dest: '&lt;%= PRODUCTION_PATH %&gt;'// Moves the single concatenated files to production.
+            }
+        },
+        usemin: {
+            html: ['&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'],
+            options: {
+                dirs: ['&lt;%= PRODUCTION_PATH %&gt;']
+            }
+        },
+
+        /**
+        * The RequireJS plugin that will use uglify2 to build and minify our JavaScript,
+        * templates and any other data we include in the require files.
+        */
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',                         // Path of source scripts, relative to this build file
+                    mainConfigFile: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/config.js',         // Path of shared configuration file, relative to this build file
+                    name: 'AppBootstrap',                                                           // Name of input script (.js extension inferred)
+                    out: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',                    // Path of built script output
+
+                    fileExclusionRegExp: /.svn/,                                                    // Ignore all files matching this pattern
+                    useStrict: true,
+                    preserveLicenseComments: false,
+                    pragmas: {
+                        debugExclude: true
+                    },
+
+                    optimize: 'uglify2',                                                            // Use 'none' If you do not want to uglify.
+                    uglify2: {
+                        output: {
+                            beautify: false,
+                            comments: false
+                        },
+                        compress: {
+                            sequences: false,
+                            global_defs: {
+                                DEBUG: false
+                            }
+                        },
+                        warnings: false,
+                        mangle: true
+                    }
+                }
+            }
+        },
+
+        /**
+        * Removes all comments from the production index.html file. I can also remove all whitespace if desired.
+        */
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: false
+                },
+                files: {
+                    '&lt;%= PRODUCTION_PATH %&gt;index.html': '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'
+                }
+            }
+        },
+
+        /**
+        * Creates a Cache Manifest file.
+        */
+        manifest: {
+            generate: {
+                options: {
+                    basePath: '&lt;%= PRODUCTION_PATH %&gt;',
+                    exclude: [
+                        'assets/media/images/moblie-icons/icon-144x144.png',
+                        'assets/media/images/moblie-icons/icon-100x100.png',
+                        'assets/media/images/moblie-icons/icon-29x29.png',
+                        'assets/media/images/moblie-icons/icon-50x50.png',
+                        'assets/media/images/moblie-icons/icon-58x58.png',
+                        'assets/media/images/moblie-icons/icon-72x72.png'
+                    ],
+                    preferOnline: false,
+                    verbose: true,
+                    timestamp: true,
+                    master: []
+                },
+                src: [
+                    'assets/data/**/*.json',
+                    'assets/media/images/**/*.jpg',
+                    'assets/media/images/**/*.png',
+                    'assets/scripts/**/*.js',
+                    'assets/styles/**/*.css'
+                ],
+                dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'offline.appcache'
+            }
+        },
+
+        /**
+        * YUIDoc plugin that will generate documentation from our YUI comments.
+        */
+        yuidoc: {
+            compile: {
+                name: '&lt;%= pkg.name %&gt;',
+                description: '&lt;%= pkg.description %&gt;',
+                version: '&lt;%= pkg.appVersion %&gt;',
+                url: '&lt;%= pkg.homepage %&gt;',
+                options: {
+                    paths: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',
+                    outdir: '&lt;%= BASE_PATH %&gt;docs',
+                    themedir: '',
+                    extension: '.js',                                   // Default '.js' &lt;comma-separated list of file extensions&gt;
+                    exclude: ''
+                }
+            }
+        },
+
+        /**
+        * Creates a node.js Express Server to test our code in a server like environment.
+        * Note: We are using the watch task to keep the server running.
+        */
+        express: {
+            src: {
+                options: {
+                    port: 8000,
+                    hostname: &quot;0.0.0.0&quot;,
+                    bases: ['&lt;%= DEVELOPMENT_PATH %&gt;'],
+                    livereload: true
+                }
+            },
+            web: {
+                options: {
+                    port: 8001,
+                    hostname: &quot;0.0.0.1&quot;,
+                    bases: ['&lt;%= PRODUCTION_PATH %&gt;'],
+                    livereload: true
+                }
+            }
+        },
+
+        /**
+        * Opens the index.html file in the default browser after the node.js Express Server is running.
+        */
+        open: {
+            src: {
+                // Gets the port from the connect configuration
+                path: ' express.src.options.port%&gt;'
+            },
+            web: {
+                // Gets the port from the connect configuration
+                path: ' express.web.options.port%&gt;'
+            }
+        },
+
+        /**
+        * Watches files and will run task(s) when files are changed. It will also reload/refresh the browser.
+        */
+        watch: {
+            css: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/styles/**/*.css',
+                ]
+            },
+            src: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/**/*.ts',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/templates/**/*.hbs'
+                ],
+                tasks: ['src']
+            }
+        }
+
+    });
+
+    /**
+    * Grunt tasks:
+    *
+    * grunt        (Will build and run your development code/server)
+    * grunt web    (Will build and run your production code/server)
+    * grunt doc    (Will generate the YUI documentation from the code comments)
+    */
+    grunt.registerTask('default', [
+        'server'
+    ]);
+
+    grunt.registerTask('server', [
+        'src',
+        'express:src',
+        'open:src',
+        'watch'
+    ]);
+
+    grunt.registerTask('src', [
+        'env:src',
+        'preprocess:src'
+    ]);
+
+    grunt.registerTask('web', [
+        'env:web',
+        'preprocess',
+        'clean',
+        'copy',
+        'useminPrepare', 'concat', 'cssmin',
+        'usemin',
+        'requirejs',
+        'usebanner',
+        'htmlmin',
+        'manifest',
+        'open:web',
+        'express:web',
+        'express-keepalive'
+    ]);
+
+    grunt.registerTask('doc', [
+        'yuidoc'
+    ]);
+
+};
+</pre>
+<p>Please let me know if you liked this tutorial.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>YUIDoc JavaScript Documentation Tutorial GruntJS</title>
+		<link>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/</link>
+		<comments>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#comments</comments>
+		<pubDate>Thu, 16 May 2013 06:42:24 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1118</guid>
+		<description><![CDATA[Wow, I am totally impressed with]]></description>
+				<content:encoded><![CDATA[<p>Wow, I am totally impressed with <a href="http://yui.github.io/yuidoc/" title="YUIDoc" "target="_blank">YUIDoc</a> and <a href="http://gruntjs.com/" title="GruntJS" target="_blank">GruntJS</a> for getting me generating JavaScript docs within 5 minutes. Plus the default template/theme is pretty nice but I am still going to see if I can get the <a href="http://api.greensock.com/js/" title="GreenSock JavaScript API Docs" target="_blank">GreenSock JavaScript API Docs</a> look.</p>
+<p>In this YUIDoc JavaScript Documentation Tutorial I will be using the <a href="https://github.com/gruntjs/grunt-contrib-yuidoc" title="Grunt YUIDoc Plugin" target="_blank">GruntJS YUIDoc Plugin</a> to generate the JavaScript Docs.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<p>Now <strong>download the example files below</strong> and navigate with Terminal or the Command Prompt to the &#8220;_build&#8221; folder and type in:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install
+</pre>
+<p>On a Mac you may need to type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo npm install
+</pre>
+<p>Basically what &#8220;npm install&#8221; is doing is looking for a &#8220;package.json&#8221; file and checks the &#8220;devDependencies&#8221;. NodeJS will download and install the necessary files for your GruntJS setup. Here is our package file:</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;YUI-Docs&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;This is the description.&quot;,
+    &quot;url&quot;: &quot;http://www.test.com&quot;,/
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;*&quot;
+    }
+}
+</pre>
+<p>Luckily <a href="http://www.createjs.com/#!/EaselJS" title="EaselJS" target="_blank">EaselJS</a> uses YUIDoc and I could run a test with JavaScript classes already committed. Below is how the Gruntfile is setup.</p>
+<pre class="brush: jscript; title: ; notranslate">
+// Metadata.
+meta: {
+    basePath: '../',
+    srcPath: '../easeljs/',
+    docsPath: '../docs/',
+    deployPath: '../deploy/'
+},
+
+// Task configuration.
+yuidoc: {
+    compile: {
+        name: '&lt;%= pkg.name %&gt;',
+        description: '&lt;%= pkg.description %&gt;',
+        version: '&lt;%= pkg.version %&gt;',
+        url: '&lt;%= pkg.homepage %&gt;',
+        options: {
+            paths: '&lt;%= meta.srcPath %&gt;',
+            outdir: '&lt;%= meta.docsPath %&gt;',
+            themedir: '',
+            exclude: ''
+        }
+    }
+}
+</pre>
+<p>Now all we have to do is type the command below and it will generate the JavaScript documents for us.</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt yuidoc
+</pre>
+<p>If you want to get a good overview of YUIDoc check out <a href="http://net.tutsplus.com/tutorials/javascript-ajax/documenting-javascript-with-yuidoc/" title="Documenting JavaScript with YUIDoc" target="_blank">Documenting JavaScript with YUIDoc</a>. Also it seems YUIDoc is not just for JavaScript Documenting before all languages.</p>
+<p><br />
+Download the examples files to see the outputted docs.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Jack Doyle How Can I Make JavaScript API Docs Like You?</title>
+		<link>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/</link>
+		<comments>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/#comments</comments>
+		<pubDate>Wed, 15 May 2013 03:18:06 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1086</guid>
+		<description><![CDATA[GreenSock TweenMax/TweenLite was there for me when I did ActionScript development. Now that Flash is almost dead GreenSock TweenMax/TweenLite JS is there for me doing JavaScript development. I am doing more and more JavaScript and I want to create nice JavaScript documents for my code but I am having a hard time finding a nice [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.greensock.com/category/actionscript/" title="GreenSock TweenMax/TweenLite" target="_blank">GreenSock TweenMax/TweenLite</a> was there for me when I did ActionScript development. Now that Flash is almost dead <a href="http://www.greensock.com/gsap-js/" title="GreenSock TweenMax/TweenLite JS" target="_blank">GreenSock TweenMax/TweenLite JS</a> is there for me doing JavaScript development. I am doing more and more JavaScript and I want to create nice JavaScript documents for my code but I am having a hard time finding a nice template that will satisfy me. This is until I saw Jack Doyle&#8217;s <a href="http://api.greensock.com/js/" title="GreenSock JavaScript API Docs" target="_blank">GreenSock JavaScript API Docs</a>.</p>
+<p>It might be a secret you want to keep like my grandmothers chocolate chip cookie recipe but I want know, I want to learn, please teach me. I can keep a secret and you can email me at code{AT}codebelt.com. I used to work with Andy your Server-Side Savant. Maybe he can vouch for me.</p>
+<p>While I am at it can you also create GreenSock LoaderMax JS. <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Emotes-face-smile-big-icon.png" /></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

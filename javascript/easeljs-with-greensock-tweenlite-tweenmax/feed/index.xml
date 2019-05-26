@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: EaselJS with GreenSock Tweenlite TweenMax</title>
+	<atom:link href="https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/#comment-15035</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Wed, 15 May 2013 00:41:05 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=956#comment-15035</guid>
+		<description><![CDATA[Thanks, I will try to do that in the future for my simple examples.]]></description>
+		<content:encoded><![CDATA[<p>Thanks, I will try to do that in the future for my simple examples.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Dirk Krause</title>
+		<link>https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/#comment-15030</link>
+		<dc:creator><![CDATA[Dirk Krause]]></dc:creator>
+		<pubDate>Tue, 14 May 2013 13:43:15 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=956#comment-15030</guid>
+		<description><![CDATA[Thanks for the example!
+I took the liberty to turn this into a jsfiddle here:
+http://jsfiddle.net/dirkk0/JhF92/
+Best,
+ Dirk]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the example!<br />
+I took the liberty to turn this into a jsfiddle here:<br />
+<a href="http://jsfiddle.net/dirkk0/JhF92/" rel="nofollow">http://jsfiddle.net/dirkk0/JhF92/</a><br />
+Best,<br />
+ Dirk</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

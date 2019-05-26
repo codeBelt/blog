@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Compiling into Single JavaScript File</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-compiling-into-single-javascript-file/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-compiling-into-single-javascript-file/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: David</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-compiling-into-single-javascript-file/#comment-11819</link>
+		<dc:creator><![CDATA[David]]></dc:creator>
+		<pubDate>Mon, 17 Dec 2012 15:06:39 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=596#comment-11819</guid>
+		<description><![CDATA[Regarding compiling to single file, the default with the Visual Studio plugin is to compile each file into a separate .js file, which it does by specifying all the files in the -out parameter.  I think it assumes that you&#039;re typically using it in a ASP.NET project which if you&#039;re  using the MVC4 bundler, it will use the unminified files when you&#039;re in debug mode, and use the a combined minified file when  you&#039;re in release mode.
+
+If you&#039;re not using it in an ASP.NET MVC4 app, then the single file compile is probably more convenient.]]></description>
+		<content:encoded><![CDATA[<p>Regarding compiling to single file, the default with the Visual Studio plugin is to compile each file into a separate .js file, which it does by specifying all the files in the -out parameter.  I think it assumes that you&#8217;re typically using it in a ASP.NET project which if you&#8217;re  using the MVC4 bundler, it will use the unminified files when you&#8217;re in debug mode, and use the a combined minified file when  you&#8217;re in release mode.</p>
+<p>If you&#8217;re not using it in an ASP.NET MVC4 app, then the single file compile is probably more convenient.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

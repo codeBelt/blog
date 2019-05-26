@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Generate Documentation for TypeScript</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: Antonio</title>
+		<link>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/#comment-30509</link>
+		<dc:creator><![CDATA[Antonio]]></dc:creator>
+		<pubDate>Thu, 02 Oct 2014 01:03:42 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1314#comment-30509</guid>
+		<description><![CDATA[He obviously doesn&#039;t have solution other than the ability to bitch and moan.]]></description>
+		<content:encoded><![CDATA[<p>He obviously doesn&#8217;t have solution other than the ability to bitch and moan.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/#comment-22164</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sat, 25 Jan 2014 15:22:54 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1314#comment-22164</guid>
+		<description><![CDATA[Thanks for the feedback. If you can show me an better/easier way to generate documentation for TypeScript. I&#039;m all ears.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the feedback. If you can show me an better/easier way to generate documentation for TypeScript. I&#8217;m all ears.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Matthew</title>
+		<link>https://codebelt.github.io/blog/typescript/generate-documentation-for-typescript/#comment-22143</link>
+		<dc:creator><![CDATA[Matthew]]></dc:creator>
+		<pubDate>Fri, 24 Jan 2014 00:46:02 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1314#comment-22143</guid>
+		<description><![CDATA[No offense, but this isn&#039;t a very good solution... 
+
+/**
+   * @property isEnabled
+   * @type {boolean}
+   * @default false
+   * @protected
+   */
+  public isEnabled:boolean = false;
+
+The great thing about JSDoc for JavaScript is that it can take standard-looking, minimal comments and generate relatively useful documentation. If you have to basically rewrite every declaration into your doc comments, then you either can&#039;t use refactoring tools or have to deal with the fact that your documentation is going to get out of date fast.]]></description>
+		<content:encoded><![CDATA[<p>No offense, but this isn&#8217;t a very good solution&#8230; </p>
+<p>/**<br />
+   * @property isEnabled<br />
+   * @type {boolean}<br />
+   * @default false<br />
+   * @protected<br />
+   */<br />
+  public isEnabled:boolean = false;</p>
+<p>The great thing about JSDoc for JavaScript is that it can take standard-looking, minimal comments and generate relatively useful documentation. If you have to basically rewrite every declaration into your doc comments, then you either can&#8217;t use refactoring tools or have to deal with the fact that your documentation is going to get out of date fast.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,1701 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>JavaScript &#8211; codeBelt</title>
+	<atom:link href="https://codebelt.github.io/blog/category/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Sun, 26 May 2019 04:51:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>Webpack React Hot Loader Hapi.js Server-side Rendering Example</title>
+		<link>https://codebelt.github.io/blog/javascript/webpack-react-hot-loader-hapi-js-server-side-rendering-example/</link>
+		<comments>https://codebelt.github.io/blog/javascript/webpack-react-hot-loader-hapi-js-server-side-rendering-example/#respond</comments>
+		<pubDate>Sat, 19 Aug 2017 04:43:14 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1755</guid>
+		<description><![CDATA[I wanted to share my awesome hapi-react-hot-loader-example and my typescript-hapi-react-hot-loader-example . Please check out my example universal application demonstrating react-hot-loader-3 with webpack-3, react and friends, and hapi.js for server-side rendering. I think it is a very clean and simple example that many can understand. I a very proud of my one webpack.config file that handles dev, production, [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I wanted to share my awesome <a href="https://github.com/codeBelt/hapi-react-hot-loader-example" target="_blank">hapi-react-hot-loader-example</a> and my <a href="https://github.com/codeBelt/typescript-hapi-react-hot-loader-example" target="_blank">typescript-hapi-react-hot-loader-example</a> . Please check out my example universal application demonstrating react-hot-loader-3 with webpack-3, react and friends, and hapi.js for server-side rendering. I think it is a very clean and simple example that many can understand. I a very proud of my one webpack.config file that handles dev, production, and staging builds.</p>
+<p>Below is some of the features:</p>
+<ul>
+<li>React</li>
+<li>React Router 4</li>
+<li>React Hot Loader 3</li>
+<li>Redux</li>
+<li>Redux Saga</li>
+<li>Redux Form</li>
+<li>Webpack 3</li>
+<li>Hapi.js</li>
+<li>Universal / Isomorphic / Server-sider Rendering</li>
+</ul>
+<p>Please star my <a href="https://github.com/codeBelt/hapi-react-hot-loader-example" target="_blank">JavaScript version of React Server-side rendering boilerplate/example</a> and my <a href="https://github.com/codeBelt/typescript-hapi-react-hot-loader-example" target="_blank">TypeScript version of React Server-side rendering boilerplate/example</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/webpack-react-hot-loader-hapi-js-server-side-rendering-example/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How To Write JavaScript Classes</title>
+		<link>https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/</link>
+		<comments>https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/#respond</comments>
+		<pubDate>Fri, 10 Oct 2014 04:54:59 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1639</guid>
+		<description><![CDATA[Example files for this article. Today I want to show you how I think JavaScript Classes should be structured. I&#8217;ve written classes many different ways over the years (Prototypal Inheritance, Object Literal Notation, Mootools, Base2js, Sencha Touch, Backbone and TypeScript). The following is a condensed example of the current format I use to structure my [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><i><a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes" target="_blank">Example files</a> for this article.</i></p>
+<p>Today I want to show you how I think JavaScript Classes should be structured. I&#8217;ve written classes many different ways over the years (Prototypal Inheritance, Object Literal Notation, Mootools, Base2js, Sencha Touch, Backbone and TypeScript). The following is a condensed example of the current format I use to structure my classes in JavaScript.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var BaseView = (function () {
+
+    function BaseView() {
+    }
+
+    BaseView.prototype.createChildren = function () {
+    };
+
+    BaseView.prototype.layoutChildren = function () {
+    };
+
+    return BaseView;
+})();
+</pre>
+<p>You may have seen prototypal inheritance before but in the example above you can see it is wrapped with an extra closure.  Sometimes this is referred to as an immediately invoked function expression (iife). The extra iife allows us to have access to the class when we start extending other classes. It is in this example to keep our class structure consistent.</p>
+<h2>Inheritance</h2>
+<p>Prototypal or class inheritance is where one class can inherit characteristics from another class. The benefit is you don&#8217;t have the same exact code or functionality in several different classes. If there is a bug in your code you don&#8217;t have to fix it in 10 different places. You just have to fix it in one class and all classes extending that class will be fixed.</p>
+<p>Below is an example of how to extend the class above.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var AnotherView = (function () {
+
+    var _super = Extend(AnotherView, BaseView);
+
+    function AnotherView() {
+        _super.call(this);
+    }
+
+    AnotherView.prototype.createChildren = function () {
+        _super.prototype.createChildren.call(this);
+    };
+
+    AnotherView.prototype.layoutChildren = function () {
+    };
+
+    return AnotherView;
+})();
+</pre>
+<p>The format is constant with the the <strong>BaseView</strong> above but now we have this `_super` thing in our class. What `_super` allows you to do is call the functions/methods on the class you extended.</p>
+<p>If you look at <strong>Extend</strong> in `var _super = Extend(AnotherView, BaseView);` it is a helper function that allows you to extend other classes easily. It will take the first class (AnotherView) and extend it with the second class (BaseView).</p>
+<p>Below is the 12 line Extend function/class. Go ahead, put it in your projects to easily extend your classes.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var Extend = function (inheritorClass, baseClass) {
+    for (var p in baseClass) {
+        if (baseClass.hasOwnProperty(p)) {
+            inheritorClass[p] = baseClass[p];
+        }
+    }
+    function __() {
+        this.constructor = inheritorClass;
+    }
+    __.prototype = baseClass.prototype;
+    inheritorClass.prototype = new __();
+    return baseClass;
+};
+</pre>
+<h2>Real World Example</h2>
+<p>You may have a view class like below that you always use and repeat the same methods and logic throughout most of your classes. Lets use this class as our base for all of our other view classes. After, scroll down to the next sample class to see how we can extend this class.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var BaseView = (function () {
+
+    function BaseView($element) {
+        if (($element instanceof jQuery) === true &amp;&amp; $element.length === 0) {
+            // If a jQuery object was passed in and it doesn't have any items then exit.
+            return;
+        }
+
+        this.$element = $element;
+        this.isEnabled = false;
+
+        this.init();
+    }
+
+    BaseView.prototype.init = function() {
+        // Kick off the view lifecycle
+        this.createChildren()
+            .setupHandlers()
+            .enable()
+            .layoutChildren();
+
+        return this;
+    };
+
+    BaseView.prototype.createChildren = function() {
+        // Used to create any objects for thr view and/or find references to child elements.
+        return this;
+    };
+
+    BaseView.prototype.setupHandlers = function() {
+        // Creates a class reference to an event handler method that is bound to the scope of the object.
+        return this;
+    };
+
+    BaseView.prototype.layoutChildren = function() {
+        // Optional use to set any child objects for the view. Also can be called later to update objects.
+        return this;
+    };
+
+    BaseView.prototype.enable = function() {
+        if (this.isEnabled === true) {
+            return this;
+        }
+        this.isEnabled = true;
+
+        // Add event listeners for this class.
+
+        return this;
+    };
+
+    BaseView.prototype.disable = function() {
+        if (!this.isEnabled === false) {
+            return this;
+        }
+        this.isEnabled = false;
+
+        // Remove event listeners for this class.
+
+        return this;
+    };
+
+    BaseView.prototype.destroy = function() {
+        this.disable();
+
+        // Nulls out all properties of the class to prevent memory leak.
+        for (var key in this) {
+            if (this.hasOwnProperty(key)) {
+                this[key] = null;
+            }
+        }
+    };
+
+    return BaseView;
+})();
+</pre>
+<p>In the new class below you will notice we don&#8217;t need to set any properties or have any logic that we usually have in all of our view classes. Since we extended <strong>BaseView</strong> and called super throughout the different methods it will be handle behind the scenes and we can concentrate on what this new class needs to do.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var AnotherView = (function () {
+
+    var _super = Extend(AnotherView, BaseView);
+
+    function AnotherView($element) {
+           // Put any properties above super.
+            _super.call(this, $element);
+            // Put any method calls below super.
+    }
+
+    AnotherView.prototype.createChildren = function() {
+        _super.prototype.createChildren.call(this);
+
+        return this;
+    };
+
+    AnotherView.prototype.setupHandlers = function() {
+        _super.prototype.setupHandlers.call(this);
+
+        return this;
+    };
+
+    AnotherView.prototype.layoutChildren = function() {
+        return this;
+    };
+
+    AnotherView.prototype.enable = function() {
+        if (this.isEnabled) {
+            return this;
+        }
+
+        return _super.prototype.enable.call(this);
+    };
+
+    AnotherView.prototype.disable = function() {
+        if (!this.isEnabled) {
+            return this;
+        }
+
+       return _super.prototype.disable.call(this);
+    };
+
+    AnotherView.prototype.destroy = function() {
+
+       _super.prototype.destroy.call(this);
+    };
+
+    return AnotherView;
+})();
+</pre>
+<p>I did not come up with this structure. This is what the TypeScript compiler spits out. I&#8217;ve just clean it up for easier use in native JavaScript projects.</p>
+<p><strong>Check out the <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/" target="_blank">example files</a> for this article.</strong></p>
+<h2>Less Typing with Templates and Snippets</h2>
+<p>Want to speed up your development? Check out my other article <a href="https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/">Templates/Snippets in your IDE</a> to learn more. </p>
+<p>Below is an example of a template I created that will create new classes that extends the <strong>BaseView</strong> above.<br />
+<img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/AnotherView.gif" /></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Templates Snippets in your IDE</title>
+		<link>https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/</link>
+		<comments>https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/#respond</comments>
+		<pubDate>Fri, 10 Oct 2014 04:54:02 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1636</guid>
+		<description><![CDATA[In this article I am going to talk about how you can speed up your development by using templates in Sublime Text and JetBrains IDE&#8217;s (WebStorm, PhpStorm, etc). Below you can see the snippets in action. Just hit the Tab key to fill in the next predefined input area. Creating a Property Creating a Method [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In this article I am going to talk about how you can speed up your development by using templates in <strong>Sublime Text</strong> and <strong>JetBrains IDE&#8217;s</strong> (WebStorm, PhpStorm, etc).</p>
+<p>Below you can see the snippets in action. Just hit the <strong>Tab</strong> key to fill in the next predefined input area.</p>
+<h4>Creating a Property</h4>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/Property.gif" /></p>
+<h4>Creating a Method</h4>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/Method.gif" /></p>
+<h4>Creating a Class</h4>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/AnotherView.gif" /></p>
+<h2>Sublime Text Snippets</h2>
+<p>Here are three Sublime Text snippets for you to use:<br />
+  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/method.sublime-snippet" target="_blank">Method Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/property.sublime-snippet" target="_blank">Property Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/view.sublime-snippet" target="_blank">View Class</a></li>
+</p>
+<p>1) To create a snippet, go to <strong>Tools > New Snippet.</strong></p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-new-snippet.png" width="625" height="271" /></p>
+<p>2) A new sample snippet file will be created. Go ahead and replace all of the code with one of the snippets I provided above. Below I have replaced it with the BaseView snippet.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-view.png" width="625" height="271" /></p>
+<p>3) Now save the file and name it &#8220;view.sublime-snippet&#8221;. For Sublime Text snippets the file must end with <strong>&#8220;.sublime-snippet&#8221;</strong>.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-save.png" width="470" height="296" /></p>
+<p>The snippets files will be saved in: <strong>Sublime Text > Preferences > Browse Package > Users</strong></p>
+<p>4) Once you have created all three snippets above you can start using them. First, create a new file and save it with the class name you are creating, be sure to give it a <strong>&#8220;.js&#8221;</strong> extension. You must have the extension defined so Sublime Text knows what type of snippet to use.</p>
+<p>Now start typing <strong>&#8220;view&#8221;</strong> and hit the Tab key on your keyboard.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-type.png" width="625" height="271" /></p>
+<p>5) You can see it has created a <strong>&#8220;AnotherView&#8221;</strong> class that extends <strong>&#8220;BaseView&#8221;</strong> with all of the default methods.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/sublimeText2-build-out.png" width="625" height="271" /></p>
+<h2>JetBrains Templates &amp; Live Templates</h2>
+<p>With JetBrains you have File Templates &amp; Live Templates. Here are three JetBrains templates for you to use:<br />
+  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/method.txt" target="_blank">Method Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/property.txt" target="_blank">Property Helper</a></li>
+<p>  * <a href="https://github.com/codeBelt/How-To-Write-JavaScript-Classes/blob/master/ide-snippets/view.txt" target="_blank">View Class</a></li>
+</p>
+<h4>File Templates</h4>
+<p>1) Lets create a File Template for the <strong>View Class</strong> template. In PhpStorm/WebStorm you can right click on any folder in your project then select <strong>New > Edit File Templates</strong>.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2013/06/edit-template.jpg" /></p>
+<p>2) Now click the green <strong>plus button</strong> top left and name it <strong>JS View</strong>. Copy the snippet provided above and paste it in. Click the <strong>OK</strong> button and you are ready to go.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/js-view.png" /></p>
+<p>3) Now you can click <strong>New > JS View</strong> to create a new view class.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/new-template.png" /></p>
+<h4>Live Templates</h4>
+<p>For the <strong>Method Helper</strong> and <strong>Property Helper</strong> snippets above we need to do the following.</p>
+<p>1) Go to <strong>Preferences > Live Templates > JavaScript</strong> and click on the <strong>plus symbol</strong> and select <strong>1. Live Template</strong>.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/new-live-template.png" /></p>
+<p>2) Fill in the <strong>Abbreviation:</strong> with the name you want to type to trigger the snippet. Add the snippet I&#8217;ve provided in the <strong>Template text:</strong> area and then click the <strong>Define</strong> link.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/set-live-template.png" /></p>
+<p>3) After clicking the <strong>Define</strong> select <strong>JavaScript</strong> and click the <strong>Apply</strong> button.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/define-live-template.png" /></p>
+<p>4) One thing you will want to do is click the <strong>Edit variables</strong> and order the names like I have below. Also on the <strong>Method Helper</strong> you will need to set the <strong>Expression</strong> and check the <strong>Skip if defined</strong> checkbox.</p>
+<p><img src="https://codebelt.github.io/blog/wp/wp-content/uploads/2014/09/order-live-template.png" /></p>
+<p>5) When you want to use the Live Template use <strong>Ctrl+J</strong> or <strong>Cmd+J</strong> and start typing the <strong>Abbreviation</strong> name to insert the snippet.</p>
+<p>This template article relates to another article I wrote <a href="https://codebelt.github.io/blog/javascript/how-to-write-javascript-classes/">How To Write JavaScript Classes</a>. Please let me know if you use and like these templates.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/templates-snippets-in-your-ide/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Compile JSON files into Javascript Tutorial</title>
+		<link>https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/</link>
+		<comments>https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/#respond</comments>
+		<pubDate>Thu, 18 Jul 2013 04:43:13 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1309</guid>
+		<description><![CDATA[Just a quick tutorial on how to compile JSON files into a single JavaScript file. This is very easy with GruntJS and the grunt-json plugin. Grunt JS Setup If you have never used GruntJS before you probably need to checkout my Install Grunt JS on a Mac Tutorial or Install Grunt JS on Windows Tutorial. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Just a quick tutorial on how to compile JSON files into a single JavaScript file. This is very easy with <strong>GruntJS</strong> and the <a href="https://npmjs.org/package/grunt-json" target="_blank">grunt-json</a> plugin.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you probably need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Example-JSON-to-Javascript" target="_blank">https://github.com/codeBelt/Example-JSON-to-Javascript</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Grunt File</h2>
+<p>If you take a look at the <strong>json </strong>config area you will see some <strong>options</strong>. Those <strong>options </strong>are:</p>
+<dl>
+<dt>namespace</dt>
+<dd>The namespace in which the json data will be assigned. (Default: &#8216;myjson&#8217;)</dd>
+<dt>includePath</dt>
+<dd>Includes the full path of the file and the extension. By default only the file name is used as the key value. (Default: false)</dd>
+<dt>processName</dt>
+<dd>This option accepts a function which takes one argument (filename) and returns a string which will be used as the key for the object. The example below stores all json data on the default <strong>JSON_DATA </strong>namespace in lowercase letters. (Default: null)</dd>
+</dl>
+<pre class="brush: jscript; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        //Read the package.json (optional)
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Constants for the Gruntfile so we can easily change the path for
+        // our environments.
+        BASE_PATH: '../',
+        DEVELOPMENT_PATH: '../dev/',
+        PRODUCTION_PATH: '../prod/',
+
+        // The JSON to JavaScript plugin.
+        json: {
+            prod: {
+                options: {
+                    namespace: 'JSON_DATA',
+                    includePath: false,
+                    processName: function(filename) {
+                        return filename.toLowerCase();
+                    }
+                },
+                src: ['&lt;%= DEVELOPMENT_PATH %&gt;' + '**/*.json'],
+                dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/json.js'
+            }
+        }
+
+    });
+
+    // Loads the necessary tasks for this Grunt file.
+    grunt.loadNpmTasks('grunt-json');
+
+    // Grunt tasks.
+    grunt.registerTask('default', ['json']);
+
+};
+</pre>
+<p>Checkout the <a href="https://npmjs.org/package/grunt-json" target="_blank">grunt-json</a> plugin to learn more about the plugin.</p>
+<h2>JSON File</h2>
+<p>The <strong>grunt-json</strong> plugin will take the following JSON data convert it into a JavaScript Object like in the next example.</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;Product&quot;,
+    &quot;properties&quot;: {
+        &quot;id&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;description&quot;: &quot;Product identifier&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;name&quot;: {
+            &quot;description&quot;: &quot;Name of the product&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;price&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;required&quot;: true
+        },
+        &quot;tags&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+            }
+        }
+    }
+}
+</pre>
+<h2>JSON Converted to JavaScript</h2>
+<p>Below is what the JavaScript file will look like.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var JSON_DATA = JSON_DATA || {};
+JSON_DATA[&quot;products&quot;] = {
+    &quot;name&quot;: &quot;Product&quot;,
+    &quot;properties&quot;: {
+        &quot;id&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;description&quot;: &quot;Product identifier&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;name&quot;: {
+            &quot;description&quot;: &quot;Name of the product&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;required&quot;: true
+        },
+        &quot;price&quot;: {
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;required&quot;: true
+        },
+        &quot;tags&quot;: {
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: {
+                &quot;type&quot;: &quot;string&quot;
+            }
+        }
+    }
+};
+</pre>
+<p>Now we can used the data like any other JavaScript Object.</p>
+<pre class="brush: jscript; title: ; notranslate">
+console.log( JSON_DATA.products );
+</pre>
+<p>Leave me a comment, I love comments.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/compile-json-files-into-javascript/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Single Page JavaScript Application Workflow</title>
+		<link>https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/</link>
+		<comments>https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/#comments</comments>
+		<pubDate>Mon, 24 Jun 2013 06:14:13 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1155</guid>
+		<description><![CDATA[I started playing around with creating a workflow for creating single page applications with JavaScript. The big player in this workflow is GruntJS. In this Single Page JavaScript Application Workflow Tutorial I will explain how to setup a build process for your development and production environment. We will be using several GruntJS plugins to help [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I started playing around with creating a workflow for creating single page applications with JavaScript. The big player in this workflow is GruntJS. In this <strong>Single Page JavaScript Application Workflow Tutorial</strong> I will explain how to setup a build process for your development and production environment. We will be using several GruntJS plugins to help us and they are:</p>
+<p><a href="https://github.com/gruntjs/grunt-contrib-requirejs" target="_blank">grunt-contrib-requirejs</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-cssmin" target="_blank">grunt-contrib-cssmin</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-htmlmin" target="_blank">grunt-contrib-htmlmin</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-copy" target="_blank">grunt-contrib-copy</a><br />
+<a href="https://github.com/gruntjs/grunt-contrib-concat" target="_blank">grunt-contrib-concat</a><br />
+<a href="https://github.com/onehealth/grunt-env" target="_blank">grunt-env</a><br />
+<a href="https://github.com/onehealth/grunt-preprocess" target="_blank">grunt-preprocess</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-yuidoc" target="_blank">grunt-contrib-yuidoc</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-watch" target="_blank">grunt-contrib-watch</a><br />
+<a href="https://npmjs.org/package/grunt-contrib-clean" target="_blank">grunt-contrib-clean</a><br />
+<a href="https://npmjs.org/package/grunt-banner" target="_blank">grunt-banner</a><br />
+<a href="https://npmjs.org/package/grunt-usemin" target="_blank">grunt-usemin</a><br />
+<a href="https://npmjs.org/package/grunt-manifest" target="_blank">grunt-manifest</a><br />
+<a href="https://npmjs.org/package/grunt-express" target="_blank">grunt-express</a><br />
+<a href="https://npmjs.org/package/grunt-open" target="_blank">grunt-open</a></p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you probably need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<h2>Example Code</h2>
+<p>To follow along with this tutorial you may want to download the files from <a href="https://github.com/codeBelt/Single-Page-Application-Workflow-Boilerplate" target="_blank">https://github.com/codeBelt/Single-Page-Application-Workflow-Boilerplate</a> and click the &#8220;Download Zip&#8221; button.</p>
+<h2>Environments</h2>
+<p>We will setup GruntJS to build our development (src/ folder) environment and our production (web/ folder) environments. Our two GruntJS commands will be <strong>grunt</strong> and <strong>grunt web</strong>.</p>
+<p>We will start with the following:</p>
+<pre class="brush: jscript; title: ; notranslate">
+/
+├──  src/
+├──  web/
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<dl>
+<dt>src folder</dt>
+<dd>The src folder will have all of the source files we need to create a single page JavaScript application.</dd>
+<dt>web folder</dt>
+<dd>The web folder will only contain the minified files and assets needed for the production server.</dd>
+<dt>Gruntfile.js &#038; package.json Files</dt>
+<dd>The GruntJS tasks and plugins need to build our environments.</dd>
+</dl>
+<h2>Development Folder</h2>
+<p>Lets take a look at our <strong>src</strong> folder. Notice the <strong>src/config.html</strong> file. This file will be used to create the <strong>index.html</strong> file for both our development (src) and production (web) environment.</p>
+<pre class="brush: jscript; title: ; notranslate">
+/
+├──+ src/
+│  ├── assets/
+│  ├── favicon.ico
+│  └── config.html
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<p>If where too run both the development (grunt) and production (grunt web) commands it would generate the following:</p>
+<pre class="brush: jscript; title: ; notranslate">
+/
+├──+ src/
+│  ├── assets/
+│  ├── favicon.ico
+│  ├── config.html
+│  └── index.html
+├──+ web/
+│  ├── assets/
+│  ├── favicon.ico
+│  ├── offline.appcache
+│  └── index.html
+├──  Gruntfile.js
+└──  package.json
+</pre>
+<p>Here is our <strong>config.html</strong> in the <strong>src</strong> folder. Notice the <strong>NODE_ENV</strong> conditions, they will be used to determine how the production and development html file will be generated.</p>
+<pre class="brush: xml; title: ; notranslate">
+&lt;!DOCTYPE html&gt;
+
+&lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;!-- @endif --&gt;
+
+&lt;!-- @if NODE_ENV == 'PRODUCTION' --&gt;
+&lt;html lang=&quot;en&quot; manifest=&quot;offline.appcache&quot;&gt;
+&lt;!-- @endif --&gt;
+
+&lt;head&gt;
+    &lt;!-- The current version of the application --&gt;
+    &lt;meta name=&quot;version&quot; content=&quot;&lt;!-- @echo buildVersion --&gt;&quot;/&gt;
+
+    &lt;!-- Add the fav icon --&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+    &lt;!-- build:css assets/styles/app.min.css --&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/setup.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/bootstrap.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen, projection&quot; href=&quot;assets/styles/screen.css&quot; /&gt;
+    &lt;!-- endbuild --&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+        &lt;script src=&quot;assets/vendor/require/require.js&quot; data-main=&quot;assets/scripts/AppBootstrap.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;assets/scripts/config.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- @endif --&gt;
+
+    &lt;!-- @if NODE_ENV == 'PRODUCTION' --&gt;
+        &lt;script src=&quot;assets/scripts/require.js&quot; data-main=&quot;assets/scripts/app.min.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- @endif --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<h2>Install GruntJS &#038; the necessary plugins</h2>
+<p>Lets look how I setup the <strong>package.json</strong> file. This file will install Grunt and Grunt plugins locally for our project. All we have to do to install all of the plugins is type <strong>npm install</strong> when in root of this project and it will install everything we need.</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;Single-Page-Application-GruntJS&quot;,
+    &quot;version&quot;: &quot;0.2.0&quot;,
+
+    &quot;appVersion&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;A sample single page JavaScript application workflow boilerplate with Grunt.js&quot;,
+    &quot;url&quot;: &quot;https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/&quot;,
+    &quot;developedBy&quot;: &quot;codeBelt&quot;,
+
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;0.4.2&quot;,
+        &quot;matchdep&quot;: &quot;0.3.0&quot;,
+
+        &quot;grunt-contrib-requirejs&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;0.5.0&quot;,
+        &quot;grunt-contrib-watch&quot;: &quot;0.5.3&quot;,
+        &quot;grunt-contrib-cssmin&quot;: &quot;0.7.0&quot;,
+        &quot;grunt-contrib-htmlmin&quot;: &quot;0.1.3&quot;,
+        &quot;grunt-contrib-concat&quot;: &quot;0.3.0&quot;,
+        &quot;grunt-contrib-uglify&quot;: &quot;0.2.7&quot;,
+        &quot;grunt-contrib-copy&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-contrib-clean&quot;: &quot;0.5.0&quot;,
+        &quot;grunt-banner&quot;: &quot;0.2.0&quot;,
+        &quot;grunt-usemin&quot;: &quot;2.0.2&quot;,
+        &quot;grunt-manifest&quot;: &quot;0.4.0&quot;,
+        &quot;grunt-preprocess&quot;: &quot;4.0.0&quot;,
+        &quot;grunt-env&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-express&quot;: &quot;1.2.1&quot;,
+        &quot;grunt-open&quot;: &quot;0.2.2&quot;
+    }
+}
+</pre>
+<p>Take notice of the <strong>&#8220;version&#8221;</strong> property. It will be used in the creation of the index.html, minified css, minified JavaScript and the cache manifest files.</p>
+<p>Here is the <strong>Gruntfile.js</strong> file. You can read the comments to see what each plugin is doing.</p>
+<pre class="brush: as3; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Load Grunt tasks declared in the package.json file.
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+    // Project configuration.
+    grunt.initConfig({
+
+        /**
+        * This will load in our package.json file so we can have access
+        * to the project name and appVersion number.
+        */
+        pkg: grunt.file.readJSON('package.json'),
+
+        /**
+        * Constants for the Gruntfile so we can easily change the path for our environments.
+        */
+        BASE_PATH: '',
+        DEVELOPMENT_PATH: 'src/',
+        PRODUCTION_PATH: 'web/',
+
+        /**
+        * A code block that will be added to our minified code files.
+        * Gets the name and appVersion and other info from the above loaded 'package.json' file.
+        * @example &lt;%= banner.join(&quot;\\n&quot;) %&gt;
+        */
+        banner: [
+            '/*',
+            '* Project: &lt;%= pkg.name %&gt;',
+            '* Version: &lt;%= pkg.appVersion %&gt; (&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;)',
+            '* Development By: &lt;%= pkg.developedBy %&gt;',
+            '* Copyright(c): &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt;',
+            '*/'
+        ],
+
+        /**
+        * The different constant names that will be use to build our html files.
+        * @example &lt;!-- @if NODE_ENV == 'DEVELOPMENT' --&gt;
+        */
+        env: {
+            src: {
+                NODE_ENV : 'DEVELOPMENT'
+            },
+            web : {
+                NODE_ENV : 'PRODUCTION'
+            }
+        },
+
+        /**
+        * Allows us to pass in variables to files that have place holders so we can similar files with different data.
+        * This plugin works with the 'env' plugin above.
+        * @example &lt;!-- @echo appVersion --&gt; or &lt;!-- @echo filePath --&gt;
+        */
+        preprocess : {
+            // Task to create the index.html file that will be used during development.
+            // Passes the app version and creates the /index.html
+            src : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            },
+            // Task to create the index.html file that will be used in production.
+            // Passes the app version and creates the /index.html
+            web : {
+                src : '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                dest : '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html',
+                options : {
+                    context : {
+                        appVersion : '&lt;%= pkg.appVersion %&gt;',
+                        filePath: ''
+                    }
+                }
+            }
+        },
+
+        /**
+        * Cleans or deletes our production folder before we create a new production build.
+        */
+        clean: {
+            dist: ['&lt;%= PRODUCTION_PATH %&gt;']
+        },
+
+        /**
+        * Copies certain files over from the development folder to the production folder so we don't have to do it manually.
+        */
+        copy: {
+            web:  {
+                files: [
+                    // Copy favicon.ico file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: 'favicon.ico', dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the media folder from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', src: ['assets/media/**'], dest: '&lt;%= PRODUCTION_PATH %&gt;' },
+                    // Copy the index.html file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;', dest: '&lt;%= PRODUCTION_PATH %&gt;', src: ['index.html'], filter: 'isFile', dot: true },
+                    // Copy require.js file from development to production
+                    { expand: true, cwd: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/vendor/require/', src: 'require.js', dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/' }
+                ]
+            }
+        },
+
+        /**
+        * Prepends the banner above to the minified files.
+        */
+        usebanner: {
+            dist: {
+                options: {
+                    position: 'top',
+                    banner: '&lt;%= banner.join(&quot;\\n&quot;) %&gt;',
+                    linebreak: true
+                },
+                files: {
+                    src: [
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',
+                        '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/styles/app.min.css'
+                    ]
+                }
+            }
+        },
+
+        /**
+        * The useminPrepare part of the usemin plugin looks at the html file and checks for a build:js or build:css code block.
+        * It will take those files found in the code block(s) and concat them together and then runs uglify for js and/or cssmin for css files.
+        * useminPrepare requires grunt-contrib-uglify, grunt-contrib-concat, and grunt-contrib-cssmin plugins to be installed. Which is listed in the package.json file.
+        *
+        * The usemin part will remove the code block(s) and replace that area with the single file path in the html file.
+        */
+        useminPrepare: {
+            html: ['&lt;%= DEVELOPMENT_PATH %&gt;' + 'index.html'],
+            options: {
+                dest: '&lt;%= PRODUCTION_PATH %&gt;'// Moves the single concatenated files to production.
+            }
+        },
+        usemin: {
+            html: ['&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'],
+            options: {
+                dirs: ['&lt;%= PRODUCTION_PATH %&gt;']
+            }
+        },
+
+        /**
+        * The RequireJS plugin that will use uglify2 to build and minify our JavaScript,
+        * templates and any other data we include in the require files.
+        */
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',                         // Path of source scripts, relative to this build file
+                    mainConfigFile: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/config.js',         // Path of shared configuration file, relative to this build file
+                    name: 'AppBootstrap',                                                           // Name of input script (.js extension inferred)
+                    out: '&lt;%= PRODUCTION_PATH %&gt;' + 'assets/scripts/app.min.js',                    // Path of built script output
+
+                    fileExclusionRegExp: /.svn/,                                                    // Ignore all files matching this pattern
+                    useStrict: true,
+                    preserveLicenseComments: false,
+                    pragmas: {
+                        debugExclude: true
+                    },
+
+                    optimize: 'uglify2',                                                            // Use 'none' If you do not want to uglify.
+                    uglify2: {
+                        output: {
+                            beautify: false,
+                            comments: false
+                        },
+                        compress: {
+                            sequences: false,
+                            global_defs: {
+                                DEBUG: false
+                            }
+                        },
+                        warnings: false,
+                        mangle: true
+                    }
+                }
+            }
+        },
+
+        /**
+        * Removes all comments from the production index.html file. I can also remove all whitespace if desired.
+        */
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: false
+                },
+                files: {
+                    '&lt;%= PRODUCTION_PATH %&gt;index.html': '&lt;%= PRODUCTION_PATH %&gt;' + 'index.html'
+                }
+            }
+        },
+
+        /**
+        * Creates a Cache Manifest file.
+        */
+        manifest: {
+            generate: {
+                options: {
+                    basePath: '&lt;%= PRODUCTION_PATH %&gt;',
+                    exclude: [
+                        'assets/media/images/moblie-icons/icon-144x144.png',
+                        'assets/media/images/moblie-icons/icon-100x100.png',
+                        'assets/media/images/moblie-icons/icon-29x29.png',
+                        'assets/media/images/moblie-icons/icon-50x50.png',
+                        'assets/media/images/moblie-icons/icon-58x58.png',
+                        'assets/media/images/moblie-icons/icon-72x72.png'
+                    ],
+                    preferOnline: false,
+                    verbose: true,
+                    timestamp: true,
+                    master: []
+                },
+                src: [
+                    'assets/data/**/*.json',
+                    'assets/media/images/**/*.jpg',
+                    'assets/media/images/**/*.png',
+                    'assets/scripts/**/*.js',
+                    'assets/styles/**/*.css'
+                ],
+                dest: '&lt;%= PRODUCTION_PATH %&gt;' + 'offline.appcache'
+            }
+        },
+
+        /**
+        * YUIDoc plugin that will generate documentation from our YUI comments.
+        */
+        yuidoc: {
+            compile: {
+                name: '&lt;%= pkg.name %&gt;',
+                description: '&lt;%= pkg.description %&gt;',
+                version: '&lt;%= pkg.appVersion %&gt;',
+                url: '&lt;%= pkg.homepage %&gt;',
+                options: {
+                    paths: '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/',
+                    outdir: '&lt;%= BASE_PATH %&gt;docs',
+                    themedir: '',
+                    extension: '.js',                                   // Default '.js' &lt;comma-separated list of file extensions&gt;
+                    exclude: ''
+                }
+            }
+        },
+
+        /**
+        * Creates a node.js Express Server to test our code in a server like environment.
+        * Note: We are using the watch task to keep the server running.
+        */
+        express: {
+            src: {
+                options: {
+                    port: 8000,
+                    hostname: &quot;0.0.0.0&quot;,
+                    bases: ['&lt;%= DEVELOPMENT_PATH %&gt;'],
+                    livereload: true
+                }
+            },
+            web: {
+                options: {
+                    port: 8001,
+                    hostname: &quot;0.0.0.1&quot;,
+                    bases: ['&lt;%= PRODUCTION_PATH %&gt;'],
+                    livereload: true
+                }
+            }
+        },
+
+        /**
+        * Opens the index.html file in the default browser after the node.js Express Server is running.
+        */
+        open: {
+            src: {
+                // Gets the port from the connect configuration
+                path: ' express.src.options.port%&gt;'
+            },
+            web: {
+                // Gets the port from the connect configuration
+                path: ' express.web.options.port%&gt;'
+            }
+        },
+
+        /**
+        * Watches files and will run task(s) when files are changed. It will also reload/refresh the browser.
+        */
+        watch: {
+            css: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/styles/**/*.css',
+                ]
+            },
+            src: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/scripts/**/*.ts',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'config.html',
+                    '&lt;%= DEVELOPMENT_PATH %&gt;' + 'assets/templates/**/*.hbs'
+                ],
+                tasks: ['src']
+            }
+        }
+
+    });
+
+    /**
+    * Grunt tasks:
+    *
+    * grunt        (Will build and run your development code/server)
+    * grunt web    (Will build and run your production code/server)
+    * grunt doc    (Will generate the YUI documentation from the code comments)
+    */
+    grunt.registerTask('default', [
+        'server'
+    ]);
+
+    grunt.registerTask('server', [
+        'src',
+        'express:src',
+        'open:src',
+        'watch'
+    ]);
+
+    grunt.registerTask('src', [
+        'env:src',
+        'preprocess:src'
+    ]);
+
+    grunt.registerTask('web', [
+        'env:web',
+        'preprocess',
+        'clean',
+        'copy',
+        'useminPrepare', 'concat', 'cssmin',
+        'usemin',
+        'requirejs',
+        'usebanner',
+        'htmlmin',
+        'manifest',
+        'open:web',
+        'express:web',
+        'express-keepalive'
+    ]);
+
+    grunt.registerTask('doc', [
+        'yuidoc'
+    ]);
+
+};
+</pre>
+<p>Please let me know if you liked this tutorial.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/single-page-javascript-application-workflow/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>YUIDoc JavaScript Documentation Tutorial GruntJS</title>
+		<link>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/</link>
+		<comments>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/#comments</comments>
+		<pubDate>Thu, 16 May 2013 06:42:24 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1118</guid>
+		<description><![CDATA[Wow, I am totally impressed with]]></description>
+				<content:encoded><![CDATA[<p>Wow, I am totally impressed with <a href="http://yui.github.io/yuidoc/" title="YUIDoc" "target="_blank">YUIDoc</a> and <a href="http://gruntjs.com/" title="GruntJS" target="_blank">GruntJS</a> for getting me generating JavaScript docs within 5 minutes. Plus the default template/theme is pretty nice but I am still going to see if I can get the <a href="http://api.greensock.com/js/" title="GreenSock JavaScript API Docs" target="_blank">GreenSock JavaScript API Docs</a> look.</p>
+<p>In this YUIDoc JavaScript Documentation Tutorial I will be using the <a href="https://github.com/gruntjs/grunt-contrib-yuidoc" title="Grunt YUIDoc Plugin" target="_blank">GruntJS YUIDoc Plugin</a> to generate the JavaScript Docs.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<p>Now <strong>download the example files below</strong> and navigate with Terminal or the Command Prompt to the &#8220;_build&#8221; folder and type in:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install
+</pre>
+<p>On a Mac you may need to type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo npm install
+</pre>
+<p>Basically what &#8220;npm install&#8221; is doing is looking for a &#8220;package.json&#8221; file and checks the &#8220;devDependencies&#8221;. NodeJS will download and install the necessary files for your GruntJS setup. Here is our package file:</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;YUI-Docs&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;description&quot;: &quot;This is the description.&quot;,
+    &quot;url&quot;: &quot;http://www.test.com&quot;,/
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-yuidoc&quot;: &quot;*&quot;
+    }
+}
+</pre>
+<p>Luckily <a href="http://www.createjs.com/#!/EaselJS" title="EaselJS" target="_blank">EaselJS</a> uses YUIDoc and I could run a test with JavaScript classes already committed. Below is how the Gruntfile is setup.</p>
+<pre class="brush: jscript; title: ; notranslate">
+// Metadata.
+meta: {
+    basePath: '../',
+    srcPath: '../easeljs/',
+    docsPath: '../docs/',
+    deployPath: '../deploy/'
+},
+
+// Task configuration.
+yuidoc: {
+    compile: {
+        name: '&lt;%= pkg.name %&gt;',
+        description: '&lt;%= pkg.description %&gt;',
+        version: '&lt;%= pkg.version %&gt;',
+        url: '&lt;%= pkg.homepage %&gt;',
+        options: {
+            paths: '&lt;%= meta.srcPath %&gt;',
+            outdir: '&lt;%= meta.docsPath %&gt;',
+            themedir: '',
+            exclude: ''
+        }
+    }
+}
+</pre>
+<p>Now all we have to do is type the command below and it will generate the JavaScript documents for us.</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt yuidoc
+</pre>
+<p>If you want to get a good overview of YUIDoc check out <a href="http://net.tutsplus.com/tutorials/javascript-ajax/documenting-javascript-with-yuidoc/" title="Documenting JavaScript with YUIDoc" target="_blank">Documenting JavaScript with YUIDoc</a>. Also it seems YUIDoc is not just for JavaScript Documenting before all languages.</p>
+<p><br />
+Download the examples files to see the outputted docs.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/yuidoc-javascript-documentation-tutorial-gruntjs/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Jack Doyle How Can I Make JavaScript API Docs Like You?</title>
+		<link>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/</link>
+		<comments>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/#comments</comments>
+		<pubDate>Wed, 15 May 2013 03:18:06 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1086</guid>
+		<description><![CDATA[GreenSock TweenMax/TweenLite was there for me when I did ActionScript development. Now that Flash is almost dead GreenSock TweenMax/TweenLite JS is there for me doing JavaScript development. I am doing more and more JavaScript and I want to create nice JavaScript documents for my code but I am having a hard time finding a nice [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><a href="http://www.greensock.com/category/actionscript/" title="GreenSock TweenMax/TweenLite" target="_blank">GreenSock TweenMax/TweenLite</a> was there for me when I did ActionScript development. Now that Flash is almost dead <a href="http://www.greensock.com/gsap-js/" title="GreenSock TweenMax/TweenLite JS" target="_blank">GreenSock TweenMax/TweenLite JS</a> is there for me doing JavaScript development. I am doing more and more JavaScript and I want to create nice JavaScript documents for my code but I am having a hard time finding a nice template that will satisfy me. This is until I saw Jack Doyle&#8217;s <a href="http://api.greensock.com/js/" title="GreenSock JavaScript API Docs" target="_blank">GreenSock JavaScript API Docs</a>.</p>
+<p>It might be a secret you want to keep like my grandmothers chocolate chip cookie recipe but I want know, I want to learn, please teach me. I can keep a secret and you can email me at code{AT}codebelt.com. I used to work with Andy your Server-Side Savant. Maybe he can vouch for me.</p>
+<p>While I am at it can you also create GreenSock LoaderMax JS. <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Emotes-face-smile-big-icon.png" /></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/jack-doyle-how-can-i-make-javascript-api-docs-like-you/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Precompiling JavaScript Underscore Templates</title>
+		<link>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/</link>
+		<comments>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/#comments</comments>
+		<pubDate>Sun, 12 May 2013 05:36:15 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1024</guid>
+		<description><![CDATA[In this tutorial I will show you how to Precompile JavaScript Underscore Templates with GruntJS. I will be using the GruntJS JST Plugin. Grunt JS Setup If you have never used GruntJS before you will need to checkout my Install Grunt JS on a Mac Tutorial or Install Grunt JS on Windows Tutorial. Now download [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In this tutorial I will show you how to <strong>Precompile JavaScript Underscore Templates</strong> with <strong>GruntJS</strong>. I will be using the <a href="https://github.com/gruntjs/grunt-contrib-jst" title="Grunt JST Plugin" target="_blank">GruntJS JST Plugin</a>.</p>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<p>Now <strong>download the example files below</strong> and navigate with Terminal or the Command Prompt to the &#8220;_build&#8221; folder and type in:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install
+</pre>
+<p>On a Mac you may need to type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo npm install
+</pre>
+<p>Basically what &#8220;npm install&#8221; is doing is looking for a &#8220;package.json&#8221; file and checks the &#8220;devDependencies&#8221;. NodeJS will download and install the necessary files for your GruntJS setup. Here is our package file:</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;UnderScoreTemplate&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-jst&quot;: &quot;~0.5.0&quot;
+    }
+}
+</pre>
+<h2>Compiling Underscore Templates into JavaScript</h2>
+<p>Now that we have the GruntJS packages added to our &#8220;_build/node_modules/&#8221; folder we can start converting Underscore templates into precompiled JavaScript template Functions. </p>
+<p>What the JST GruntJS plugin will do is take the Underscore template (templates/home/UserDetailTemplate.tpl) below and will create a JavaScript function that will return the template as a string.</p>
+<pre class="brush: xml; title: ; notranslate">
+&lt;%
+    var length = userList.length;
+    for (var index = 0; index &lt; length; index++) {
+        var user = userList[index];
+%&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;%= index %&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;%= user.firstName %&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;%= user.lastName %&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;%= user.email %&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+&lt;% } %&gt;
+</pre>
+<p>Here is the function it creates. It uses the path and name of the template as the function name.</p>
+<pre class="brush: jscript; title: ; notranslate">
+this[&quot;JST&quot;][&quot;templates/home/UserDetailTemplate.tpl&quot;] = function (obj) {
+    obj || (obj = {});
+    var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
+
+    function print() {
+        __p += __j.call(arguments, '')
+    }
+
+    with (obj) {
+        var length = userList.length;
+        for (var index = 0; index &lt; length; index++) {
+            var user = userList[index];
+            ;
+            __p += '\r\n        &lt;tr&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( index )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( user.firstName )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( user.lastName )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n            &lt;td&gt;' +
+                ((__t = ( user.email )) == null ? '' : __t) +
+                '&lt;/td&gt;\r\n        &lt;/tr&gt;\r\n';
+        };
+    }
+    return __p
+};
+</pre>
+<p>To use the precompiled JavaScript template Function in your JavaScript code you would do the following:</p>
+<pre class="brush: jscript; title: ; notranslate">
+var userDetailTemplate = window['JST']['templates/home/UserDetailTemplate.tpl']();
+jQuery('body').append(userDetailTemplate);
+</pre>
+<p>Since the Underscore template example above expects an Array we will need to pass the data(Array) into the function-call operator as we do below:</p>
+<pre class="brush: jscript; title: ; notranslate">
+var data = [
+...
+]
+var userDetailTemplate = window['JST']['templates/home/UserDetailTemplate.tpl'](data );
+jQuery('body').append(userDetailTemplate);
+</pre>
+<h2>Precompiled JavaScript Template Example</h2>
+<p>On to my example code which you can download below and see how this all works. I hope code is straight forward.</p>
+<pre class="brush: jscript; title: ; notranslate">
+&lt;script&gt;
+    /**
+     * Helper Function to get the template function and returns the compiled
+     * template string.
+     * @param {string} templatePath The path and name of the template you want to use.
+     * @param {Object=} data Optional data to be used within the template.
+     * @returns {string} Returned compiled template.
+     */
+    function createTemplate(templatePath, data) {
+        var templateString = window['JST'][templatePath](data);
+        return templateString;
+    }
+
+    /**
+     * Initialize Function that gets called when the page is loaded (window.onload).
+     * All of our JavaScript code to generate the templates and add it to the DOM.
+     */
+    function init() {
+        // Data for the UserDetailTemplate template.
+        var userListData = [
+            {
+                firstName: 'Mark',
+                lastName: 'Otto',
+                email: 'mark@example.com'
+            },
+            {
+                firstName: 'Jacob',
+                lastName: 'Thornton',
+                email: 'jacob@example.com'
+            },
+            {
+                firstName: 'Larry',
+                lastName: 'Bird',
+                email: 'lary@example.com'
+            }
+        ];
+
+        // Get templates by path and template name.
+        var titleBar = createTemplate('templates/titlebar/TitleBarTemplate.tpl');
+        var header = createTemplate('templates/home/HelloTemplate.tpl', { title: 'Robert Is Cool!' });
+        var users = createTemplate('templates/home/UserDetailTemplate.tpl', {userList: userListData});
+
+        // Add the template string to the DOM with jQuery.
+        var $body = $('body');
+        $body.append(titleBar);
+        $body.append(header);
+        $body.find('tbody').html(users);
+    }
+
+    // Calls the init Function on window load.
+    window.onload = init;
+&lt;/script&gt;
+</pre>
+<h2>Gruntfile</h2>
+<p>If you dive into the &#8220;Gruntfile.js&#8221; file you will see:</p>
+<pre class="brush: jscript; title: ; notranslate">
+jst: {
+    compile: {
+        options: {
+            //namespace: &quot;anotherNameThanJST&quot;,      //Default: 'JST'
+            prettify: false,                        //Default: false|true
+            amdWrapper: false,                      //Default: false|true
+            templateSettings: {
+            },
+            processName: function(filename) {
+                //Shortens the file path for the template.
+                return filename.slice(filename.indexOf(&quot;template&quot;), filename.length);
+            }
+        },
+        files: {
+            &quot;&lt;%= meta.deployPath %&gt;scripts/templates.js&quot;: [&quot;&lt;%= meta.srcPath %&gt;templates/**/*.tpl&quot;]
+        }
+    }
+}
+</pre>
+<p>I will point out a couple of things. Look at the <strong>files: {&#8230;}</strong> property. The first part <strong><%= meta.deployPath %>scripts/templates.js</strong> is the export path and file name(templates.js) we want the template(s) to be outputted to. The second part <strong>[&#8220;<%= meta.srcPath %>templates/**/*.tpl&#8221;]</strong> is where the Underscore templates are located. The <strong>templates/**/</strong> means look in the templates directory and all the sub directories. The <strong>*.tpl</strong> means look for all files that have an extension of <strong>.tpl</strong>. This will take all those <strong>.tpl</strong> files and precompile the Underscore templates into JavaScript Functions to a file called <strong>templates.js</strong>.</p>
+<p>Another one I want to point out is the &#8220;processName&#8221; function. This allows you to modify the file name before the precompiling finishes. By default in my case, all my template Function names would be like below because where my Gruntfile is located:</p>
+<pre class="brush: jscript; title: ; notranslate">
+this[&quot;JST&quot;][&quot;../assets/src/templates/home/UserDetailTemplate.tpl&quot;]
+</pre>
+<p>I don&#8217;t like the look of that and I just wanted to remove everything before the &#8220;template&#8221; word to get this:</p>
+<pre class="brush: jscript; title: ; notranslate">
+this[&quot;JST&quot;][&quot;templates/home/UserDetailTemplate.tpl&quot;]
+</pre>
+<p>Now all we have to do is type the command below and it will precompile our Underscore templates.</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt jst
+</pre>
+<p>It maybe best to download the example and start playing around with it.</p>
+
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/precompiling-javascript-underscore-templates/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>EaselJS with GreenSock Tweenlite TweenMax</title>
+		<link>https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/</link>
+		<comments>https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/#comments</comments>
+		<pubDate>Sat, 27 Apr 2013 07:00:22 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=956</guid>
+		<description><![CDATA[I just started looking at EaselJS &#8220;A Javascript library that makes working with the HTML5 Canvas element easy&#8221;. I am a be fan of GreenSock&#8217;s tweening and easing library so I wanted to see how I could get TweenLite working with EaselJS. In this JavaScript tutorial I will show a very simple example how you [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I just started looking at EaselJS &#8220;A Javascript library that makes working with the HTML5 Canvas element easy&#8221;. I am a be fan of GreenSock&#8217;s tweening and easing library so I wanted to see how I could get TweenLite working with EaselJS. </p>
+<p>In this JavaScript tutorial I will show a very simple example how you can integration Greensock (Tweenmax / Tweenlite) with EaselJS.</p>
+<pre class="brush: jscript; title: ; notranslate">
+var canvas = document.getElementById('mainCanvas');
+var stage = new createjs.Stage(canvas);
+
+var shape = new createjs.Shape();
+shape.graphics.beginFill(&quot;#000&quot;);
+shape.graphics.drawCircle(0, 0, 100);
+shape.graphics.endFill();
+stage.addChild(shape);
+
+stage.update();
+
+TweenLite.ticker.addEventListener(&quot;tick&quot;, stage.update, stage);
+
+TweenLite.to(shape, 1, {delay: 1, x:100, y:100, ease:Cubic.easeInOut});
+</pre>
+<p>Here is all the HTML markup and JavaScript for the EaselJS and Tweenlite example.</p>
+<pre class="brush: xml; title: ; notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;EaselJS with GreenSock Tweenlite TweenMax&lt;/title&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;libs/easeljs/easeljs-0.6.0.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;libs/greensock/easing/EasePack.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;libs/greensock/TweenLite.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        function init()
+        {
+            var canvas = document.getElementById('mainCanvas');
+            var stage = new createjs.Stage(canvas);
+
+            var shape = new createjs.Shape();
+            shape.graphics.beginFill(&quot;#000&quot;);
+            shape.graphics.drawCircle(0, 0, 100);
+            shape.graphics.endFill();
+            stage.addChild(shape);
+            stage.update();
+
+            TweenLite.ticker.addEventListener(&quot;tick&quot;, stage.update, stage);
+
+            TweenLite.to(shape, 1, {delay: 1, x:100, y:100, ease:Cubic.easeInOut});
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload=&quot;javascript:init();&quot;&gt;
+
+    &lt;canvas id=&quot;mainCanvas&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;&lt;/canvas&gt;
+
+&lt;/body&gt;
+</pre>
+<p>You can download example files below:<br />
+</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/easeljs-with-greensock-tweenlite-tweenmax/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Compile SASS files into one CSS file &#124; Grunt JS Tutorial</title>
+		<link>https://codebelt.github.io/blog/javascript/compile-sass-files-into-one-css-file-grunt-js-tutorial/</link>
+		<comments>https://codebelt.github.io/blog/javascript/compile-sass-files-into-one-css-file-grunt-js-tutorial/#comments</comments>
+		<pubDate>Fri, 12 Apr 2013 03:00:09 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=930</guid>
+		<description><![CDATA[In this tutorial I will show you how to compile sass files into a single css file. The technique is great for working in teams where others may not have an EDI that supports compiling sass files. Install Ruby and Sass First thing we need to is get Ruby and Sass installed on our computer. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>In this tutorial I will show you how to compile sass files into a single css file. The technique is great for working in teams where others may not have an EDI that supports compiling sass files.</p>
+<h2>Install Ruby and Sass</h2>
+<p>First thing we need to is get <a href="http://www.ruby-lang.org/en/downloads/" target="_blank">Ruby</a> and <a href="http://sass-lang.com/download.html" target="_blank">Sass</a> installed on our computer. If you are using a Mac you do not need to install Ruby. For my Windows computer I used <a href="http://rubyinstaller.org/" target="_blank">http://rubyinstaller.org/</a> to install Ruby. Be sure to check the &#8220;Add Ruby executables to your Path&#8221; checkbox.</p>
+<p>To install Sass on Windows open the Command Prompt and type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+gem install sass
+</pre>
+<p>To install Sass on your Mac open Terminal and type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo gem install sass
+</pre>
+<p>You should see the following after Sass is successfully installed.</p>
+<pre class="brush: jscript; title: ; notranslate">
+Fetching: sass-3.2.7.gem (100%)
+Successfully installed sass-3.2.7
+Parsing documentation for sass-3.2.7
+Installing ri documentation for sass-3.2.7
+Done installing documentation for sass (18 sec).
+1 gem installed
+</pre>
+<h2>Grunt JS Setup</h2>
+<p>If you have never used GruntJS before you will need to checkout my <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/" title="Install Grunt JS on a Mac – Tutorial">Install Grunt JS on a Mac Tutorial</a> or <a href="https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/" title="Install Grunt JS on Windows – Tutorial">Install Grunt JS on Windows Tutorial</a>.</p>
+<p>Now <strong>download the example files below</strong> and navigate with Terminal or the Command Prompt to the &#8220;_build&#8221; folder and type in:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install
+</pre>
+<p>On a Mac you may need to type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo npm install
+</pre>
+<h2>Compiling Sass into CSS</h2>
+<p>Now that we have the Grunt JS packages added to our &#8220;_build/node_modules/&#8221; folder we can start converting sass into css. Check out the &#8220;Gruntfile.js&#8221; and you will see:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sass: {
+    dist: {
+        files: {
+            '&lt;%= meta.deployPath %&gt;main.css': '&lt;%= meta.srcPath %&gt;main.scss'
+        }
+    }
+}
+</pre>
+<p>That&#8217;s the magic where it will take your main.scss and all the @import&#8217;s and compile it into one css file. Now all we have to do is type the command below:</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt
+</pre>
+<p>This works because in our &#8220;Gruntfile.js&#8221; file we have default Grunt JS task setup to use &#8220;sass&#8221;:</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt.registerTask('default', ['sass']);
+</pre>
+<h2>SASS Watch Command</h2>
+<p>Lets make this better by any time a sass file is edited or added Grunt JS will compile the files into css. Take a look at the &#8220;package.json&#8221; file in our &#8220;_build&#8221; folder. It should look like this:</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+  &quot;name&quot;: &quot;Test-SASS-To-CSS&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;grunt&quot;: &quot;~0.4.1&quot;,
+    &quot;grunt-contrib-sass&quot;: &quot;*&quot;
+  }
+}
+</pre>
+<p>Now add [&#8220;grunt-contrib-watch&#8221;: &#8220;*&#8221;] to devDependencies. Yours should look like this now:</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+    &quot;name&quot;: &quot;Test-SASS-To-CSS&quot;,
+    &quot;version&quot;: &quot;0.1.0&quot;,
+    &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;~0.4.1&quot;,
+        &quot;grunt-contrib-sass&quot;: &quot;*&quot;,
+        &quot;grunt-contrib-watch&quot;: &quot;*&quot;
+    }
+}
+</pre>
+<p>Type the below command to install the watch task packager to your local &#8220;_build&#8221; folder.</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install
+</pre>
+<p>Ok, trust me we are almost done. Once you do this for one project. Setting up another project will be faster. Now we need to add the below code to the &#8220;Gruntfile.js&#8221; file.</p>
+<pre class="brush: jscript; title: ; notranslate">
+watch: {
+    scripts: {
+        files: [
+            '&lt;%= meta.srcPath %&gt;/**/*.scss'
+        ],
+        tasks: ['sass']
+    }
+}
+</pre>
+<pre class="brush: jscript; title: ; notranslate">
+grunt.loadNpmTasks('grunt-contrib-watch');
+</pre>
+<p>Your &#8220;Gruntfile.js&#8221; file should look like this now:</p>
+<pre class="brush: jscript; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        //Read the package.json (optional)
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Metadata.
+        meta: {
+            basePath: '../',
+            srcPath: '../assets/sass/',
+            deployPath: '../assets/css/'
+        },
+
+        banner: '/*! &lt;%= pkg.name %&gt; - v&lt;%= pkg.version %&gt; - ' +
+                '&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;\n' +
+                '* Copyright (c) &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt; ',
+
+        // Task configuration.
+        sass: {
+            dist: {
+                files: {
+                    '&lt;%= meta.deployPath %&gt;main.css': '&lt;%= meta.srcPath %&gt;main.scss'
+                }
+            }
+        },
+
+        watch: {
+            scripts: {
+                files: [
+                    '&lt;%= meta.srcPath %&gt;/**/*.scss'
+                ],
+                tasks: ['sass']
+            }
+        }
+
+    });
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+    // Default task.
+    grunt.registerTask('default', ['sass']);
+
+};
+</pre>
+<p>To start the watch command we need to type:</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt watch
+</pre>
+<p>Not sure if that was painful for you but for me creating this tutorial was. It seems like a lot of steps but after you use Grunt JS a couple of times you will see the benefit.<br />
+</p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/compile-sass-files-into-one-css-file-grunt-js-tutorial/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Learn Chrome Developer Tools Tutorials</title>
+		<link>https://codebelt.github.io/blog/javascript/learn-chrome-developer-tools-tutorials/</link>
+		<comments>https://codebelt.github.io/blog/javascript/learn-chrome-developer-tools-tutorials/#respond</comments>
+		<pubDate>Tue, 26 Mar 2013 04:10:54 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=919</guid>
+		<description><![CDATA[Google and CodeSchool announced a new course that helps people use Chrome Developer Tools. There appears to be a lot of great video tutorials for beginners and intermediate users of the Developer Tools. Here are the links to check it out: Chrome Developer Tools Video Tutorials http://discover-devtools.codeschool.com/ Google Blog Post http://blog.chromium.org/2013/03/discover-chrome-devtools-our-new.html Discover DevTools Companion Extention [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Google and CodeSchool announced a new course that helps people use Chrome Developer Tools. There appears to be a lot of great video tutorials for beginners and intermediate users of the Developer Tools. Here are the links to check it out:</p>
+<h3>Chrome Developer Tools Video Tutorials</h3>
+<p><a href="http://discover-devtools.codeschool.com/" target="_blank">http://discover-devtools.codeschool.com/</a></p>
+<h3>Google Blog Post</h3>
+<p><a href="http://blog.chromium.org/2013/03/discover-chrome-devtools-our-new.html" target="_blank">http://blog.chromium.org/2013/03/discover-chrome-devtools-our-new.html</a></p>
+<h3>Discover DevTools Companion Extention</h3>
+<p><a href="https://chrome.google.com/webstore/detail/discover-devtools-compani/angkfkebojeancgemegoedelbnjgcgme" target="_blank">https://chrome.google.com/webstore/detail/discover-devtools-compani/angkfkebojeancgemegoedelbnjgcgme</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/learn-chrome-developer-tools-tutorials/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Install Grunt JS on Windows &#8211; Tutorial</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/</link>
+		<comments>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/#comments</comments>
+		<pubDate>Sat, 23 Mar 2013 00:27:24 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=901</guid>
+		<description><![CDATA[Before you install Grunt.js you will need to have node.js installed. For this tutorial I have node.js v0.10.0 installed. I will be installing Grunt.js v0.4.1. WARNING if you have Grunt.j 0.3.x or less you will need to uninstall it first. Grunt&#8217;s command line interface (CLI) To get grunt.js installed we need to first install Grunt&#8217;s [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Before you install Grunt.js you will need to have <a href="http://nodejs.org/" title="nodejs" target="_blank">node.js</a> installed. For this tutorial I have <strong>node.js v0.10.0</strong> installed.</p>
+<p>I will be installing <strong>Grunt.js v0.4.1</strong>. WARNING if you have Grunt.j 0.3.x or less you will need to uninstall it first.</p>
+<h3>Grunt&#8217;s command line interface (CLI)</h3>
+<p>To get grunt.js installed we need to first install Grunt&#8217;s command line interface (CLI) globally. Current version is 1.0.6. Open up Windows Command Prompt and put in the command below:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install grunt-cli -g
+</pre>
+<p>This will put the grunt command in your system path, allowing it to be run from any directory.</p>
+<h3>Windows Tip &#8211; Open Command Prompt from Folder (Two Ways)</h3>
+<ol>
+<li>Type <strong>cmd</strong> into the address bar and hit enter</li>
+<li>Hold <strong>Shift</strong> while <strong>Right-Clicking</strong> a blank space in the folder and select <strong>Open Command Window Here</strong>.</li>
+</ol>
+<h3>Folder and Package JSON Setup</h3>
+<p>Now we need to install Grunt.js. With Windows Command Prompt navigate to our project folder. I like to put all my build files into a folder called &#8220;_build&#8221;. So for this example the path is &#8220;C:\Users\codebelt\Desktop\first-grunt-project\_build&#8221;. </p>
+<p>There are a few different ways to get Grunt.js and other plugins installed but I will be showing you the easiest way (I think). We need to create a &#8220;package.json&#8221; and put it in our &#8220;_build&#8221; folder. Copy and past code below and put in the &#8220;package.json&#8221;</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+  &quot;name&quot;: &quot;Test-Project&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;grunt&quot;: &quot;~0.4.1&quot;,
+    &quot;grunt-contrib-concat&quot;: &quot;~0.1.3&quot;
+  }
+}
+</pre>
+<p>When the next command below is ran it will install <strong>grunt v0.4.1</strong> and the grunt plugin <strong>concat v0.1.3</strong> into the &#8220;_build&#8221; folder.</p>
+<p>Here is the command:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install
+</pre>
+<h3>Grunt File Setup</h3>
+<p>Now Grunt.js and the Concat plugin should be installed. Now we need to add a Grunt file to configure and build our project. Create a &#8220;Gruntfile.js&#8221; file inside the &#8220;_build&#8221; folder and paste in the code below.</p>
+<pre class="brush: jscript; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        //Read the package.json (optional)
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Metadata.
+        meta: {
+            basePath: '../',
+            srcPath: '../src/',
+            deployPath: '../deploy/'
+        },
+
+        banner: '/*! &lt;%= pkg.name %&gt; - v&lt;%= pkg.version %&gt; - ' +
+                '&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;\n' +
+                '* Copyright (c) &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt; ',
+
+        // Task configuration.
+        concat: {
+            options: {
+                stripBanners: true
+            },
+            dist: {
+                src: ['&lt;%= meta.srcPath %&gt;scripts/fileone.js', '&lt;%= meta.srcPath %&gt;scripts/filetwo.js'],
+                dest: '&lt;%= meta.deployPath %&gt;scripts/app.js'
+            }
+        }
+    });
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
+    // Default task
+    grunt.registerTask('default', ['concat']);
+
+};
+</pre>
+<p>If you look you can see I have created a fileone.js and filetwo.js file and placed them into the ../src/scripts directory. This GruntJS script will take those files and export into the ../deploy/scripts folder as app.js. I am using &lt;%= meta.srcPath %> as a constant or base path to my src folder. This allows me to change the base path in one location than having it hard coded all over the Gruntfile.</p>
+<p>Now type &#8220;grunt&#8221; into Windows Command Prompt and watch the magic happen.</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt
+</pre>
+<p>That will run the Default task and concatenate the two js files into one. Try it out, I hope this works for you. You should see the output in Windows Command Prompt say:</p>
+<pre class="brush: jscript; title: ; notranslate">
+Running &quot;concat:dist&quot; (concat) task
+File &quot;../deploy/scripts/app.js&quot; created.
+
+Done, without errors.
+</pre>
+<p>You can download the example files for this tutorial here: </p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/install-grunt-js-on-windows/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>Install Grunt JS on a Mac &#8211; Tutorial</title>
+		<link>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/</link>
+		<comments>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/#comments</comments>
+		<pubDate>Fri, 15 Mar 2013 04:54:31 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=871</guid>
+		<description><![CDATA[Before you install Grunt.js you will need to have node.js installed. For this tutorial I have node.js v0.10.0 installed. I will be installing Grunt.js v0.4.1. WARNING if you have Grunt.j 0.3.x or less you will need to uninstall it first. Grunt&#8217;s command line interface (CLI) To get grunt.js installed we need to first install Grunt&#8217;s [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Before you install Grunt.js you will need to have <a href="http://nodejs.org/" title="nodejs" target="_blank">node.js</a> installed. For this tutorial I have <strong>node.js v0.10.0</strong> installed.</p>
+<p>I will be installing <strong>Grunt.js v0.4.1</strong>. WARNING if you have Grunt.j 0.3.x or less you will need to uninstall it first.</p>
+<h3>Grunt&#8217;s command line interface (CLI)</h3>
+<p>To get grunt.js installed we need to first install Grunt&#8217;s command line interface (CLI) globally. Current version is 1.0.6. Open Terminal and put in the command below:</p>
+<pre class="brush: jscript; title: ; notranslate">
+npm install grunt-cli -g
+</pre>
+<p>You may get an error that says &#8220;Please try running this command again as root/Administrator.&#8221; You will need to put <strong>sudo</strong> before you command.</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo npm install grunt-cli -g
+</pre>
+<p>This will put the grunt command in your system path, allowing it to be run from any directory.</p>
+<h3>Mac Tip &#8211; Open Terminal from Folder</h3>
+<ol>
+<li>If you have the Terminal icon on your Dock you can drag the folder to the Terminal icon and it will open to that folder path.</li>
+</ol>
+<h3>Folder and Package JSON Setup</h3>
+<p>Now we need to install Grunt.js. With Terminal navigate to our project folder. I like to put all my build files into a folder called &#8220;_build&#8221;. So for this example the path is &#8220;/Users/codebelt/Desktop/project/_build&#8221;. </p>
+<p>There are a few different ways to get Grunt.js and other plugins installed but I will be showing you the easiest way (I think). We need to create a &#8220;package.json&#8221; and put it in our &#8220;_build&#8221; folder. Copy and past code below and put in the &#8220;package.json&#8221;</p>
+<pre class="brush: jscript; title: ; notranslate">
+{
+  &quot;name&quot;: &quot;Test-Project&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;grunt&quot;: &quot;~0.4.1&quot;,
+    &quot;grunt-contrib-concat&quot;: &quot;~0.1.3&quot;
+  }
+}
+</pre>
+<p>When the next command below is ran it will install <strong>grunt v0.4.1</strong> and the grunt plugin <strong>concat v0.1.3</strong> into the &#8220;_build&#8221; folder.</p>
+<p>Here is the command:</p>
+<pre class="brush: jscript; title: ; notranslate">
+sudo npm install
+</pre>
+<h3>Grunt File Setup</h3>
+<p>Now Grunt.js and the Concat plugin should be installed. Now we need to add a Grunt file to configure and build our project. Create a &#8220;Gruntfile.js&#8221; file inside the &#8220;_build&#8221; folder and paste in the code below.</p>
+<pre class="brush: jscript; title: ; notranslate">
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+
+        //Read the package.json (optional)
+        pkg: grunt.file.readJSON('package.json'),
+
+        // Metadata.
+        meta: {
+            basePath: '../',
+            srcPath: '../src/',
+            deployPath: '../deploy/'
+        },
+
+        banner: '/*! &lt;%= pkg.name %&gt; - v&lt;%= pkg.version %&gt; - ' +
+                '&lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt;\n' +
+                '* Copyright (c) &lt;%= grunt.template.today(&quot;yyyy&quot;) %&gt; ',
+
+        // Task configuration.
+        concat: {
+            options: {
+                stripBanners: true
+            },
+            dist: {
+                src: ['&lt;%= meta.srcPath %&gt;scripts/fileone.js', '&lt;%= meta.srcPath %&gt;scripts/filetwo.js'],
+                dest: '&lt;%= meta.deployPath %&gt;scripts/app.js'
+            }
+        }
+    });
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
+    // Default task
+    grunt.registerTask('default', ['concat']);
+
+};
+</pre>
+<p>If you look you can see I have created a fileone.js and filetwo.js file and placed them into the ../src/scripts directory. This GruntJS script will take those files and export into the ../deploy/scripts folder as app.js. I am using &lt;%= meta.srcPath %> as a constant or base path to my src folder. This allows me to change the base path in one location than having it hard coded all over the Gruntfile.</p>
+<p>Now type &#8220;grunt&#8221; into Terminal and watch the magic happen.</p>
+<pre class="brush: jscript; title: ; notranslate">
+grunt
+</pre>
+<p>That will run the Default task and concatenate the two js files into one. Try it out, I hope this works for you. You should see the output in Terminal say:</p>
+<pre class="brush: jscript; title: ; notranslate">
+Running &quot;concat:dist&quot; (concat) task
+File &quot;../deploy/scripts/app.js&quot; created.
+
+Done, without errors.
+</pre>
+<p>You can download the example files for this tutorial here: </p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/javascript/install-grunt-js-on-a-mac/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

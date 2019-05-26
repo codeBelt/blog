@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Coldfusion &#8211; codeBelt</title>
+	<atom:link href="https://codebelt.github.io/blog/category/coldfusion/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Sun, 26 May 2019 04:51:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>Media Temple ColdFusion 9 Grid Server Container</title>
+		<link>https://codebelt.github.io/blog/coldfusion/media-temple-coldfusion-9-grid-server-container/</link>
+		<comments>https://codebelt.github.io/blog/coldfusion/media-temple-coldfusion-9-grid-server-container/#respond</comments>
+		<pubDate>Sun, 29 Aug 2010 03:45:39 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[Coldfusion]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=20</guid>
+		<description><![CDATA[I am writing this short article for two reasons. 1) To see how many other people out there would like to see ColdFusion 9 as a grid container at MediaTemple. 2) Hopefully this article will push MediaTemple to create a CF9 grid container. Yes I know, maybe I will be the only one to read [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img src="http://codebelt.com/wp/wp-content/uploads/2010/08/coldfusion-mediatemple.jpg" width="100" height="120" alt="coldfusion actionscript" class="float-left" /> I am writing this short article for two reasons. 1) To see how many other people out there would like to see ColdFusion 9 as a grid container at MediaTemple. 2) Hopefully this article will push MediaTemple to create a CF9 grid container. Yes I know, maybe I will be the only one to read this article because my site is unknown but I can dream.</p>
+<p>
+  I have seen it mentioned on their website but it was way back in 2006:</p>
+<p class="output"><strong>New Containers.</strong> Python containers with support for DJango and Trac. FlashMedia Server, ColdFusion, MySQL containers all in development.<br />
+  <a href="http://weblog.mediatemple.net/weblog/2006/12/04/grid-improvements-new-gmr-release/" target="_blank">weblog.mediatemple.net </a></p>
+<p> I am interested in ColdFusion 9 because CFScript seems similar to ActionScript. You can read another article of mine here: <a href="../coldfusion_9_actionscript_developers/">ColdFusion 9 for ActionScript Developers (CFScript)</a>.</p>
+<p> I also noticed it mentioned in an article by Lee Brimelow posted on August 04th 2009:</p>
+<p class="output">I&#8217;m going to look into other options for ColdFusion. MediaTemple may add support for it on their (gs) accounts so I guess I&#8217;ll wait for that.<br />
+  <a href="http://theflashblog.com/?p=1265" target="_blank">theflashblog.com </a></p>
+<p>I hope customers of MediaTemple read this and login to post a message in the User Form. There is already a item open called &#8220;ColdFusion Container&#8221; so do a search and add a post reply and help get ColdFusion added as a grid container.</p></p>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/coldfusion/media-temple-coldfusion-9-grid-server-container/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>ColdFusion 9 for ActionScript Developers (CFScript)</title>
+		<link>https://codebelt.github.io/blog/coldfusion/coldfusion-9-for-actionscript-developers-cfscript/</link>
+		<comments>https://codebelt.github.io/blog/coldfusion/coldfusion-9-for-actionscript-developers-cfscript/#comments</comments>
+		<pubDate>Sun, 29 Aug 2010 03:09:50 +0000</pubDate>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+				<category><![CDATA[Coldfusion]]></category>
+
+		<guid isPermaLink="false">http://codebelt.com/?p=11</guid>
+		<description><![CDATA[I was very interested to find out that Adobe ColdFusion 9 would allow developers to program everything (I think everything) using CFScript instead of the ColdFusion Markup Language (CFML) which is tag-based and looks very similar to HTML or XML. Being an ActionScript developer I thought it would be awesome if I could use my [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><img class="float-left" src="http://codebelt.com/wp/wp-content/uploads/2010/08/coldfusion-actionscript.jpg" alt="coldfusion actionscript" width="100" height="120" />I was very interested to find out that Adobe ColdFusion 9  would allow developers to program everything (I think everything) using  CFScript instead of the ColdFusion Markup Language (CFML) which is tag-based  and looks very similar to HTML or XML. Being an ActionScript developer I  thought it would be awesome if I could use my knowledge of ActionScript to help  me learn ColdFusion. Below are just the basics and I hope this information can  benefit someone else.</p>
+<h2>CFScript Block and File Extention</h2>
+<p>First thing to know is how to setup your files so it will  work on a ColdFusion server. 1) Change the file extension to .cfm so it should  like something like this: index.cfm. 2) Place your scripts into a  &lt;cfscript&gt; CODE HERE &lt;/cfscript&gt;. Below will generate a &ldquo;Hello  World&rdquo; on your website page.</p>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	writeOutput(&quot;Hello World&quot;);
+	
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>Hello World</p></div>
+<h2>CFScript Single &amp; Multi-Line Line Comments</h2>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	// This is a Single Line Comment (Same as ActionScript and other languages) 
+	
+	/* 
+		This is a Multi-Line Comments
+		(Same as ActionScript and other languages) 
+	*/  
+
+&lt;/cfscript&gt;
+</pre>
+<h2>CFScript Variable</h2>
+<p>            Notice below that we do not use &#8220;var&#8221; in front of our variables.<br />
+        We can use &#8220;var&#8221; in front of a variable if the variable is created within a function. (More on that later)</p>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	//we just created a variable call &quot;txt&quot;.
+	txt = &quot;This is sentence one. &quot;;
+	
+	//we just created another variable call &quot;txtToAdd&quot;.
+	txtToAdd = &quot;This is sentence two.&quot;;
+	
+	// We use &amp; to join string variables together instead of + in ActionScript.
+	writeOutput( txt &amp; txtToAdd );
+	
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>This is sentence one. This is sentence two.</p></div>
+<p class="tip">Tip: Don&#8217;t forget to put a semicolon; at the end of each statement!</p>
+<h2>CFScript Array</h2>
+<p>            When using ArrayNew() you can create multidimensional arrays by passing in a parameter of 1, 2, or 3. You can also create an array by using the square brackets: [] which I do in the loops section. Note: Arrays in ColdFusion are not 0 based like ActionScript. So arrays in ColdFusion start at 1.</p>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	firstArray = ArrayNew(1);
+	firstArray[1] = &quot;item one&quot;;
+	firstArray[2] = &quot;item two&quot;;
+	firstArray[3] = &quot;item three&quot;;
+	firstArray[4] = &quot;item four&quot;;
+	
+	writeOutput( firstArray[1] );
+	
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>item one</p>
+</div>
+<p class="tip">Tip: Arrays in ColdFusion are not 0 based. So an array always starts at 1.</p>
+<h2>CFScript Loops</h2>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	firstArray = [&quot;item one&quot;, &quot;item two&quot;, &quot;item three&quot;, &quot;item four&quot;];
+	
+	theArrayLength = ArrayLen(firstArray);
+				
+	// For Loop			
+	for( i=1; i &lt;= theArrayLength; i++){
+		
+		writeOutput( &quot;This is loop &quot; &amp; i &amp; &quot; out of &quot; &amp; theArrayLength);
+		writeOutput(&quot;&lt;br /&gt;&quot;);
+		
+	}
+	
+	// While Loop
+	counter = 1;
+	
+	while(counter &lt;= theArrayLength){
+	
+		writeOutput( &quot;This is loop &quot; &amp; counter &amp; &quot; out of &quot; &amp; theArrayLength);
+		writeOutput(&quot;&lt;br /&gt;&quot;);
+		counter++;
+		
+	}
+	
+	// Do While Loop
+	counter = 1;
+	
+	do{
+	
+		writeOutput( &quot;This is loop &quot; &amp; counter &amp; &quot; out of &quot; &amp; theArrayLength);
+		writeOutput(&quot;&lt;br /&gt;&quot;);
+		counter++;
+		
+	}
+	
+	while(counter &lt;= theArrayLength);
+	 
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output for all loops are the same:</p>
+<p>This is loop 1 out of 4<br />This is loop 2 out of 4<br />This is loop 3 out of 4<br />This is loop 4 out of 4
+</div>
+<h2>CFScript Statements</h2>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	//If Statement
+	expression = 3;
+	
+	if( expression == 3){
+		writeOutput(&quot;True, it is equal to 3&quot;);
+	} else {
+		writeOutput(&quot;False, it is not equal to 3&quot;);
+	}
+	
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>True, it is equal to 3</p></div>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	// Switch Statement
+	switchExpression = 3;
+
+	switch (switchExpression) {
+		case 0:
+			writeOutput(0);
+			break;
+		case 1:
+			writeOutput(1);
+			break;
+		case 2:
+			writeOutput(2);
+			break;
+		default:
+			writeOutput(&quot;Not 0, 1, or 2&quot;);
+	}
+	 
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>Not 0, 1, or 2</p></div>
+<h2>CFScript Functions</h2>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	// Simple Function
+	function cfScriptFunction(){
+		writeOutput(&quot;Function has be called.&quot;);
+	}
+	
+	cfScriptFunction();
+
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>Function has be called.</p></div>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	//Return Function
+	function makeSentence(name){
+		return name &amp; &quot; is cool.&quot;;
+	}
+	
+	newString = makeSentence(&quot;Robert&quot;);
+	
+	writeOutput(newString);
+
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>Robert is cool.</p></div>
+<p>Since I just started playing around with ColdFusion I am not sure of best practices but like ActionScript I think you would want to have a return type on your functions and setting parameters types. Below is what it would look like:</p>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	// Note: return type &quot;Void&quot; in front of the function
+	Void function cfScriptFunction(){
+		writeOutput(&quot;Function has be called.&quot;);
+	}
+	
+	cfScriptFunction();
+	
+	// Note: the return type &quot;String&quot; in front of the function
+	// Note: Parameter &quot;name&quot; has a type as &quot;String&quot;. Placed in front of parameter
+	String function makeSentence(String name){
+		return name &amp; &quot; is cool.&quot;;
+	}
+	
+	newString = makeSentence(&quot;Robert&quot;);
+	
+	writeOutput(newString);
+
+&lt;/cfscript&gt;
+</pre>
+<p>Using &#8220;var&#8221; in front of variables like ActionScript is only allowed inside of a function.</p>
+<pre class="brush: as3; title: ; notranslate">
+&lt;cfscript&gt;
+
+	message = &quot;I am outside&quot;;
+	
+	function cfScriptFunction(){
+		var message = &quot;&quot;;
+			message = &quot;I am inside&quot;;
+		writeOutput(message &amp; &quot;&lt;br /&gt;&quot;);
+	}
+	
+	cfScriptFunction();
+	
+	writeOutput(message);
+	
+&lt;/cfscript&gt;
+</pre>
+<div class="output">Output:</p>
+<p>I am inside<br />
+I am outside</div>
+]]></content:encoded>
+			<wfw:commentRss>https://codebelt.github.io/blog/coldfusion/coldfusion-9-for-actionscript-developers-cfscript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

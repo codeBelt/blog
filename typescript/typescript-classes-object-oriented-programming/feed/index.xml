@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: TypeScript Classes &#038; Object-Oriented Programming</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/#comment-59003</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sun, 06 Dec 2015 20:29:08 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1561#comment-59003</guid>
+		<description><![CDATA[The example below doesn&#039;t retrun anything. Notice that there is no &#039;return&#039; keyword at the bottom of the method.
+&lt;code&gt;
+public work():void {
+    // This method doesn&#039;t return anything. 
+}
+&lt;/code&gt;
+
+Notice that there is a &#039;return&#039; keyword at the bottom of the method. That is how you tell the method to return something.
+&lt;code&gt;
+public work():string {
+    var str = &#039;This is the string you are returning&#039;;
+    return str;
+}
+&lt;/code&gt;
+
+&lt;strong&gt;super()&lt;/strong&gt; is only need in the constructor when you &lt;strong&gt;extend&lt;/strong&gt; another class. &lt;strong&gt;Cat extends Animal&lt;/strong&gt; Basically this is calling the constructor of the Animal class so that your Cat class inherits all the functionality from the Animal class.]]></description>
+		<content:encoded><![CDATA[<p>The example below doesn&#8217;t retrun anything. Notice that there is no &#8216;return&#8217; keyword at the bottom of the method.<br />
+<code><br />
+public work():void {<br />
+    // This method doesn't return anything.<br />
+}<br />
+</code></p>
+<p>Notice that there is a &#8216;return&#8217; keyword at the bottom of the method. That is how you tell the method to return something.<br />
+<code><br />
+public work():string {<br />
+    var str = 'This is the string you are returning';<br />
+    return str;<br />
+}<br />
+</code></p>
+<p><strong>super()</strong> is only need in the constructor when you <strong>extend</strong> another class. <strong>Cat extends Animal</strong> Basically this is calling the constructor of the Animal class so that your Cat class inherits all the functionality from the Animal class.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: gabriel</title>
+		<link>https://codebelt.github.io/blog/typescript/typescript-classes-object-oriented-programming/#comment-58972</link>
+		<dc:creator><![CDATA[gabriel]]></dc:creator>
+		<pubDate>Thu, 03 Dec 2015 19:25:12 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1561#comment-58972</guid>
+		<description><![CDATA[As a guy that has worked with javascript but is now required to work in an object oriented way (which i&#039;ve never done), this couldn&#039;t be more helpful, thanks. Only doubts that remained are:
+
+If &lt;code&gt;public work():void {(something)}&lt;/code&gt; means that the function is expected to return nothing, then if I expect it to return a string for instance, would I write &lt;code&gt;public work():string {(something)}&lt;/code&gt;
+
+And, what&#039;s the meaning of the &#039;super()&#039; keyword you used in the constructor of the cat class?]]></description>
+		<content:encoded><![CDATA[<p>As a guy that has worked with javascript but is now required to work in an object oriented way (which i&#8217;ve never done), this couldn&#8217;t be more helpful, thanks. Only doubts that remained are:</p>
+<p>If <code>public work():void {(something)}</code> means that the function is expected to return nothing, then if I expect it to return a string for instance, would I write <code>public work():string {(something)}</code></p>
+<p>And, what&#8217;s the meaning of the &#8216;super()&#8217; keyword you used in the constructor of the cat class?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

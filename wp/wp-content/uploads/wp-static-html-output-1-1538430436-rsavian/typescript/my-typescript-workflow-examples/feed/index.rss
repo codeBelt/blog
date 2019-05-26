@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: My TypeScript Workflow Example</title>
+	<atom:link href="https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/feed/" rel="self" type="application/rss+xml" />
+	<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/</link>
+	<description>Manage Your Code Snippets with codeBelt &#124; Code Examples / Tutorials / Articles</description>
+	<lastBuildDate>Wed, 14 Feb 2018 05:52:52 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comment-59619</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Wed, 13 Jan 2016 04:14:56 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402#comment-59619</guid>
+		<description><![CDATA[Thanks, I appreciate the feedback.]]></description>
+		<content:encoded><![CDATA[<p>Thanks, I appreciate the feedback.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Liam</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comment-59602</link>
+		<dc:creator><![CDATA[Liam]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2016 05:39:54 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402#comment-59602</guid>
+		<description><![CDATA[You&#039;re a diamond in the rough Robert, 
+
+I know this is a pretty old article but this is an amazing setup and like others, I&#039;ve learnt a wealth of Grunt stuff I didn&#039;t know previously, thank you so much!]]></description>
+		<content:encoded><![CDATA[<p>You&#8217;re a diamond in the rough Robert, </p>
+<p>I know this is a pretty old article but this is an amazing setup and like others, I&#8217;ve learnt a wealth of Grunt stuff I didn&#8217;t know previously, thank you so much!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comment-28495</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Sat, 23 Aug 2014 04:04:29 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402#comment-28495</guid>
+		<description><![CDATA[Thanks for the feedback!
+
+I have not done break points with Webstorm but I did see this article: http://www.jetbrains.com/webstorm/webhelp/debugging-typescript.html
+
+You could &#039;debugger&#039; or use Chrome to put break points https://developer.chrome.com/devtools/docs/javascript-debugging. I think you might be able put break points on your TypeScript sourcemap files. Check out my other article on &lt;a href=&quot;https://codebelt.github.io/blog/typescript/typescript-source-maps-example/&quot; title=&quot;TypeScript Source Maps Example&quot; rel=&quot;nofollow&quot;&gt;TypeScript sourcemaps&lt;/a&gt;.]]></description>
+		<content:encoded><![CDATA[<p>Thanks for the feedback!</p>
+<p>I have not done break points with Webstorm but I did see this article: <a href="http://www.jetbrains.com/webstorm/webhelp/debugging-typescript.html" rel="nofollow">http://www.jetbrains.com/webstorm/webhelp/debugging-typescript.html</a></p>
+<p>You could &#8216;debugger&#8217; or use Chrome to put break points <a href="https://developer.chrome.com/devtools/docs/javascript-debugging" rel="nofollow">https://developer.chrome.com/devtools/docs/javascript-debugging</a>. I think you might be able put break points on your TypeScript sourcemap files. Check out my other article on <a href="https://codebelt.github.io/blog/typescript/typescript-source-maps-example/" title="TypeScript Source Maps Example" rel="nofollow">TypeScript sourcemaps</a>.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Pavan Kumar</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comment-28418</link>
+		<dc:creator><![CDATA[Pavan Kumar]]></dc:creator>
+		<pubDate>Thu, 21 Aug 2014 16:13:28 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402#comment-28418</guid>
+		<description><![CDATA[Hi Robert,
+
+I learnt more than what I was looking for. I came here to learn about compiling typescript via grunt, along with that I got to know about many essential grunt plugin which I never knew existed. Thank you! :)
+
+I saw that you have mentioned your IDE of choice is WebStorm. Am curious to know is there any way to debug application by setting break points in WebStorm, while running &#039;grunt server&#039; task? (Both in TypeScript and JavaScript file)]]></description>
+		<content:encoded><![CDATA[<p>Hi Robert,</p>
+<p>I learnt more than what I was looking for. I came here to learn about compiling typescript via grunt, along with that I got to know about many essential grunt plugin which I never knew existed. Thank you! :)</p>
+<p>I saw that you have mentioned your IDE of choice is WebStorm. Am curious to know is there any way to debug application by setting break points in WebStorm, while running &#8216;grunt server&#8217; task? (Both in TypeScript and JavaScript file)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: robert</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comment-22180</link>
+		<dc:creator><![CDATA[robert]]></dc:creator>
+		<pubDate>Mon, 27 Jan 2014 01:14:21 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402#comment-22180</guid>
+		<description><![CDATA[Thanks, you could checkout my example files:
+https://github.com/codeBelt/TypeScript-Boilerplate]]></description>
+		<content:encoded><![CDATA[<p>Thanks, you could checkout my example files:<br />
+<a href="https://github.com/codeBelt/TypeScript-Boilerplate" rel="nofollow">https://github.com/codeBelt/TypeScript-Boilerplate</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Txus Ordorika</title>
+		<link>https://codebelt.github.io/blog/typescript/my-typescript-workflow-examples/#comment-22151</link>
+		<dc:creator><![CDATA[Txus Ordorika]]></dc:creator>
+		<pubDate>Fri, 24 Jan 2014 15:42:27 +0000</pubDate>
+		<guid isPermaLink="false">https://codebelt.github.io/blog/?p=1402#comment-22151</guid>
+		<description><![CDATA[Hey dude many thanks for your example gruntfile. I was having problems with express js and I used as a basis for my work. Many thanks!]]></description>
+		<content:encoded><![CDATA[<p>Hey dude many thanks for your example gruntfile. I was having problems with express js and I used as a basis for my work. Many thanks!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

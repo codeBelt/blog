@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>TypeScript Namespace with Internal Modules &laquo;  codeBelt</title>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/screen.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/ie6.css" media="screen"/>
+    <![endif]-->
+    <link rel="pingback" href="https://codebelt.github.io/blog/wp/xmlrpc.php"/>
+    <link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="codeBelt &raquo; TypeScript Namespace with Internal Modules Comments Feed" href="https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/feed/" />
+<link rel='stylesheet' id='font-awesome-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/font-awesome/css/font-awesome.min.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-bootstrap-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/css/front.css?ver=4.9.10' type='text/css' media='all' />
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/js/front.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/download-manager/assets/js/chosen.jquery.min.js?ver=4.9.10'></script>
+<meta name="generator" content="WordPress Download Manager 2.8.92" />
+<link rel='https://api.w.org/' href='https://codebelt.github.io/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codebelt.github.io/blog/wp/xmlrpc.php?rsd" />
+<link rel='prev' title='How to create Ambient Declarations in TypeScript Tutorial' href='https://codebelt.github.io/blog/typescript/how-to-create-a-ambient-class-declarations-in-typescript-tutorial/' />
+<link rel='next' title='JavaScript rest parameter with TypeScript' href='https://codebelt.github.io/blog/typescript/javascript-rest-parameter-with-typescript/' />
+<link rel='shortlink' href='https://codebelt.github.io/blog/?p=546' />
+<link rel="alternate" type="application/json+oembed" href="https://codebelt.github.io/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://codebelt.github.io/blog%2Ftypescript%2Fjavascript-namespacing-with-typescript-internal-modules%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://codebelt.github.io/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://codebelt.github.io/blog%2Ftypescript%2Fjavascript-namespacing-with-typescript-internal-modules%2F&#038;format=xml" />
+
+        <script>
+            var wpdm_site_url = 'https://codebelt.github.io/blog/wp/';
+            var wpdm_home_url = 'https://codebelt.github.io/blog/';
+            var ajax_url = 'https://codebelt.github.io/blog/wp/wp-admin/admin-ajax.php';
+        </script>
+
+
+        <style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body><!-- wrap -->
+<div id="wrap">    <!-- header -->
+    <div id="header"><a name="top"></a>                <h4 id="logo-text"><a href="https://codebelt.github.io/blog/"
+                                                                             title="codeBelt">codeBelt</a>
+    </h4>
+
+        <p id="slogan">
+           
+        </p>
+        <div id="nav">
+            <ul>
+                <li
+                 class="current_page_item"                ><a href="https://codebelt.github.io/blog/">Home</a></li>                            </ul>
+        </div>
+        <p id="rss-feed"><a href="https://codebelt.github.io/blog/feed/" class="feed">Grab the RSS feed</a></p>
+
+        <form id="quick-search" action="https://codebelt.github.io/blog/"><p><label for="qsearch">Search:</label> <input
+                class="tbox" id="qsearch" type="text" name="s" value="Search..."
+                onfocus="if(this.value==this.defaultValue) this.value='';" title="Start typing and hit ENTER"/> <input
+                class="btn" alt="Search" type="image" title="Search"
+                src="https://codebelt.github.io/blog/wp/wp-content/themes/jungleland/images/search.png"/></p></form>
+        <!-- /header -->                        </div>
+	
+
+	<!-- content -->
+
+	<div id="content-wrap" class="clear">
+
+	
+
+		<div id="content">		
+
+			
+
+			<!-- main -->
+
+			<div id="main">	
+
+						
+
+				<div class="post">
+
+			
+
+					<h1>TypeScript Namespace with Internal Modules</h1>
+
+					
+
+					<p class="post-info">Posted by robert | Filed under <a href="https://codebelt.github.io/blog/category/typescript/" rel="category tag">TypeScript</a></p>
+
+				
+
+										
+
+					
+
+					<h4>Update: New and better Boilerplate that uses <a href="https://codebelt.github.io/blog/typescript/typescript-es6-modules-boilerplate/">ES6 Modules in TypeScript</a> check it out.</h4>
+<p>I am going to talk about JavaScript Namespacing with TypeScript&#8217;s Internal Modules and show an example how you can use namespacing with your TypeScript applications. If you are new to TypeScript check out my <a href="https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/" title="Object Oriented Programming with TypeScript Tutorial (JavaScript OOP)" target="_blank">OOP TypeScript Tutorial</a>.</p>
+<p>First off JavaScript namespacing is a way of preventing issues or properties being overridden on the browser window object. It also keeps the browser window object cleaner because all our JavaScript object are not global. For example if I was to create a class called Main it would be window.Main and would be global. If someone else working on the same website as you creates a another Main JavaScript object then one of the Main object will be overriden with the other code.</p>
+<p>What I have seen and have done myself is create a single property/variable and then add other objects to that property. </p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+var somename = somename || {};
+somename.Main = function(){};
+somename.Car = function(){};
+</pre>
+<p>Now how do we do this in TypeScript? Lets take this TypeScript class below:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+class Main
+{
+    constructor()
+    {
+        console.log(&quot;Main&quot;);
+    }
+}
+</pre>
+<p>If you compiled this code your window object property will look like:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+window.Main
+</pre>
+<p>Now to add the <strong>Main</strong> class into a namespace we need to wrap the class with a module and give that module a name/namespace. The namespace can be anything you want and for example I am going to make the namespace <strong>MyNamespace</strong>. We also now need to put an export statement in front of our class declaration.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+module MyNamespace
+{
+    export class Main
+    {
+        constructor()
+        {
+            console.log(&quot;Main&quot;);
+        }
+    }
+}
+</pre>
+<p>Now your window object property will look like:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+window.MyNamespace.Main
+</pre>
+<h2>Import Other Namespace Classes</h2>
+<p>Lets take our <strong>Main</strong> class and now import some other classes that have a different namespace.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='AnotherNamespace/ClassOne.ts'/&gt;
+///&lt;reference path='AnotherNamespace/ClassTwo.ts'/&gt;
+
+module MyNamespace
+{
+    import ClassOne = AnotherNamespace.ClassOne;
+    import ClassTwo = AnotherNamespace.ClassTwo;
+
+    export class Main
+    {
+        private _classOne:ClassOne;
+        private _classTwo:ClassTwo;
+
+        constructor()
+        {
+            this._classOne = new ClassOne();
+            this._classTwo = new ClassTwo();
+        }
+    }
+}
+</pre>
+<p>You can see we reference two new classes with the <strong>reference path</strong> statement. Also when dealing with classes that have a different namespace you will need to use an import statement. The import statement(s) needs to be inside the module namespace area. </p>
+<p>Here are the other classes for this example. Please not that they all have the same namespace but is different from the <strong>Main</strong> class. One thing to point out is if you are referencing classes with in the same namespace you do not need to use the import statement.:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='CommonComponent.ts'/&gt;
+
+module AnotherNamespace
+{
+    export class ClassOne
+    {
+        private _component:CommonComponent;
+
+        constructor()
+        {
+            this._component = new CommonComponent();
+        }
+    }
+}
+</pre>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='CommonComponent.ts'/&gt;
+
+module AnotherNamespace
+{
+    export class ClassTwo
+    {
+        private _component:CommonComponent;
+
+        constructor()
+        {
+            this._component = new CommonComponent();
+        }
+    }
+}
+</pre>
+<pre class="brush: as3; title: ; notranslate" title="">
+module AnotherNamespace
+{
+    export class CommonComponent
+    {
+        constructor()
+        {
+        }
+    }
+}
+</pre>
+<p>To compile all these classes into one file you can use the TypeScript compiler command below:</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+tsc -out _compiled/main.js Main.ts
+</pre>
+<p>Below is the HTML is for this TypeScript Namespace tutorial.</p>
+<pre class="brush: xml; title: ; notranslate" title="">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;scripts/_compiled/main.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        window.onload = function(event) {
+            //Get class from namespace.
+            var Main = MyNamespace.Main;
+
+            var app = new Main();
+
+            console.log(app);
+            console.log(&quot;MyNamespace objects found on the window object:&quot;, window.MyNamespace);
+            console.log(&quot;AnotherNamespace objects found on the window object:&quot;, window.AnotherNamespace);
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Open your console log and view the output.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p><strong>You can download the example files here: </strong><a href="https://github.com/codeBelt/Example-TypeScript-Namespace" title="TypeScript Namespace with Internal Modules" target="_blank">https://github.com/codeBelt/Example-TypeScript-Namespace</a></p>
+<h2>Another Namespace Example</h2>
+<p>You can take this a step future and maybe it&#8217;s over kill. I am going you use reverse domain name notation and the window object property look like:</p>
+<pre class="brush: jscript; title: ; notranslate" title="">
+window.com.codebelt.Main
+//Other Objects/Classes in my code base:
+window.com.codebelt.components.vehicles.Truck
+window.com.codebelt.components.accessories.soundsystems.CDPlayer
+</pre>
+<p>You may wanna check out my first <a href="https://codebelt.github.io/blog/typescript/object-oriented-programming-with-typescript/" title="Object Oriented Programming with TypeScript Tutorial (JavaScript OOP)" target="_blank">TypeScript Tutorial</a> to see the difference when not using TypeScript module&#8217;s.</p>
+<pre class="brush: as3; title: ; notranslate" title="">
+///&lt;reference path='com/codebelt/components/vehicles/Car.ts'/&gt;
+///&lt;reference path='com/codebelt/components/vehicles/Truck.ts'/&gt;
+
+module com.codebelt
+{
+    import Car = com.codebelt.components.vehicles.Car;
+    import Truck = com.codebelt.components.vehicles.Truck;
+
+    export class Main
+    {
+        private _compact:Car;
+        private _pickup:Truck;
+
+        constructor()
+        {
+            this._compact = new Car(21, 18);
+            this._compact.changeGear();
+
+            this._compact.useAccessory();
+
+            this._pickup = new Truck(16, 23);
+            this._pickup.changeGear();
+            this._pickup.useAccessory();
+
+            this._compact.soundSystem.turnOn();
+            this._compact.soundSystem.playSelection(2);
+            this._pickup.soundSystem.turnOn();
+
+            this._compact.drive();
+            this._pickup.drive();
+        }
+    }
+}
+</pre>
+<p>You can get this extreme namespacing example files at: <a href="https://github.com/codeBelt/Example-TypeScript-Namespace-Overboard" target="_blank">https://github.com/codeBelt/Example-TypeScript-Namespace-Overboard</a></p>
+
+
+
+
+					
+
+					
+				
+
+					<p class="postmeta">		
+
+						<a href="https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#comments" class="comments">Comments (10)</a> |		
+
+						<span class="date">November 29th, 2012</span>
+					</p>
+
+
+
+
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments">10 Responses to &#8220;TypeScript Namespace with Internal Modules&#8221;</h3>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	<ol class="commentlist">
+	
+   	<li class="comment even thread-even depth-1" id="comment-11937">
+
+<div class="comment-info">			
+<img alt='' src='http://1.gravatar.com/avatar/7022f1cbf5514d9f08787d22d473ad1a?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7022f1cbf5514d9f08787d22d473ad1a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Nick Says: <br />				
+<span class="comment-data"><a href="#comment-11937" title="">December 22, 2012 at 3:17 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>As with most examples of Typescript (including TypeScript.Org samples), I find it impossible to try these in Ie10.  What am I missing about Typescript solutions in VS?  No project files &#8230; no solution file?<br />
+How can this example be loaded and run from VS2012 ?</p>
+<p>(I&#8217;m a C# developr)</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=11937#respond' onclick='return addComment.moveForm( "comment-11937", "11937", "respond", "546" )' aria-label='Reply to Nick'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-11940">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/wp-content/uploads/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-11940" title="">December 22, 2012 at 6:56 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>I will have to talk with a co-worker if you they can show me how to in VS2012 but it maybe a few weeks before I write a tutorial.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=11940#respond' onclick='return addComment.moveForm( "comment-11940", "11940", "respond", "546" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="comment even thread-odd thread-alt depth-1" id="comment-11938">
+
+<div class="comment-info">			
+<img alt='' src='http://1.gravatar.com/avatar/7022f1cbf5514d9f08787d22d473ad1a?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7022f1cbf5514d9f08787d22d473ad1a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Nick Says: <br />				
+<span class="comment-data"><a href="#comment-11938" title="">December 22, 2012 at 3:19 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Someone needs to write an article &#8230; TypeScript in VS 2012 for the C# developer!</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=11938#respond' onclick='return addComment.moveForm( "comment-11938", "11938", "respond", "546" )' aria-label='Reply to Nick'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor odd alt depth-2" id="comment-21802">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/wp-content/uploads/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-21802" title="">January 5, 2014 at 12:46 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Here is a nice video for Visual Studio 2013 and TypeScript. <a href="http://youtu.be/-XXYLIhKA-w" rel="nofollow">http://youtu.be/-XXYLIhKA-w</a></p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=21802#respond' onclick='return addComment.moveForm( "comment-21802", "21802", "respond", "546" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="comment even thread-even depth-1" id="comment-13444">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/c0e73cad042ac82ae88cc42a31bcb5d0?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0e73cad042ac82ae88cc42a31bcb5d0?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+<a href='http://www.rcolepeterson.com/' rel='external nofollow' class='url'>Cole Peterson</a> Says: <br />				
+<span class="comment-data"><a href="#comment-13444" title="">March 11, 2013 at 9:29 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>this is awesome. thanks<br />
+cp</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=13444#respond' onclick='return addComment.moveForm( "comment-13444", "13444", "respond", "546" )' aria-label='Reply to Cole Peterson'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+   	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-15888">
+
+<div class="comment-info">			
+<img alt='' src='http://2.gravatar.com/avatar/b4b7e21776a1081ba754619d20e33f4c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b4b7e21776a1081ba754619d20e33f4c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Luke Says: <br />				
+<span class="comment-data"><a href="#comment-15888" title="">June 18, 2013 at 3:28 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>I like your typescript coding style &#8211; makes more sense to me than other styles I&#8217;ve seen.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=15888#respond' onclick='return addComment.moveForm( "comment-15888", "15888", "respond", "546" )' aria-label='Reply to Luke'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment byuser comment-author-rsavian bypostauthor even depth-2" id="comment-15889">
+
+<div class="comment-info">			
+<img alt='robert' src='https://codebelt.github.io/blog/wp/wp-content/uploads/2012/12/robert_avatar.png' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+robert Says: <br />				
+<span class="comment-data"><a href="#comment-15889" title="">June 18, 2013 at 4:18 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Thanks! That is why I write these tutorials because some of the other tutorials are kind of confusing.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=15889#respond' onclick='return addComment.moveForm( "comment-15889", "15889", "respond", "546" )' aria-label='Reply to robert'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="comment odd alt thread-even depth-1" id="comment-17801">
+
+<div class="comment-info">			
+<img alt='' src='http://1.gravatar.com/avatar/180e6502e53aadd87f8b353f6f32c95d?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/180e6502e53aadd87f8b353f6f32c95d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Ross Says: <br />				
+<span class="comment-data"><a href="#comment-17801" title="">August 29, 2013 at 4:20 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Robert,<br />
+Great article and sample code.</p>
+<p>One problem that I had was getting the code base to compile under &#8211;module commonjs (for NodeJS use).  I tried exporting the main module also and that generated many reference errors.</p>
+<p>Any ideas how this could be done (as a single file, e.g., -out)?  I</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=17801#respond' onclick='return addComment.moveForm( "comment-17801", "17801", "respond", "546" )' aria-label='Reply to Ross'>Reply</a>
+		 						</div>								
+							</div>
+<ul class="children">
+
+   	<li class="comment even depth-2" id="comment-17824">
+
+<div class="comment-info">			
+<img alt='' src='http://1.gravatar.com/avatar/180e6502e53aadd87f8b353f6f32c95d?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/180e6502e53aadd87f8b353f6f32c95d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+Ross Says: <br />				
+<span class="comment-data"><a href="#comment-17824" title="">August 30, 2013 at 5:25 am</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>One simple way but unpleasant way to get it to work is compile as normal (tsc Main.ts -out ../bin/main.js). Then manually change two lines in the output code (main.js).  Add exports, such as:</p>
+<p>})(exports.com || (exports.com = {}));<br />
+var com = exports.com;</p>
+<p>as the last two lines.  Then in create app.js in the bin directory:</p>
+<p>var m = require(&#8216;./main.js&#8217;).com;<br />
+var main = new m.codebelt.Main();</p>
+<p>and run it:<br />
+node app.js</p>
+<p>A better way is needed.</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=17824#respond' onclick='return addComment.moveForm( "comment-17824", "17824", "respond", "546" )' aria-label='Reply to Ross'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+   	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-79005">
+
+<div class="comment-info">			
+<img alt='' src='http://0.gravatar.com/avatar/37da44498a79fb0094a6b71c6808fd5a?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/37da44498a79fb0094a6b71c6808fd5a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' />				
+								<cite>										
+leo Says: <br />				
+<span class="comment-data"><a href="#comment-79005" title="">September 27, 2017 at 10:57 pm</a></span>
+								</cite>	
+							</div>							
+							
+							<div class="comment-text">
+				
+
+				<p>Hi, robert:<br />
+Thanks for your sharing!<br />
+And I have a Question:<br />
+I found the project &#8216;StructureJS&#8217; in your GitHub, I&#8217;m wondering why not use &#8216;///&#8217; to include other classes instead of &#8216;import &#8230; from &#8230;&#8217;?</p>
+<p>Thanks!</p>
+
+
+								
+								<div class="reply">
+		<a rel='nofollow' class='comment-reply-link' href='https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/?replytocom=79005#respond' onclick='return addComment.moveForm( "comment-79005", "79005", "respond", "546" )' aria-label='Reply to leo'>Reply</a>
+		 						</div>								
+							</div>
+</li><!-- #comment-## -->
+
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+
+
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://codebelt.github.io/blog/typescript/javascript-namespacing-with-typescript-internal-modules/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+
+<form action="https://codebelt.github.io/blog/wp/wp-comments-post.php" method="post" id="commentform">
+
+
+
+<p><label for="author">Name (required)</label><br/><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+
+<p><label for="email">Mail (will not be published) (required)</label><br/><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+
+<p><label for="url">Website</label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><label for="comment">Your Message</label><br /><textarea name="comment" id="comment" rows="10" cols="20" tabindex="4"></textarea></p>
+
+<p class="no-border"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='546' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="821da0af8c" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="122"/></p>
+
+</form>
+
+
+</div>
+
+
+
+
+
+				
+
+				<!-- /post -->	
+
+				</div>	
+
+			
+
+			<!-- /main -->	
+
+			</div>
+
+		
+
+			<!-- sidebar -->
+
+			<div id="sidebar">
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* CodeBelt Right 300x250 */
+google_ad_slot = "8058341238";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+				<div class="sidemenu">	
+
+					<h3>Code Examples</h3>
+
+					<ul>				
+
+							<li class="cat-item cat-item-5"><a href="https://codebelt.github.io/blog/category/actionscript-3/" title="ActionScript Examples">ActionScript 3</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://codebelt.github.io/blog/category/android/" >android</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://codebelt.github.io/blog/category/coldfusion/" title="CFScript code examples for ColdFusion 9">Coldfusion</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://codebelt.github.io/blog/category/html5/" >html5</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://codebelt.github.io/blog/category/javascript/" >JavaScript</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://codebelt.github.io/blog/category/jquery/" title="jQuery Examples">jQuery</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://codebelt.github.io/blog/category/typescript/" >TypeScript</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://codebelt.github.io/blog/category/uncategorized/" >Uncategorized</a>
+</li>
+
+					</ul>	
+
+				</div>
+	
+
+				
+				
+
+				
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9212069377316227";
+/* codeBelt Right 160x600 */
+google_ad_slot = "7356185783";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<!-- /sidebar -->				
+
+			</div>
+		<!-- /content -->	
+
+		</div>				
+
+	<!-- /content-wrap -->	
+
+	</div>	
+
+<!-- /wrap -->
+
+</div>
+
+
+
+<!-- footer -->	
+
+<div id="footer">	
+
+
+
+	<!-- footer-outer -->	
+
+	<div id="footer-outer" class="clear"><div id="footer-wrap">
+
+	
+
+		<div class="col-a">
+
+				
+
+			<h3>Contact Info</h3>
+			<p><strong>E-mail: </strong><span id='email_link'>code {AT} codebelt.com</span></p>
+
+			<div class="footer-list">
+
+
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">			
+
+						
+
+			<h3>Pages</h3>
+			<div class="footer-list">
+
+				<ul>				
+					<li><a href="https://codebelt.github.io/blog/">Home</a></li>
+										
+				</ul>
+			</div>					
+
+				
+
+		</div>
+
+		
+
+		<div class="col-a">
+
+				
+
+			<div class="footer-list"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://semver.org/">Application Semantic Versioning</a></li>
+<li><a href="http://www.blackcj.com/blog/" target="_blank">Chris Black&#039;s Blog</a></li>
+<li><a href="http://css-tricks.com/snippets/">CSS-Tricks Snippets</a></li>
+<li><a href="http://tutorials.flashmymind.com/" target="_blank">Flash My Mind</a></li>
+<li><a href="http://gotoandlearn.com/" target="_blank">gotoAndLearn ();</a></li>
+<li><a href="http://js.nerderylabs.com/blog/">Nerdery JavaScript Blog</a></li>
+<li><a href="http://net.tutsplus.com/" target="_blank">NetTuts</a></li>
+<li><a href="http://www.reflektions.com/" target="_blank">Reflektions</a></li>
+<li><a href="http://www.riacodes.com/" target="_blank">RiaCodes</a></li>
+<li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="http://codebelt.github.io/StructureJS/" title="Structure js">StructureJS</a></li>
+<li><a href="http://www.taterboy.com/blog/" target="_blank">TaterBoy Blog</a></li>
+<li><a href="http://www.uquickstart.com/">Umbraco Quick Start</a></li>
+
+	</ul>
+</div>
+		
+
+				
+
+		</div>		
+
+	
+
+		<div class="col-b">
+
+					
+
+			<h3>About</h3>			
+
+			
+
+			<p>
+
+			<img src="http://codebelt.com/wp/wp-content/uploads/2010/10/me.png" width="40" height="40" alt="firefox" class="float-left" />
+Hello, my name is Robert and I am an interactive developer at <a href="http://nerdery.com/" target="_blank">The Nerdery</a>. I created this website so I can  hopefully give back to the interactive community that has helped me out over  the years. When I have time I will try to upload code examples and tutorials so  that it might benefit someone looking for answers.
+			</p>			
+
+			
+		</div>		
+
+		
+
+		<div class="fix"></div>
+
+		
+
+		<!-- footer-bottom -->		
+
+		<div id="footer-bottom">
+
+	
+
+			<div class="bottom-left">
+
+				<p>
+
+				&copy; 2019 <strong>codeBelt</strong>&nbsp; &nbsp; &nbsp;
+
+				Design by: <a href="http://www.styleshout.com/">styleshout</a>&nbsp; &nbsp; &nbsp;Theme by: <a href="http://www.themelab.com/" title="Free WordPress Templates">Theme Lab</a> 			
+
+				</p>
+
+			</div>		
+
+	
+
+			<div class="bottom-right">
+
+				<p>		
+
+					<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+
+		   		<a href="http://validator.w3.org/check/referer">XHTML</a>	|			
+
+					<a href="https://codebelt.github.io/blog/">Home</a> |
+
+					<strong><a href="#top" class="back-to-top">Back to Top</a></strong>								
+
+				</p>
+
+			</div>
+
+
+
+		<!-- /footer-bottom -->		
+
+		</div>
+
+	
+
+	<!-- /footer-outer -->		
+
+	</div></div>		
+
+
+
+<!-- /footer -->
+
+</div>
+
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0.9b'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://codebelt.github.io/blog/wp/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeRDark.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['auto-links'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://codebelt.github.io/blog/wp/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-9839557-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+
+</body>
+
+</html>
